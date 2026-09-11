@@ -1,0 +1,42 @@
+[
+  {
+    "slug": "windows",
+    "name": "Windows",
+    "score": 0
+  },
+  {
+    "slug": "pc",
+    "name": "PC",
+    "score": 0
+  },
+  {
+    "slug": "chrome",
+    "name": "Chrome",
+    "score": 0
+  },
+  {
+    "slug": "web-service",
+    "name": "Webサービス",
+    "score": 0
+  },
+  {
+    "slug": "wordpress",
+    "name": "WordPress",
+    "score": 0
+  },
+  {
+    "slug": "plugin",
+    "name": "プラグイン",
+    "score": 0
+  },
+  {
+    "slug": "gas",
+    "name": "GAS",
+    "score": 0
+  },
+  {
+    "slug": "spreadsheet",
+    "name": "スプレッドシート",
+    "score": 0
+  }
+]

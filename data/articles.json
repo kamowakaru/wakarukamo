@@ -1,0 +1,74 @@
+[
+  {
+    "slug": "windows-basics",
+    "title": "Windowsの基本設定を見直して快適に使うポイント",
+    "date": "2026-09-11",
+    "category": "pc-windows",
+    "tags": [
+      "windows",
+      "pc"
+    ],
+    "description": "Windowsを快適に使うための基本設定を確認するための記事です。",
+    "placeholder": true
+  },
+  {
+    "slug": "web-troubleshooting",
+    "title": "Webサービスで困ったときに確認したい基本ポイント",
+    "date": "2026-09-11",
+    "category": "web",
+    "tags": [
+      "chrome",
+      "web-service"
+    ],
+    "description": "Webサービスがうまく動かないときの基本確認項目をまとめる記事です。",
+    "placeholder": true
+  },
+  {
+    "slug": "wordpress-start",
+    "title": "WordPressブログを始める前に知っておきたい基本",
+    "date": "2026-09-11",
+    "category": "wordpress",
+    "tags": [
+      "wordpress",
+      "plugin"
+    ],
+    "description": "WordPressの基本構成や運営前の確認事項をまとめる記事です。",
+    "placeholder": true
+  },
+  {
+    "slug": "gas-basics",
+    "title": "Googleスプレッドシートを自動化するGASの基本",
+    "date": "2026-09-11",
+    "category": "google-gas",
+    "tags": [
+      "gas",
+      "spreadsheet",
+      "automation"
+    ],
+    "description": "GASでできることや基本的な考え方を紹介する記事です。",
+    "placeholder": true
+  },
+  {
+    "slug": "chatgpt-basics",
+    "title": "ChatGPTでできることと基本的な使い方",
+    "date": "2026-09-11",
+    "category": "ai-chatgpt",
+    "tags": [
+      "chatgpt",
+      "ai"
+    ],
+    "description": "ChatGPTの基本的な使い方や活用例をまとめる記事です。",
+    "placeholder": true
+  },
+  {
+    "slug": "useful-tools",
+    "title": "無料で使える便利ツールを探すときのポイント",
+    "date": "2026-09-11",
+    "category": "other",
+    "tags": [
+      "tools"
+    ],
+    "description": "無料ツールを選ぶ際に確認したいポイントをまとめる記事です。",
+    "placeholder": true
+  }
+]

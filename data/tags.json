@@ -1,0 +1,50 @@
+[
+  {
+    "slug": "windows",
+    "name": "Windows"
+  },
+  {
+    "slug": "pc",
+    "name": "PC"
+  },
+  {
+    "slug": "chrome",
+    "name": "Chrome"
+  },
+  {
+    "slug": "web-service",
+    "name": "Webサービス"
+  },
+  {
+    "slug": "wordpress",
+    "name": "WordPress"
+  },
+  {
+    "slug": "plugin",
+    "name": "プラグイン"
+  },
+  {
+    "slug": "gas",
+    "name": "GAS"
+  },
+  {
+    "slug": "spreadsheet",
+    "name": "スプレッドシート"
+  },
+  {
+    "slug": "automation",
+    "name": "自動化"
+  },
+  {
+    "slug": "chatgpt",
+    "name": "ChatGPT"
+  },
+  {
+    "slug": "ai",
+    "name": "AI"
+  },
+  {
+    "slug": "tools",
+    "name": "便利ツール"
+  }
+]
