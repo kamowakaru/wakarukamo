@@ -1,5 +1,16 @@
 [
   {
+    "slug": "wordpress-start",
+    "title": "WordPressブログを始める前に知っておきたい基本",
+    "date": "2026-09-11",
+    "category": "wordpress",
+    "tags": [
+      "wordpress",
+      "plugin"
+    ],
+    "description": "WordPressの基本構成や運営前の確認事項をまとめる記事です。"
+  },
+  {
     "slug": "windows-basics",
     "title": "Windowsの基本設定を見直して快適に使うポイント",
     "date": "2026-09-11",
@@ -8,8 +19,7 @@
       "windows",
       "pc"
     ],
-    "description": "Windowsを快適に使うための基本設定を確認するための記事です。",
-    "placeholder": true
+    "description": "Windowsを快適に使うための基本設定を確認するための記事です。"
   },
   {
     "slug": "web-troubleshooting",
@@ -20,20 +30,17 @@
       "chrome",
       "web-service"
     ],
-    "description": "Webサービスがうまく動かないときの基本確認項目をまとめる記事です。",
-    "placeholder": true
+    "description": "Webサービスがうまく動かないときの基本確認項目をまとめる記事です。"
   },
   {
-    "slug": "wordpress-start",
-    "title": "WordPressブログを始める前に知っておきたい基本",
+    "slug": "useful-tools",
+    "title": "無料で使える便利ツールを探すときのポイント",
     "date": "2026-09-11",
-    "category": "wordpress",
+    "category": "other",
     "tags": [
-      "wordpress",
-      "plugin"
+      "tools"
     ],
-    "description": "WordPressの基本構成や運営前の確認事項をまとめる記事です。",
-    "placeholder": true
+    "description": "無料ツールを選ぶ際に確認したいポイントをまとめる記事です。"
   },
   {
     "slug": "gas-basics",
@@ -45,8 +52,7 @@
       "spreadsheet",
       "automation"
     ],
-    "description": "GASでできることや基本的な考え方を紹介する記事です。",
-    "placeholder": true
+    "description": "GASでできることや基本的な考え方を紹介する記事です。"
   },
   {
     "slug": "chatgpt-basics",
@@ -57,18 +63,6 @@
       "chatgpt",
       "ai"
     ],
-    "description": "ChatGPTの基本的な使い方や活用例をまとめる記事です。",
-    "placeholder": true
-  },
-  {
-    "slug": "useful-tools",
-    "title": "無料で使える便利ツールを探すときのポイント",
-    "date": "2026-09-11",
-    "category": "other",
-    "tags": [
-      "tools"
-    ],
-    "description": "無料ツールを選ぶ際に確認したいポイントをまとめる記事です。",
-    "placeholder": true
+    "description": "ChatGPTの基本的な使い方や活用例をまとめる記事です。"
   }
 ]
