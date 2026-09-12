@@ -40,6 +40,18 @@ description: "2つの一覧を比較して差分を確認する方法を解説�
 
 `slug` は Markdown のファイル名です。例: `gas-match-list.md` → `/articles/gas-match-list.html`
 
+## サムネイル画像
+各カテゴリには `assets/images/thumbnails/<category>/` 内に10種類のJPEG画像があります。
+記事のタイトル・説明・タグに合う画像を優先し、該当しない場合はslugをもとに10種類から自動選択します。同じ記事の画像は再生成しても変わりません。
+
+特定の画像を使いたい場合だけ front matter に追加します。
+
+```md
+thumbnail: "google-gas/03.jpg"
+```
+
+独自画像も `assets/images/thumbnails/` 以下へ置けば、同じ形式で指定できます。
+
 ## カテゴリ
 `data/categories.json` が固定マスタです。基本は1記事1カテゴリ。
 
@@ -68,6 +80,37 @@ GA4等からPVをCSVへ入れる処理は次の段階で接続できます。
 5. **Commit changes**
 6. Actions の `Build articles` が動き、生成物を自動コミット
 7. GitHub Pages が更新される
+
+## SNSへの自動投稿
+新しい記事Markdownを追加したときだけ、記事公開後に次の処理を行います。本文の修正や自動生成コミットでは再投稿しません。
+
+- X: APIの従量課金を避け、280文字以内のコピペ用原稿を自動生成
+- Threads: 読者の体験に寄り添う文章で投稿
+- Pinterest: 「方法・手順・設定」などのHow-to記事だけ画像Pinを作成
+- LinkedIn: 仕事・業務効率化・自動化に関係する記事だけ投稿
+- YouTube Shorts / TikTok: 人気記事の縦型MP4を生成（投稿前に人が確認）
+
+各SNSの認証情報は、GitHubの **Settings → Secrets and variables → Actions → New repository secret** で登録します。ZIPや記事ファイルには書かないでください。
+
+| Secret名 | 内容 |
+|---|---|
+| `SITE_URL` | 公開サイトURL（例: `https://ユーザー名.github.io/リポジトリ名`） |
+| `THREADS_USER_ID` | ThreadsのユーザーID |
+| `THREADS_ACCESS_TOKEN` | Threads投稿用アクセストークン |
+| `PINTEREST_ACCESS_TOKEN` | Pin作成権限付きアクセストークン |
+| `PINTEREST_BOARD_ID` | 投稿先ボードID |
+| `LINKEDIN_ACCESS_TOKEN` | Posts API用アクセストークン |
+| `LINKEDIN_AUTHOR_URN` | 投稿者URN（例: `urn:li:person:...`） |
+| `LINKEDIN_VERSION` | 利用中のLinkedIn APIバージョン（例: `202601`） |
+
+未設定のSNSは警告だけ表示してスキップし、サイト公開は止めません。記事ごとに判定を上書きする場合はfront matterへ `pinterest: true`、`pinterest: false`、`linkedin: true`、`linkedin: false` を追加できます。全SNSへの投稿を止める記事は `social: false` にします。
+
+記事ごとのコピペ用原稿は `social-drafts/<slug>.md` に生成されます。Xは「要点型」「問いかけ型」の2案から選べます。各媒体のURLにはUTMパラメータが付き、アクセス解析を接続した際に流入元を区別できます。
+
+## Shorts / TikTok動画
+`data/analytics-pageviews.csv` が更新されると、PV上位3記事について15秒・縦型（1080×1920）のMP4下書きを作ります。初期値は100PV以上です。GitHubの **Settings → Secrets and variables → Actions → Variables** に `MIN_POPULAR_VIEWS` を登録すると基準を変更できます。
+
+動画はActionsの `Build popular article videos` を開き、実行結果のArtifactsにある `wakarukamo-shorts-tiktok` からダウンロードします。自動アップロードにはせず、内容・音源を確認してからYouTube Shorts / TikTokへ投稿する設計です。
 
 ## 画像
 `assets/images/` の以下3点は、今回ユーザーが差し替えたカモ画像です。
