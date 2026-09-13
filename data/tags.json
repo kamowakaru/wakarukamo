@@ -50,5 +50,49 @@
   {
     "slug": "seo",
     "name": "SEO"
+  },
+  {
+    "slug": "github",
+    "name": "GitHub"
+  },
+  {
+    "slug": "github-pages",
+    "name": "GitHub Pages"
+  },
+  {
+    "slug": "website",
+    "name": "Webサイト制作"
+  },
+  {
+    "slug": "markdown",
+    "name": "Markdown"
+  },
+  {
+    "slug": "search-console",
+    "name": "Search Console"
+  },
+  {
+    "slug": "ga4",
+    "name": "GA4"
+  },
+  {
+    "slug": "analytics",
+    "name": "アクセス解析"
+  },
+  {
+    "slug": "sns",
+    "name": "SNS"
+  },
+  {
+    "slug": "threads",
+    "name": "Threads"
+  },
+  {
+    "slug": "utm",
+    "name": "UTM"
+  },
+  {
+    "slug": "privacy",
+    "name": "プライバシー"
   }
 ]
