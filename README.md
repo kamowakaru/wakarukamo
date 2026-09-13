@@ -13,6 +13,7 @@ GitHub Pages向けの静的サイトです。
 - トップページの最新6記事
 - 同カテゴリの関連記事
 - アクセス集計CSVの新規記事行
+- X・Threadsへコピペする投稿原稿TXT
 
 ### 記事ファイル例
 ファイル名: `content/articles/gas-match-list.md`
@@ -114,31 +115,19 @@ GA4ではイベント名 `search`、パラメータ `search_term` と `result_co
 6. Actions の `Build articles` が動き、生成物を自動コミット
 7. GitHub Pages が更新される
 
-## SNSへの自動投稿
-新しい記事Markdownを追加したときだけ、記事公開後に次の処理を行います。本文の修正や自動生成コミットでは再投稿しません。
+## X・Threads用の投稿原稿
+記事Markdownを追加・更新すると、自動投稿はせず、コピペ用のテキストファイルを生成します。
 
-- X: APIの従量課金を避け、280文字以内のコピペ用原稿を自動生成
-- Threads: 読者の体験に寄り添う文章で投稿
-- Pinterest: 「方法・手順・設定」などのHow-to記事だけ画像Pinを作成
-- LinkedIn: 仕事・業務効率化・自動化に関係する記事だけ投稿
-- YouTube Shorts / TikTok: 人気記事の縦型MP4を生成（投稿前に人が確認）
+生成場所は `social-drafts/<slug>.txt` です。1つのファイルに以下が入ります。
 
-各SNSの認証情報は、GitHubの **Settings → Secrets and variables → Actions → New repository secret** で登録します。ZIPや記事ファイルには書かないでください。
+- X案1：要点型（280文字以内）
+- X案2：問いかけ型（280文字以内）
+- Threads案：読者の体験に寄り添う文章
+- 投稿前チェックリスト
 
-| Secret名 | 内容 |
-|---|---|
-| `SITE_URL` | 公開サイトURL（例: `https://ユーザー名.github.io/リポジトリ名`） |
-| `THREADS_USER_ID` | ThreadsのユーザーID |
-| `THREADS_ACCESS_TOKEN` | Threads投稿用アクセストークン |
-| `PINTEREST_ACCESS_TOKEN` | Pin作成権限付きアクセストークン |
-| `PINTEREST_BOARD_ID` | 投稿先ボードID |
-| `LINKEDIN_ACCESS_TOKEN` | Posts API用アクセストークン |
-| `LINKEDIN_AUTHOR_URN` | 投稿者URN（例: `urn:li:person:...`） |
-| `LINKEDIN_VERSION` | 利用中のLinkedIn APIバージョン（例: `202601`） |
+各投稿文のURLにはX・Threads別のUTMパラメータが付くため、GA4でSNS別の流入を確認できます。使いたい案をコピーして、内容を確認してから手動で投稿してください。
 
-未設定のSNSは警告だけ表示してスキップし、サイト公開は止めません。記事ごとに判定を上書きする場合はfront matterへ `pinterest: true`、`pinterest: false`、`linkedin: true`、`linkedin: false` を追加できます。全SNSへの投稿を止める記事は `social: false` にします。
-
-記事ごとのコピペ用原稿は `social-drafts/<slug>.md` に生成されます。Xは「要点型」「問いかけ型」の2案から選べます。各媒体のURLにはUTMパラメータが付き、アクセス解析を接続した際に流入元を区別できます。
+特定の記事だけSNS原稿を作らない場合は、front matterへ `social: false` を追加します。
 
 ## Shorts / TikTok動画
 `data/analytics-pageviews.csv` が更新されると、PV上位3記事について15秒・縦型（1080×1920）のMP4下書きを作ります。初期値は100PV以上です。GitHubの **Settings → Secrets and variables → Actions → Variables** に `MIN_POPULAR_VIEWS` を登録すると基準を変更できます。
