@@ -1,1 +1,112 @@
-(()=>{const b=document.body,root=b.dataset.root||'';const menu=document.querySelector('.menu-btn'),nav=document.querySelector('.nav');if(menu&&nav)menu.addEventListener('click',()=>nav.classList.toggle('open'));const J=async p=>{const r=await fetch(root+p);if(!r.ok)throw new Error(p);return r.json()};const catName=async slug=>{const c=await J('data/categories.json');return c.find(x=>x.slug===slug)?.name||slug};const tagName=async slug=>{const t=await J('data/tags.json');return t.find(x=>x.slug===slug)?.name||slug};function esc(s){return String(s).replace(/[&<>\"]/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[m]))}async function makeCard(a){const cn=await catName(a.category);const tags=(await J('data/tags.json'));const chips=a.tags.map(t=>{const n=tags.find(x=>x.slug===t)?.name||t;return `<a class="tag-link" href="${root}tags/${t}.html">${esc(n)}</a>`}).join('');return `<article class="card"><div class="thumb"><img src="${root}assets/images/tip-duck.svg" alt=""></div><div class="card-body"><span class="chip">${esc(cn)}</span><h3><a href="${root}articles/${a.slug}.html">${esc(a.title)}</a></h3><p>${esc(a.description)}</p><div class="meta">${chips}<time>${a.date.replaceAll('-','.')}</time></div></div></article>`}async function renderCollection(){const el=document.querySelector('[data-collection]');if(!el)return;const mode=el.dataset.collection,key=el.dataset.key;const arts=await J('data/articles.json');let f=arts;if(mode==='category')f=arts.filter(a=>a.category===key);if(mode==='tag')f=arts.filter(a=>a.tags.includes(key));if(mode==='latest')f=arts.slice().sort((a,b)=>b.date.localeCompare(a.date));const lim=parseInt(el.dataset.limit||'0',10);if(lim)f=f.slice(0,lim);el.innerHTML=(await Promise.all(f.map(makeCard))).join('')||'<div class="empty-note">まだ記事がありません。</div>'}async function renderPopular(){const box=document.querySelector('[data-popular-tags]');if(!box)return;let pts=[];try{pts=await J('data/popular-tags.json')}catch{}if(!pts.length){const [arts,tgs]=await Promise.all([J('data/articles.json'),J('data/tags.json')]);pts=tgs.map(t=>({slug:t.slug,name:t.name,score:arts.filter(a=>a.tags.includes(t.slug)).length})).sort((a,b)=>b.score-a.score).slice(0,8)}box.innerHTML=pts.slice(0,8).map(t=>`<a href="${root}tags/${t.slug}.html">${esc(t.name)}</a>`).join('')}async function search(){const wrap=document.querySelector('[data-search-results]');if(!wrap)return;const q=new URLSearchParams(location.search).get('q')?.trim()||'';document.querySelector('[data-search-query]').textContent=q||'すべて';const arts=await J('data/articles.json');const tgs=await J('data/tags.json');const cats=await J('data/categories.json');const out=!q?arts:arts.filter(a=>{const cat=cats.find(c=>c.slug===a.category)?.name||'';const names=a.tags.map(x=>tgs.find(t=>t.slug===x)?.name||'').join(' ');return (a.title+' '+a.description+' '+cat+' '+names).toLowerCase().includes(q.toLowerCase())});wrap.innerHTML=out.map(a=>`<a class="search-row" href="${root}articles/${a.slug}.html"><strong>${esc(a.title)}</strong><small>${esc(a.description)}</small></a>`).join('')||'<div class="empty-note">該当する記事がありません。</div>'}async function related(){const el=document.querySelector('[data-related]');if(!el)return;const arts=await J('data/articles.json');const cat=el.dataset.category,slug=el.dataset.slug;const f=arts.filter(a=>a.category===cat&&a.slug!==slug).slice(0,3);el.innerHTML=(await Promise.all(f.map(makeCard))).join('')||'<div class="empty-note">関連する記事はまだありません。</div>'}renderCollection();renderPopular();search();related()})();
+(() => {
+  const body = document.body;
+  const root = body.dataset.root || '';
+  const menu = document.querySelector('.menu-btn');
+  const nav = document.querySelector('.nav');
+  if (menu && nav) menu.addEventListener('click', () => nav.classList.toggle('open'));
+
+  function initAnalytics() {
+    const id = window.WAKARUKAMO_GA_MEASUREMENT_ID || '';
+    if (!/^G-[A-Z0-9]+$/.test(id)) return;
+    window.dataLayer = window.dataLayer || [];
+    window.gtag = window.gtag || function () { window.dataLayer.push(arguments); };
+    window.gtag('js', new Date());
+    window.gtag('config', id, { anonymize_ip: true });
+    const script = document.createElement('script');
+    script.async = true;
+    script.src = `https://www.googletagmanager.com/gtag/js?id=${encodeURIComponent(id)}`;
+    document.head.appendChild(script);
+  }
+
+  function safeSearchTerm(value) {
+    const term = String(value || '').trim().replace(/\s+/g, ' ').slice(0, 80);
+    if (!term || /@/.test(term) || /\d{9,}/.test(term)) return '';
+    return term;
+  }
+
+  function trackSearch(term, resultCount) {
+    const safe = safeSearchTerm(term);
+    if (!safe || typeof window.gtag !== 'function') return;
+    window.gtag('event', 'search', { search_term: safe, result_count: resultCount });
+  }
+
+  const json = async path => {
+    const response = await fetch(root + path);
+    if (!response.ok) throw new Error(path);
+    return response.json();
+  };
+  const categoryName = async slug => {
+    const categories = await json('data/categories.json');
+    return categories.find(item => item.slug === slug)?.name || slug;
+  };
+  function escapeHtml(value) {
+    return String(value).replace(/[&<>\"]/g, char => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' })[char]);
+  }
+
+  async function makeCard(article) {
+    const category = await categoryName(article.category);
+    const tags = await json('data/tags.json');
+    const chips = article.tags.map(tag => {
+      const name = tags.find(item => item.slug === tag)?.name || tag;
+      return `<a class="tag-link" href="${root}tags/${tag}.html">${escapeHtml(name)}</a>`;
+    }).join('');
+    const thumbnail = article.thumbnail || `${article.category}/01.jpg`;
+    return `<article class="card"><a class="thumb" href="${root}articles/${article.slug}.html"><img src="${root}assets/images/thumbnails/${escapeHtml(thumbnail)}" alt="${escapeHtml(article.title)}のイメージ画像" loading="lazy"></a><div class="card-body"><span class="chip">${escapeHtml(category)}</span><h3><a href="${root}articles/${article.slug}.html">${escapeHtml(article.title)}</a></h3><p>${escapeHtml(article.description)}</p><div class="meta">${chips}<time>${article.date.replaceAll('-', '.')}</time></div></div></article>`;
+  }
+
+  async function renderCollection() {
+    const element = document.querySelector('[data-collection]');
+    if (!element) return;
+    const mode = element.dataset.collection;
+    const key = element.dataset.key;
+    const articles = await json('data/articles.json');
+    let filtered = articles;
+    if (mode === 'category') filtered = articles.filter(article => article.category === key);
+    if (mode === 'tag') filtered = articles.filter(article => article.tags.includes(key));
+    if (mode === 'latest') filtered = articles.slice().sort((a, b) => b.date.localeCompare(a.date));
+    const limit = parseInt(element.dataset.limit || '0', 10);
+    if (limit) filtered = filtered.slice(0, limit);
+    element.innerHTML = (await Promise.all(filtered.map(makeCard))).join('') || '<div class="empty-note">まだ記事がありません。</div>';
+  }
+
+  async function renderPopular() {
+    const box = document.querySelector('[data-popular-tags]');
+    if (!box) return;
+    let popular = [];
+    try { popular = await json('data/popular-tags.json'); } catch (_) {}
+    if (!popular.length) {
+      const [articles, tags] = await Promise.all([json('data/articles.json'), json('data/tags.json')]);
+      popular = tags.map(tag => ({ slug: tag.slug, name: tag.name, score: articles.filter(article => article.tags.includes(tag.slug)).length })).sort((a, b) => b.score - a.score).slice(0, 8);
+    }
+    box.innerHTML = popular.slice(0, 8).map(tag => `<a href="${root}tags/${tag.slug}.html">${escapeHtml(tag.name)}</a>`).join('');
+  }
+
+  async function search() {
+    const wrap = document.querySelector('[data-search-results]');
+    if (!wrap) return;
+    const query = new URLSearchParams(location.search).get('q')?.trim() || '';
+    document.querySelector('[data-search-query]').textContent = query || 'すべて';
+    const [articles, tags, categories] = await Promise.all([json('data/articles.json'), json('data/tags.json'), json('data/categories.json')]);
+    const filtered = !query ? articles : articles.filter(article => {
+      const category = categories.find(item => item.slug === article.category)?.name || '';
+      const tagNames = article.tags.map(tag => tags.find(item => item.slug === tag)?.name || '').join(' ');
+      return `${article.title} ${article.description} ${category} ${tagNames}`.toLowerCase().includes(query.toLowerCase());
+    });
+    wrap.innerHTML = filtered.map(article => `<a class="search-row" href="${root}articles/${article.slug}.html"><strong>${escapeHtml(article.title)}</strong><small>${escapeHtml(article.description)}</small></a>`).join('') || '<div class="empty-note">該当する記事がありません。</div>';
+    trackSearch(query, filtered.length);
+  }
+
+  async function related() {
+    const element = document.querySelector('[data-related]');
+    if (!element) return;
+    const articles = await json('data/articles.json');
+    const filtered = articles.filter(article => article.category === element.dataset.category && article.slug !== element.dataset.slug).slice(0, 3);
+    element.innerHTML = (await Promise.all(filtered.map(makeCard))).join('') || '<div class="empty-note">関連する記事はまだありません。</div>';
+  }
+
+  initAnalytics();
+  renderCollection();
+  renderPopular();
+  search();
+  related();
+})();

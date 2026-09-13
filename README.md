@@ -52,6 +52,15 @@ thumbnail: "google-gas/03.jpg"
 
 独自画像も `assets/images/thumbnails/` 以下へ置けば、同じ形式で指定できます。
 
+## ワカルカモポイント
+記事内にポイント枠を表示したい場合は、front matterへ `point` を追加します。
+
+```md
+point: "この記事で特に覚えておきたいことを一文で書きます。"
+```
+
+設定した記事だけ、カモの顔と電球の専用アイコン付きで表示されます。
+
 ## カテゴリ
 `data/categories.json` が固定マスタです。基本は1記事1カテゴリ。
 
@@ -71,6 +80,22 @@ thumbnail: "google-gas/03.jpg"
 ## 人気タグ
 `data/analytics-pageviews.csv` のPVをタグ単位に加算し、`scripts/update_popular_tags.py` が `data/popular-tags.json` を更新します。
 GA4等からPVをCSVへ入れる処理は次の段階で接続できます。
+
+## サイト内検索キーワードの計測
+検索結果ページを開いたとき、検索語と検索結果件数をGoogle Analytics 4へ送信できます。
+
+1. Google Analyticsでワカルカモ用のウェブデータストリームを作る
+2. `G-` から始まる測定IDを確認する
+3. `assets/js/analytics-config.js` を開く
+4. 次の空欄へ測定IDを入れてcommitする
+
+```js
+window.WAKARUKAMO_GA_MEASUREMENT_ID = 'G-XXXXXXXXXX';
+```
+
+設定前はアクセス解析を送信しません。空欄検索、メールアドレスを含む検索語、9桁以上の数字列を含む検索語は記録対象外です。検索語は80文字まで送信します。
+
+GA4ではイベント名 `search`、パラメータ `search_term` と `result_count` で確認できます。個人情報を検索欄へ入力しないよう、プライバシーポリシーにも注意書きを掲載しています。
 
 ## GitHubで記事を書く手順
 1. `content/articles` を開く

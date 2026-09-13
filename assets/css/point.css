@@ -1,0 +1,43 @@
+.wakarukamo-point {
+  position: relative;
+  margin-top: 34px;
+  padding: 20px 22px 18px 88px;
+  min-height: 82px;
+}
+
+.wakarukamo-point .point-heading {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+}
+
+.wakarukamo-point .point-heading img {
+  position: absolute;
+  left: 15px;
+  top: 50%;
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+  transform: translateY(-50%);
+}
+
+.wakarukamo-point .point-heading strong {
+  color: #6f5000;
+  font-size: 17px;
+}
+
+.wakarukamo-point p {
+  margin: 4px 0 0;
+}
+
+@media (max-width: 700px) {
+  .wakarukamo-point {
+    padding: 18px 16px 16px 72px;
+  }
+
+  .wakarukamo-point .point-heading img {
+    left: 10px;
+    width: 52px;
+    height: 52px;
+  }
+}

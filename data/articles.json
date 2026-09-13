@@ -1,5 +1,33 @@
 [
   {
+    "slug": "chatgpt-seo-publish-workflow",
+    "title": "ChatGPTでSEO記事を作って公開する方法｜ワカルカモの実例",
+    "date": "2026-09-13",
+    "category": "ai-chatgpt",
+    "tags": [
+      "chatgpt",
+      "ai",
+      "seo",
+      "automation"
+    ],
+    "description": "テーマ決めから構成、事実確認、Markdown化、GitHub Pagesへの公開まで、ワカルカモで実際に使った流れを紹介します。",
+    "thumbnail": "ai-chatgpt/01.jpg",
+    "point": "ChatGPTは構成と下書きの時短に使い、事実確認・実体験・最終判断は人が担当するのが基本です。"
+  },
+  {
+    "slug": "x-api-auto-post-pricing",
+    "title": "X APIで記事を自動投稿する方法は有料？料金と無料の代替案を解説",
+    "date": "2026-09-12",
+    "category": "other",
+    "tags": [
+      "automation",
+      "tools"
+    ],
+    "description": "ブログの更新情報をXへ自動投稿するときに必要なX APIの料金と、APIを使わず無料で運用する方法を解説します。",
+    "thumbnail": "other/07.jpg",
+    "point": "完全自動化にこだわらず、投稿文の作成だけを自動化すると、API料金を避けながら作業を減らせます。"
+  },
+  {
     "slug": "wordpress-start",
     "title": "WordPressブログを始める前に知っておきたい基本",
     "date": "2026-09-11",
@@ -8,7 +36,9 @@
       "wordpress",
       "plugin"
     ],
-    "description": "WordPressの基本構成や運営前の確認事項をまとめる記事です。"
+    "description": "WordPressの基本構成や運営前の確認事項をまとめる記事です。",
+    "thumbnail": "wordpress/02.jpg",
+    "point": ""
   },
   {
     "slug": "windows-basics",
@@ -19,7 +49,9 @@
       "windows",
       "pc"
     ],
-    "description": "Windowsを快適に使うための基本設定を確認するための記事です。"
+    "description": "Windowsを快適に使うための基本設定を確認するための記事です。",
+    "thumbnail": "pc-windows/08.jpg",
+    "point": ""
   },
   {
     "slug": "web-troubleshooting",
@@ -30,7 +62,9 @@
       "chrome",
       "web-service"
     ],
-    "description": "Webサービスがうまく動かないときの基本確認項目をまとめる記事です。"
+    "description": "Webサービスがうまく動かないときの基本確認項目をまとめる記事です。",
+    "thumbnail": "web/06.jpg",
+    "point": ""
   },
   {
     "slug": "useful-tools",
@@ -40,7 +74,9 @@
     "tags": [
       "tools"
     ],
-    "description": "無料ツールを選ぶ際に確認したいポイントをまとめる記事です。"
+    "description": "無料ツールを選ぶ際に確認したいポイントをまとめる記事です。",
+    "thumbnail": "other/09.jpg",
+    "point": ""
   },
   {
     "slug": "gas-basics",
@@ -52,7 +88,9 @@
       "spreadsheet",
       "automation"
     ],
-    "description": "GASでできることや基本的な考え方を紹介する記事です。"
+    "description": "GASでできることや基本的な考え方を紹介する記事です。",
+    "thumbnail": "google-gas/03.jpg",
+    "point": ""
   },
   {
     "slug": "chatgpt-basics",
@@ -63,6 +101,8 @@
       "chatgpt",
       "ai"
     ],
-    "description": "ChatGPTの基本的な使い方や活用例をまとめる記事です。"
+    "description": "ChatGPTの基本的な使い方や活用例をまとめる記事です。",
+    "thumbnail": "ai-chatgpt/01.jpg",
+    "point": ""
   }
 ]

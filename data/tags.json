@@ -46,5 +46,9 @@
   {
     "slug": "tools",
     "name": "便利ツール"
+  },
+  {
+    "slug": "seo",
+    "name": "SEO"
   }
 ]
