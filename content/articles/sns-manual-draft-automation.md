@@ -23,7 +23,7 @@ point: "料金がかかる完全自動化をやめ、準備だけ自動化する
 
 また、自動投稿ではタイトルや説明に間違いがあっても、そのまま公開される可能性があります。手動投稿なら、リンク先とサムネイルを最後に確認できます。
 
-X APIの料金を調べた経緯は、[X APIで記事を自動投稿する方法は有料？](https://kamowakaru.github.io/wakarukamo/articles/x-api-auto-post-pricing.html)で紹介しています。
+X APIの料金を調べた経緯は、[X APIで記事を自動投稿する方法は有料？](x-api-auto-post-pricing.html)で紹介しています。
 
 ## 自動化する範囲
 
