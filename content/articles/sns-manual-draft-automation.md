@@ -1,4 +1,4 @@
-<img width="5760" height="1080" alt="image" src="https://github.com/user-attachments/assets/2fd2478c-4efb-43cf-9dcb-2d90b9f7b324" />---
+---
 title: "記事公開時のSNS投稿文だけを自動生成する方法｜API不要の運用"
 date: "2026-09-14"
 category: "other"
