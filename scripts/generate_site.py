@@ -45,7 +45,22 @@ def inline(text):
     text = html.escape(text)
     text = re.sub(r'\*\*(.+?)\*\*', r'<strong>\1</strong>', text)
     text = re.sub(r'`([^`]+)`', r'<code>\1</code>', text)
-    text = re.sub(r'\[([^\]]+)\]\((https?://[^)]+)\)', r'<a href="\2" rel="noopener" target="_blank">\1</a>', text)
+
+    def replace_link(match):
+        label, href = match.group(1), match.group(2)
+        raw_href = html.unescape(href)
+        if raw_href.startswith(('https://', 'http://')):
+            return f'<a href="{href}" rel="noopener" target="_blank">{label}</a>'
+        # 記事同士の相対リンクや、サイト内の絶対パス・ページ内リンクを許可する。
+        is_relative = (
+            raw_href.startswith(('/', './', '../', '#', '?'))
+            or re.fullmatch(r'[A-Za-z0-9][A-Za-z0-9._~/-]*(?:[?#][^\s]*)?', raw_href)
+        )
+        if is_relative and ':' not in raw_href:
+            return f'<a href="{href}">{label}</a>'
+        return match.group(0)
+
+    text = re.sub(r'\[([^\]]+)\]\(([^)\s]+)\)', replace_link, text)
     return text
 
 def md_to_html(md):
