@@ -44,6 +44,8 @@ def main():
     active = set()
     for path in sorted(CONTENT.glob("*.md")):
         fm, slug = parse_frontmatter(path), path.stem
+        if truth(fm.get("draft"), False):
+            continue
         active.add(f"{slug}.md")
         title, description = fm["title"], fm["description"]
         tags = fm.get("tags", []) if isinstance(fm.get("tags"), list) else []

@@ -27,6 +27,7 @@ tags:
   - spreadsheet
   - automation
 description: "2つの一覧を比較して差分を確認する方法を解説します。"
+point: "この記事で特に覚えておきたい要点です。"
 ---
 
 ## 結論
@@ -39,6 +40,10 @@ description: "2つの一覧を比較して差分を確認する方法を解説�
 ```
 
 `slug` は Markdown のファイル名です。例: `gas-match-list.md` → `/articles/gas-match-list.html`
+
+公開前の下書きは front matter に `draft: true` を追加します。記事ページは確認用に生成されますが、トップ・記事一覧・カテゴリ・タグ・サイトマップから除外され、検索エンジンにも登録しない設定になります。完成したらこの行を削除するか `draft: false` にします。
+
+記事を大きく更新した場合は `updated: "2026-09-13"` のように更新日を追加できます。検索エンジン向けの構造化データとサイトマップへ反映されます。
 
 ## サムネイル画像
 各カテゴリには `assets/images/thumbnails/<category>/` 内に10種類のJPEG画像があります。
@@ -141,7 +146,7 @@ GA4ではイベント名 `search`、パラメータ `search_term` と `result_co
 動画はActionsの `Build popular article videos` を開き、実行結果のArtifactsにある `wakarukamo-shorts-tiktok` からダウンロードします。自動アップロードにはせず、内容・音源を確認してからYouTube Shorts / TikTokへ投稿する設計です。
 
 ## 画像
-`assets/images/` の以下3点は、今回ユーザーが差し替えたカモ画像です。
-- `logo-duck.svg`
-- `hero-duck.svg`
-- `tip-duck.svg`
+`assets/images/` の以下3点は、今回ユーザーが差し替えたカモ画像です。Webページでは表示速度を上げるため軽量なWebP版を使い、元のSVGも保管しています。
+- `logo-duck.webp`
+- `hero-duck.webp`
+- `tip-duck.webp`

@@ -1,6 +1,7 @@
 ---
 title: "Googleスプレッドシートを自動化するGASの基本"
 date: "2026-09-11"
+draft: true
 category: "google-gas"
 tags:
   - gas

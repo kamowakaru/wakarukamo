@@ -1,6 +1,7 @@
 ---
 title: "ChatGPTでできることと基本的な使い方"
 date: "2026-09-11"
+draft: true
 category: "ai-chatgpt"
 tags:
   - chatgpt

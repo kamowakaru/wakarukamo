@@ -2,7 +2,7 @@
 
 > 自動生成ファイルです。必要に応じて文章を整えてから投稿してください。
 
-- 記事URL: https://kamowakaru.github.io/wakarukamo/articles/chatgpt-seo-publish-workflow.html
+- 記事URL: https://＜公開サイトURL＞/articles/chatgpt-seo-publish-workflow.html
 - 使用画像: ai-chatgpt/01.jpg
 
 ## X案1：要点型
@@ -11,7 +11,7 @@
 【ChatGPTでSEO記事を作って公開する方法｜ワカルカモの実例】
 テーマ決めから構成、事実確認、Markdown化、GitHub Pagesへの公開まで、ワカルカモで実際に使った流れを紹介します。
 
-https://kamowakaru.github.io/wakarukamo/articles/chatgpt-seo-publish-workflow.html?utm_source=x&utm_medium=social&utm_campaign=article_share
+https://＜公開サイトURL＞/articles/chatgpt-seo-publish-workflow.html?utm_source=x&utm_medium=social&utm_campaign=article_share
 #ChatGPT #AI #SEO
 ```
 
@@ -21,7 +21,7 @@ https://kamowakaru.github.io/wakarukamo/articles/chatgpt-seo-publish-workflow.ht
 「ChatGPTでSEO記事を作って公開する方法｜ワカルカモの実例」で困っていませんか？
 テーマ決めから構成、事実確認、Markdown化、GitHub Pagesへの公開まで、ワカルカモで実際に使った流れを紹介します。
 
-https://kamowakaru.github.io/wakarukamo/articles/chatgpt-seo-publish-workflow.html?utm_source=x&utm_medium=social&utm_campaign=article_share
+https://＜公開サイトURL＞/articles/chatgpt-seo-publish-workflow.html?utm_source=x&utm_medium=social&utm_campaign=article_share
 #ChatGPT #AI #SEO
 ```
 
@@ -33,7 +33,7 @@ https://kamowakaru.github.io/wakarukamo/articles/chatgpt-seo-publish-workflow.ht
 今回は、テーマ決めから構成、事実確認、Markdown化、GitHub Pagesへの公開まで、ワカルカモで実際に使った流れを紹介します。
 実際の手順やポイントを初心者向けにまとめました🐤
 
-https://kamowakaru.github.io/wakarukamo/articles/chatgpt-seo-publish-workflow.html?utm_source=threads&utm_medium=social&utm_campaign=article_share
+https://＜公開サイトURL＞/articles/chatgpt-seo-publish-workflow.html?utm_source=threads&utm_medium=social&utm_campaign=article_share
 
 #ChatGPT #AI #SEO
 ```
@@ -50,7 +50,7 @@ https://kamowakaru.github.io/wakarukamo/articles/chatgpt-seo-publish-workflow.ht
 初心者向けに手順とポイントを分かりやすく解説します。
 ```
 
-**リンク:** https://kamowakaru.github.io/wakarukamo/articles/chatgpt-seo-publish-workflow.html?utm_source=pinterest&utm_medium=social&utm_campaign=article_share
+**リンク:** https://＜公開サイトURL＞/articles/chatgpt-seo-publish-workflow.html?utm_source=pinterest&utm_medium=social&utm_campaign=article_share
 
 ## LinkedIn（仕事・業務効率化記事対象）
 
@@ -61,7 +61,7 @@ ChatGPTでSEO記事を作って公開する方法｜ワカルカモの実例
 
 業務で活用するときのポイントを、初心者向けに整理しました。
 
-https://kamowakaru.github.io/wakarukamo/articles/chatgpt-seo-publish-workflow.html?utm_source=linkedin&utm_medium=social&utm_campaign=article_share
+https://＜公開サイトURL＞/articles/chatgpt-seo-publish-workflow.html?utm_source=linkedin&utm_medium=social&utm_campaign=article_share
 
 #ChatGPT #AI #SEO
 ```

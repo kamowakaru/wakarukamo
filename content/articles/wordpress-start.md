@@ -1,6 +1,7 @@
 ---
 title: "WordPressブログを始める前に知っておきたい基本"
 date: "2026-09-11"
+draft: true
 category: "wordpress"
 tags:
   - wordpress

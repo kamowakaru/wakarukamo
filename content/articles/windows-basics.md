@@ -1,6 +1,7 @@
 ---
 title: "Windowsの基本設定を見直して快適に使うポイント"
 date: "2026-09-11"
+draft: true
 category: "pc-windows"
 tags:
   - windows
