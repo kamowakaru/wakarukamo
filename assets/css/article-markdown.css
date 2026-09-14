@@ -196,10 +196,72 @@
   }
 }
 
-/* 「次に読むと分かりやすい記事」のリンク一覧は箇条書き記号を表示しない */
-.article-body h2[id="次に読むと分かりやすい記事"] + ul,
-.article-content h2[id="次に読むと分かりやすい記事"] + ul,
-h2[id="次に読むと分かりやすい記事"] + ul {
+/* 「次に読むと分かりやすい記事」のカードリンクは箇条書き記号を表示しない */
+.article-body h2#次に読むと分かりやすい記事 + ul,
+.article-body h2#次に読むとわかりやすい記事 + ul {
   list-style: none;
   padding-left: 0;
+}
+
+/* Markdown tables */
+.article-body .table-scroll {
+  width: 100%;
+  margin: 20px 0 28px;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.article-body table {
+  width: 100%;
+  min-width: 520px;
+  border-collapse: collapse;
+  border-spacing: 0;
+  background: #fff;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.article-body th,
+.article-body td {
+  padding: 11px 14px;
+  border: 1px solid #d7e0ea;
+  vertical-align: top;
+  text-align: left;
+}
+
+.article-body th {
+  background: #f3f7fb;
+  color: #172f49;
+  font-weight: 800;
+  white-space: nowrap;
+}
+
+.article-body tbody tr:nth-child(even) td {
+  background: #fbfdff;
+}
+
+.article-body th.align-center,
+.article-body td.align-center { text-align: center; }
+.article-body th.align-right,
+.article-body td.align-right { text-align: right; }
+.article-body th.align-left,
+.article-body td.align-left { text-align: left; }
+
+.article-body table code {
+  white-space: nowrap;
+}
+
+@media (max-width: 700px) {
+  .article-body .table-scroll {
+    margin: 16px 0 24px;
+  }
+
+  .article-body table {
+    font-size: 13px;
+  }
+
+  .article-body th,
+  .article-body td {
+    padding: 9px 11px;
+  }
 }

@@ -179,21 +179,62 @@ def inline(text):
     text = re.sub(r'\[([^\]]+)\]\(([^)\s]+)\)', replace_link, text)
     return text
 
+def _split_table_row(line):
+    """Split a simple Markdown table row while respecting escaped pipes and inline code."""
+    line = line.strip()
+    if line.startswith('|'):
+        line = line[1:]
+    if line.endswith('|'):
+        line = line[:-1]
+    cells, buf = [], []
+    escaped = False
+    in_code = False
+    for ch in line:
+        if escaped:
+            buf.append(ch)
+            escaped = False
+            continue
+        if ch == '\\':
+            escaped = True
+            buf.append(ch)
+            continue
+        if ch == '`':
+            in_code = not in_code
+            buf.append(ch)
+            continue
+        if ch == '|' and not in_code:
+            cells.append(''.join(buf).strip())
+            buf = []
+        else:
+            buf.append(ch)
+    cells.append(''.join(buf).strip())
+    return cells
+
+def _is_table_separator(line):
+    cells = _split_table_row(line)
+    return bool(cells) and all(re.fullmatch(r':?-{3,}:?', c.strip()) for c in cells)
+
 def md_to_html(md):
     lines, out, para = md.splitlines(), [], []
     in_code, code, in_ul, in_ol = False, [], False, False
+
     def flush_para():
         nonlocal para
         if para:
             out.append('<p>' + inline(' '.join(x.strip() for x in para)) + '</p>')
             para = []
+
     def close_lists():
         nonlocal in_ul, in_ol
         if in_ul:
             out.append('</ul>'); in_ul = False
         if in_ol:
             out.append('</ol>'); in_ol = False
-    for line in lines:
+
+    i = 0
+    while i < len(lines):
+        line = lines[i]
+
         if line.startswith('```'):
             flush_para(); close_lists()
             if not in_code:
@@ -201,18 +242,61 @@ def md_to_html(md):
             else:
                 out.append('<pre><code>' + html.escape('\n'.join(code)) + '</code></pre>')
                 in_code = False
+            i += 1
             continue
+
         if in_code:
-            code.append(line); continue
+            code.append(line)
+            i += 1
+            continue
+
         if not line.strip():
-            flush_para(); close_lists(); continue
+            flush_para(); close_lists()
+            i += 1
+            continue
+
+        # GitHub-flavored Markdown style tables. A table is recognized only when
+        # a header row is immediately followed by a valid --- separator row.
+        if '|' in line and i + 1 < len(lines) and _is_table_separator(lines[i + 1]):
+            headers = _split_table_row(line)
+            separators = _split_table_row(lines[i + 1])
+            if len(headers) == len(separators):
+                flush_para(); close_lists()
+                aligns = []
+                for sep in separators:
+                    left, right = sep.startswith(':'), sep.endswith(':')
+                    aligns.append('center' if left and right else 'left' if left else 'right' if right else '')
+
+                table = ['<div class="table-scroll"><table><thead><tr>']
+                for cell, align in zip(headers, aligns):
+                    attr = f' class="align-{align}"' if align else ''
+                    table.append(f'<th{attr}>' + inline(cell) + '</th>')
+                table.append('</tr></thead><tbody>')
+
+                i += 2
+                while i < len(lines) and lines[i].strip() and '|' in lines[i] and not lines[i].startswith('```'):
+                    cells = _split_table_row(lines[i])
+                    # Pad or trim malformed rows to keep valid HTML.
+                    cells = (cells + [''] * len(headers))[:len(headers)]
+                    table.append('<tr>')
+                    for cell, align in zip(cells, aligns):
+                        attr = f' class="align-{align}"' if align else ''
+                        table.append(f'<td{attr}>' + inline(cell) + '</td>')
+                    table.append('</tr>')
+                    i += 1
+                table.append('</tbody></table></div>')
+                out.append(''.join(table))
+                continue
+
         m = re.match(r'^(#{2,4})\s+(.+)$', line)
         if m:
             flush_para(); close_lists()
             level, title = len(m.group(1)), m.group(2).strip()
             anchor = re.sub(r'[^0-9A-Za-zぁ-んァ-ヶ一-龠ー]+', '-', title).strip('-') or 'section'
             out.append(f'<h{level} id="{html.escape(anchor)}">{inline(title)}</h{level}>')
+            i += 1
             continue
+
         m = re.match(r'^[-*]\s+(.+)$', line)
         if m:
             flush_para()
@@ -221,7 +305,9 @@ def md_to_html(md):
             if not in_ul:
                 out.append('<ul>'); in_ul = True
             out.append('<li>' + inline(m.group(1)) + '</li>')
+            i += 1
             continue
+
         m = re.match(r'^\d+\.\s+(.+)$', line)
         if m:
             flush_para()
@@ -230,12 +316,18 @@ def md_to_html(md):
             if not in_ol:
                 out.append('<ol>'); in_ol = True
             out.append('<li>' + inline(m.group(1)) + '</li>')
+            i += 1
             continue
+
         if line.startswith('> '):
             flush_para(); close_lists()
             out.append('<blockquote>' + inline(line[2:]) + '</blockquote>')
+            i += 1
             continue
+
         para.append(line)
+        i += 1
+
     flush_para(); close_lists()
     if in_code:
         out.append('<pre><code>' + html.escape('\n'.join(code)) + '</code></pre>')
@@ -253,7 +345,7 @@ def shell(title, body, prefix='../', desc='', canonical_path='', json_ld='', noi
     schema = f'<script type="application/ld+json">{json_ld}</script>' if json_ld else ''
     image = og_image or f'{SITE_URL}/assets/images/hero-duck.webp'
     robots = '<meta name="robots" content="noindex,follow">' if noindex else ''
-    return f'''<!doctype html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="{html.escape(desc)}">{robots}<link rel="canonical" href="{html.escape(canonical)}"><meta property="og:title" content="{html.escape(title)}"><meta property="og:description" content="{html.escape(desc)}"><meta property="og:url" content="{html.escape(canonical)}"><meta property="og:type" content="{page_type}"><meta property="og:image" content="{html.escape(image)}"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="{html.escape(title)}"><meta name="twitter:description" content="{html.escape(desc)}"><meta name="twitter:image" content="{html.escape(image)}"><title>{html.escape(title)} | ワカルカモ</title><link rel="stylesheet" href="{prefix}assets/css/style.css?v=20260914-3"><link rel="stylesheet" href="{prefix}assets/css/point.css"><link rel="stylesheet" href="{prefix}assets/css/article-markdown.css?v=20260915-nextread-nobullet">{schema}</head><body data-root="{prefix}"><header class="site-header"><div class="container header-inner"><a class="brand" href="{prefix}index.html"><img src="{prefix}assets/images/logo-duck.webp" alt=""><span><strong>ワカルカモ</strong><small>PC・Web・AIの「わからない」が、わかるかも。</small></span></a><button class="menu-btn" aria-label="メニュー">☰</button><nav class="nav">{nav}</nav><form class="header-search" action="{prefix}search.html"><input name="q" type="search" placeholder="キーワードで検索…"><button>🔍</button></form></div></header>{body}<footer class="footer"><div class="container footer-inner"><div class="footer-brand"><img src="{prefix}assets/images/logo-duck.webp" alt=""><div><strong>ワカルカモ</strong><div style="font-size:12px;color:#6c7c91">PC・Web・AIの「わからない」が、わかるかも。</div></div></div><div class="footer-links"><a href="{prefix}index.html">ホーム</a><a href="{prefix}articles.html">記事一覧</a><a href="{prefix}about.html">このサイトについて</a><a href="{prefix}privacy.html">プライバシーポリシー</a></div></div><p class="copyright">© 2026 ワカルカモ</p></footer><script src="{prefix}assets/js/analytics-config.js"></script><script src="{prefix}assets/js/site.js?v=20260914-2"></script></body></html>'''
+    return f'''<!doctype html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="{html.escape(desc)}">{robots}<link rel="canonical" href="{html.escape(canonical)}"><meta property="og:title" content="{html.escape(title)}"><meta property="og:description" content="{html.escape(desc)}"><meta property="og:url" content="{html.escape(canonical)}"><meta property="og:type" content="{page_type}"><meta property="og:image" content="{html.escape(image)}"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="{html.escape(title)}"><meta name="twitter:description" content="{html.escape(desc)}"><meta name="twitter:image" content="{html.escape(image)}"><title>{html.escape(title)} | ワカルカモ</title><link rel="stylesheet" href="{prefix}assets/css/style.css?v=20260914-3"><link rel="stylesheet" href="{prefix}assets/css/point.css"><link rel="stylesheet" href="{prefix}assets/css/article-markdown.css?v=20260915-table">{schema}</head><body data-root="{prefix}"><header class="site-header"><div class="container header-inner"><a class="brand" href="{prefix}index.html"><img src="{prefix}assets/images/logo-duck.webp" alt=""><span><strong>ワカルカモ</strong><small>PC・Web・AIの「わからない」が、わかるかも。</small></span></a><button class="menu-btn" aria-label="メニュー">☰</button><nav class="nav">{nav}</nav><form class="header-search" action="{prefix}search.html"><input name="q" type="search" placeholder="キーワードで検索…"><button>🔍</button></form></div></header>{body}<footer class="footer"><div class="container footer-inner"><div class="footer-brand"><img src="{prefix}assets/images/logo-duck.webp" alt=""><div><strong>ワカルカモ</strong><div style="font-size:12px;color:#6c7c91">PC・Web・AIの「わからない」が、わかるかも。</div></div></div><div class="footer-links"><a href="{prefix}index.html">ホーム</a><a href="{prefix}articles.html">記事一覧</a><a href="{prefix}about.html">このサイトについて</a><a href="{prefix}privacy.html">プライバシーポリシー</a></div></div><p class="copyright">© 2026 ワカルカモ</p></footer><script src="{prefix}assets/js/analytics-config.js"></script><script src="{prefix}assets/js/site.js?v=20260914-2"></script></body></html>'''
 
 def static_card(article, prefix=''):
     cat = catmap[article['category']]
