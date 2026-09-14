@@ -5,10 +5,92 @@ ROOT = Path(__file__).resolve().parents[1]
 CONTENT = ROOT / 'content/articles'
 SITE_URL = os.environ.get('SITE_URL', 'https://kamowakaru.github.io/wakarukamo').rstrip('/')
 
-def thumbnail_for(slug, category, specified=''):
-    """Return a stable category thumbnail unless the article specifies one."""
+THUMBNAIL_KEYWORDS = {
+    'pc-windows': [
+        (2, ('スクリーンショット', '画面保存', 'キャプチャ')),
+        (3, ('エラー', '不具合', 'トラブル', '起動しない')),
+        (4, ('wi-fi', 'wifi', 'ネットワーク', 'インターネット')),
+        (5, ('ファイル', 'フォルダ', '保存', 'ストレージ')),
+        (6, ('セキュリティ', 'パスワード', 'ウイルス')),
+        (7, ('アップデート', '更新')),
+        (8, ('ショートカット', 'キーボード')),
+        (9, ('プリンター', 'デバイス')),
+        (10, ('遅い', '重い', '高速化', 'パフォーマンス')),
+        (1, ('設定', 'windows', 'pc')),
+    ],
+    'web': [
+        (6, ('サイトマップ', 'sitemap')),
+        (8, ('html確認', '確認ファイル', 'verification')),
+        (5, ('search console', 'インデックス', '検索登録')),
+        (9, ('スマホ', 'レスポンシブ', 'モバイル')),
+        (10, ('お問い合わせ', 'メール', 'フォーム')),
+        (7, ('アクセス解析', 'analytics', '分析')),
+        (4, ('seo', '検索')),
+        (3, ('github pages', '公開', 'デプロイ', 'actions')),
+        (2, ('github', 'markdown', 'アップロード', 'リポジトリ')),
+        (1, ('web', 'サイト', 'ブラウザ')),
+    ],
+    'wordpress': [
+        (4, ('白い画面', 'エラー', '不具合')),
+        (3, ('プラグイン',)),
+        (2, ('テーマ', 'デザイン')),
+        (5, ('ログイン', 'セキュリティ')),
+        (6, ('seo', '検索')),
+        (7, ('バックアップ',)),
+        (8, ('高速化', '速度', '重い')),
+        (9, ('記事', 'エディター', 'ブロック')),
+        (10, ('サーバー', 'ドメイン', 'ホスティング')),
+        (1, ('wordpress', 'ブログ')),
+    ],
+    'google-gas': [
+        (2, ('googleフォーム', 'フォーム', '回答')),
+        (8, ('サイト内検索', '検索キーワード', '検索語句')),
+        (9, ('utm', '流入', 'xとthreads', 'sns')),
+        (5, ('自由探索', 'ディメンション', '指標')),
+        (6, ('測定id', '測定タグ', 'g-')),
+        (7, ('リアルタイム',)),
+        (4, ('ga4', 'アナリティクス', 'analytics')),
+        (3, ('gas', 'apps script', '自動化')),
+        (1, ('スプレッドシート', '表計算')),
+        (10, ('google', '連携')),
+    ],
+    'ai-chatgpt': [
+        (4, ('事実確認', 'ファクトチェック', '正確')),
+        (5, ('aiっぽい', '自然な文章', '書き直')),
+        (7, ('画像生成', '画像を作')),
+        (8, ('スプレッドシート', '表計算')),
+        (6, ('webサイト', 'ホームページ', 'サイトを作')),
+        (3, ('seo記事', '記事を作', '記事を書く', '公開')),
+        (2, ('プロンプト', '指示文')),
+        (9, ('アイデア', '比較')),
+        (10, ('自動化', 'ワークフロー')),
+        (1, ('chatgpt', 'ai')),
+    ],
+    'other': [
+        (1, ('プロフィール', '初投稿', 'アカウント')),
+        (2, ('sns投稿文', '投稿文', '原稿')),
+        (3, ('api', '料金', '有料', '課金')),
+        (4, ('お問い合わせ', 'メール', '掲載依頼')),
+        (6, ('サムネイル', '画像')),
+        (7, ('プライバシー', '個人情報')),
+        (8, ('チェックリスト', '手順')),
+        (9, ('utm', '流入', '分析')),
+        (10, ('著者', '運営者')),
+        (5, ('ツール', '便利')),
+    ],
+}
+
+def thumbnail_for(slug, category, specified='', title='', description=''):
+    """Choose a topic-matched category thumbnail, with a stable fallback."""
     if specified:
         return specified.lstrip('/')
+    # タイトルの語を最優先にし、タイトルで決まらないときだけ説明文も見る。
+    # これにより、説明文に補助的に「確認」などがあっても主題を取り違えにくい。
+    for source in (title, description):
+        haystack = source.casefold()
+        for number, keywords in THUMBNAIL_KEYWORDS.get(category, []):
+            if any(keyword.casefold() in haystack for keyword in keywords):
+                return f'{category}/{number:02d}.jpg'
     number = int(hashlib.sha256(slug.encode('utf-8')).hexdigest()[:8], 16) % 10 + 1
     return f'{category}/{number:02d}.jpg'
 
@@ -57,7 +139,7 @@ def inline(text):
             or re.fullmatch(r'[A-Za-z0-9][A-Za-z0-9._~/-]*(?:[?#][^\s]*)?', raw_href)
         )
         if is_relative and ':' not in raw_href:
-            return f'<a href="{href}">{label}</a>'
+            return f'<a class="article-reference" href="{href}"><span>{label}</span></a>'
         return match.group(0)
 
     text = re.sub(r'\[([^\]]+)\]\(([^)\s]+)\)', replace_link, text)
@@ -147,11 +229,11 @@ def static_card(article, prefix=''):
     )
     return f'''<article class="card"><a class="thumb" href="{prefix}articles/{article['slug']}.html"><img src="{prefix}assets/images/thumbnails/{html.escape(article['thumbnail'])}" alt="{html.escape(article['title'])}のイメージ画像" loading="lazy"></a><div class="card-body"><span class="chip">{html.escape(cat['name'])}</span><h3><a href="{prefix}articles/{article['slug']}.html">{html.escape(article['title'])}</a></h3><p>{html.escape(article['description'])}</p><div class="meta">{chips}<time datetime="{article['date']}">{article['date'].replace('-', '.')}</time></div></div></article>'''
 
-def update_collection(path, cards):
+def update_collection(path, cards, marker='ARTICLES'):
     text = path.read_text(encoding='utf-8')
-    content = '<!-- ARTICLES:START -->' + (''.join(cards) or '<div class="empty-note">まだ記事がありません。</div>') + '<!-- ARTICLES:END -->'
-    if '<!-- ARTICLES:START -->' in text:
-        text = re.sub(r'<!-- ARTICLES:START -->.*?<!-- ARTICLES:END -->', content, text, flags=re.S)
+    content = f'<!-- {marker}:START -->' + (''.join(cards) or '<div class="empty-note">まだ記事がありません。</div>') + f'<!-- {marker}:END -->'
+    if f'<!-- {marker}:START -->' in text:
+        text = re.sub(rf'<!-- {re.escape(marker)}:START -->.*?<!-- {re.escape(marker)}:END -->', content, text, flags=re.S)
     else:
         text, count = re.subn(r'(<div class="(?:article-grid|list-grid)"[^>]*data-collection[^>]*>)\s*(</div>)', r'\1' + content + r'\2', text, count=1, flags=re.S)
         if count != 1:
@@ -191,7 +273,7 @@ for fp in sorted(CONTENT.glob('*.md')):
     bad = [t for t in fm['tags'] if t not in tagmap]
     if bad:
         raise ValueError(f'{fp.name}: 未登録タグ {bad}。data/tags.json に追加してください')
-    article = {'slug':slug,'title':fm['title'],'date':fm['date'],'updated':fm.get('updated', fm['date']),'category':fm['category'],'tags':fm['tags'],'description':fm['description'],'thumbnail':thumbnail_for(slug, fm['category'], fm.get('thumbnail', '')),'point':fm.get('point', ''),'draft':truth(fm.get('draft'))}
+    article = {'slug':slug,'title':fm['title'],'date':fm['date'],'updated':fm.get('updated', fm['date']),'category':fm['category'],'tags':fm['tags'],'description':fm['description'],'thumbnail':thumbnail_for(slug, fm['category'], fm.get('thumbnail', ''), fm['title'], fm['description']),'point':fm.get('point', ''),'draft':truth(fm.get('draft'))}
     all_articles.append(article)
     bodies[slug] = body
 all_articles.sort(key=lambda a: (a['date'], a['slug']), reverse=True)
@@ -240,6 +322,16 @@ for t in tags:
 
 # JavaScript実行前にも記事リンクが見えるよう、主要一覧へ公開記事を直接書き込みます。
 update_collection(ROOT/'index.html', [static_card(a) for a in articles[:6]])
+update_collection(ROOT/'index.html', [static_card(a) for a in articles[:3]], marker='NEW_ARTICLES')
+# data/articles.json is committed by Actions, so the browser can refresh this block
+# for future posts even when index.html itself is not part of the generated commit.
+home_text = (ROOT/'index.html').read_text(encoding='utf-8')
+home_text = home_text.replace(
+    '<div class="list-grid new-articles-list">',
+    '<div class="list-grid new-articles-list" data-collection="latest" data-limit="3">',
+    1,
+)
+(ROOT/'index.html').write_text(home_text, encoding='utf-8')
 update_collection(ROOT/'articles.html', [static_card(a) for a in articles])
 for c in categories:
     matches = [a for a in articles if a['category'] == c['slug']]

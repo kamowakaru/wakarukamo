@@ -38,6 +38,64 @@
   overflow-wrap: anywhere;
 }
 
+/* Markdown内の関連記事リンクを見つけやすいカード風に表示 */
+.article-body a.article-reference {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin: 18px 0;
+  padding: 14px 18px;
+  border: 1px solid #cfe0ef;
+  border-left: 5px solid #287be0;
+  border-radius: 12px;
+  background: #f7fbff;
+  color: #1d5fa8;
+  font-weight: 700;
+  line-height: 1.6;
+  text-decoration: none;
+  box-shadow: 0 3px 12px rgba(34, 75, 120, 0.06);
+  transition: 0.2s ease;
+}
+
+.article-body a.article-reference::before {
+  content: "関連記事";
+  flex: 0 0 auto;
+  padding: 4px 8px;
+  border-radius: 999px;
+  background: #e5f1ff;
+  color: #287be0;
+  font-size: 11px;
+  white-space: nowrap;
+}
+
+.article-body a.article-reference::after {
+  content: "読む →";
+  flex: 0 0 auto;
+  color: #287be0;
+  font-size: 13px;
+  white-space: nowrap;
+}
+
+.article-body a.article-reference:hover {
+  border-color: #287be0;
+  background: #eef7ff;
+  transform: translateY(-1px);
+}
+
+/* 長いURLや英数字がある記事でもスマホ画面からはみ出さないようにする */
+.article-body,
+.article-body p,
+.article-body li,
+.article-body h1,
+.article-body h2,
+.article-body h3,
+.article-body .breadcrumb {
+  min-width: 0;
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+
 @media (max-width: 700px) {
   .article-body pre {
     margin: 16px -4px 22px;
@@ -45,5 +103,16 @@
     border-radius: 8px;
     font-size: 13px;
     line-height: 1.7;
+  }
+
+  .article-body a.article-reference {
+    align-items: flex-start;
+    gap: 9px;
+    padding: 12px 13px;
+    font-size: 14px;
+  }
+
+  .article-body a.article-reference::before {
+    display: none;
   }
 }
