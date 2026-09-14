@@ -80,12 +80,24 @@ THUMBNAIL_KEYWORDS = {
     ],
 }
 
-def thumbnail_for(slug, category, specified='', title='', description=''):
-    """Choose a topic-matched category thumbnail, with a stable fallback."""
+def thumbnail_for(slug, category, article_no='', specified='', title='', description=''):
+    """Choose a thumbnail. New articles use their management No. to share one image per group.
+
+    Example: article_no 17 / 17-2 / 17-2-1 -> groups/17.jpg
+    `thumbnail` in front matter always takes priority. Older articles without article_no
+    keep the previous keyword-based selection so the current site can still build.
+    """
     if specified:
         return specified.lstrip('/')
-    # タイトルの語を最優先にし、タイトルで決まらないときだけ説明文も見る。
-    # これにより、説明文に補助的に「確認」などがあっても主題を取り違えにくい。
+
+    article_no = str(article_no).strip()
+    if article_no:
+        if not re.fullmatch(r'\d+(?:-\d+)*', article_no):
+            raise ValueError(f'不正な article_no: {article_no!r}')
+        group_no = int(article_no.split('-', 1)[0])
+        return f'groups/{group_no:02d}.jpg'
+
+    # Legacy fallback for existing articles that do not have article_no yet.
     for source in (title, description):
         haystack = source.casefold()
         for number, keywords in THUMBNAIL_KEYWORDS.get(category, []):
@@ -273,7 +285,7 @@ for fp in sorted(CONTENT.glob('*.md')):
     bad = [t for t in fm['tags'] if t not in tagmap]
     if bad:
         raise ValueError(f'{fp.name}: 未登録タグ {bad}。data/tags.json に追加してください')
-    article = {'slug':slug,'title':fm['title'],'date':fm['date'],'updated':fm.get('updated', fm['date']),'category':fm['category'],'tags':fm['tags'],'description':fm['description'],'thumbnail':thumbnail_for(slug, fm['category'], fm.get('thumbnail', ''), fm['title'], fm['description']),'point':fm.get('point', ''),'draft':truth(fm.get('draft'))}
+    article = {'slug':slug,'title':fm['title'],'date':fm['date'],'updated':fm.get('updated', fm['date']),'category':fm['category'],'tags':fm['tags'],'description':fm['description'],'article_no':fm.get('article_no', ''),'thumbnail':thumbnail_for(slug, fm['category'], fm.get('article_no', ''), fm.get('thumbnail', ''), fm['title'], fm['description']),'point':fm.get('point', ''),'draft':truth(fm.get('draft'))}
     all_articles.append(article)
     bodies[slug] = body
 all_articles.sort(key=lambda a: (a['date'], a['slug']), reverse=True)
