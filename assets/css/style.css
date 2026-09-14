@@ -135,3 +135,18 @@
     min-height:90px !important;
   }
 }
+
+/* Parent article: remove bullet markers from "このグループで分かること" link cards */
+.article-body h2[id="このグループで分かること"] + ul {
+  list-style:none !important;
+  padding-left:0 !important;
+  margin-left:0 !important;
+}
+.article-body h2[id="このグループで分かること"] + ul > li {
+  list-style:none !important;
+  margin-left:0 !important;
+  padding-left:0 !important;
+}
+.article-body h2[id="このグループで分かること"] + ul > li::marker {
+  content:"" !important;
+}
