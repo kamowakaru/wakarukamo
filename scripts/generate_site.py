@@ -241,6 +241,70 @@ def static_card(article, prefix=''):
     )
     return f'''<article class="card"><a class="thumb" href="{prefix}articles/{article['slug']}.html"><img src="{prefix}assets/images/thumbnails/{html.escape(article['thumbnail'])}" alt="{html.escape(article['title'])}のイメージ画像" loading="lazy"></a><div class="card-body"><span class="chip">{html.escape(cat['name'])}</span><h3><a href="{prefix}articles/{article['slug']}.html">{html.escape(article['title'])}</a></h3><p>{html.escape(article['description'])}</p><div class="meta">{chips}<time datetime="{article['date']}">{article['date'].replace('-', '.')}</time></div></div></article>'''
 
+def article_no_key(article):
+    no = str(article.get('article_no', '')).strip()
+    if not no:
+        return (9999, article.get('date', ''), article['slug'])
+    try:
+        parts = tuple(int(x) for x in no.split('-'))
+        return parts + (-1,) * (4 - len(parts))
+    except ValueError:
+        return (9998, no, article['slug'])
+
+def grouped_collection(items, prefix=''):
+    numbered = [a for a in items if a.get('article_no')]
+    legacy = [a for a in items if not a.get('article_no')]
+    groups = {}
+    for a in sorted(numbered, key=article_no_key):
+        root = str(a['article_no']).split('-')[0]
+        groups.setdefault(root, []).append(a)
+    chunks = []
+    for root in sorted(groups, key=lambda x: int(x) if x.isdigit() else 9999):
+        members = groups[root]
+        parent = next((a for a in members if str(a['article_no']) == root), None)
+        children = [a for a in members if a is not parent]
+        if parent:
+            cat = catmap[parent['category']]
+            child_html = ''.join(static_card(a, prefix) for a in children)
+            chunks.append(f'<section class="article-group"><article class="parent-card"><a class="parent-thumb" href="{prefix}articles/{parent["slug"]}.html"><img src="{prefix}assets/images/thumbnails/{html.escape(parent["thumbnail"])}" alt="{html.escape(parent["title"])}のイメージ画像" loading="lazy"></a><div class="parent-card-body"><span class="parent-badge">まとめ記事</span><span class="chip">{html.escape(cat["name"])}</span><h2><a href="{prefix}articles/{parent["slug"]}.html">{html.escape(parent["title"])}</a></h2><p>{html.escape(parent["description"])}</p><a class="parent-link" href="{prefix}articles/{parent["slug"]}.html">このテーマをまとめて見る →</a></div></article><div class="group-children">{child_html}</div></section>')
+        else:
+            chunks.append('<section class="article-group"><div class="group-children">' + ''.join(static_card(a, prefix) for a in children) + '</div></section>')
+    if legacy:
+        chunks.append('<section class="article-group legacy-group"><h2 class="legacy-heading">その他の記事</h2><div class="group-children">' + ''.join(static_card(a, prefix) for a in legacy) + '</div></section>')
+    return ''.join(chunks) or '<div class="empty-note">まだ記事がありません。</div>'
+
+def update_grouped_collection(path, items, prefix=''):
+    text = path.read_text(encoding='utf-8')
+    content = '<!-- ARTICLES:START -->' + grouped_collection(items, prefix) + '<!-- ARTICLES:END -->'
+    if '<!-- ARTICLES:START -->' in text:
+        text = re.sub(r'<!-- ARTICLES:START -->.*?<!-- ARTICLES:END -->', content, text, flags=re.S)
+    else:
+        raise ValueError(f'{path}: 記事一覧の挿入場所が見つかりません')
+    text = text.replace('class="list-grid" data-collection="all"', 'class="grouped-article-list" data-collection="all"')
+    text = text.replace('class="list-grid" data-collection="category"', 'class="grouped-article-list" data-collection="category"')
+    path.write_text(text, encoding='utf-8')
+
+def update_home_parent_links(path, items):
+    text = path.read_text(encoding='utf-8')
+    # Rebuild these links on every run so newly published parent articles appear automatically.
+    text = re.sub(r'<div class="category-card-wrap">(<a class="category-card".*?</a>)<div class="category-parent-links">.*?</div></div>', r'\1', text, flags=re.S)
+    parents_by_cat = {}
+    for a in sorted(items, key=article_no_key):
+        no = str(a.get('article_no', ''))
+        if no and '-' not in no:
+            parents_by_cat.setdefault(a['category'], []).append(a)
+    for cat in categories:
+        parents = parents_by_cat.get(cat['slug'], [])[:3]
+        if not parents:
+            continue
+        links = ''.join(f'<a href="articles/{a["slug"]}.html">{html.escape(a["title"].split("｜")[0])}</a>' for a in parents)
+        block = f'<div class="category-parent-links"><span>まずはここから</span>{links}</div>'
+        pattern = rf'(<a class="category-card" href="categories/{re.escape(cat["slug"])}\.html">.*?</a>)'
+        m = re.search(pattern, text, flags=re.S)
+        if m and 'category-parent-links' not in text[m.end():m.end()+100]:
+            text = text[:m.start()] + f'<div class="category-card-wrap">{m.group(1)}{block}</div>' + text[m.end():]
+    path.write_text(text, encoding='utf-8')
+
 def update_collection(path, cards, marker='ARTICLES'):
     text = path.read_text(encoding='utf-8')
     content = f'<!-- {marker}:START -->' + (''.join(cards) or '<div class="empty-note">まだ記事がありません。</div>') + f'<!-- {marker}:END -->'
@@ -335,6 +399,7 @@ for t in tags:
 # JavaScript実行前にも記事リンクが見えるよう、主要一覧へ公開記事を直接書き込みます。
 update_collection(ROOT/'index.html', [static_card(a) for a in articles[:6]])
 update_collection(ROOT/'index.html', [static_card(a) for a in articles[:3]], marker='NEW_ARTICLES')
+update_home_parent_links(ROOT/'index.html', articles)
 # data/articles.json is committed by Actions, so the browser can refresh this block
 # for future posts even when index.html itself is not part of the generated commit.
 home_text = (ROOT/'index.html').read_text(encoding='utf-8')
@@ -344,10 +409,10 @@ home_text = home_text.replace(
     1,
 )
 (ROOT/'index.html').write_text(home_text, encoding='utf-8')
-update_collection(ROOT/'articles.html', [static_card(a) for a in articles])
+update_grouped_collection(ROOT/'articles.html', articles)
 for c in categories:
     matches = [a for a in articles if a['category'] == c['slug']]
-    update_collection(ROOT/'categories'/f'{c["slug"]}.html', [static_card(a, '../') for a in matches])
+    update_grouped_collection(ROOT/'categories'/f'{c["slug"]}.html', matches, '../')
     update_static_seo(ROOT/'categories'/f'{c["slug"]}.html', f'categories/{c["slug"]}.html', c['name'], f'{c["name"]}の記事一覧です。', noindex=not matches)
 
 home_schema = json.dumps({'@context':'https://schema.org','@graph':[
