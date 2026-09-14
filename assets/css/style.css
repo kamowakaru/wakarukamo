@@ -84,3 +84,54 @@
   .grouped-article-list .parent-card-body p{display:none !important}
   .grouped-article-list .group-children{grid-template-columns:1fr !important}
 }
+
+/* Parent card visual fix: keep outline, remove fill, keep thumbnail inside card */
+.grouped-article-list .parent-card{
+  background:transparent !important;
+  border:1px solid var(--line) !important;
+  box-shadow:none !important;
+  overflow:hidden !important;
+}
+.grouped-article-list .parent-thumb{
+  overflow:hidden !important;
+  min-width:0 !important;
+  max-width:100% !important;
+  background:transparent !important;
+}
+.grouped-article-list .parent-thumb img{
+  display:block !important;
+  max-width:100% !important;
+  object-fit:cover !important;
+  margin:0 !important;
+}
+
+/* Parent thumbnail fix: remove blue fill and make image exactly fill its link box */
+.grouped-article-list .parent-thumb{
+  display:block !important;
+  width:180px !important;
+  height:112px !important;
+  min-width:180px !important;
+  max-width:180px !important;
+  min-height:112px !important;
+  overflow:hidden !important;
+  background:transparent !important;
+  line-height:0 !important;
+  box-sizing:border-box !important;
+}
+.grouped-article-list .parent-thumb img{
+  display:block !important;
+  width:100% !important;
+  max-width:none !important;
+  height:100% !important;
+  margin:0 !important;
+  object-fit:cover !important;
+}
+@media(max-width:600px){
+  .grouped-article-list .parent-thumb{
+    width:120px !important;
+    min-width:120px !important;
+    max-width:120px !important;
+    height:90px !important;
+    min-height:90px !important;
+  }
+}
