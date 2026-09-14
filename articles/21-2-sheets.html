@@ -1,0 +1,47 @@
+<!doctype html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="GASでGoogleスプレッドシートを操作する方法について、初心者向けに具体的な手順・例・注意点を交えて解説します。"><link rel="canonical" href="https://kamowakaru.github.io/wakarukamo/articles/21-2-sheets.html"><meta property="og:title" content="GASでGoogleスプレッドシートを操作する方法｜基本的な書き方を解説"><meta property="og:description" content="GASでGoogleスプレッドシートを操作する方法について、初心者向けに具体的な手順・例・注意点を交えて解説します。"><meta property="og:url" content="https://kamowakaru.github.io/wakarukamo/articles/21-2-sheets.html"><meta property="og:type" content="article"><meta property="og:image" content="https://kamowakaru.github.io/wakarukamo/assets/images/thumbnails/groups/21.jpg"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="GASでGoogleスプレッドシートを操作する方法｜基本的な書き方を解説"><meta name="twitter:description" content="GASでGoogleスプレッドシートを操作する方法について、初心者向けに具体的な手順・例・注意点を交えて解説します。"><meta name="twitter:image" content="https://kamowakaru.github.io/wakarukamo/assets/images/thumbnails/groups/21.jpg"><title>GASでGoogleスプレッドシートを操作する方法｜基本的な書き方を解説 | ワカルカモ</title><link rel="stylesheet" href="../assets/css/style.css?v=20260914-3"><link rel="stylesheet" href="../assets/css/point.css"><link rel="stylesheet" href="../assets/css/article-markdown.css?v=20260915-prevnext"><script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "Article", "headline": "GASでGoogleスプレッドシートを操作する方法｜基本的な書き方を解説", "description": "GASでGoogleスプレッドシートを操作する方法について、初心者向けに具体的な手順・例・注意点を交えて解説します。", "datePublished": "2026-09-15", "dateModified": "2026-09-15", "mainEntityOfPage": "https://kamowakaru.github.io/wakarukamo/articles/21-2-sheets.html", "author": {"@type": "Person", "name": "ワカルカモ運営者", "url": "https://kamowakaru.github.io/wakarukamo/about.html#author-profile"}, "publisher": {"@type": "Organization", "name": "ワカルカモ", "url": "https://kamowakaru.github.io/wakarukamo"}, "image": "https://kamowakaru.github.io/wakarukamo/assets/images/thumbnails/groups/21.jpg"}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "ホーム", "item": "https://kamowakaru.github.io/wakarukamo/"}, {"@type": "ListItem", "position": 2, "name": "Google・GAS", "item": "https://kamowakaru.github.io/wakarukamo/categories/google-gas.html"}, {"@type": "ListItem", "position": 3, "name": "GASでGoogleスプレッドシートを操作する方法｜基本的な書き方を解説", "item": "https://kamowakaru.github.io/wakarukamo/articles/21-2-sheets.html"}]}]}</script></head><body data-root="../"><header class="site-header"><div class="container header-inner"><a class="brand" href="../index.html"><img src="../assets/images/logo-duck.webp" alt=""><span><strong>ワカルカモ</strong><small>PC・Web・AIの「わからない」が、わかるかも。</small></span></a><button class="menu-btn" aria-label="メニュー">☰</button><nav class="nav"><a href="../index.html">ホーム</a><a href="../index.html#categories">カテゴリ</a><a href="../articles.html">記事一覧</a><a href="../about.html">このサイトについて</a></nav><form class="header-search" action="../search.html"><input name="q" type="search" placeholder="キーワードで検索…"><button>🔍</button></form></div></header><main class="article-main"><div class="container article-layout"><article class="article-body"><div class="breadcrumb"><a href="../index.html">ホーム</a> › <a href="../categories/google-gas.html">Google・GAS</a> › GASでGoogleスプレッドシートを操作する方法｜基本的な書き方を解説</div><div class="meta"><span class="chip">Google・GAS</span><a class="tag-link" href="../tags/spreadsheet.html">スプレッドシート</a><a class="tag-link" href="../tags/gas.html">GAS</a><span class="author-byline">著者：<a href="../about.html#author-profile">ワカルカモ運営者</a></span><time datetime="2026-09-15">2026.09.15</time></div><h1>GASでGoogleスプレッドシートを操作する方法｜基本的な書き方を解説</h1><p class="lead">GASでGoogleスプレッドシートを操作する方法について、初心者向けに具体的な手順・例・注意点を交えて解説します。</p><figure class="article-thumbnail"><img src="../assets/images/thumbnails/groups/21.jpg" alt="GASでGoogleスプレッドシートを操作する方法｜基本的な書き方を解説のイメージ画像"></figure><h2 id="結論">結論</h2>
+<p><strong>GASでGoogleスプレッドシートを操作する方法</strong>には、対象を確認してから手順を一つずつ進め、最後に結果まで確認します。</p>
+<p>Googleスプレッドシートはブラウザで共同編集しやすく、共有・関数・GASとの連携などに使えます。 共有設定を変えるときは『閲覧者』『コメント可』『編集者』のどこまで許可するか確認します。</p>
+<h2 id="まず知っておきたいポイント">まず知っておきたいポイント</h2>
+<p>Googleスプレッドシートはブラウザで共同編集しやすく、共有・関数・GASとの連携などに使えます。 共有設定を変えるときは『閲覧者』『コメント可』『編集者』のどこまで許可するか確認します。</p>
+<p>初心者のうちは用語を丸暗記する必要はありません。「何のための機能か」「自分の作業ではどこで使うか」まで分かれば、別の画面やサービスでも応用しやすくなります。</p>
+<h2 id="実際に進めるときの流れ">実際に進めるときの流れ</h2>
+<ol>
+<li><strong>対象を確認する</strong>  </li>
+<p>操作するサイト、アカウント、ファイル、シートなどが正しいか確認します。</p>
+<li><strong>必要な設定だけ変更する</strong>  </li>
+<p>一度に複数の設定を変えず、記事タイトルの目的に必要な箇所だけ操作します。</p>
+<li><strong>結果を確認する</strong>  </li>
+<p>保存しただけで終わらず、表示・出力・公開状態など最終結果を確認します。</p>
+<li><strong>うまくいかなければ直前の変更から戻る</strong>  </li>
+<p>エラー文や変更前の値を控えておくと切り分けやすくなります。</p>
+</ol>
+<h2 id="セルを読み書きする基本例">セルを読み書きする基本例</h2>
+<pre><code>function updateSheet() {
+  const sheet = SpreadsheetApp.getActiveSpreadsheet().getActiveSheet();
+  const value = sheet.getRange(&#x27;A2&#x27;).getValue();
+  sheet.getRange(&#x27;B2&#x27;).setValue(value + &#x27;：確認済み&#x27;);
+}</code></pre>
+<p>スプレッドシートから「拡張機能 → Apps Script」を開いて貼り付けます。A2の値を読み、B2へ加工した値を書き込む最小例です。</p>
+<h2 id="よくある失敗-注意点">よくある失敗・注意点</h2>
+<ul>
+<li>操作するアカウントやサイトを取り違えたまま設定を変更する。</li>
+<li>一度に複数の設定を変えて、どの変更が効いたのか分からなくなる。</li>
+<li>保存・commit・公開・デプロイなど、最後の反映工程を確認せず「変わらない」と判断する。</li>
+<li>パスワード、APIキー、個人情報などを公開ファイルやスクリーンショットへ含める。</li>
+</ul>
+<p>元に戻しにくい操作では、変更前の値やファイルを残してから進めると安全です。</p>
+<h2 id="よくある質問">よくある質問</h2>
+<h3 id="GASは無料で使える">GASは無料で使える？</h3>
+<p>Googleアカウントで利用できますが、サービスごとに実行時間やメール送信数などの利用上限があります。大量処理をする場合は現在のクォータを確認してください。</p>
+<h3 id="コードを実行するときに許可が出るのはなぜ">コードを実行するときに許可が出るのはなぜ？</h3>
+<p>スプレッドシートやGmailなどへアクセスするスクリプトでは、初回実行時などに権限の承認が必要です。要求されている権限を確認してから許可しましょう。</p>
+<h2 id="次に読むと分かりやすい記事">次に読むと分かりやすい記事</h2>
+<ul>
+<li><a class="article-reference" href="21-gas.html"><span>Google Apps Script（GAS）とは？できること・始め方を初心者向けに解説</span></a></li>
+<li><a class="article-reference" href="31-gas.html"><span>GASで作業を自動化する方法｜便利な活用例まとめ</span></a></li>
+<li><a class="article-reference" href="21-1-gas.html"><span>GASの始め方｜スクリプトを作成・実行する方法を初心者向けに解説</span></a></li>
+<li><a class="article-reference" href="21-3-gas.html"><span>GASのトリガーとは？決まった時間に自動実行する方法</span></a></li>
+</ul>
+<h2 id="まとめ">まとめ</h2>
+<p><strong>GASでGoogleスプレッドシートを操作する方法</strong>では、用語だけでなく実際に何を確認・操作すればよいかまで押さえることが大切です。</p>
+<p>この記事の手順を試すときは、自分の環境に該当する部分だけ進め、最後に結果を確認してください。うまくいかない場合は、直前の変更と表示されたエラーを手掛かりに一つずつ切り分けましょう。</p><aside class="point yellow wakarukamo-point"><div class="point-heading"><img src="../assets/images/wakarukamo-point.png" alt=""><strong>ワカルカモポイント</strong></div><p>実際に確認・操作できるところまで具体的に解説します。</p></aside><section class="author-box" aria-labelledby="author-box-title"><img src="../assets/images/tip-duck.webp" alt="ワカルカモ運営者"><div><span id="author-box-title" class="author-label">この記事を書いた人</span><strong>ワカルカモ運営者</strong><p>企業の情報システム・DX推進・マーケティング業務などを経験。PC・Webサービス・業務自動化など、実際に試して分かったことを初心者向けに解説しています。</p><a href="../about.html#author-profile">運営者情報を見る →</a></div></section><nav class="article-pager" aria-label="前後の記事"><a class="article-pager-link article-pager-prev" href="21-1-gas.html"><span class="article-pager-label">← 前の記事</span><strong>GASの始め方｜スクリプトを作成・実行する方法を初心者向けに解説</strong></a><a class="article-pager-link article-pager-next" href="21-3-gas.html"><span class="article-pager-label">次の記事 →</span><strong>GASのトリガーとは？決まった時間に自動実行する方法</strong></a></nav><h2>関連記事</h2><div class="article-grid" data-related data-category="google-gas" data-slug="21-2-sheets"></div></article><aside><div class="sidebox"><img class="side-duck" src="../assets/images/tip-duck.webp" alt=""><h3>この記事のカテゴリ</h3><a class="outline-btn" href="../categories/google-gas.html">Google・GAS →</a></div><div class="sidebox"><h3>🔥 人気のタグ</h3><div class="tag-cloud" data-popular-tags></div></div></aside></div></main><footer class="footer"><div class="container footer-inner"><div class="footer-brand"><img src="../assets/images/logo-duck.webp" alt=""><div><strong>ワカルカモ</strong><div style="font-size:12px;color:#6c7c91">PC・Web・AIの「わからない」が、わかるかも。</div></div></div><div class="footer-links"><a href="../index.html">ホーム</a><a href="../articles.html">記事一覧</a><a href="../about.html">このサイトについて</a><a href="../privacy.html">プライバシーポリシー</a></div></div><p class="copyright">© 2026 ワカルカモ</p></footer><script src="../assets/js/analytics-config.js"></script><script src="../assets/js/site.js?v=20260914-2"></script></body></html>
