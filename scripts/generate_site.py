@@ -5,6 +5,22 @@ ROOT = Path(__file__).resolve().parents[1]
 CONTENT = ROOT / 'content/articles'
 SITE_URL = os.environ.get('SITE_URL', 'https://kamowakaru.github.io/wakarukamo').rstrip('/')
 
+# data/article-management.csv is the publication master.
+# Only rows whose 公開済 column is 済 are emitted as public articles.
+MANAGEMENT_CSV = ROOT / 'data/article-management.csv'
+PUBLISHED_NOS = set()
+PUBLISHED_TITLES = set()
+if MANAGEMENT_CSV.exists():
+    with MANAGEMENT_CSV.open(encoding='utf-8-sig', newline='') as f:
+        for row in csv.DictReader(f):
+            if (row.get('公開済') or '').strip() == '済':
+                no = (row.get('No.') or '').strip()
+                title = (row.get('タイトル') or '').strip()
+                if no:
+                    PUBLISHED_NOS.add(no)
+                if title:
+                    PUBLISHED_TITLES.add(title)
+
 THUMBNAIL_KEYWORDS = {
     'pc-windows': [
         (2, ('スクリーンショット', '画面保存', 'キャプチャ')),
@@ -351,7 +367,9 @@ for fp in sorted(CONTENT.glob('*.md')):
     bad = [t for t in fm['tags'] if t not in tagmap]
     if bad:
         raise ValueError(f'{fp.name}: 未登録タグ {bad}。data/tags.json に追加してください')
-    article = {'slug':slug,'title':fm['title'],'date':fm['date'],'updated':fm.get('updated', fm['date']),'category':fm['category'],'tags':fm['tags'],'description':fm['description'],'article_no':fm.get('article_no', ''),'thumbnail':thumbnail_for(slug, fm['category'], fm.get('article_no', ''), fm.get('thumbnail', ''), fm['title'], fm['description']),'point':fm.get('point', ''),'draft':truth(fm.get('draft'))}
+    article_no = str(fm.get('article_no', '') or '').strip()
+    managed_public = (article_no in PUBLISHED_NOS) if article_no else (fm['title'] in PUBLISHED_TITLES)
+    article = {'slug':slug,'title':fm['title'],'date':fm['date'],'updated':fm.get('updated', fm['date']),'category':fm['category'],'tags':fm['tags'],'description':fm['description'],'article_no':article_no,'thumbnail':thumbnail_for(slug, fm['category'], article_no, fm.get('thumbnail', ''), fm['title'], fm['description']),'point':fm.get('point', ''),'draft':truth(fm.get('draft')) or not managed_public}
     all_articles.append(article)
     bodies[slug] = body
 all_articles.sort(key=lambda a: (a['date'], a['slug']), reverse=True)
