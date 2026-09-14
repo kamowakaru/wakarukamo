@@ -282,6 +282,8 @@ def update_grouped_collection(path, items, prefix=''):
         raise ValueError(f'{path}: 記事一覧の挿入場所が見つかりません')
     text = text.replace('class="list-grid" data-collection="all"', 'class="grouped-article-list" data-collection="all"')
     text = text.replace('class="list-grid" data-collection="category"', 'class="grouped-article-list" data-collection="category"')
+    # Force browsers to fetch the latest hierarchy CSS after layout updates.
+    text = re.sub(r'(assets/css/style\.css)(?:\?v=[^\"\']+)?', r'\1?v=20260914-hierarchy-v4', text)
     path.write_text(text, encoding='utf-8')
 
 def update_home_parent_links(path, items):

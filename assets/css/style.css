@@ -49,3 +49,38 @@
   .grouped-article-list .parent-thumb img{width:280px !important}
   .grouped-article-list .group-children{grid-template-columns:repeat(3,minmax(0,1fr)) !important}
 }
+
+/* Hierarchy layout v4: compact parent header + children grid */
+.grouped-article-list .article-group{
+  display:block !important;width:100% !important;padding:16px !important;
+  border:1px solid #dceaf7 !important;border-radius:18px !important;background:#fbfdff !important;
+}
+.grouped-article-list .parent-card{
+  display:grid !important;grid-template-columns:180px minmax(0,1fr) !important;
+  width:100% !important;max-width:none !important;min-width:0 !important;margin:0 0 16px !important;
+  overflow:hidden !important;border:2px solid #bcdcf8 !important;border-radius:14px !important;background:#fff !important;
+}
+.grouped-article-list .parent-thumb{
+  display:block !important;width:180px !important;height:112px !important;min-height:112px !important;
+  aspect-ratio:auto !important;overflow:hidden !important;
+}
+.grouped-article-list .parent-thumb img{
+  display:block !important;width:180px !important;height:112px !important;object-fit:cover !important;
+}
+.grouped-article-list .parent-card-body{padding:10px 14px !important;min-width:0 !important}
+.grouped-article-list .parent-card-body h2{font-size:17px !important;margin:5px 0 !important;line-height:1.45 !important}
+.grouped-article-list .parent-card-body p{font-size:12px !important;margin:0 0 4px !important;-webkit-line-clamp:1 !important}
+.grouped-article-list .group-children{
+  display:grid !important;grid-template-columns:repeat(3,minmax(0,1fr)) !important;
+  gap:14px !important;padding:14px 0 0 !important;border-top:1px solid #dceaf7 !important;min-width:0 !important;
+}
+.grouped-article-list .group-children .thumb{height:120px !important}
+@media(max-width:900px){
+  .grouped-article-list .group-children{grid-template-columns:repeat(2,minmax(0,1fr)) !important}
+}
+@media(max-width:600px){
+  .grouped-article-list .parent-card{grid-template-columns:120px minmax(0,1fr) !important}
+  .grouped-article-list .parent-thumb,.grouped-article-list .parent-thumb img{width:120px !important;height:90px !important;min-height:90px !important}
+  .grouped-article-list .parent-card-body p{display:none !important}
+  .grouped-article-list .group-children{grid-template-columns:1fr !important}
+}
