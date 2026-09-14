@@ -1,6 +1,25 @@
 (() => {
   const body = document.body;
   const root = body.dataset.root || '';
+
+  // 一覧カードの画像と本文を別レイヤーに固定し、狭い画面でも重なりを防ぐ。
+  const cardLayoutStyle = document.createElement('style');
+  cardLayoutStyle.textContent = `
+    .card { display:flex; min-width:0; flex-direction:column; }
+    .card > .thumb {
+      display:block; width:100%; height:auto; aspect-ratio:16/9;
+      flex:0 0 auto; overflow:hidden; line-height:0;
+    }
+    .card > .thumb img {
+      display:block; width:100%; height:100%; object-fit:cover;
+    }
+    .card > .card-body {
+      position:relative; z-index:1; flex:1 1 auto;
+      padding:16px; border-top:1px solid #e2eaf2; background:#fff;
+    }
+  `;
+  document.head.appendChild(cardLayoutStyle);
+
   const menu = document.querySelector('.menu-btn');
   const nav = document.querySelector('.nav');
   if (menu && nav) menu.addEventListener('click', () => nav.classList.toggle('open'));
