@@ -195,3 +195,10 @@
     font-size: 11px;
   }
 }
+
+/* 「次に読むと分かりやすい記事」のカードリンクは箇条書き記号を表示しない */
+.article-body h2#次に読むと分かりやすい記事 + ul,
+.article-body h2#次に読むとわかりやすい記事 + ul {
+  list-style: none;
+  padding-left: 0;
+}
