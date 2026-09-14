@@ -195,3 +195,11 @@
     font-size: 11px;
   }
 }
+
+/* 「次に読むと分かりやすい記事」のリンク一覧は箇条書き記号を表示しない */
+.article-body h2[id="次に読むと分かりやすい記事"] + ul,
+.article-content h2[id="次に読むと分かりやすい記事"] + ul,
+h2[id="次に読むと分かりやすい記事"] + ul {
+  list-style: none;
+  padding-left: 0;
+}
