@@ -1,0 +1,110 @@
+<!doctype html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="サイトの検索窓で入力された語句をGA4のview_search_resultsとsearch_termで収集する仕組みを解説します。"><link rel="canonical" href="https://kamowakaru.github.io/wakarukamo/articles/ga4-site-search-keywords.html"><meta property="og:title" content="GA4でサイト内検索キーワードを収集する方法"><meta property="og:description" content="サイトの検索窓で入力された語句をGA4のview_search_resultsとsearch_termで収集する仕組みを解説します。"><meta property="og:url" content="https://kamowakaru.github.io/wakarukamo/articles/ga4-site-search-keywords.html"><meta property="og:type" content="article"><meta property="og:image" content="https://kamowakaru.github.io/wakarukamo/assets/images/thumbnails/google-gas/08.jpg"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="GA4でサイト内検索キーワードを収集する方法"><meta name="twitter:description" content="サイトの検索窓で入力された語句をGA4のview_search_resultsとsearch_termで収集する仕組みを解説します。"><meta name="twitter:image" content="https://kamowakaru.github.io/wakarukamo/assets/images/thumbnails/google-gas/08.jpg"><title>GA4でサイト内検索キーワードを収集する方法 | ワカルカモ</title><link rel="stylesheet" href="../assets/css/style.css?v=20260914-3"><link rel="stylesheet" href="../assets/css/point.css"><link rel="stylesheet" href="../assets/css/article-markdown.css?v=20260915-prevnext"><script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "Article", "headline": "GA4でサイト内検索キーワードを収集する方法", "description": "サイトの検索窓で入力された語句をGA4のview_search_resultsとsearch_termで収集する仕組みを解説します。", "datePublished": "2026-09-14", "dateModified": "2026-09-14", "mainEntityOfPage": "https://kamowakaru.github.io/wakarukamo/articles/ga4-site-search-keywords.html", "author": {"@type": "Person", "name": "ワカルカモ運営者", "url": "https://kamowakaru.github.io/wakarukamo/about.html#author-profile"}, "publisher": {"@type": "Organization", "name": "ワカルカモ", "url": "https://kamowakaru.github.io/wakarukamo"}, "image": "https://kamowakaru.github.io/wakarukamo/assets/images/thumbnails/google-gas/08.jpg"}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "ホーム", "item": "https://kamowakaru.github.io/wakarukamo/"}, {"@type": "ListItem", "position": 2, "name": "Google・GAS", "item": "https://kamowakaru.github.io/wakarukamo/categories/google-gas.html"}, {"@type": "ListItem", "position": 3, "name": "GA4でサイト内検索キーワードを収集する方法", "item": "https://kamowakaru.github.io/wakarukamo/articles/ga4-site-search-keywords.html"}]}]}</script></head><body data-root="../"><header class="site-header"><div class="container header-inner"><a class="brand" href="../index.html"><img src="../assets/images/logo-duck.webp" alt=""><span><strong>ワカルカモ</strong><small>PC・Web・AIの「わからない」が、わかるかも。</small></span></a><button class="menu-btn" aria-label="メニュー">☰</button><nav class="nav"><a href="../index.html">ホーム</a><a href="../index.html#categories">カテゴリ</a><a href="../articles.html">記事一覧</a><a href="../about.html">このサイトについて</a></nav><form class="header-search" action="../search.html"><input name="q" type="search" placeholder="キーワードで検索…"><button>🔍</button></form></div></header><main class="article-main"><div class="container article-layout"><article class="article-body"><div class="breadcrumb"><a href="../index.html">ホーム</a> › <a href="../categories/google-gas.html">Google・GAS</a> › GA4でサイト内検索キーワードを収集する方法</div><div class="meta"><span class="chip">Google・GAS</span><a class="tag-link" href="../tags/ga4.html">GA4</a><a class="tag-link" href="../tags/analytics.html">アクセス解析</a><a class="tag-link" href="../tags/website.html">Webサイト制作</a><span class="author-byline">著者：<a href="../about.html#author-profile">ワカルカモ運営者</a></span><time datetime="2026-09-14">2026.09.14</time></div><h1>GA4でサイト内検索キーワードを収集する方法</h1><p class="lead">サイトの検索窓で入力された語句をGA4のview_search_resultsとsearch_termで収集する仕組みを解説します。</p><figure class="article-thumbnail"><img src="../assets/images/thumbnails/google-gas/08.jpg" alt="GA4でサイト内検索キーワードを収集する方法のイメージ画像"></figure><h2 id="結論">結論</h2>
+<p>GA4では、検索結果ページのURLに検索語がクエリパラメータとして付くサイトなら、拡張計測機能でサイト内検索を収集できます。</p>
+<p>たとえばワカルカモでは、検索結果URLが次の形になります。</p>
+<pre><code>search.html?q=ChatGPT</code></pre>
+<p>このページが表示されると、GA4は<code>view_search_results</code>イベントを記録し、<code>search_term</code>へ<code>ChatGPT</code>を入れます。</p>
+<h2 id="サイト内検索を集める目的">サイト内検索を集める目的</h2>
+<p>検索窓へ入力された語句には、訪問者がサイト内で見つけられなかった情報や、次に知りたい内容が表れます。</p>
+<ul>
+<li>検索結果が0件だった語句を記事候補にする</li>
+<li>表記違いをタグへ追加する</li>
+<li>よく検索される記事を見つけやすくする</li>
+<li>記事タイトルと読者の言葉のずれを確認する</li>
+</ul>
+<p>単なるアクセス数だけでなく、次に作るコンテンツを決める材料になります。</p>
+<h2 id="1-検索結果URLを確認する">1．検索結果URLを確認する</h2>
+<p>サイトの検索窓で言葉を入力し、検索後のURLを見ます。</p>
+<pre><code>?q=検索語
+?s=検索語
+?search=検索語</code></pre>
+<p>GA4は一般的な検索パラメータを使ってサイト内検索を検知します。独自の名前を使う場合は、ウェブデータストリームの拡張計測機能からサイト内検索の詳細設定を確認します。</p>
+<h2 id="HTML側で必要な作業">HTML側で必要な作業</h2>
+<p>GA4の管理画面を設定するだけでは、検索窓のないサイトで検索語句は集まりません。HTML側では、検索語をURLの<code>q</code>パラメータへ入れて検索結果ページを開く仕組みを作ります。</p>
+<p>ワカルカモでは、次の3か所を用意しています。</p>
+<ol>
+<li>各ページに検索フォームを置く</li>
+<li><code>search.html</code>に検索結果の表示場所を置く</li>
+<li>JavaScriptでURLから検索語を読み、記事を絞り込む</li>
+</ol>
+<h3 id="1-検索フォームをHTMLへ追加する">1．検索フォームをHTMLへ追加する</h3>
+<p>トップページなど、リポジトリ直下にあるHTMLには次のフォームを置きます。</p>
+<pre><code>&lt;form class=&quot;header-search&quot; action=&quot;search.html&quot; method=&quot;get&quot;&gt;
+  &lt;input
+    name=&quot;q&quot;
+    type=&quot;search&quot;
+    placeholder=&quot;キーワードで検索…&quot;
+    aria-label=&quot;サイト内検索&quot;
+  &gt;
+  &lt;button type=&quot;submit&quot;&gt;検索&lt;/button&gt;
+&lt;/form&gt;</code></pre>
+<p>重要なのは、入力欄の<code>name=&quot;q&quot;</code>です。フォームを送信すると、ブラウザが入力内容を次のようなURLに変換します。</p>
+<pre><code>search.html?q=ChatGPT</code></pre>
+<p><code>q</code>はGA4が標準で認識するサイト内検索用のパラメータです。検索フォームが記事ページなど1階層下のHTMLにある場合は、検索結果ページへ戻れるように<code>action=&quot;../search.html&quot;</code>とします。</p>
+<h3 id="2-検索結果ページを作る">2．検索結果ページを作る</h3>
+<p>リポジトリ直下に<code>search.html</code>を作り、検索語と結果一覧を表示する場所を用意します。</p>
+<pre><code>&lt;main&gt;
+  &lt;h1&gt;検索結果&lt;/h1&gt;
+  &lt;p&gt;「&lt;strong data-search-query&gt;&lt;/strong&gt;」の検索結果&lt;/p&gt;
+  &lt;div class=&quot;search-results&quot; data-search-results&gt;&lt;/div&gt;
+&lt;/main&gt;
+
+&lt;script src=&quot;assets/js/analytics-config.js&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;assets/js/site.js?v=20260914-2&quot;&gt;&lt;/script&gt;</code></pre>
+<p><code>data-search-query</code>には検索された言葉を表示し、<code>data-search-results</code>には該当記事をJavaScriptで並べます。GA4の読み込み処理を含む<code>site.js</code>は、HTMLの最後で読み込みます。</p>
+<h3 id="3-JavaScriptで検索語を取得する">3．JavaScriptで検索語を取得する</h3>
+<p><code>assets/js/site.js?v=20260914-2</code>では、URLの<code>q</code>から検索語を取り出します。</p>
+<pre><code>const params = new URLSearchParams(window.location.search);
+const query = params.get(&#x27;q&#x27;)?.trim() || &#x27;&#x27;;
+
+document.querySelector(&#x27;[data-search-query]&#x27;).textContent =
+  query || &#x27;すべて&#x27;;</code></pre>
+<p>その後、記事一覧データを読み込み、タイトルや説明文に検索語が含まれる記事だけを残します。</p>
+<pre><code>const response = await fetch(&#x27;data/articles.json&#x27;);
+const articles = await response.json();
+
+const filtered = !query
+  ? articles
+  : articles.filter(article =&gt;
+      `${article.title} ${article.description}`
+        .toLowerCase()
+        .includes(query.toLowerCase())
+    );</code></pre>
+<p>検索結果の表示方法はサイトごとに異なります。GA4で検索語を集めるうえで重要なのは、検索結果を表示するときのURLが<code>search.html?q=検索語</code>になっていることです。</p>
+<h3 id="4-GA4タグを読み込む">4．GA4タグを読み込む</h3>
+<p>すべてのページでGA4タグが読み込まれ、検索結果ページでも<code>page_view</code>が送信される状態にします。ワカルカモでは、測定IDを<code>assets/js/analytics-config.js</code>へ保存し、<code>site.js</code>からGoogleタグを読み込んでいます。</p>
+<pre><code>window.WAKARUKAMO_GA_MEASUREMENT_ID = &#x27;G-XXXXXXXXXX&#x27;;</code></pre>
+<p>測定IDは自分のGA4プロパティに表示される<code>G-</code>から始まる値へ置き換えます。公開記事へ自分の測定IDを例として載せる必要はありません。</p>
+<h2 id="2-拡張計測機能を確認する">2．拡張計測機能を確認する</h2>
+<p>GA4の<code>管理 → データストリーム</code>から対象ウェブストリームを開き、拡張計測機能のサイト内検索が有効か確認します。</p>
+<p>Google公式によると、<code>view_search_results</code>は検索結果ページのURLに<code>q</code>などのクエリパラメータがあるときに記録され、<code>search_term</code>が送信されます。拡張計測機能を使うだけなら、<code>view_search_results</code>を送るJavaScriptを自分で書く必要はありません。<a href="https://support.google.com/analytics/answer/9216061?hl=ja" rel="noopener" target="_blank">拡張計測機能イベント</a></p>
+<h2 id="3-リアルタイムでテストする">3．リアルタイムでテストする</h2>
+<p>公開サイトの検索窓から、個人情報を含まないテスト語を検索します。その後、GA4のリアルタイムで<code>view_search_results</code>が出るか確認します。</p>
+<p>ワカルカモでは、メールアドレスらしい文字列や長い数字列を独自イベントの対象外にしています。ただし、検索欄自体へ個人情報を入力しない案内も必要です。</p>
+<h2 id="推奨イベントのsearchも送る場合">推奨イベントのsearchも送る場合</h2>
+<p>GA4には、自動取得される<code>view_search_results</code>とは別に、手動で送信できる推奨イベント<code>search</code>があります。検索結果件数なども一緒に記録したい場合に使えます。</p>
+<p>ワカルカモでは、検索結果を画面へ表示したあとに次の処理を実行しています。</p>
+<pre><code>gtag(&#x27;event&#x27;, &#x27;search&#x27;, {
+  search_term: query,
+  result_count: filtered.length
+});</code></pre>
+<p><code>search_term</code>は検索語、<code>result_count</code>は該当した記事数です。Google公式の<code>search</code>推奨イベントでは<code>search_term</code>が必須パラメータとして案内されています。<a href="https://developers.google.com/analytics/devguides/collection/ga4/reference/events?hl=ja#search" rel="noopener" target="_blank">GA4の推奨イベント</a></p>
+<p>なお、<code>result_count</code>はワカルカモ独自のパラメータです。GA4の通常レポートで使う場合は、別途カスタム指標の登録が必要です。検索ニーズの把握だけなら、まずは自動取得される<code>view_search_results</code>と<code>search_term</code>だけでも十分です。</p>
+<p>ただし、拡張計測機能の<code>view_search_results</code>と両方を送ると、一回の検索に二つのイベントが記録されます。集計ではイベント名を指定し、二重に数えないようにします。</p>
+<h3 id="個人情報らしい文字列を送らないようにする例">個人情報らしい文字列を送らないようにする例</h3>
+<p>検索窓へメールアドレスや長い番号が入力される可能性もあります。ワカルカモでは、送信前に文字数を制限し、<code>@</code>を含む文字列や9桁以上の連続した数字を除外しています。</p>
+<pre><code>function safeSearchTerm(value) {
+  const term = String(value || &#x27;&#x27;)
+    .trim()
+    .replace(/\s+/g, &#x27; &#x27;)
+    .slice(0, 80);
+
+  if (!term || /@/.test(term) || /\d{9,}/.test(term)) return &#x27;&#x27;;
+  return term;
+}</code></pre>
+<p>これはすべての個人情報を完全に判定する仕組みではありませんが、明らかなメールアドレスや長い番号を送信しにくくできます。</p>
+<h2 id="収集後の見方">収集後の見方</h2>
+<p>検索語を一覧で見るには、GA4の自由探索を使います。行へ検索語句、値へイベント数、フィルタへ<code>view_search_results</code>を設定します。</p>
+<p>詳しい画面設定は、<a class="article-reference" href="ga4-free-form-exploration.html"><span>GA4の自由探索でサイト内検索語句を見る方法</span></a>で説明しています。</p>
+<h2 id="まとめ">まとめ</h2>
+<p>HTML側では、<code>name=&quot;q&quot;</code>の検索フォーム、<code>search.html</code>、検索結果を作るJavaScript、GA4タグの4つを用意します。そのうえで、GA4側の拡張計測機能とリアルタイムイベントを確認します。</p>
+<p>検索語は訪問者のニーズそのものです。まずは<code>view_search_results</code>と<code>search_term</code>を収集し、0件検索や頻出語を次の記事作りへ活用しましょう。</p><aside class="point yellow wakarukamo-point"><div class="point-heading"><img src="../assets/images/wakarukamo-point.png" alt=""><strong>ワカルカモポイント</strong></div><p>検索結果URLにqなどの検索パラメータが付けば、GA4の拡張計測機能でサイト内検索を取得できます。</p></aside><section class="author-box" aria-labelledby="author-box-title"><img src="../assets/images/tip-duck.webp" alt="ワカルカモ運営者"><div><span id="author-box-title" class="author-label">この記事を書いた人</span><strong>ワカルカモ運営者</strong><p>企業の情報システム・DX推進・マーケティング業務などを経験。PC・Webサービス・業務自動化など、実際に試して分かったことを初心者向けに解説しています。</p><a href="../about.html#author-profile">運営者情報を見る →</a></div></section><nav class="article-pager" aria-label="前後の記事"><a class="article-pager-link article-pager-prev" href="ga4-realtime-check.html"><span class="article-pager-label">← 前の記事</span><strong>GA4のリアルタイムにアクセスが出ないときの確認方法</strong></a><a class="article-pager-link article-pager-next" href="ga4-social-utm.html"><span class="article-pager-label">次の記事 →</span><strong>GA4でXとThreadsの流入を分けて確認する方法｜UTM設定例</strong></a></nav><h2>関連記事</h2><div class="article-grid" data-related data-category="google-gas" data-slug="ga4-site-search-keywords"></div></article><aside><div class="sidebox"><img class="side-duck" src="../assets/images/tip-duck.webp" alt=""><h3>この記事のカテゴリ</h3><a class="outline-btn" href="../categories/google-gas.html">Google・GAS →</a></div><div class="sidebox"><h3>🔥 人気のタグ</h3><div class="tag-cloud" data-popular-tags></div></div></aside></div></main><footer class="footer"><div class="container footer-inner"><div class="footer-brand"><img src="../assets/images/logo-duck.webp" alt=""><div><strong>ワカルカモ</strong><div style="font-size:12px;color:#6c7c91">PC・Web・AIの「わからない」が、わかるかも。</div></div></div><div class="footer-links"><a href="../index.html">ホーム</a><a href="../articles.html">記事一覧</a><a href="../about.html">このサイトについて</a><a href="../privacy.html">プライバシーポリシー</a></div></div><p class="copyright">© 2026 ワカルカモ</p></footer><script src="../assets/js/analytics-config.js"></script><script src="../assets/js/site.js?v=20260914-2"></script></body></html>

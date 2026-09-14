@@ -1,0 +1,133 @@
+<!doctype html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="テーマ決めから構成、事実確認、Markdown化、GitHub Pagesへの公開まで、ワカルカモで実際に使った流れを紹介します。"><link rel="canonical" href="https://kamowakaru.github.io/wakarukamo/articles/chatgpt-seo-publish-workflow.html"><meta property="og:title" content="ChatGPTでSEO記事を作って公開する方法｜ワカルカモの実例"><meta property="og:description" content="テーマ決めから構成、事実確認、Markdown化、GitHub Pagesへの公開まで、ワカルカモで実際に使った流れを紹介します。"><meta property="og:url" content="https://kamowakaru.github.io/wakarukamo/articles/chatgpt-seo-publish-workflow.html"><meta property="og:type" content="article"><meta property="og:image" content="https://kamowakaru.github.io/wakarukamo/assets/images/thumbnails/ai-chatgpt/03.jpg"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="ChatGPTでSEO記事を作って公開する方法｜ワカルカモの実例"><meta name="twitter:description" content="テーマ決めから構成、事実確認、Markdown化、GitHub Pagesへの公開まで、ワカルカモで実際に使った流れを紹介します。"><meta name="twitter:image" content="https://kamowakaru.github.io/wakarukamo/assets/images/thumbnails/ai-chatgpt/03.jpg"><title>ChatGPTでSEO記事を作って公開する方法｜ワカルカモの実例 | ワカルカモ</title><link rel="stylesheet" href="../assets/css/style.css?v=20260914-3"><link rel="stylesheet" href="../assets/css/point.css"><link rel="stylesheet" href="../assets/css/article-markdown.css?v=20260915-prevnext"><script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "Article", "headline": "ChatGPTでSEO記事を作って公開する方法｜ワカルカモの実例", "description": "テーマ決めから構成、事実確認、Markdown化、GitHub Pagesへの公開まで、ワカルカモで実際に使った流れを紹介します。", "datePublished": "2026-09-13", "dateModified": "2026-09-13", "mainEntityOfPage": "https://kamowakaru.github.io/wakarukamo/articles/chatgpt-seo-publish-workflow.html", "author": {"@type": "Person", "name": "ワカルカモ運営者", "url": "https://kamowakaru.github.io/wakarukamo/about.html#author-profile"}, "publisher": {"@type": "Organization", "name": "ワカルカモ", "url": "https://kamowakaru.github.io/wakarukamo"}, "image": "https://kamowakaru.github.io/wakarukamo/assets/images/thumbnails/ai-chatgpt/03.jpg"}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "ホーム", "item": "https://kamowakaru.github.io/wakarukamo/"}, {"@type": "ListItem", "position": 2, "name": "AI・ChatGPT", "item": "https://kamowakaru.github.io/wakarukamo/categories/ai-chatgpt.html"}, {"@type": "ListItem", "position": 3, "name": "ChatGPTでSEO記事を作って公開する方法｜ワカルカモの実例", "item": "https://kamowakaru.github.io/wakarukamo/articles/chatgpt-seo-publish-workflow.html"}]}]}</script></head><body data-root="../"><header class="site-header"><div class="container header-inner"><a class="brand" href="../index.html"><img src="../assets/images/logo-duck.webp" alt=""><span><strong>ワカルカモ</strong><small>PC・Web・AIの「わからない」が、わかるかも。</small></span></a><button class="menu-btn" aria-label="メニュー">☰</button><nav class="nav"><a href="../index.html">ホーム</a><a href="../index.html#categories">カテゴリ</a><a href="../articles.html">記事一覧</a><a href="../about.html">このサイトについて</a></nav><form class="header-search" action="../search.html"><input name="q" type="search" placeholder="キーワードで検索…"><button>🔍</button></form></div></header><main class="article-main"><div class="container article-layout"><article class="article-body"><div class="breadcrumb"><a href="../index.html">ホーム</a> › <a href="../categories/ai-chatgpt.html">AI・ChatGPT</a> › ChatGPTでSEO記事を作って公開する方法｜ワカルカモの実例</div><div class="meta"><span class="chip">AI・ChatGPT</span><a class="tag-link" href="../tags/chatgpt.html">ChatGPT</a><a class="tag-link" href="../tags/ai.html">AI</a><a class="tag-link" href="../tags/seo.html">SEO</a><a class="tag-link" href="../tags/automation.html">自動化</a><span class="author-byline">著者：<a href="../about.html#author-profile">ワカルカモ運営者</a></span><time datetime="2026-09-13">2026.09.13</time></div><h1>ChatGPTでSEO記事を作って公開する方法｜ワカルカモの実例</h1><p class="lead">テーマ決めから構成、事実確認、Markdown化、GitHub Pagesへの公開まで、ワカルカモで実際に使った流れを紹介します。</p><figure class="article-thumbnail"><img src="../assets/images/thumbnails/ai-chatgpt/03.jpg" alt="ChatGPTでSEO記事を作って公開する方法｜ワカルカモの実例のイメージ画像"></figure><h2 id="結論">結論</h2>
+<p>ChatGPTを使えば、SEO記事のテーマ整理や見出し作成、文章の下書きにかかる時間を短縮できます。ただし、ChatGPTが出した文章をそのまま公開するのではなく、検索する人の目的に合っているか、情報が正しいか、自分の経験や具体例が入っているかを人が確認することが重要です。</p>
+<p>ワカルカモでは、ChatGPTで下書きを作り、人が内容を確認してMarkdownファイルへ整え、GitHubへ追加すると記事ページが生成される仕組みにしています。</p>
+<p>この記事自体も、テーマと構成をChatGPTと相談しながら作り、掲載内容や実際の手順を人が確認して公開しています。</p>
+<h2 id="今回の記事を公開するまでの流れ">今回の記事を公開するまでの流れ</h2>
+<p>大きな流れは次のとおりです。</p>
+<ol>
+<li>読者の困りごとを一つ決める</li>
+<li>検索する目的を整理する</li>
+<li>ChatGPTで構成案を作る</li>
+<li>本文の下書きを作る</li>
+<li>公式情報と実際の画面で確認する</li>
+<li>自分の経験や失敗例を追加する</li>
+<li>Markdownファイルへ整える</li>
+<li>GitHubへ追加して公開する</li>
+<li>公開後に表示と検索登録を確認する</li>
+</ol>
+<p>最初から長文を書かせるより、テーマ、構成、本文の順に分けたほうが内容を調整しやすくなります。</p>
+<h2 id="1-読者の困りごとを一つ決める">1．読者の困りごとを一つ決める</h2>
+<p>最初に「この記事を読んだ人が、最後に何をできるようになるか」を一文で決めます。</p>
+<p>今回のゴールは、次のように設定しました。</p>
+<blockquote>ChatGPTを使った記事作成から、GitHub Pagesで公開するまでの流れが分かる。</blockquote>
+<p>「ChatGPTの使い方」のように範囲を広げすぎると、何を解決する記事なのか分かりにくくなります。「SEO記事を作る」「WordPress用に整える」「タイトル案を作る」など、一記事につき一つの目的へ絞るのがポイントです。</p>
+<h2 id="2-検索する人が知りたいことを整理する">2．検索する人が知りたいことを整理する</h2>
+<p>同じキーワードでも、検索する人が知りたい内容は異なります。</p>
+<p>「ChatGPT SEO記事」であれば、次のような疑問が考えられます。</p>
+<ul>
+<li>どんな指示を出せばよいか</li>
+<li>AIで作った記事を公開して問題ないか</li>
+<li>見出しやタイトルも作れるか</li>
+<li>間違った情報を防ぐにはどうするか</li>
+<li>WordPressやGitHubへどう載せるか</li>
+</ul>
+<p>親記事ですべてを簡単に説明し、詳しい操作は別の記事へ分けて内部リンクでつなぐと、読者が必要な情報へ移動しやすくなります。</p>
+<h2 id="3-ChatGPTへ構成案を依頼する">3．ChatGPTへ構成案を依頼する</h2>
+<p>今回のような初心者向け記事では、次の形で依頼できます。</p>
+<pre><code>「ChatGPTでSEO記事を作って公開する方法」という初心者向け記事の
+見出し構成を作ってください。
+
+読者：ブログを始めたばかりの人
+記事のゴール：テーマ決めから公開までの流れが分かる
+掲載したい内容：
+・検索意図の整理
+・ChatGPTへの指示例
+・事実確認
+・人が修正するポイント
+・Markdown化
+・GitHub Pagesへの公開
+
+結論を先に書き、作業順に見出しを並べてください。
+似た内容の見出しはまとめてください。</code></pre>
+<p>出てきた構成はそのまま採用せず、重複する見出しや、今回の読者に必要のない内容を削ります。</p>
+<h2 id="4-見出しごとに本文を作る">4．見出しごとに本文を作る</h2>
+<p>構成が決まったら、一度に記事全体を書かせるのではなく、見出しごとに下書きを作ります。</p>
+<pre><code>次の見出しの本文を、PC操作に慣れていない人向けに書いてください。
+
+見出し：ChatGPTが作った記事を公開前に確認するポイント
+
+条件：
+・最初に結論を書く
+・難しい言葉は言い換える
+・確認項目を具体的にする
+・確認できない内容を断定しない
+・同じ説明を繰り返さない</code></pre>
+<p>短い単位で作れば、「説明が難しい」「この例は実態と違う」といった修正もしやすくなります。</p>
+<h2 id="5-公式情報と実際の操作で確認する">5．公式情報と実際の操作で確認する</h2>
+<p>料金、サービスの仕様、操作画面、法律に関係する内容は変わることがあります。公開前に公式サイトで確認し、確認日や参照先を記事へ記載します。</p>
+<p>Googleは、検索順位を操作する目的で大量の自動生成コンテンツを作るのではなく、読者に役立つ独自情報や実体験を含めることを案内しています。詳しくは<a href="https://developers.google.com/search/docs/fundamentals/creating-helpful-content" rel="noopener" target="_blank">Google検索の有用なコンテンツに関する案内</a>で確認できます。</p>
+<p>確認するときは、少なくとも次の点を見ます。</p>
+<ul>
+<li>公式ページと食い違っていないか</li>
+<li>現在も使える機能か</li>
+<li>実際の画面で同じ操作ができるか</li>
+<li>金額や日付に根拠があるか</li>
+<li>存在しない機能や事例を作っていないか</li>
+</ul>
+<h2 id="6-人にしか足せない情報を入れる">6．人にしか足せない情報を入れる</h2>
+<p>AIがまとめやすい一般論だけでは、ほかの記事と似た内容になりがちです。そこで、実際に行った操作や迷った点を追加します。</p>
+<p>ワカルカモでは、記事公開の自動化を進める途中で、X APIを使った完全自動投稿には料金がかかることが分かりました。そのため、SNSへ直接投稿する代わりに、記事公開時に投稿用の原稿と計測用URLを作る仕組みへ変更しています。</p>
+<p>このような「最初はこう考えたが、確認後にこう変えた」という経緯は、同じところで迷っている人の参考になります。</p>
+<h2 id="7-記事をMarkdownファイルへ整える">7．記事をMarkdownファイルへ整える</h2>
+<p>ワカルカモの記事は、本文の前に記事情報を付けたMarkdown形式で管理しています。</p>
+<pre><code>---
+title: &quot;記事タイトル&quot;
+date: &quot;2026-09-13&quot;
+category: &quot;ai-chatgpt&quot;
+tags:
+  - chatgpt
+  - ai
+description: &quot;記事の内容を短く説明する文章&quot;
+---
+
+## 結論
+
+ここから本文を書きます。</code></pre>
+<p>ファイル名は記事URLにも使われるため、英小文字とハイフンで分かりやすく付けます。今回のファイル名は <code>chatgpt-seo-publish-workflow.md</code> です。</p>
+<h2 id="8-GitHubへ追加して記事を公開する">8．GitHubへ追加して記事を公開する</h2>
+<p>ワカルカモでは、完成したMarkdownファイルを <code>content/articles</code> フォルダへ追加します。</p>
+<ol>
+<li>GitHubで対象のリポジトリを開く</li>
+<li><code>content</code>、<code>articles</code>の順に開く</li>
+<li>Add fileからCreate new fileを選ぶ</li>
+<li>ファイル名と記事本文を入力する</li>
+<li>Commit changesを押す</li>
+<li>GitHub Actionsの処理が完了するまで待つ</li>
+<li>公開された記事ページを開く</li>
+</ol>
+<p>自動処理では、記事ページ、記事一覧、カテゴリページ、タグページ、SNS投稿用メモを更新します。画像はカテゴリごとに用意した候補から、記事ごとに自動選択されます。</p>
+<h2 id="9-公開後に確認すること">9．公開後に確認すること</h2>
+<p>公開できたら、次の点を確認します。</p>
+<ul>
+<li>タイトルと本文が表示されているか</li>
+<li>サムネイル画像が表示されているか</li>
+<li>スマートフォンで読みにくくないか</li>
+<li>内部リンクと外部リンクが開くか</li>
+<li>検索結果に不要な下書きが混ざっていないか</li>
+<li>Search ConsoleでURLを検査できるか</li>
+</ul>
+<p>記事を公開しただけで作業を終えず、実際の表示を確認するところまでを一つの手順にしておくと安心です。</p>
+<h2 id="ChatGPTだけに任せないほうがよい部分">ChatGPTだけに任せないほうがよい部分</h2>
+<p>ChatGPTは下書きや整理には便利ですが、次の判断は人が行います。</p>
+<ul>
+<li>どの困りごとを記事にするか</li>
+<li>読者に本当に必要な説明は何か</li>
+<li>情報源を信頼できるか</li>
+<li>実際に同じ操作ができたか</li>
+<li>自分の経験として何を伝えるか</li>
+<li>公開して問題のない内容か</li>
+</ul>
+<p>GoogleのAI検索向け案内でも、特別なAI専用ファイルや専用マークアップは必要なく、通常のSEOと読者に役立つ内容が基本とされています。<a href="https://developers.google.com/search/docs/appearance/ai-features" rel="noopener" target="_blank">Google検索のAI機能に関する案内</a>も参考にしてください。</p>
+<h2 id="まとめ">まとめ</h2>
+<p>ChatGPTでSEO記事を作るときは、テーマ決め、構成、下書きを分けて進め、公開前に人が事実と操作を確認します。</p>
+<p>ワカルカモでは、確認済みのMarkdownファイルをGitHubへ追加し、記事ページや一覧、SNS投稿用メモを自動生成する形にしました。文章作成をすべて自動化するのではなく、時間のかかる下準備をChatGPTに手伝ってもらい、正確さや実体験は人が補うのが基本です。</p><aside class="point yellow wakarukamo-point"><div class="point-heading"><img src="../assets/images/wakarukamo-point.png" alt=""><strong>ワカルカモポイント</strong></div><p>ChatGPTは構成と下書きの時短に使い、事実確認・実体験・最終判断は人が担当するのが基本です。</p></aside><section class="author-box" aria-labelledby="author-box-title"><img src="../assets/images/tip-duck.webp" alt="ワカルカモ運営者"><div><span id="author-box-title" class="author-label">この記事を書いた人</span><strong>ワカルカモ運営者</strong><p>企業の情報システム・DX推進・マーケティング業務などを経験。PC・Webサービス・業務自動化など、実際に試して分かったことを初心者向けに解説しています。</p><a href="../about.html#author-profile">運営者情報を見る →</a></div></section><nav class="article-pager" aria-label="前後の記事"><a class="article-pager-link article-pager-prev" href="x-api-auto-post-pricing.html"><span class="article-pager-label">← 前の記事</span><strong>X APIで記事を自動投稿する方法は有料？料金と無料の代替案を解説</strong></a><a class="article-pager-link article-pager-next" href="ai-article-fact-check.html"><span class="article-pager-label">次の記事 →</span><strong>ChatGPTで作った記事を事実確認する方法｜公開前チェック項目</strong></a></nav><h2>関連記事</h2><div class="article-grid" data-related data-category="ai-chatgpt" data-slug="chatgpt-seo-publish-workflow"></div></article><aside><div class="sidebox"><img class="side-duck" src="../assets/images/tip-duck.webp" alt=""><h3>この記事のカテゴリ</h3><a class="outline-btn" href="../categories/ai-chatgpt.html">AI・ChatGPT →</a></div><div class="sidebox"><h3>🔥 人気のタグ</h3><div class="tag-cloud" data-popular-tags></div></div></aside></div></main><footer class="footer"><div class="container footer-inner"><div class="footer-brand"><img src="../assets/images/logo-duck.webp" alt=""><div><strong>ワカルカモ</strong><div style="font-size:12px;color:#6c7c91">PC・Web・AIの「わからない」が、わかるかも。</div></div></div><div class="footer-links"><a href="../index.html">ホーム</a><a href="../articles.html">記事一覧</a><a href="../about.html">このサイトについて</a><a href="../privacy.html">プライバシーポリシー</a></div></div><p class="copyright">© 2026 ワカルカモ</p></footer><script src="../assets/js/analytics-config.js"></script><script src="../assets/js/site.js?v=20260914-2"></script></body></html>
