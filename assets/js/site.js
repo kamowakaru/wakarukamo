@@ -78,6 +78,11 @@
     if (!element) return;
     const mode = element.dataset.collection;
     const key = element.dataset.key;
+
+    // 記事一覧とカテゴリページはPythonで親子構造を静的生成している。
+    // ここで再描画すると親子レイアウトが通常カードへ戻ってしまうため触らない。
+    if (mode === 'all' || mode === 'category') return;
+
     const articles = await json('data/articles.json');
     let filtered = articles;
     if (mode === 'category') filtered = articles.filter(article => article.category === key);
