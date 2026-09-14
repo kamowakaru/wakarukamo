@@ -11,7 +11,7 @@
       "website"
     ],
     "description": "情報サイト用にXとThreadsを始めるとき、表示名・プロフィール文・初投稿へ何を書くかをワカルカモの例で解説します。",
-    "thumbnail": "other/06.jpg",
+    "thumbnail": "other/01.jpg",
     "point": "表示名と発信テーマは統一し、プロフィール文の最後だけ媒体に合わせて調整すると管理しやすくなります。",
     "draft": false
   },
@@ -26,7 +26,7 @@
       "privacy"
     ],
     "description": "個人運営の情報サイトにお問い合わせフォームを置くメリットと負担を整理し、企業連絡用メールだけを掲載する選択肢を解説します。",
-    "thumbnail": "web/01.jpg",
+    "thumbnail": "web/10.jpg",
     "point": "受けたい連絡の種類を先に決めると、フォームを置くかメールだけにするか判断しやすくなります。",
     "draft": false
   },
@@ -43,7 +43,7 @@
       "threads"
     ],
     "description": "記事公開時にXとThreadsへ完全自動投稿せず、コピペ用原稿とUTM付きURLだけをGitHub Actionsで生成する方法を解説します。",
-    "thumbnail": "other/03.jpg",
+    "thumbnail": "other/02.jpg",
     "point": "料金がかかる完全自動化をやめ、準備だけ自動化すると、無料のまま確認工程も残せます。",
     "draft": false
   },
@@ -59,7 +59,7 @@
       "website"
     ],
     "description": "Search Consoleへsitemap.xmlを送信する手順と、成功・取得できませんでしたなどの表示を確認するポイントを解説します。",
-    "thumbnail": "web/07.jpg",
+    "thumbnail": "web/06.jpg",
     "point": "サイトマップはページ一覧の場所をGoogleへ伝える仕組みで、送信しただけで検索掲載が保証されるものではありません。",
     "draft": false
   },
@@ -91,7 +91,7 @@
       "github-pages"
     ],
     "description": "Google Search Consoleから取得した所有権確認用HTMLファイルを、GitHub Pagesの正しい場所へ追加する方法を解説します。",
-    "thumbnail": "web/09.jpg",
+    "thumbnail": "web/08.jpg",
     "point": "確認ファイルは名前も中身も変えず、公開URLの直下で直接開ける場所へ置きます。",
     "draft": false
   },
@@ -107,7 +107,7 @@
       "seo"
     ],
     "description": "GitHub Pagesで公開したサイトをGoogle Search Consoleへ追加し、検索状況を確認できるようにする流れを解説します。",
-    "thumbnail": "web/09.jpg",
+    "thumbnail": "web/05.jpg",
     "point": "github.io配下のサイトでは、URLプレフィックスで正確な公開URLを登録するとHTMLファイル確認を使えます。",
     "draft": false
   },
@@ -122,7 +122,7 @@
       "website"
     ],
     "description": "Search Consoleを個人用Googleアカウントで登録したあと、サイト運営用アカウントでも管理できるようにする方法を解説します。",
-    "thumbnail": "web/07.jpg",
+    "thumbnail": "web/05.jpg",
     "point": "プロパティを削除して最初からやり直さず、運営用アカウントをユーザーまたは所有者として追加できます。",
     "draft": false
   },
@@ -139,7 +139,7 @@
       "automation"
     ],
     "description": "記事Markdownを追加するとGitHub ActionsがHTMLと記事一覧を生成する、静的ブログの自動化方法を基本構成から解説します。",
-    "thumbnail": "web/06.jpg",
+    "thumbnail": "web/03.jpg",
     "point": "人が編集する原稿と自動生成物を分けると、記事追加はMarkdown1ファイルだけにできます。",
     "draft": false
   },
@@ -154,7 +154,7 @@
       "website"
     ],
     "description": "GitHubのブラウザ画面からファイルやフォルダをドラッグ＆ドロップし、既存ファイルを差し替える手順を解説します。",
-    "thumbnail": "web/04.jpg",
+    "thumbnail": "web/02.jpg",
     "point": "差し替えるときは、ZIPではなく展開後の中身を、同じフォルダ構成のままリポジトリへ入れます。",
     "draft": false
   },
@@ -169,7 +169,7 @@
       "website"
     ],
     "description": "GitHubで「Yowza, that’s a lot of files」と表示されたときの原因と、更新ファイルを分ける方法を解説します。",
-    "thumbnail": "web/06.jpg",
+    "thumbnail": "web/02.jpg",
     "point": "サイト全体を毎回アップロードせず、変更したファイルだけの更新セットにすると100ファイル制限を避けられます。",
     "draft": false
   },
@@ -185,7 +185,7 @@
       "automation"
     ],
     "description": "GitHub PagesのDeploy from a branchとGitHub Actionsの違いを整理し、静的サイトや自動生成サイトに合う公開方法を解説します。",
-    "thumbnail": "web/04.jpg",
+    "thumbnail": "web/03.jpg",
     "point": "完成済みHTMLをそのまま公開するならブランチ、公開前にビルドが必要ならActionsが判断の目安です。",
     "draft": false
   },
@@ -201,7 +201,7 @@
       "website"
     ],
     "description": "GitHubへファイルを追加したのにGitHub Pagesへ反映されないとき、コミット・公開元・Actions・キャッシュを順番に確認する方法を解説します。",
-    "thumbnail": "web/07.jpg",
+    "thumbnail": "web/03.jpg",
     "point": "GitHub上のファイル、Actionsの結果、公開ページの順に確認すると、どこで更新が止まったか切り分けられます。",
     "draft": false
   },
@@ -217,7 +217,7 @@
       "website"
     ],
     "description": "GitHubのリポジトリへHTMLファイルを置き、GitHub PagesでWebサイトを無料公開する基本手順を初心者向けに解説します。",
-    "thumbnail": "web/07.jpg",
+    "thumbnail": "web/03.jpg",
     "point": "最初はindex.htmlをリポジトリ直下へ置き、公開元をmainブランチのrootにすると構成を理解しやすくなります。",
     "draft": false
   },
@@ -234,7 +234,7 @@
       "utm"
     ],
     "description": "XとThreadsへ同じ記事を投稿するとき、UTMパラメータでSNS別のアクセスをGA4へ記録し、流入を比較する方法を解説します。",
-    "thumbnail": "google-gas/07.jpg",
+    "thumbnail": "google-gas/09.jpg",
     "point": "utm_sourceだけ媒体別に変え、mediumとcampaignの命名を統一すると比較しやすくなります。",
     "draft": false
   },
@@ -250,7 +250,7 @@
       "website"
     ],
     "description": "サイトの検索窓で入力された語句をGA4のview_search_resultsとsearch_termで収集する仕組みを解説します。",
-    "thumbnail": "google-gas/09.jpg",
+    "thumbnail": "google-gas/08.jpg",
     "point": "検索結果URLにqなどの検索パラメータが付けば、GA4の拡張計測機能でサイト内検索を取得できます。",
     "draft": false
   },
@@ -266,7 +266,7 @@
       "website"
     ],
     "description": "GA4を設置したのにリアルタイムレポートへ表示されないとき、公開ページ・測定ID・タグ・除外設定を確認する順番を解説します。",
-    "thumbnail": "google-gas/03.jpg",
+    "thumbnail": "google-gas/07.jpg",
     "point": "GitHub上のファイルではなく、公開中のページを開いてからリアルタイムレポートを確認します。",
     "draft": false
   },
@@ -283,7 +283,7 @@
       "website"
     ],
     "description": "個人ブログへGoogle Analytics 4を導入するとき、プライバシーポリシーで説明したい計測目的・Cookie・無効化方法を整理します。",
-    "thumbnail": "web/10.jpg",
+    "thumbnail": "web/07.jpg",
     "point": "利用ツール名だけでなく、何のために情報を収集し、読者がどう無効化できるかを分かる言葉で示します。",
     "draft": false
   },
@@ -298,7 +298,7 @@
       "analytics"
     ],
     "description": "Google Analytics 4でG-から始まる測定IDを確認する場所と、プロパティID・ストリームIDとの違いを解説します。",
-    "thumbnail": "google-gas/09.jpg",
+    "thumbnail": "google-gas/06.jpg",
     "point": "Webサイトへ設定するのは、ウェブデータストリーム詳細にあるG-から始まる測定IDです。",
     "draft": false
   },
@@ -314,7 +314,7 @@
       "github-pages"
     ],
     "description": "GitHub Pagesで公開した静的サイトへGoogle Analytics 4を設置し、アクセス計測を始める流れを初心者向けに解説します。",
-    "thumbnail": "google-gas/08.jpg",
+    "thumbnail": "google-gas/04.jpg",
     "point": "GA4でデータストリームを作り、G-から始まる測定IDをサイトの全ページで読み込めば計測を始められます。",
     "draft": false
   },
@@ -329,7 +329,7 @@
       "analytics"
     ],
     "description": "GA4の自由形式レポートで検索語句ごとの検索回数を表示するための、ディメンション・指標・フィルタ設定を解説します。",
-    "thumbnail": "google-gas/10.jpg",
+    "thumbnail": "google-gas/08.jpg",
     "point": "行は分類項目、値は数える数字、フィルタは対象データを絞る条件と考えると自由探索を理解しやすくなります。",
     "draft": false
   },
@@ -345,7 +345,7 @@
       "website"
     ],
     "description": "GitHubやGA4など、次に押す場所が分からないときにスクリーンショットを使ってChatGPTへ質問する方法と注意点を解説します。",
-    "thumbnail": "ai-chatgpt/09.jpg",
+    "thumbnail": "ai-chatgpt/06.jpg",
     "point": "画面全体だけでなく、目的・直前に押した場所・困っている状態を文章でも添えると案内が正確になります。",
     "draft": false
   },
@@ -361,7 +361,7 @@
       "seo"
     ],
     "description": "SEO記事の検索意図整理、見出し構成、本文下書き、重複確認に使えるChatGPTへの指示例を紹介します。",
-    "thumbnail": "ai-chatgpt/01.jpg",
+    "thumbnail": "ai-chatgpt/03.jpg",
     "point": "一度に完成記事を求めず、検索意図・構成・本文・確認の順に分けると修正しやすくなります。",
     "draft": false
   },
@@ -378,7 +378,7 @@
       "github-pages"
     ],
     "description": "ChatGPTと相談しながらデザイン、HTML、記事生成、GitHub Pages公開まで進めた実体験と、AIに任せやすい作業を紹介します。",
-    "thumbnail": "ai-chatgpt/09.jpg",
+    "thumbnail": "ai-chatgpt/06.jpg",
     "point": "AIに完成形を一度で求めるより、見た目・機能・公開作業を分けて修正すると希望へ近づけやすくなります。",
     "draft": false
   },
@@ -410,7 +410,7 @@
       "seo"
     ],
     "description": "同じ構成や言い回しが続くAI記事へ実体験と具体例を加え、自然で読みやすい文章に整える方法を解説します。",
-    "thumbnail": "ai-chatgpt/10.jpg",
+    "thumbnail": "ai-chatgpt/05.jpg",
     "point": "構成を固定しても、読者の状況・具体例・説明の順番を記事ごとに変えれば単調さを減らせます。",
     "draft": false
   },
@@ -443,7 +443,7 @@
       "automation"
     ],
     "description": "テーマ決めから構成、事実確認、Markdown化、GitHub Pagesへの公開まで、ワカルカモで実際に使った流れを紹介します。",
-    "thumbnail": "ai-chatgpt/01.jpg",
+    "thumbnail": "ai-chatgpt/03.jpg",
     "point": "ChatGPTは構成と下書きの時短に使い、事実確認・実体験・最終判断は人が担当するのが基本です。",
     "draft": false
   },
@@ -458,7 +458,7 @@
       "tools"
     ],
     "description": "ブログの更新情報をXへ自動投稿するときに必要なX APIの料金と、APIを使わず無料で運用する方法を解説します。",
-    "thumbnail": "other/07.jpg",
+    "thumbnail": "other/03.jpg",
     "point": "完全自動化にこだわらず、投稿文の作成だけを自動化すると、API料金を避けながら作業を減らせます。",
     "draft": false
   }
