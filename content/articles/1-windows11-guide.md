@@ -23,6 +23,7 @@ Windows 11の使い方について、最初に覚えておきたいポイント�
 - [Windows 11でアプリをインストール・アンインストールする方法](./1-3-windows11-app-install-uninstall.html)
 - [Windows 11で画面録画する方法](./1-4-windows11-screen-recording.html)
 - [Windows 11の便利なショートカットキーまとめ](./1-5-windows11-shortcut-keys.html)
+- [Windowsで画面の一部だけスクショする方法](./1-6-windows11-range-screenshot.html)
 
 ## スクリーンショット
 

@@ -1,0 +1,46 @@
+Wakarukamo final all-published verification
+CSV rows: 296
+Managed Markdown files: 296
+CSV rows missing Markdown: 0
+Duplicate article_no: 0
+Markdown article_no not in CSV: 0
+Legacy/unmanaged Markdown removed: 35
+公開済=済: 296 / 296
+generate_site.py exit code: 0
+
+Removed legacy/unmanaged Markdown files:
+github-pages-publish-source.md
+chatgpt-basics.md
+chatgpt-seo-publish-workflow.md
+search-console-change-google-account.md
+web-troubleshooting.md
+ai-writing-natural.md
+ga4-privacy-policy.md
+github-pages-not-updating.md
+useful-tools.md
+ga4-realtime-check.md
+website-contact-form-needed.md
+x-threads-profile-start.md
+x-api-auto-post-pricing.md
+markdown-github-actions-blog.md
+ga4-social-utm.md
+github-upload-files-browser.md
+chatgpt-build-website-review.md
+github-pages-create-website.md
+ga4-free-form-exploration.md
+ga4-github-pages-setup.md
+article-thumbnail-auto-select.md
+chatgpt-website-setup-help.md
+chatgpt-seo-prompt.md
+search-console-github-pages.md
+gas-basics.md
+ai-article-fact-check.md
+ga4-measurement-id.md
+search-console-html-verification.md
+search-console-sitemap-submit.md
+ga4-site-search-keywords.md
+search-console-request-indexing.md
+github-upload-100-files-limit.md
+sns-manual-draft-automation.md
+windows-basics.md
+wordpress-start.md

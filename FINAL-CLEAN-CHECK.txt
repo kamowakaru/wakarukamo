@@ -1,0 +1,16 @@
+Wakarukamo final clean check
+CSV rows: 296
+CSV 公開済=済: 296
+content/articles Markdown: 296
+CSV missing Markdown: 0
+Markdown IDs not in CSV: 0
+Duplicate article_no: 0
+Markdown without article_no: 0
+Stray Markdown removed from generated articles/: 1
+Markdown remaining under generated articles/: 0
+Generated article HTML files: 296
+Suspicious backup/temp files: 0
+generate_site.py exit code: 0
+
+Removed from generated articles/:
+articles/x-api-auto-post-pricing.md

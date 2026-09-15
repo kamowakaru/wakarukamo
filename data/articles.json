@@ -15,6 +15,21 @@
     "draft": false
   },
   {
+    "slug": "7-8-web",
+    "title": "デプロイとは？Webサイトを公開する仕組みを初心者向けに解説",
+    "date": "2026-09-16",
+    "updated": "2026-09-16",
+    "category": "web",
+    "tags": [
+      "website"
+    ],
+    "description": "デプロイとは、作成・更新したWebサイトをサーバーなどの公開環境へ反映し、ユーザーがアクセスできる状態にすることです。ビルドやアップロードとの違い、GitHub PagesやNetlifyでの例を初心者向けに解説します。",
+    "article_no": "7-8",
+    "thumbnail": "groups/07.jpg",
+    "point": "作る＝ビルド、公開環境へ反映する＝デプロイ、と分けて考えると仕組みを理解しやすくなります。",
+    "draft": false
+  },
+  {
     "slug": "7-7-github-pages",
     "title": "Wixとは？無料でWebサイトを作れる？WordPress・GitHub Pagesとの違い",
     "date": "2026-09-16",
@@ -117,6 +132,1057 @@
     "article_no": "7-1",
     "thumbnail": "groups/07.jpg",
     "point": "タイトルの疑問に先に答え、必要な手順・違い・注意点だけを具体的に解説します。",
+    "draft": false
+  },
+  {
+    "slug": "36-5-lp-inquiry",
+    "title": "ランディングページの問い合わせを増やすには？SEO・オウンドメディア・メルマガを組み合わせた集客方法",
+    "date": "2026-09-16",
+    "updated": "2026-09-16",
+    "category": "other",
+    "tags": [
+      "website"
+    ],
+    "description": "ランディングページの問い合わせを増やすには？SEO・オウンドメディア・メルマガを組み合わせた集客方法について、Webマーケティング初心者向けに具体的に解説します。",
+    "article_no": "36-5",
+    "thumbnail": "other/06.jpg",
+    "point": "施策単体ではなく、集客から問い合わせまでの導線で考えるのがポイントです。",
+    "draft": false
+  },
+  {
+    "slug": "36-5-1-lp-seo",
+    "title": "LPのSEO対策とは？検索流入を増やす方法とLPだけでは難しい理由",
+    "date": "2026-09-16",
+    "updated": "2026-09-16",
+    "category": "other",
+    "tags": [
+      "website"
+    ],
+    "description": "LPのSEO対策とは？検索流入を増やす方法とLPだけでは難しい理由について、Webマーケティング初心者向けに具体的に解説します。",
+    "article_no": "36-5-1",
+    "thumbnail": "other/06.jpg",
+    "point": "施策単体ではなく、集客から問い合わせまでの導線で考えるのがポイントです。",
+    "draft": false
+  },
+  {
+    "slug": "35-9-mail-magazine",
+    "title": "メルマガとは？仕組み・できること・Web集客での使い方を初心者向けに解説",
+    "date": "2026-09-16",
+    "updated": "2026-09-16",
+    "category": "other",
+    "tags": [
+      "website"
+    ],
+    "description": "メルマガとは？仕組み・できること・Web集客での使い方を初心者向けに解説について、Webマーケティング初心者向けに具体的に解説します。",
+    "article_no": "35-9",
+    "thumbnail": "other/05.jpg",
+    "point": "施策単体ではなく、集客から問い合わせまでの導線で考えるのがポイントです。",
+    "draft": false
+  },
+  {
+    "slug": "35-9-5-marketing",
+    "title": "メルマガからWebサイトへ誘導するには？クリックされる記事リンク・CTA・計測の基本",
+    "date": "2026-09-16",
+    "updated": "2026-09-16",
+    "category": "other",
+    "tags": [
+      "website"
+    ],
+    "description": "メルマガからWebサイトへ誘導するには？クリックされる記事リンク・CTA・計測の基本について、Webマーケティング初心者向けに具体的に解説します。",
+    "article_no": "35-9-5",
+    "thumbnail": "other/05.jpg",
+    "point": "施策単体ではなく、集客から問い合わせまでの導線で考えるのがポイントです。",
+    "draft": false
+  },
+  {
+    "slug": "35-9-4-marketing",
+    "title": "メルマガ配信ツールとMAツールの違いは？目的・機能・向いているケースを比較",
+    "date": "2026-09-16",
+    "updated": "2026-09-16",
+    "category": "other",
+    "tags": [
+      "website"
+    ],
+    "description": "メルマガ配信ツールとMAツールの違いは？目的・機能・向いているケースを比較について、Webマーケティング初心者向けに具体的に解説します。",
+    "article_no": "35-9-4",
+    "thumbnail": "other/05.jpg",
+    "point": "施策単体ではなく、集客から問い合わせまでの導線で考えるのがポイントです。",
+    "draft": false
+  },
+  {
+    "slug": "35-9-3-marketing",
+    "title": "メルマガ配信ツールとは？普通のメールとの違い・できることを初心者向けに解説",
+    "date": "2026-09-16",
+    "updated": "2026-09-16",
+    "category": "other",
+    "tags": [
+      "website"
+    ],
+    "description": "メルマガ配信ツールとは？普通のメールとの違い・できることを初心者向けに解説について、Webマーケティング初心者向けに具体的に解説します。",
+    "article_no": "35-9-3",
+    "thumbnail": "other/05.jpg",
+    "point": "施策単体ではなく、集客から問い合わせまでの導線で考えるのがポイントです。",
+    "draft": false
+  },
+  {
+    "slug": "35-9-2-marketing",
+    "title": "メルマガの始め方｜配信リストの準備から作成・テスト・配信までの手順",
+    "date": "2026-09-16",
+    "updated": "2026-09-16",
+    "category": "other",
+    "tags": [
+      "website"
+    ],
+    "description": "メルマガの始め方｜配信リストの準備から作成・テスト・配信までの手順について、Webマーケティング初心者向けに具体的に解説します。",
+    "article_no": "35-9-2",
+    "thumbnail": "other/05.jpg",
+    "point": "施策単体ではなく、集客から問い合わせまでの導線で考えるのがポイントです。",
+    "draft": false
+  },
+  {
+    "slug": "35-9-1-marketing",
+    "title": "メルマガの配信方法は？メールを送る方法と配信までの流れを初心者向けに解説",
+    "date": "2026-09-16",
+    "updated": "2026-09-16",
+    "category": "other",
+    "tags": [
+      "website"
+    ],
+    "description": "メルマガの配信方法は？メールを送る方法と配信までの流れを初心者向けに解説について、Webマーケティング初心者向けに具体的に解説します。",
+    "article_no": "35-9-1",
+    "thumbnail": "other/05.jpg",
+    "point": "施策単体ではなく、集客から問い合わせまでの導線で考えるのがポイントです。",
+    "draft": false
+  },
+  {
+    "slug": "35-8-marketing",
+    "title": "展示会の名刺・見込み客をどう活用する？メルマガとオウンドメディアで商談につなげる方法",
+    "date": "2026-09-16",
+    "updated": "2026-09-16",
+    "category": "other",
+    "tags": [
+      "website"
+    ],
+    "description": "展示会の名刺・見込み客をどう活用する？メルマガとオウンドメディアで商談につなげる方法について、Webマーケティング初心者向けに具体的に解説します。",
+    "article_no": "35-8",
+    "thumbnail": "other/05.jpg",
+    "point": "施策単体ではなく、集客から問い合わせまでの導線で考えるのがポイントです。",
+    "draft": false
+  },
+  {
+    "slug": "35-7-marketing",
+    "title": "メルマガからオウンドメディアへ誘導するメリットは？既存リードを問い合わせにつなげる方法",
+    "date": "2026-09-16",
+    "updated": "2026-09-16",
+    "category": "other",
+    "tags": [
+      "website"
+    ],
+    "description": "メルマガからオウンドメディアへ誘導するメリットは？既存リードを問い合わせにつなげる方法について、Webマーケティング初心者向けに具体的に解説します。",
+    "article_no": "35-7",
+    "thumbnail": "other/05.jpg",
+    "point": "施策単体ではなく、集客から問い合わせまでの導線で考えるのがポイントです。",
+    "draft": false
+  },
+  {
+    "slug": "35-7-1-mail-tool",
+    "title": "メルマガ配信は何を使う？BCC・メール配信ツール・MAツールの違いと選び方",
+    "date": "2026-09-16",
+    "updated": "2026-09-16",
+    "category": "other",
+    "tags": [
+      "website"
+    ],
+    "description": "メルマガ配信は何を使う？BCC・メール配信ツール・MAツールの違いと選び方について、Webマーケティング初心者向けに具体的に解説します。",
+    "article_no": "35-7-1",
+    "thumbnail": "other/05.jpg",
+    "point": "施策単体ではなく、集客から問い合わせまでの導線で考えるのがポイントです。",
+    "draft": false
+  },
+  {
+    "slug": "35-6-marketing",
+    "title": "オウンドメディアから問い合わせを増やすには？記事から商品・サービスページへつなぐ導線設計",
+    "date": "2026-09-16",
+    "updated": "2026-09-16",
+    "category": "other",
+    "tags": [
+      "website"
+    ],
+    "description": "オウンドメディアから問い合わせを増やすには？記事から商品・サービスページへつなぐ導線設計について、Webマーケティング初心者向けに具体的に解説します。",
+    "article_no": "35-6",
+    "thumbnail": "other/05.jpg",
+    "point": "施策単体ではなく、集客から問い合わせまでの導線で考えるのがポイントです。",
+    "draft": false
+  },
+  {
+    "slug": "35-11-business-card",
+    "title": "名刺はどう管理する？Excel・スプレッドシート・名刺管理ツールの方法を比較",
+    "date": "2026-09-16",
+    "updated": "2026-09-16",
+    "category": "other",
+    "tags": [
+      "website"
+    ],
+    "description": "名刺はどう管理する？Excel・スプレッドシート・名刺管理ツールの方法を比較について、Webマーケティング初心者向けに具体的に解説します。",
+    "article_no": "35-11",
+    "thumbnail": "other/05.jpg",
+    "point": "施策単体ではなく、集客から問い合わせまでの導線で考えるのがポイントです。",
+    "draft": false
+  },
+  {
+    "slug": "35-11-1-marketing",
+    "title": "展示会でもらった名刺はどう管理する？リスト化から営業・メルマガ活用までの流れ",
+    "date": "2026-09-16",
+    "updated": "2026-09-16",
+    "category": "other",
+    "tags": [
+      "website"
+    ],
+    "description": "展示会でもらった名刺はどう管理する？リスト化から営業・メルマガ活用までの流れについて、Webマーケティング初心者向けに具体的に解説します。",
+    "article_no": "35-11-1",
+    "thumbnail": "other/05.jpg",
+    "point": "施策単体ではなく、集客から問い合わせまでの導線で考えるのがポイントです。",
+    "draft": false
+  },
+  {
+    "slug": "35-10-lead",
+    "title": "リードとは？Webマーケティングでの意味と見込み客を獲得・管理する基本",
+    "date": "2026-09-16",
+    "updated": "2026-09-16",
+    "category": "other",
+    "tags": [
+      "website"
+    ],
+    "description": "リードとは？Webマーケティングでの意味と見込み客を獲得・管理する基本について、Webマーケティング初心者向けに具体的に解説します。",
+    "article_no": "35-10",
+    "thumbnail": "other/05.jpg",
+    "point": "施策単体ではなく、集客から問い合わせまでの導線で考えるのがポイントです。",
+    "draft": false
+  },
+  {
+    "slug": "35-10-2-marketing",
+    "title": "リードナーチャリングとは？メルマガやオウンドメディアで見込み客を育成する方法",
+    "date": "2026-09-16",
+    "updated": "2026-09-16",
+    "category": "other",
+    "tags": [
+      "website"
+    ],
+    "description": "リードナーチャリングとは？メルマガやオウンドメディアで見込み客を育成する方法について、Webマーケティング初心者向けに具体的に解説します。",
+    "article_no": "35-10-2",
+    "thumbnail": "other/05.jpg",
+    "point": "施策単体ではなく、集客から問い合わせまでの導線で考えるのがポイントです。",
+    "draft": false
+  },
+  {
+    "slug": "35-10-1-marketing",
+    "title": "獲得したリードはどう使う？見込み客を問い合わせ・商談につなげる方法",
+    "date": "2026-09-16",
+    "updated": "2026-09-16",
+    "category": "other",
+    "tags": [
+      "website"
+    ],
+    "description": "獲得したリードはどう使う？見込み客を問い合わせ・商談につなげる方法について、Webマーケティング初心者向けに具体的に解説します。",
+    "article_no": "35-10-1",
+    "thumbnail": "other/05.jpg",
+    "point": "施策単体ではなく、集客から問い合わせまでの導線で考えるのがポイントです。",
+    "draft": false
+  },
+  {
+    "slug": "34-9-blog-efficiency",
+    "title": "ChatGPTで大量の記事を生成して一括投稿する方法｜ブログ運営を効率化する流れを解説",
+    "date": "2026-09-16",
+    "updated": "2026-09-16",
+    "category": "web",
+    "tags": [
+      "chatgpt"
+    ],
+    "description": "ChatGPTで大量の記事を生成して一括投稿する方法｜ブログ運営を効率化する流れを解説について、具体例を交えて初心者向けに解説します。",
+    "article_no": "34-9",
+    "thumbnail": "groups/34.jpg",
+    "point": "生成・管理だけで終わらせず、確認と動作テストまで行うのがポイントです。",
+    "draft": false
+  },
+  {
+    "slug": "34-17-blog-efficiency",
+    "title": "ブログのデザインを全記事まとめて変更する方法｜共通CSSで管理するメリット",
+    "date": "2026-09-16",
+    "updated": "2026-09-16",
+    "category": "web",
+    "tags": [
+      "chatgpt"
+    ],
+    "description": "ブログのデザインを全記事まとめて変更する方法｜共通CSSで管理するメリットについて、具体例を交えて初心者向けに解説します。",
+    "article_no": "34-17",
+    "thumbnail": "groups/34.jpg",
+    "point": "生成・管理だけで終わらせず、確認と動作テストまで行うのがポイントです。",
+    "draft": false
+  },
+  {
+    "slug": "34-16-blog-efficiency",
+    "title": "静的サイトの記事を効率よく管理する方法｜Markdown・テンプレート・CSSを活用",
+    "date": "2026-09-16",
+    "updated": "2026-09-16",
+    "category": "web",
+    "tags": [
+      "chatgpt"
+    ],
+    "description": "静的サイトの記事を効率よく管理する方法｜Markdown・テンプレート・CSSを活用について、具体例を交えて初心者向けに解説します。",
+    "article_no": "34-16",
+    "thumbnail": "groups/34.jpg",
+    "point": "生成・管理だけで終わらせず、確認と動作テストまで行うのがポイントです。",
+    "draft": false
+  },
+  {
+    "slug": "34-15-blog-efficiency",
+    "title": "ブログ記事をMarkdownで管理するメリットは？HTMLで直接管理する場合との違い",
+    "date": "2026-09-16",
+    "updated": "2026-09-16",
+    "category": "web",
+    "tags": [
+      "chatgpt"
+    ],
+    "description": "ブログ記事をMarkdownで管理するメリットは？HTMLで直接管理する場合との違いについて、具体例を交えて初心者向けに解説します。",
+    "article_no": "34-15",
+    "thumbnail": "groups/34.jpg",
+    "point": "生成・管理だけで終わらせず、確認と動作テストまで行うのがポイントです。",
+    "draft": false
+  },
+  {
+    "slug": "34-14-blog-efficiency",
+    "title": "ChatGPTで大量生成した記事のミスを減らす方法｜機械チェックできる項目とは？",
+    "date": "2026-09-16",
+    "updated": "2026-09-16",
+    "category": "web",
+    "tags": [
+      "chatgpt"
+    ],
+    "description": "ChatGPTで大量生成した記事のミスを減らす方法｜機械チェックできる項目とは？について、具体例を交えて初心者向けに解説します。",
+    "article_no": "34-14",
+    "thumbnail": "groups/34.jpg",
+    "point": "生成・管理だけで終わらせず、確認と動作テストまで行うのがポイントです。",
+    "draft": false
+  },
+  {
+    "slug": "34-13-blog-efficiency",
+    "title": "SEO記事の公開前チェックリスト｜検索意図・内部リンク・内容を確認",
+    "date": "2026-09-16",
+    "updated": "2026-09-16",
+    "category": "web",
+    "tags": [
+      "chatgpt"
+    ],
+    "description": "SEO記事の公開前チェックリスト｜検索意図・内部リンク・内容を確認について、具体例を交えて初心者向けに解説します。",
+    "article_no": "34-13",
+    "thumbnail": "groups/34.jpg",
+    "point": "生成・管理だけで終わらせず、確認と動作テストまで行うのがポイントです。",
+    "draft": false
+  },
+  {
+    "slug": "34-12-blog-efficiency",
+    "title": "大量の記事を効率よくQAする方法｜目視確認と自動チェックの使い分け",
+    "date": "2026-09-16",
+    "updated": "2026-09-16",
+    "category": "web",
+    "tags": [
+      "chatgpt"
+    ],
+    "description": "大量の記事を効率よくQAする方法｜目視確認と自動チェックの使い分けについて、具体例を交えて初心者向けに解説します。",
+    "article_no": "34-12",
+    "thumbnail": "groups/34.jpg",
+    "point": "生成・管理だけで終わらせず、確認と動作テストまで行うのがポイントです。",
+    "draft": false
+  },
+  {
+    "slug": "34-11-blog-efficiency",
+    "title": "ChatGPTで大量の記事を作るときの管理方法｜CSV・スプレッドシートで重複や投稿漏れを防ぐ",
+    "date": "2026-09-16",
+    "updated": "2026-09-16",
+    "category": "web",
+    "tags": [
+      "chatgpt"
+    ],
+    "description": "ChatGPTで大量の記事を作るときの管理方法｜CSV・スプレッドシートで重複や投稿漏れを防ぐについて、具体例を交えて初心者向けに解説します。",
+    "article_no": "34-11",
+    "thumbnail": "groups/34.jpg",
+    "point": "生成・管理だけで終わらせず、確認と動作テストまで行うのがポイントです。",
+    "draft": false
+  },
+  {
+    "slug": "34-10-blog-efficiency",
+    "title": "ChatGPTでブログ記事を一括生成する方法｜複数記事を効率よく作るコツ",
+    "date": "2026-09-16",
+    "updated": "2026-09-16",
+    "category": "web",
+    "tags": [
+      "chatgpt"
+    ],
+    "description": "ChatGPTでブログ記事を一括生成する方法｜複数記事を効率よく作るコツについて、具体例を交えて初心者向けに解説します。",
+    "article_no": "34-10",
+    "thumbnail": "groups/34.jpg",
+    "point": "生成・管理だけで終わらせず、確認と動作テストまで行うのがポイントです。",
+    "draft": false
+  },
+  {
+    "slug": "30-9-markdown",
+    "title": "Markdownでブログを書く方法｜見出し・リンク・画像・コードの基本記法",
+    "date": "2026-09-16",
+    "updated": "2026-09-16",
+    "category": "web",
+    "tags": [
+      "website"
+    ],
+    "description": "Markdownでブログを書く方法｜見出し・リンク・画像・コードの基本記法について、初心者向けに具体的に解説します。",
+    "article_no": "30-9",
+    "thumbnail": "groups/30.jpg",
+    "point": "実際の操作や仕組みを確認しながら進めるのがポイントです。",
+    "draft": false
+  },
+  {
+    "slug": "30-8-markdown-html",
+    "title": "MarkdownからHTMLに変換する方法｜ブログ記事を自動生成する仕組みも解説",
+    "date": "2026-09-16",
+    "updated": "2026-09-16",
+    "category": "web",
+    "tags": [
+      "website"
+    ],
+    "description": "MarkdownからHTMLに変換する方法｜ブログ記事を自動生成する仕組みも解説について、初心者向けに具体的に解説します。",
+    "article_no": "30-8",
+    "thumbnail": "groups/30.jpg",
+    "point": "実際の操作や仕組みを確認しながら進めるのがポイントです。",
+    "draft": false
+  },
+  {
+    "slug": "30-7-markdown-html",
+    "title": "MarkdownとHTMLの違いは？それぞれの役割と使い分けを初心者向けに解説",
+    "date": "2026-09-16",
+    "updated": "2026-09-16",
+    "category": "web",
+    "tags": [
+      "website"
+    ],
+    "description": "MarkdownとHTMLの違いは？それぞれの役割と使い分けを初心者向けに解説について、初心者向けに具体的に解説します。",
+    "article_no": "30-7",
+    "thumbnail": "groups/30.jpg",
+    "point": "実際の操作や仕組みを確認しながら進めるのがポイントです。",
+    "draft": false
+  },
+  {
+    "slug": "30-6-markdown",
+    "title": "Markdown（マークダウン）とは？HTMLとの違い・記事をMarkdownで管理するメリットを解説",
+    "date": "2026-09-16",
+    "updated": "2026-09-16",
+    "category": "web",
+    "tags": [
+      "website"
+    ],
+    "description": "Markdown（マークダウン）とは？HTMLとの違い・記事をMarkdownで管理するメリットを解説について、初心者向けに具体的に解説します。",
+    "article_no": "30-6",
+    "thumbnail": "groups/30.jpg",
+    "point": "実際の操作や仕組みを確認しながら進めるのがポイントです。",
+    "draft": false
+  },
+  {
+    "slug": "30-23-bulk-publish",
+    "title": "ブログ記事を一括投稿する方法｜WordPress・API・GitHub Pagesなどを比較",
+    "date": "2026-09-16",
+    "updated": "2026-09-16",
+    "category": "web",
+    "tags": [
+      "website"
+    ],
+    "description": "ブログ記事を一括投稿する方法｜WordPress・API・GitHub Pagesなどを比較について、初心者向けに具体的に解説します。",
+    "article_no": "30-23",
+    "thumbnail": "groups/30.jpg",
+    "point": "実際の操作や仕組みを確認しながら進めるのがポイントです。",
+    "draft": false
+  },
+  {
+    "slug": "30-22-ftp-ai",
+    "title": "FTPサーバーへAI生成記事を自動投稿する方法｜HTML生成からアップロードまで",
+    "date": "2026-09-16",
+    "updated": "2026-09-16",
+    "category": "web",
+    "tags": [
+      "website"
+    ],
+    "description": "FTPサーバーへAI生成記事を自動投稿する方法｜HTML生成からアップロードまでについて、初心者向けに具体的に解説します。",
+    "article_no": "30-22",
+    "thumbnail": "groups/30.jpg",
+    "point": "実際の操作や仕組みを確認しながら進めるのがポイントです。",
+    "draft": false
+  },
+  {
+    "slug": "30-21-chatgpt-auto-post",
+    "title": "ChatGPTの記事自動投稿はおすすめ？全自動と手動一括投稿を比較",
+    "date": "2026-09-16",
+    "updated": "2026-09-16",
+    "category": "web",
+    "tags": [
+      "website"
+    ],
+    "description": "ChatGPTの記事自動投稿はおすすめ？全自動と手動一括投稿を比較について、初心者向けに具体的に解説します。",
+    "article_no": "30-21",
+    "thumbnail": "groups/30.jpg",
+    "point": "実際の操作や仕組みを確認しながら進めるのがポイントです。",
+    "draft": false
+  },
+  {
+    "slug": "30-20-ai-blog",
+    "title": "AIでブログを自動更新する方法｜記事生成から公開までの仕組みを解説",
+    "date": "2026-09-16",
+    "updated": "2026-09-16",
+    "category": "web",
+    "tags": [
+      "website"
+    ],
+    "description": "AIでブログを自動更新する方法｜記事生成から公開までの仕組みを解説について、初心者向けに具体的に解説します。",
+    "article_no": "30-20",
+    "thumbnail": "groups/30.jpg",
+    "point": "実際の操作や仕組みを確認しながら進めるのがポイントです。",
+    "draft": false
+  },
+  {
+    "slug": "30-19-openai-api",
+    "title": "OpenAI APIでブログ記事を自動生成する方法｜仕組みと実装の流れを解説",
+    "date": "2026-09-16",
+    "updated": "2026-09-16",
+    "category": "web",
+    "tags": [
+      "website"
+    ],
+    "description": "OpenAI APIでブログ記事を自動生成する方法｜仕組みと実装の流れを解説について、初心者向けに具体的に解説します。",
+    "article_no": "30-19",
+    "thumbnail": "groups/30.jpg",
+    "point": "実際の操作や仕組みを確認しながら進めるのがポイントです。",
+    "draft": false
+  },
+  {
+    "slug": "30-18-chatgpt-auto",
+    "title": "ChatGPTで記事生成・投稿を自動化する方法｜OpenAI APIを使った仕組みを解説",
+    "date": "2026-09-16",
+    "updated": "2026-09-16",
+    "category": "web",
+    "tags": [
+      "website"
+    ],
+    "description": "ChatGPTで記事生成・投稿を自動化する方法｜OpenAI APIを使った仕組みを解説について、初心者向けに具体的に解説します。",
+    "article_no": "30-18",
+    "thumbnail": "groups/30.jpg",
+    "point": "実際の操作や仕組みを確認しながら進めるのがポイントです。",
+    "draft": false
+  },
+  {
+    "slug": "30-17-markdown-html",
+    "title": "Markdownから同じデザインのHTMLを自動生成する方法",
+    "date": "2026-09-16",
+    "updated": "2026-09-16",
+    "category": "web",
+    "tags": [
+      "website"
+    ],
+    "description": "Markdownから同じデザインのHTMLを自動生成する方法について、初心者向けに具体的に解説します。",
+    "article_no": "30-17",
+    "thumbnail": "groups/30.jpg",
+    "point": "実際の操作や仕組みを確認しながら進めるのがポイントです。",
+    "draft": false
+  },
+  {
+    "slug": "30-16-markdown-html-css",
+    "title": "Markdown・HTML・CSSの違いは？ブログを作るときの役割を初心者向けに解説",
+    "date": "2026-09-16",
+    "updated": "2026-09-16",
+    "category": "web",
+    "tags": [
+      "website"
+    ],
+    "description": "Markdown・HTML・CSSの違いは？ブログを作るときの役割を初心者向けに解説について、初心者向けに具体的に解説します。",
+    "article_no": "30-16",
+    "thumbnail": "groups/30.jpg",
+    "point": "実際の操作や仕組みを確認しながら進めるのがポイントです。",
+    "draft": false
+  },
+  {
+    "slug": "30-15-html-css",
+    "title": "HTMLとCSSを分ける理由は？複数ページを管理しやすくする仕組み",
+    "date": "2026-09-16",
+    "updated": "2026-09-16",
+    "category": "web",
+    "tags": [
+      "website"
+    ],
+    "description": "HTMLとCSSを分ける理由は？複数ページを管理しやすくする仕組みについて、初心者向けに具体的に解説します。",
+    "article_no": "30-15",
+    "thumbnail": "groups/30.jpg",
+    "point": "実際の操作や仕組みを確認しながら進めるのがポイントです。",
+    "draft": false
+  },
+  {
+    "slug": "30-14-html-template",
+    "title": "ブログ記事ごとにHTMLを書く必要はある？テンプレートとCSSを共通化する方法",
+    "date": "2026-09-16",
+    "updated": "2026-09-16",
+    "category": "web",
+    "tags": [
+      "website"
+    ],
+    "description": "ブログ記事ごとにHTMLを書く必要はある？テンプレートとCSSを共通化する方法について、初心者向けに具体的に解説します。",
+    "article_no": "30-14",
+    "thumbnail": "groups/30.jpg",
+    "point": "実際の操作や仕組みを確認しながら進めるのがポイントです。",
+    "draft": false
+  },
+  {
+    "slug": "30-13-html-template",
+    "title": "大量のHTMLファイルを一括更新するには？テンプレート化・自動生成する方法",
+    "date": "2026-09-16",
+    "updated": "2026-09-16",
+    "category": "web",
+    "tags": [
+      "website"
+    ],
+    "description": "大量のHTMLファイルを一括更新するには？テンプレート化・自動生成する方法について、初心者向けに具体的に解説します。",
+    "article_no": "30-13",
+    "thumbnail": "groups/30.jpg",
+    "point": "実際の操作や仕組みを確認しながら進めるのがポイントです。",
+    "draft": false
+  },
+  {
+    "slug": "30-12-css",
+    "title": "複数のHTMLページのデザインを一括変更する方法｜CSSを共通化するメリット",
+    "date": "2026-09-16",
+    "updated": "2026-09-16",
+    "category": "web",
+    "tags": [
+      "website"
+    ],
+    "description": "複数のHTMLページのデザインを一括変更する方法｜CSSを共通化するメリットについて、初心者向けに具体的に解説します。",
+    "article_no": "30-12",
+    "thumbnail": "groups/30.jpg",
+    "point": "実際の操作や仕組みを確認しながら進めるのがポイントです。",
+    "draft": false
+  },
+  {
+    "slug": "30-11-blog-design",
+    "title": "ブログ記事のデザインを一括管理する方法｜HTML・CSS・Markdownの役割を解説",
+    "date": "2026-09-16",
+    "updated": "2026-09-16",
+    "category": "web",
+    "tags": [
+      "website"
+    ],
+    "description": "ブログ記事のデザインを一括管理する方法｜HTML・CSS・Markdownの役割を解説について、初心者向けに具体的に解説します。",
+    "article_no": "30-11",
+    "thumbnail": "groups/30.jpg",
+    "point": "実際の操作や仕組みを確認しながら進めるのがポイントです。",
+    "draft": false
+  },
+  {
+    "slug": "30-10-markdown-github-pages",
+    "title": "Markdownで記事を管理してGitHub Pagesで公開する方法",
+    "date": "2026-09-16",
+    "updated": "2026-09-16",
+    "category": "web",
+    "tags": [
+      "website"
+    ],
+    "description": "Markdownで記事を管理してGitHub Pagesで公開する方法について、初心者向けに具体的に解説します。",
+    "article_no": "30-10",
+    "thumbnail": "groups/30.jpg",
+    "point": "実際の操作や仕組みを確認しながら進めるのがポイントです。",
+    "draft": false
+  },
+  {
+    "slug": "29-9-github",
+    "title": "GitHubに大量のファイルを一括アップロードする方法｜GitHub Desktopを使う手順",
+    "date": "2026-09-16",
+    "updated": "2026-09-16",
+    "category": "web",
+    "tags": [
+      "website"
+    ],
+    "description": "GitHubに大量のファイルを一括アップロードする方法｜GitHub Desktopを使う手順について、初心者向けに具体的に解説します。",
+    "article_no": "29-9",
+    "thumbnail": "groups/29.jpg",
+    "point": "実際の操作や仕組みを確認しながら進めるのがポイントです。",
+    "draft": false
+  },
+  {
+    "slug": "29-8-github",
+    "title": "GitHub DesktopでCommit・Pushする方法｜ローカルの変更をGitHubに反映する手順",
+    "date": "2026-09-16",
+    "updated": "2026-09-16",
+    "category": "web",
+    "tags": [
+      "website"
+    ],
+    "description": "GitHub DesktopでCommit・Pushする方法｜ローカルの変更をGitHubに反映する手順について、初心者向けに具体的に解説します。",
+    "article_no": "29-8",
+    "thumbnail": "groups/29.jpg",
+    "point": "実際の操作や仕組みを確認しながら進めるのがポイントです。",
+    "draft": false
+  },
+  {
+    "slug": "29-7-github",
+    "title": "GitHub DesktopでCloneする方法｜GitHubのリポジトリをPCに保存する手順",
+    "date": "2026-09-16",
+    "updated": "2026-09-16",
+    "category": "web",
+    "tags": [
+      "website"
+    ],
+    "description": "GitHub DesktopでCloneする方法｜GitHubのリポジトリをPCに保存する手順について、初心者向けに具体的に解説します。",
+    "article_no": "29-7",
+    "thumbnail": "groups/29.jpg",
+    "point": "実際の操作や仕組みを確認しながら進めるのがポイントです。",
+    "draft": false
+  },
+  {
+    "slug": "29-6-github",
+    "title": "GitHub Desktopとは？使うメリット・できること・基本的な使い方を初心者向けに解説",
+    "date": "2026-09-16",
+    "updated": "2026-09-16",
+    "category": "web",
+    "tags": [
+      "website"
+    ],
+    "description": "GitHub Desktopとは？使うメリット・できること・基本的な使い方を初心者向けに解説について、初心者向けに具体的に解説します。",
+    "article_no": "29-6",
+    "thumbnail": "groups/29.jpg",
+    "point": "実際の操作や仕組みを確認しながら進めるのがポイントです。",
+    "draft": false
+  },
+  {
+    "slug": "29-11-github-revert",
+    "title": "GitHubで間違って上書きしたファイルを元に戻す方法｜Revertの仕組みと手順を解説",
+    "date": "2026-09-16",
+    "updated": "2026-09-16",
+    "category": "web",
+    "tags": [
+      "website"
+    ],
+    "description": "GitHubで間違って上書きしたファイルを元に戻す方法｜Revertの仕組みと手順を解説について、初心者向けに具体的に解説します。",
+    "article_no": "29-11",
+    "thumbnail": "groups/29.jpg",
+    "point": "実際の操作や仕組みを確認しながら進めるのがポイントです。",
+    "draft": false
+  },
+  {
+    "slug": "29-10-github",
+    "title": "GitHub Desktopとブラウザ版GitHubの違いは？初心者にはどっちがおすすめ？",
+    "date": "2026-09-16",
+    "updated": "2026-09-16",
+    "category": "web",
+    "tags": [
+      "website"
+    ],
+    "description": "GitHub Desktopとブラウザ版GitHubの違いは？初心者にはどっちがおすすめ？について、初心者向けに具体的に解説します。",
+    "article_no": "29-10",
+    "thumbnail": "groups/29.jpg",
+    "point": "実際の操作や仕組みを確認しながら進めるのがポイントです。",
+    "draft": false
+  },
+  {
+    "slug": "28-6-chatgpt-wordpress-auto-post",
+    "title": "ChatGPTで作った記事をWordPressへ自動投稿する方法｜OpenAI APIとREST APIを使う流れ",
+    "date": "2026-09-16",
+    "updated": "2026-09-16",
+    "category": "ai-chatgpt",
+    "tags": [
+      "chatgpt"
+    ],
+    "description": "ChatGPTで作った記事をWordPressへ自動投稿する方法｜OpenAI APIとREST APIを使う流れについて、初心者向けに具体例と手順を交えて解説します。",
+    "article_no": "28-6",
+    "thumbnail": "groups/28.jpg",
+    "point": "仕組みを理解し、実際のデータやコードで確認しながら進めるのがポイントです。",
+    "draft": false
+  },
+  {
+    "slug": "26-9-chatgpt",
+    "title": "AIで作った記事をそのまま公開して大丈夫？公開前に確認したいこと",
+    "date": "2026-09-16",
+    "updated": "2026-09-16",
+    "category": "ai-chatgpt",
+    "tags": [
+      "chatgpt"
+    ],
+    "description": "AIで作った記事をそのまま公開して大丈夫？公開前に確認したいことについて、初心者向けに具体的に解説します。",
+    "article_no": "26-9",
+    "thumbnail": "groups/26.jpg",
+    "point": "生成だけで終わらせず、内容と事実を確認して使うことがポイントです。",
+    "draft": false
+  },
+  {
+    "slug": "26-8-chatgpt",
+    "title": "ChatGPTでSEO記事を作るときのQAとは？公開前にチェックしたいポイント",
+    "date": "2026-09-16",
+    "updated": "2026-09-16",
+    "category": "ai-chatgpt",
+    "tags": [
+      "chatgpt"
+    ],
+    "description": "ChatGPTでSEO記事を作るときのQAとは？公開前にチェックしたいポイントについて、初心者向けに具体的に解説します。",
+    "article_no": "26-8",
+    "thumbnail": "groups/26.jpg",
+    "point": "生成だけで終わらせず、内容と事実を確認して使うことがポイントです。",
+    "draft": false
+  },
+  {
+    "slug": "26-7-chatgpt",
+    "title": "ChatGPTでSEO記事を量産しても大丈夫？品質を落とさず効率化するポイント",
+    "date": "2026-09-16",
+    "updated": "2026-09-16",
+    "category": "ai-chatgpt",
+    "tags": [
+      "chatgpt"
+    ],
+    "description": "ChatGPTでSEO記事を量産しても大丈夫？品質を落とさず効率化するポイントについて、初心者向けに具体的に解説します。",
+    "article_no": "26-7",
+    "thumbnail": "groups/26.jpg",
+    "point": "生成だけで終わらせず、内容と事実を確認して使うことがポイントです。",
+    "draft": false
+  },
+  {
+    "slug": "26-11-chatgpt",
+    "title": "ChatGPTとMarkdownは相性がいい？ブログ記事を効率よく作る方法",
+    "date": "2026-09-16",
+    "updated": "2026-09-16",
+    "category": "ai-chatgpt",
+    "tags": [
+      "chatgpt"
+    ],
+    "description": "ChatGPTとMarkdownは相性がいい？ブログ記事を効率よく作る方法について、初心者向けに具体的に解説します。",
+    "article_no": "26-11",
+    "thumbnail": "groups/26.jpg",
+    "point": "生成だけで終わらせず、内容と事実を確認して使うことがポイントです。",
+    "draft": false
+  },
+  {
+    "slug": "26-10-chatgpt",
+    "title": "ChatGPTの記事品質をチェックする方法｜AIっぽい文章・内容不足を防ぐには",
+    "date": "2026-09-16",
+    "updated": "2026-09-16",
+    "category": "ai-chatgpt",
+    "tags": [
+      "chatgpt"
+    ],
+    "description": "ChatGPTの記事品質をチェックする方法について、初心者向けに具体的に解説します。",
+    "article_no": "26-10",
+    "thumbnail": "groups/26.jpg",
+    "point": "生成だけで終わらせず、内容と事実を確認して使うことがポイントです。",
+    "draft": false
+  },
+  {
+    "slug": "24-chatgpt",
+    "title": "ChatGPTのプロンプトとは？書き方のコツと例文を初心者向けに解説",
+    "date": "2026-09-16",
+    "updated": "2026-09-16",
+    "category": "ai-chatgpt",
+    "tags": [
+      "chatgpt"
+    ],
+    "description": "ChatGPTのプロンプトの意味と、目的・前提・条件・出力形式を使って欲しい回答へ近づける書き方を例文付きで解説します。",
+    "article_no": "24",
+    "thumbnail": "groups/24.jpg",
+    "point": "プロンプトはChatGPTへの入力・指示。目的と条件を必要な分だけ具体化するのが基本です。",
+    "draft": false
+  },
+  {
+    "slug": "24-5-chatgpt",
+    "title": "ChatGPTに表を作ってもらう方法｜指示のコツを解説",
+    "date": "2026-09-16",
+    "updated": "2026-09-16",
+    "category": "ai-chatgpt",
+    "tags": [
+      "chatgpt"
+    ],
+    "description": "ChatGPTに比較表や一覧表を作ってもらう方法を、列・行・並び順・MarkdownやCSVなどの形式指定の例とともに解説します。",
+    "article_no": "24-5",
+    "thumbnail": "groups/24.jpg",
+    "point": "何を比較するかだけでなく、欲しい列と出力形式まで指定すると使いやすい表になります。",
+    "draft": false
+  },
+  {
+    "slug": "24-4-chatgpt",
+    "title": "ChatGPTに文章を添削してもらう方法｜プロンプト例つき",
+    "date": "2026-09-16",
+    "updated": "2026-09-16",
+    "category": "ai-chatgpt",
+    "tags": [
+      "chatgpt"
+    ],
+    "description": "ChatGPTで文章を添削するときに、目的・相手・直してよい範囲を指定する方法をコピペ用プロンプト例付きで解説します。",
+    "article_no": "24-4",
+    "thumbnail": "groups/24.jpg",
+    "point": "文章だけでなく用途と直したい点を伝え、修正版と変更理由を分けて出してもらうと確認しやすくなります。",
+    "draft": false
+  },
+  {
+    "slug": "24-3-chatgpt",
+    "title": "ChatGPTに文章を要約してもらう方法｜プロンプト例つき",
+    "date": "2026-09-16",
+    "updated": "2026-09-16",
+    "category": "ai-chatgpt",
+    "tags": [
+      "chatgpt"
+    ],
+    "description": "ChatGPTで文章を要約する方法を、文字数・箇条書き・対象読者・重要点を指定するコピペ用プロンプト例とともに解説します。",
+    "article_no": "24-3",
+    "thumbnail": "groups/24.jpg",
+    "point": "文章を渡して要約を頼み、長さ・形式・残したい情報を指定すると使いやすくなります。",
+    "draft": false
+  },
+  {
+    "slug": "24-2-chatgpt",
+    "title": "ChatGPTの回答が思い通りにならない原因は？指示の直し方を解説",
+    "date": "2026-09-16",
+    "updated": "2026-09-16",
+    "category": "ai-chatgpt",
+    "tags": [
+      "chatgpt"
+    ],
+    "description": "ChatGPTの回答がズレるときに、目的・前提・条件・出力形式・事実確認のどこを直せばよいか原因別に解説します。",
+    "article_no": "24-2",
+    "thumbnail": "groups/24.jpg",
+    "point": "回答の不満をそのまま伝えるより、何が違うかを特定して追加指示すると直しやすくなります。",
+    "draft": false
+  },
+  {
+    "slug": "24-1-chatgpt",
+    "title": "ChatGPTにうまく指示するコツ｜回答の精度を上げる方法",
+    "date": "2026-09-16",
+    "updated": "2026-09-16",
+    "category": "ai-chatgpt",
+    "tags": [
+      "chatgpt"
+    ],
+    "description": "ChatGPTの回答を欲しい内容へ近づけるために、目的・前提・条件・出力形式を伝える具体的な指示のコツを解説します。",
+    "article_no": "24-1",
+    "thumbnail": "groups/24.jpg",
+    "point": "曖昧な依頼を長文化するより、回答に必要な条件を具体的に伝えるのがコツです。",
+    "draft": false
+  },
+  {
+    "slug": "23-chatgpt",
+    "title": "ChatGPTの使い方｜基本操作と便利な機能を初心者向けに解説",
+    "date": "2026-09-16",
+    "updated": "2026-09-16",
+    "category": "ai-chatgpt",
+    "tags": [
+      "chatgpt"
+    ],
+    "description": "ChatGPTの基本的な使い方を、質問の送り方から画像・ファイル・Web検索・過去チャット・プロジェクトまで初心者向けに整理します。",
+    "article_no": "23",
+    "thumbnail": "groups/23.jpg",
+    "point": "まずは質問を送るだけでOK。必要に応じて画像・ファイル・検索などを使い分けます。",
+    "draft": false
+  },
+  {
+    "slug": "23-5-chatgpt",
+    "title": "ChatGPTのプロジェクトとは？使い方を初心者向けに解説",
+    "date": "2026-09-16",
+    "updated": "2026-09-16",
+    "category": "ai-chatgpt",
+    "tags": [
+      "chatgpt"
+    ],
+    "description": "ChatGPTのプロジェクトで、同じテーマのチャット・ファイル・指示をまとめて作業する方法を初心者向けに解説します。",
+    "article_no": "23-5",
+    "thumbnail": "groups/23.jpg",
+    "point": "長く続く作業を1か所にまとめ、関連チャットや資料を同じ文脈で扱いやすくする機能です。",
+    "draft": false
+  },
+  {
+    "slug": "23-4-chatgpt",
+    "title": "ChatGPTの過去のチャットを探す方法",
+    "date": "2026-09-16",
+    "updated": "2026-09-16",
+    "category": "ai-chatgpt",
+    "tags": [
+      "chatgpt"
+    ],
+    "description": "ChatGPTで以前の会話を検索して見つける方法と、タイトルを覚えていないときの検索語の選び方を解説します。",
+    "article_no": "23-4",
+    "thumbnail": "groups/23.jpg",
+    "point": "サイドバーの検索から、会話中に使った固有名詞や特徴的な言葉で探すのが近道です。",
+    "draft": false
+  },
+  {
+    "slug": "23-3-chatgpt",
+    "title": "ChatGPTでWeb検索する方法",
+    "date": "2026-09-16",
+    "updated": "2026-09-16",
+    "category": "ai-chatgpt",
+    "tags": [
+      "chatgpt"
+    ],
+    "description": "ChatGPTでWeb検索を使い、最新情報や公式情報を出典付きで調べる方法と、検索を頼むときのコツを解説します。",
+    "article_no": "23-3",
+    "thumbnail": "groups/23.jpg",
+    "point": "最新情報が必要なら検索するよう明示し、回答では出典と情報の日付も確認します。",
+    "draft": false
+  },
+  {
+    "slug": "23-2-chatgpt",
+    "title": "ChatGPTにファイルを送って内容を読み取る方法",
+    "date": "2026-09-16",
+    "updated": "2026-09-16",
+    "category": "ai-chatgpt",
+    "tags": [
+      "chatgpt"
+    ],
+    "description": "ChatGPTにPDFや文書、CSVなどのファイルを添付し、要約・抽出・比較などを依頼する基本手順を解説します。",
+    "article_no": "23-2",
+    "thumbnail": "groups/23.jpg",
+    "point": "ファイルを添付したら「何をしてほしいか」まで具体的に指定すると使いやすくなります。",
+    "draft": false
+  },
+  {
+    "slug": "23-1-chatgpt",
+    "title": "ChatGPTに画像を送って質問する方法",
+    "date": "2026-09-16",
+    "updated": "2026-09-16",
+    "category": "ai-chatgpt",
+    "tags": [
+      "chatgpt"
+    ],
+    "description": "ChatGPTに写真やスクリーンショットを添付して質問する手順と、画像について質問するときのコツを解説します。",
+    "article_no": "23-1",
+    "thumbnail": "groups/23.jpg",
+    "point": "入力欄の追加・添付メニューから画像を選び、画像と一緒に質問を送ります。",
+    "draft": false
+  },
+  {
+    "slug": "23-1-1-chatgpt",
+    "title": "ChatGPTに画面を見せながらWebサイト設定を進めるコツ",
+    "date": "2026-09-16",
+    "updated": "2026-09-16",
+    "category": "ai-chatgpt",
+    "tags": [
+      "chatgpt"
+    ],
+    "description": "Webサイト設定で迷った画面をChatGPTに見せ、1画面ずつ安全に進めるコツを実践的に解説します。",
+    "article_no": "23-1-1",
+    "thumbnail": "groups/23.jpg",
+    "point": "現在地・やりたいこと・触ってよい範囲を伝え、操作後の画面を再確認しながら進めます。",
+    "draft": false
+  },
+  {
+    "slug": "1-6-windows11-range-screenshot",
+    "title": "Windowsで画面の一部だけスクショする方法｜範囲指定してコピー・保存する手順",
+    "date": "2026-09-16",
+    "updated": "2026-09-16",
+    "category": "pc-windows",
+    "tags": [
+      "windows",
+      "pc"
+    ],
+    "description": "Windows 11で画面の一部だけを範囲指定してスクリーンショットし、コピーまたは画像として保存する方法を解説します。",
+    "article_no": "1-6",
+    "thumbnail": "groups/01.jpg",
+    "point": "Windows + Shift + Sを押して範囲をドラッグすれば、必要な部分だけすぐにコピーできます。",
     "draft": false
   },
   {
@@ -1619,202 +2685,6 @@
     "draft": false
   },
   {
-    "slug": "24-chatgpt",
-    "title": "ChatGPTのプロンプトとは？書き方のコツと例文を初心者向けに解説",
-    "date": "2026-09-15",
-    "updated": "2026-09-15",
-    "category": "ai-chatgpt",
-    "tags": [
-      "chatgpt"
-    ],
-    "description": "ChatGPTのプロンプトとは？書き方のコツと例文を初心者向けに解説について、初心者向けに具体的な手順・例・注意点を交えて解説します。",
-    "article_no": "24",
-    "thumbnail": "groups/24.jpg",
-    "point": "実際に確認・操作できるところまで具体的に解説します。",
-    "draft": false
-  },
-  {
-    "slug": "24-5-chatgpt",
-    "title": "ChatGPTに表を作ってもらう方法｜指示のコツを解説",
-    "date": "2026-09-15",
-    "updated": "2026-09-15",
-    "category": "ai-chatgpt",
-    "tags": [
-      "chatgpt"
-    ],
-    "description": "ChatGPTに表を作ってもらう方法について、初心者向けに具体的な手順・例・注意点を交えて解説します。",
-    "article_no": "24-5",
-    "thumbnail": "groups/24.jpg",
-    "point": "実際に確認・操作できるところまで具体的に解説します。",
-    "draft": false
-  },
-  {
-    "slug": "24-4-chatgpt",
-    "title": "ChatGPTに文章を添削してもらう方法｜プロンプト例つき",
-    "date": "2026-09-15",
-    "updated": "2026-09-15",
-    "category": "ai-chatgpt",
-    "tags": [
-      "chatgpt"
-    ],
-    "description": "ChatGPTに文章を添削してもらう方法について、初心者向けに具体的な手順・例・注意点を交えて解説します。",
-    "article_no": "24-4",
-    "thumbnail": "groups/24.jpg",
-    "point": "実際に確認・操作できるところまで具体的に解説します。",
-    "draft": false
-  },
-  {
-    "slug": "24-3-chatgpt",
-    "title": "ChatGPTに文章を要約してもらう方法｜プロンプト例つき",
-    "date": "2026-09-15",
-    "updated": "2026-09-15",
-    "category": "ai-chatgpt",
-    "tags": [
-      "chatgpt"
-    ],
-    "description": "ChatGPTに文章を要約してもらう方法について、初心者向けに具体的な手順・例・注意点を交えて解説します。",
-    "article_no": "24-3",
-    "thumbnail": "groups/24.jpg",
-    "point": "実際に確認・操作できるところまで具体的に解説します。",
-    "draft": false
-  },
-  {
-    "slug": "24-2-chatgpt",
-    "title": "ChatGPTの回答が思い通りにならない原因は？指示の直し方を解説",
-    "date": "2026-09-15",
-    "updated": "2026-09-15",
-    "category": "ai-chatgpt",
-    "tags": [
-      "chatgpt"
-    ],
-    "description": "ChatGPTの回答が思い通りにならない原因は？指示の直し方を解説について、初心者向けに具体的な手順・例・注意点を交えて解説します。",
-    "article_no": "24-2",
-    "thumbnail": "groups/24.jpg",
-    "point": "実際に確認・操作できるところまで具体的に解説します。",
-    "draft": false
-  },
-  {
-    "slug": "24-1-chatgpt",
-    "title": "ChatGPTにうまく指示するコツ｜回答の精度を上げる方法",
-    "date": "2026-09-15",
-    "updated": "2026-09-15",
-    "category": "ai-chatgpt",
-    "tags": [
-      "chatgpt"
-    ],
-    "description": "ChatGPTにうまく指示するコツについて、初心者向けに具体的な手順・例・注意点を交えて解説します。",
-    "article_no": "24-1",
-    "thumbnail": "groups/24.jpg",
-    "point": "実際に確認・操作できるところまで具体的に解説します。",
-    "draft": false
-  },
-  {
-    "slug": "23-chatgpt",
-    "title": "ChatGPTの使い方｜基本操作と便利な機能を初心者向けに解説",
-    "date": "2026-09-15",
-    "updated": "2026-09-15",
-    "category": "ai-chatgpt",
-    "tags": [
-      "chatgpt"
-    ],
-    "description": "ChatGPTの使い方について、初心者向けに具体的な手順・例・注意点を交えて解説します。",
-    "article_no": "23",
-    "thumbnail": "groups/23.jpg",
-    "point": "実際に確認・操作できるところまで具体的に解説します。",
-    "draft": false
-  },
-  {
-    "slug": "23-5-chatgpt",
-    "title": "ChatGPTのプロジェクトとは？使い方を初心者向けに解説",
-    "date": "2026-09-15",
-    "updated": "2026-09-15",
-    "category": "ai-chatgpt",
-    "tags": [
-      "chatgpt"
-    ],
-    "description": "ChatGPTのプロジェクトとは？使い方を初心者向けに解説について、初心者向けに具体的な手順・例・注意点を交えて解説します。",
-    "article_no": "23-5",
-    "thumbnail": "groups/23.jpg",
-    "point": "実際に確認・操作できるところまで具体的に解説します。",
-    "draft": false
-  },
-  {
-    "slug": "23-4-chatgpt",
-    "title": "ChatGPTの過去のチャットを探す方法",
-    "date": "2026-09-15",
-    "updated": "2026-09-15",
-    "category": "ai-chatgpt",
-    "tags": [
-      "chatgpt"
-    ],
-    "description": "ChatGPTの過去のチャットを探す方法について、初心者向けに具体的な手順・例・注意点を交えて解説します。",
-    "article_no": "23-4",
-    "thumbnail": "groups/23.jpg",
-    "point": "実際に確認・操作できるところまで具体的に解説します。",
-    "draft": false
-  },
-  {
-    "slug": "23-3-chatgpt",
-    "title": "ChatGPTでWeb検索する方法",
-    "date": "2026-09-15",
-    "updated": "2026-09-15",
-    "category": "ai-chatgpt",
-    "tags": [
-      "chatgpt"
-    ],
-    "description": "ChatGPTでWeb検索する方法について、初心者向けに具体的な手順・例・注意点を交えて解説します。",
-    "article_no": "23-3",
-    "thumbnail": "groups/23.jpg",
-    "point": "実際に確認・操作できるところまで具体的に解説します。",
-    "draft": false
-  },
-  {
-    "slug": "23-2-chatgpt",
-    "title": "ChatGPTにファイルを送って内容を読み取る方法",
-    "date": "2026-09-15",
-    "updated": "2026-09-15",
-    "category": "ai-chatgpt",
-    "tags": [
-      "chatgpt"
-    ],
-    "description": "ChatGPTにファイルを送って内容を読み取る方法について、初心者向けに具体的な手順・例・注意点を交えて解説します。",
-    "article_no": "23-2",
-    "thumbnail": "groups/23.jpg",
-    "point": "実際に確認・操作できるところまで具体的に解説します。",
-    "draft": false
-  },
-  {
-    "slug": "23-1-chatgpt",
-    "title": "ChatGPTに画像を送って質問する方法",
-    "date": "2026-09-15",
-    "updated": "2026-09-15",
-    "category": "ai-chatgpt",
-    "tags": [
-      "chatgpt"
-    ],
-    "description": "ChatGPTに画像を送って質問する方法について、初心者向けに具体的な手順・例・注意点を交えて解説します。",
-    "article_no": "23-1",
-    "thumbnail": "groups/23.jpg",
-    "point": "実際に確認・操作できるところまで具体的に解説します。",
-    "draft": false
-  },
-  {
-    "slug": "23-1-1-chatgpt",
-    "title": "ChatGPTに画面を見せながらWebサイト設定を進めるコツ",
-    "date": "2026-09-15",
-    "updated": "2026-09-15",
-    "category": "ai-chatgpt",
-    "tags": [
-      "chatgpt",
-      "website"
-    ],
-    "description": "ChatGPTに画面を見せながらWebサイト設定を進めるコツについて、初心者向けに具体的な手順・例・注意点を交えて解説します。",
-    "article_no": "23-1-1",
-    "thumbnail": "groups/23.jpg",
-    "point": "実際に確認・操作できるところまで具体的に解説します。",
-    "draft": false
-  },
-  {
     "slug": "22-chatgpt",
     "title": "ChatGPTとは？何ができる？初心者向けにわかりやすく解説",
     "date": "2026-09-15",
@@ -3201,464 +4071,6 @@
     "draft": false
   },
   {
-    "slug": "x-threads-profile-start",
-    "title": "ブログ用X・Threadsアカウントのプロフィールと初投稿の作り方",
-    "date": "2026-09-14",
-    "updated": "2026-09-14",
-    "category": "other",
-    "tags": [
-      "sns",
-      "threads",
-      "website"
-    ],
-    "description": "情報サイト用にXとThreadsを始めるとき、表示名・プロフィール文・初投稿へ何を書くかをワカルカモの例で解説します。",
-    "article_no": "",
-    "thumbnail": "other/01.jpg",
-    "point": "表示名と発信テーマは統一し、プロフィール文の最後だけ媒体に合わせて調整すると管理しやすくなります。",
-    "draft": false
-  },
-  {
-    "slug": "website-contact-form-needed",
-    "title": "個人ブログにお問い合わせフォームは必要？メールだけにした理由",
-    "date": "2026-09-14",
-    "updated": "2026-09-14",
-    "category": "web",
-    "tags": [
-      "website",
-      "privacy"
-    ],
-    "description": "個人運営の情報サイトにお問い合わせフォームを置くメリットと負担を整理し、企業連絡用メールだけを掲載する選択肢を解説します。",
-    "article_no": "",
-    "thumbnail": "web/10.jpg",
-    "point": "受けたい連絡の種類を先に決めると、フォームを置くかメールだけにするか判断しやすくなります。",
-    "draft": false
-  },
-  {
-    "slug": "sns-manual-draft-automation",
-    "title": "記事公開時のSNS投稿文だけを自動生成する方法｜API不要の運用",
-    "date": "2026-09-14",
-    "updated": "2026-09-14",
-    "category": "other",
-    "tags": [
-      "sns",
-      "automation",
-      "github",
-      "threads"
-    ],
-    "description": "記事公開時にXとThreadsへ完全自動投稿せず、コピペ用原稿とUTM付きURLだけをGitHub Actionsで生成する方法を解説します。",
-    "article_no": "",
-    "thumbnail": "other/02.jpg",
-    "point": "料金がかかる完全自動化をやめ、準備だけ自動化すると、無料のまま確認工程も残せます。",
-    "draft": false
-  },
-  {
-    "slug": "search-console-sitemap-submit",
-    "title": "Search Consoleへサイトマップを送信する方法｜追加後の見方も解説",
-    "date": "2026-09-14",
-    "updated": "2026-09-14",
-    "category": "web",
-    "tags": [
-      "search-console",
-      "seo",
-      "website"
-    ],
-    "description": "Search Consoleへsitemap.xmlを送信する手順と、成功・取得できませんでしたなどの表示を確認するポイントを解説します。",
-    "article_no": "",
-    "thumbnail": "web/06.jpg",
-    "point": "サイトマップはページ一覧の場所をGoogleへ伝える仕組みで、送信しただけで検索掲載が保証されるものではありません。",
-    "draft": false
-  },
-  {
-    "slug": "search-console-request-indexing",
-    "title": "新しい記事は毎回インデックス登録をリクエストする必要がある？",
-    "date": "2026-09-14",
-    "updated": "2026-09-14",
-    "category": "web",
-    "tags": [
-      "search-console",
-      "seo",
-      "website"
-    ],
-    "description": "記事を公開するたびにSearch ConsoleのURL検査からインデックス登録をリクエストする必要があるのか、サイトマップとの使い分けを解説します。",
-    "article_no": "",
-    "thumbnail": "web/05.jpg",
-    "point": "多数の記事は更新済みサイトマップで伝え、重要な新規ページや修正確認だけURL検査を使うのが基本です。",
-    "draft": false
-  },
-  {
-    "slug": "search-console-html-verification",
-    "title": "Search ConsoleのHTML確認ファイルをGitHub Pagesへ置く方法",
-    "date": "2026-09-14",
-    "updated": "2026-09-14",
-    "category": "web",
-    "tags": [
-      "search-console",
-      "github",
-      "github-pages"
-    ],
-    "description": "Google Search Consoleから取得した所有権確認用HTMLファイルを、GitHub Pagesの正しい場所へ追加する方法を解説します。",
-    "article_no": "",
-    "thumbnail": "web/08.jpg",
-    "point": "確認ファイルは名前も中身も変えず、公開URLの直下で直接開ける場所へ置きます。",
-    "draft": false
-  },
-  {
-    "slug": "search-console-github-pages",
-    "title": "GitHub PagesをGoogle Search Consoleへ登録する方法",
-    "date": "2026-09-14",
-    "updated": "2026-09-14",
-    "category": "web",
-    "tags": [
-      "search-console",
-      "github-pages",
-      "seo"
-    ],
-    "description": "GitHub Pagesで公開したサイトをGoogle Search Consoleへ追加し、検索状況を確認できるようにする流れを解説します。",
-    "article_no": "",
-    "thumbnail": "web/05.jpg",
-    "point": "github.io配下のサイトでは、URLプレフィックスで正確な公開URLを登録するとHTMLファイル確認を使えます。",
-    "draft": false
-  },
-  {
-    "slug": "search-console-change-google-account",
-    "title": "Search Consoleを別のGoogleアカウントで設定したときの変更方法",
-    "date": "2026-09-14",
-    "updated": "2026-09-14",
-    "category": "web",
-    "tags": [
-      "search-console",
-      "website"
-    ],
-    "description": "Search Consoleを個人用Googleアカウントで登録したあと、サイト運営用アカウントでも管理できるようにする方法を解説します。",
-    "article_no": "",
-    "thumbnail": "web/05.jpg",
-    "point": "プロパティを削除して最初からやり直さず、運営用アカウントをユーザーまたは所有者として追加できます。",
-    "draft": false
-  },
-  {
-    "slug": "markdown-github-actions-blog",
-    "title": "Markdownの記事をGitHub ActionsでHTMLへ自動変換する方法",
-    "date": "2026-09-14",
-    "updated": "2026-09-14",
-    "category": "web",
-    "tags": [
-      "markdown",
-      "github",
-      "github-pages",
-      "automation"
-    ],
-    "description": "記事Markdownを追加するとGitHub ActionsがHTMLと記事一覧を生成する、静的ブログの自動化方法を基本構成から解説します。",
-    "article_no": "",
-    "thumbnail": "web/03.jpg",
-    "point": "人が編集する原稿と自動生成物を分けると、記事追加はMarkdown1ファイルだけにできます。",
-    "draft": false
-  },
-  {
-    "slug": "github-upload-files-browser",
-    "title": "GitHubへファイルをアップロードする方法｜ブラウザだけで追加・差し替え",
-    "date": "2026-09-14",
-    "updated": "2026-09-14",
-    "category": "web",
-    "tags": [
-      "github",
-      "website"
-    ],
-    "description": "GitHubのブラウザ画面からファイルやフォルダをドラッグ＆ドロップし、既存ファイルを差し替える手順を解説します。",
-    "article_no": "",
-    "thumbnail": "web/02.jpg",
-    "point": "差し替えるときは、ZIPではなく展開後の中身を、同じフォルダ構成のままリポジトリへ入れます。",
-    "draft": false
-  },
-  {
-    "slug": "github-upload-100-files-limit",
-    "title": "GitHubで100ファイルを超えてアップロードできないときの対処法",
-    "date": "2026-09-14",
-    "updated": "2026-09-14",
-    "category": "web",
-    "tags": [
-      "github",
-      "website"
-    ],
-    "description": "GitHubで「Yowza, that’s a lot of files」と表示されたときの原因と、更新ファイルを分ける方法を解説します。",
-    "article_no": "",
-    "thumbnail": "web/02.jpg",
-    "point": "サイト全体を毎回アップロードせず、変更したファイルだけの更新セットにすると100ファイル制限を避けられます。",
-    "draft": false
-  },
-  {
-    "slug": "github-pages-publish-source",
-    "title": "GitHub Pagesの公開元はどれを選ぶ？ブランチとActionsの違い",
-    "date": "2026-09-14",
-    "updated": "2026-09-14",
-    "category": "web",
-    "tags": [
-      "github",
-      "github-pages",
-      "automation"
-    ],
-    "description": "GitHub PagesのDeploy from a branchとGitHub Actionsの違いを整理し、静的サイトや自動生成サイトに合う公開方法を解説します。",
-    "article_no": "",
-    "thumbnail": "web/03.jpg",
-    "point": "完成済みHTMLをそのまま公開するならブランチ、公開前にビルドが必要ならActionsが判断の目安です。",
-    "draft": false
-  },
-  {
-    "slug": "github-pages-not-updating",
-    "title": "GitHub Pagesが更新されないときは？反映されない原因と確認方法",
-    "date": "2026-09-14",
-    "updated": "2026-09-14",
-    "category": "web",
-    "tags": [
-      "github",
-      "github-pages",
-      "website"
-    ],
-    "description": "GitHubへファイルを追加したのにGitHub Pagesへ反映されないとき、コミット・公開元・Actions・キャッシュを順番に確認する方法を解説します。",
-    "article_no": "",
-    "thumbnail": "web/03.jpg",
-    "point": "GitHub上のファイル、Actionsの結果、公開ページの順に確認すると、どこで更新が止まったか切り分けられます。",
-    "draft": false
-  },
-  {
-    "slug": "github-pages-create-website",
-    "title": "GitHub PagesでWebサイトを作る方法｜無料公開までの手順",
-    "date": "2026-09-14",
-    "updated": "2026-09-14",
-    "category": "web",
-    "tags": [
-      "github",
-      "github-pages",
-      "website"
-    ],
-    "description": "GitHubのリポジトリへHTMLファイルを置き、GitHub PagesでWebサイトを無料公開する基本手順を初心者向けに解説します。",
-    "article_no": "",
-    "thumbnail": "web/03.jpg",
-    "point": "最初はindex.htmlをリポジトリ直下へ置き、公開元をmainブランチのrootにすると構成を理解しやすくなります。",
-    "draft": false
-  },
-  {
-    "slug": "ga4-social-utm",
-    "title": "GA4でXとThreadsの流入を分けて確認する方法｜UTM設定例",
-    "date": "2026-09-14",
-    "updated": "2026-09-14",
-    "category": "google-gas",
-    "tags": [
-      "ga4",
-      "analytics",
-      "sns",
-      "utm"
-    ],
-    "description": "XとThreadsへ同じ記事を投稿するとき、UTMパラメータでSNS別のアクセスをGA4へ記録し、流入を比較する方法を解説します。",
-    "article_no": "",
-    "thumbnail": "google-gas/09.jpg",
-    "point": "utm_sourceだけ媒体別に変え、mediumとcampaignの命名を統一すると比較しやすくなります。",
-    "draft": false
-  },
-  {
-    "slug": "ga4-site-search-keywords",
-    "title": "GA4でサイト内検索キーワードを収集する方法",
-    "date": "2026-09-14",
-    "updated": "2026-09-14",
-    "category": "google-gas",
-    "tags": [
-      "ga4",
-      "analytics",
-      "website"
-    ],
-    "description": "サイトの検索窓で入力された語句をGA4のview_search_resultsとsearch_termで収集する仕組みを解説します。",
-    "article_no": "",
-    "thumbnail": "google-gas/08.jpg",
-    "point": "検索結果URLにqなどの検索パラメータが付けば、GA4の拡張計測機能でサイト内検索を取得できます。",
-    "draft": false
-  },
-  {
-    "slug": "ga4-realtime-check",
-    "title": "GA4のリアルタイムにアクセスが出ないときの確認方法",
-    "date": "2026-09-14",
-    "updated": "2026-09-14",
-    "category": "google-gas",
-    "tags": [
-      "ga4",
-      "analytics",
-      "website"
-    ],
-    "description": "GA4を設置したのにリアルタイムレポートへ表示されないとき、公開ページ・測定ID・タグ・除外設定を確認する順番を解説します。",
-    "article_no": "",
-    "thumbnail": "google-gas/07.jpg",
-    "point": "GitHub上のファイルではなく、公開中のページを開いてからリアルタイムレポートを確認します。",
-    "draft": false
-  },
-  {
-    "slug": "ga4-privacy-policy",
-    "title": "GA4を使うブログのプライバシーポリシーに書くこと",
-    "date": "2026-09-14",
-    "updated": "2026-09-14",
-    "category": "web",
-    "tags": [
-      "ga4",
-      "analytics",
-      "privacy",
-      "website"
-    ],
-    "description": "個人ブログへGoogle Analytics 4を導入するとき、プライバシーポリシーで説明したい計測目的・Cookie・無効化方法を整理します。",
-    "article_no": "",
-    "thumbnail": "web/07.jpg",
-    "point": "利用ツール名だけでなく、何のために情報を収集し、読者がどう無効化できるかを分かる言葉で示します。",
-    "draft": false
-  },
-  {
-    "slug": "ga4-measurement-id",
-    "title": "GA4の測定IDはどこ？G-から始まる番号の確認方法",
-    "date": "2026-09-14",
-    "updated": "2026-09-14",
-    "category": "google-gas",
-    "tags": [
-      "ga4",
-      "analytics"
-    ],
-    "description": "Google Analytics 4でG-から始まる測定IDを確認する場所と、プロパティID・ストリームIDとの違いを解説します。",
-    "article_no": "",
-    "thumbnail": "google-gas/06.jpg",
-    "point": "Webサイトへ設定するのは、ウェブデータストリーム詳細にあるG-から始まる測定IDです。",
-    "draft": false
-  },
-  {
-    "slug": "ga4-github-pages-setup",
-    "title": "GitHub PagesにGA4を設定する方法｜測定開始までの手順",
-    "date": "2026-09-14",
-    "updated": "2026-09-14",
-    "category": "google-gas",
-    "tags": [
-      "ga4",
-      "analytics",
-      "github-pages"
-    ],
-    "description": "GitHub Pagesで公開した静的サイトへGoogle Analytics 4を設置し、アクセス計測を始める流れを初心者向けに解説します。",
-    "article_no": "",
-    "thumbnail": "google-gas/04.jpg",
-    "point": "GA4でデータストリームを作り、G-から始まる測定IDをサイトの全ページで読み込めば計測を始められます。",
-    "draft": false
-  },
-  {
-    "slug": "ga4-free-form-exploration",
-    "title": "GA4の自由探索でサイト内検索語句を見る方法｜設定例つき",
-    "date": "2026-09-14",
-    "updated": "2026-09-14",
-    "category": "google-gas",
-    "tags": [
-      "ga4",
-      "analytics"
-    ],
-    "description": "GA4の自由形式レポートで検索語句ごとの検索回数を表示するための、ディメンション・指標・フィルタ設定を解説します。",
-    "article_no": "",
-    "thumbnail": "google-gas/08.jpg",
-    "point": "行は分類項目、値は数える数字、フィルタは対象データを絞る条件と考えると自由探索を理解しやすくなります。",
-    "draft": false
-  },
-  {
-    "slug": "chatgpt-website-setup-help",
-    "title": "ChatGPTに画面を見せながらWebサイト設定を進めるコツ",
-    "date": "2026-09-14",
-    "updated": "2026-09-14",
-    "category": "ai-chatgpt",
-    "tags": [
-      "chatgpt",
-      "ai",
-      "website"
-    ],
-    "description": "GitHubやGA4など、次に押す場所が分からないときにスクリーンショットを使ってChatGPTへ質問する方法と注意点を解説します。",
-    "article_no": "",
-    "thumbnail": "ai-chatgpt/06.jpg",
-    "point": "画面全体だけでなく、目的・直前に押した場所・困っている状態を文章でも添えると案内が正確になります。",
-    "draft": false
-  },
-  {
-    "slug": "chatgpt-seo-prompt",
-    "title": "ChatGPTでSEO記事を書くプロンプト例｜構成から確認まで",
-    "date": "2026-09-14",
-    "updated": "2026-09-14",
-    "category": "ai-chatgpt",
-    "tags": [
-      "chatgpt",
-      "ai",
-      "seo"
-    ],
-    "description": "SEO記事の検索意図整理、見出し構成、本文下書き、重複確認に使えるChatGPTへの指示例を紹介します。",
-    "article_no": "",
-    "thumbnail": "ai-chatgpt/03.jpg",
-    "point": "一度に完成記事を求めず、検索意図・構成・本文・確認の順に分けると修正しやすくなります。",
-    "draft": false
-  },
-  {
-    "slug": "chatgpt-build-website-review",
-    "title": "ChatGPTでWebサイトを作ってみた｜初心者でもどこまでできる？",
-    "date": "2026-09-14",
-    "updated": "2026-09-14",
-    "category": "ai-chatgpt",
-    "tags": [
-      "chatgpt",
-      "ai",
-      "website",
-      "github-pages"
-    ],
-    "description": "ChatGPTと相談しながらデザイン、HTML、記事生成、GitHub Pages公開まで進めた実体験と、AIに任せやすい作業を紹介します。",
-    "article_no": "",
-    "thumbnail": "ai-chatgpt/06.jpg",
-    "point": "AIに完成形を一度で求めるより、見た目・機能・公開作業を分けて修正すると希望へ近づけやすくなります。",
-    "draft": false
-  },
-  {
-    "slug": "article-thumbnail-auto-select",
-    "title": "ブログ記事のサムネイルをカテゴリ別に自動選択する方法",
-    "date": "2026-09-14",
-    "updated": "2026-09-14",
-    "category": "web",
-    "tags": [
-      "automation",
-      "website",
-      "github-pages"
-    ],
-    "description": "カテゴリごとに複数画像を用意し、記事内容に合うサムネイルを自動選択する仕組みと、完全ランダムとの違いを解説します。",
-    "article_no": "",
-    "thumbnail": "web/01.jpg",
-    "point": "毎回変わる乱数ではなく記事slugから選ぶと、再生成しても同じサムネイルを保てます。",
-    "draft": false
-  },
-  {
-    "slug": "ai-writing-natural",
-    "title": "ChatGPTの記事がAIっぽい原因は？自然な文章へ直す方法",
-    "date": "2026-09-14",
-    "updated": "2026-09-14",
-    "category": "ai-chatgpt",
-    "tags": [
-      "chatgpt",
-      "ai",
-      "seo"
-    ],
-    "description": "同じ構成や言い回しが続くAI記事へ実体験と具体例を加え、自然で読みやすい文章に整える方法を解説します。",
-    "article_no": "",
-    "thumbnail": "ai-chatgpt/05.jpg",
-    "point": "構成を固定しても、読者の状況・具体例・説明の順番を記事ごとに変えれば単調さを減らせます。",
-    "draft": false
-  },
-  {
-    "slug": "ai-article-fact-check",
-    "title": "ChatGPTで作った記事を事実確認する方法｜公開前チェック項目",
-    "date": "2026-09-14",
-    "updated": "2026-09-14",
-    "category": "ai-chatgpt",
-    "tags": [
-      "chatgpt",
-      "ai",
-      "seo"
-    ],
-    "description": "ChatGPTで下書きした記事の料金、仕様、手順、出典を公開前に確認し、誤情報を減らす方法を解説します。",
-    "article_no": "",
-    "thumbnail": "ai-chatgpt/04.jpg",
-    "point": "変わりやすい情報を先に抽出し、一次情報と実際の画面で一つずつ確認します。",
-    "draft": false
-  },
-  {
     "slug": "5-windows11-storage-guide",
     "title": "パソコンの容量が足りないときは？空き容量を増やす方法まとめ",
     "date": "2026-09-14",
@@ -4136,40 +4548,6 @@
     "article_no": "1-1",
     "thumbnail": "groups/01.jpg",
     "point": "設定を変える前に現在の状態を確認し、1つずつ操作すると原因を切り分けやすくなります。",
-    "draft": false
-  },
-  {
-    "slug": "chatgpt-seo-publish-workflow",
-    "title": "ChatGPTでSEO記事を作って公開する方法｜ワカルカモの実例",
-    "date": "2026-09-13",
-    "updated": "2026-09-13",
-    "category": "ai-chatgpt",
-    "tags": [
-      "chatgpt",
-      "ai",
-      "seo",
-      "automation"
-    ],
-    "description": "テーマ決めから構成、事実確認、Markdown化、GitHub Pagesへの公開まで、ワカルカモで実際に使った流れを紹介します。",
-    "article_no": "",
-    "thumbnail": "ai-chatgpt/03.jpg",
-    "point": "ChatGPTは構成と下書きの時短に使い、事実確認・実体験・最終判断は人が担当するのが基本です。",
-    "draft": false
-  },
-  {
-    "slug": "x-api-auto-post-pricing",
-    "title": "X APIで記事を自動投稿する方法は有料？料金と無料の代替案を解説",
-    "date": "2026-09-12",
-    "updated": "2026-09-12",
-    "category": "other",
-    "tags": [
-      "automation",
-      "tools"
-    ],
-    "description": "ブログの更新情報をXへ自動投稿するときに必要なX APIの料金と、APIを使わず無料で運用する方法を解説します。",
-    "article_no": "",
-    "thumbnail": "other/03.jpg",
-    "point": "完全自動化にこだわらず、投稿文の作成だけを自動化すると、API料金を避けながら作業を減らせます。",
     "draft": false
   }
 ]
