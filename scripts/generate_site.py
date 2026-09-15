@@ -4,8 +4,6 @@ import hashlib, json, csv, re, html, os
 ROOT = Path(__file__).resolve().parents[1]
 CONTENT = ROOT / 'content/articles'
 SITE_URL = os.environ.get('SITE_URL', 'https://kamowakaru.github.io/wakarukamo').rstrip('/')
-ADSENSE_HEAD = """<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2620370554695357"
-     crossorigin="anonymous"></script>"""
 
 # data/article-management.csv is the publication master.
 # Only rows whose 公開済 column is 済 are emitted as public articles.
@@ -347,7 +345,7 @@ def shell(title, body, prefix='../', desc='', canonical_path='', json_ld='', noi
     schema = f'<script type="application/ld+json">{json_ld}</script>' if json_ld else ''
     image = og_image or f'{SITE_URL}/assets/images/hero-duck.webp'
     robots = '<meta name="robots" content="noindex,follow">' if noindex else ''
-    return f'''<!doctype html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="{html.escape(desc)}">{robots}<link rel="canonical" href="{html.escape(canonical)}"><meta property="og:title" content="{html.escape(title)}"><meta property="og:description" content="{html.escape(desc)}"><meta property="og:url" content="{html.escape(canonical)}"><meta property="og:type" content="{page_type}"><meta property="og:image" content="{html.escape(image)}"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="{html.escape(title)}"><meta name="twitter:description" content="{html.escape(desc)}"><meta name="twitter:image" content="{html.escape(image)}"><title>{html.escape(title)} | ワカルカモ</title><link rel="stylesheet" href="{prefix}assets/css/style.css?v=20260914-3"><link rel="stylesheet" href="{prefix}assets/css/point.css"><link rel="stylesheet" href="{prefix}assets/css/article-markdown.css?v=20260915-table">{schema}{ADSENSE_HEAD}</head><body data-root="{prefix}"><header class="site-header"><div class="container header-inner"><a class="brand" href="{prefix}index.html"><img src="{prefix}assets/images/logo-duck.webp" alt=""><span><strong>ワカルカモ</strong><small>PC・Web・AIの「わからない」が、わかるかも。</small></span></a><button class="menu-btn" aria-label="メニュー">☰</button><nav class="nav">{nav}</nav><form class="header-search" action="{prefix}search.html"><input name="q" type="search" placeholder="キーワードで検索…"><button>🔍</button></form></div></header>{body}<footer class="footer"><div class="container footer-inner"><div class="footer-brand"><img src="{prefix}assets/images/logo-duck.webp" alt=""><div><strong>ワカルカモ</strong><div style="font-size:12px;color:#6c7c91">PC・Web・AIの「わからない」が、わかるかも。</div></div></div><div class="footer-links"><a href="{prefix}index.html">ホーム</a><a href="{prefix}articles.html">記事一覧</a><a href="{prefix}about.html">このサイトについて</a><a href="{prefix}privacy.html">プライバシーポリシー</a></div></div><p class="copyright">© 2026 ワカルカモ</p></footer><script src="{prefix}assets/js/analytics-config.js"></script><script src="{prefix}assets/js/site.js?v=20260914-2"></script></body></html>'''
+    return f'''<!doctype html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="{html.escape(desc)}">{robots}<link rel="canonical" href="{html.escape(canonical)}"><meta property="og:title" content="{html.escape(title)}"><meta property="og:description" content="{html.escape(desc)}"><meta property="og:url" content="{html.escape(canonical)}"><meta property="og:type" content="{page_type}"><meta property="og:image" content="{html.escape(image)}"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="{html.escape(title)}"><meta name="twitter:description" content="{html.escape(desc)}"><meta name="twitter:image" content="{html.escape(image)}"><title>{html.escape(title)} | ワカルカモ</title><link rel="stylesheet" href="{prefix}assets/css/style.css?v=20260914-3"><link rel="stylesheet" href="{prefix}assets/css/point.css"><link rel="stylesheet" href="{prefix}assets/css/article-markdown.css?v=20260915-table">{schema}<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2620370554695357" crossorigin="anonymous"></script></head><body data-root="{prefix}"><header class="site-header"><div class="container header-inner"><a class="brand" href="{prefix}index.html"><img src="{prefix}assets/images/logo-duck.webp" alt=""><span><strong>ワカルカモ</strong><small>PC・Web・AIの「わからない」が、わかるかも。</small></span></a><button class="menu-btn" aria-label="メニュー">☰</button><nav class="nav">{nav}</nav><form class="header-search" action="{prefix}search.html"><input name="q" type="search" placeholder="キーワードで検索…"><button>🔍</button></form></div></header>{body}<footer class="footer"><div class="container footer-inner"><div class="footer-brand"><img src="{prefix}assets/images/logo-duck.webp" alt=""><div><strong>ワカルカモ</strong><div style="font-size:12px;color:#6c7c91">PC・Web・AIの「わからない」が、わかるかも。</div></div></div><div class="footer-links"><a href="{prefix}index.html">ホーム</a><a href="{prefix}articles.html">記事一覧</a><a href="{prefix}about.html">このサイトについて</a><a href="{prefix}privacy.html">プライバシーポリシー</a></div></div><p class="copyright">© 2026 ワカルカモ</p></footer><script src="{prefix}assets/js/analytics-config.js"></script><script src="{prefix}assets/js/site.js?v=20260914-2"></script></body></html>'''
 
 def static_card(article, prefix=''):
     cat = catmap[article['category']]
@@ -386,7 +384,7 @@ def grouped_collection(items, prefix=''):
         else:
             chunks.append('<section class="article-group"><div class="group-children">' + ''.join(static_card(a, prefix) for a in children) + '</div></section>')
     if legacy:
-        chunks.append('<section class="article-group legacy-group"><h2 class="legacy-heading">Webマーケティングの記事</h2><div class="group-children">' + ''.join(static_card(a, prefix) for a in legacy) + '</div></section>')
+        chunks.append('<section class="article-group legacy-group"><h2 class="legacy-heading">その他の記事</h2><div class="group-children">' + ''.join(static_card(a, prefix) for a in legacy) + '</div></section>')
     return ''.join(chunks) or '<div class="empty-note">まだ記事がありません。</div>'
 
 def update_grouped_collection(path, items, prefix=''):
@@ -436,10 +434,6 @@ def update_collection(path, cards, marker='ARTICLES'):
 
 def update_static_seo(path, canonical_path, title, desc, noindex=False, json_ld=''):
     text = path.read_text(encoding='utf-8')
-    if 'ca-pub-2620370554695357' not in text:
-        text = text.replace('</head>', ADSENSE_HEAD + '\n</head>', 1)
-    page_title = title if not canonical_path else f'{title} | ワカルカモ'
-    text = re.sub(r'<title>.*?</title>', f'<title>{html.escape(page_title)}</title>', text, count=1, flags=re.S)
     canonical = SITE_URL + ('/' + canonical_path.lstrip('/') if canonical_path else '/')
     image = f'{SITE_URL}/assets/images/hero-duck.webp'
     block = '<!-- SEO:START -->' + ('<meta name="robots" content="noindex,follow">' if noindex else '')
@@ -556,7 +550,10 @@ for t in tags:
     (tdir/f"{t['slug']}.html").write_text(shell('タグ：'+t['name'], body, desc=f'{t["name"]}に関する記事一覧です。', canonical_path=f'tags/{t["slug"]}.html', noindex=len(matches) < 2), encoding='utf-8')
 
 # JavaScript実行前にも記事リンクが見えるよう、主要一覧へ公開記事を直接書き込みます。
-update_collection(ROOT/'index.html', [static_card(a) for a in articles[:6]])
+recommended_parent_nos = ['1', '7', '11', '9', '16', '22']
+recommended_parents = [next((a for a in articles if str(a.get('article_no')) == no), None) for no in recommended_parent_nos]
+recommended_parents = [a for a in recommended_parents if a]
+update_collection(ROOT/'index.html', [static_card(a) for a in recommended_parents])
 update_collection(ROOT/'index.html', [static_card(a) for a in articles[:3]], marker='NEW_ARTICLES')
 update_home_parent_links(ROOT/'index.html', articles)
 # data/articles.json is committed by Actions, so the browser can refresh this block
@@ -578,7 +575,7 @@ home_schema = json.dumps({'@context':'https://schema.org','@graph':[
     {'@type':'WebSite','name':'ワカルカモ','url':f'{SITE_URL}/','potentialAction':{'@type':'SearchAction','target':f'{SITE_URL}/search.html?q={{search_term_string}}','query-input':'required name=search_term_string'}},
     {'@type':'Organization','name':'ワカルカモ','url':f'{SITE_URL}/','logo':f'{SITE_URL}/assets/images/logo-duck.webp'}
 ]}, ensure_ascii=False).replace('</', '<\\/')
-update_static_seo(ROOT/'index.html', '', 'ワカルカモ｜PC・Web・ChatGPTの使い方・困りごとを初心者向けに解説', 'PC・Web・AI・Webマーケティングをはじめとしたデジタルの困りごとを、わかりやすく解説するブログです。', json_ld=home_schema)
+update_static_seo(ROOT/'index.html', '', 'ワカルカモ', 'PC・Web・AIの「わからない」が、わかるかも。', json_ld=home_schema)
 update_static_seo(ROOT/'articles.html', 'articles.html', '記事一覧', 'ワカルカモの記事一覧です。')
 update_static_seo(ROOT/'search.html', 'search.html', '検索', 'ワカルカモの記事を検索できます。', noindex=True)
 update_static_seo(ROOT/'about.html', 'about.html', 'このサイトについて', 'ワカルカモの方針と運営者情報です。')
