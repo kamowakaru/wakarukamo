@@ -342,8 +342,6 @@ def shell(title, body, prefix='../', desc='', canonical_path='', json_ld='', noi
         f'<a href="{prefix}about.html">このサイトについて</a>'
     )
     canonical = SITE_URL + ('/' + canonical_path.lstrip('/') if canonical_path else '/')
-    page_title = title if not canonical_path else f'{title} | ワカルカモ'
-    text = re.sub(r'<title>.*?</title>', f'<title>{html.escape(page_title)}</title>', text, count=1, flags=re.S)
     schema = f'<script type="application/ld+json">{json_ld}</script>' if json_ld else ''
     image = og_image or f'{SITE_URL}/assets/images/hero-duck.webp'
     robots = '<meta name="robots" content="noindex,follow">' if noindex else ''
@@ -436,6 +434,8 @@ def update_collection(path, cards, marker='ARTICLES'):
 
 def update_static_seo(path, canonical_path, title, desc, noindex=False, json_ld=''):
     text = path.read_text(encoding='utf-8')
+    page_title = title if not canonical_path else f'{title} | ワカルカモ'
+    text = re.sub(r'<title>.*?</title>', f'<title>{html.escape(page_title)}</title>', text, count=1, flags=re.S)
     canonical = SITE_URL + ('/' + canonical_path.lstrip('/') if canonical_path else '/')
     image = f'{SITE_URL}/assets/images/hero-duck.webp'
     block = '<!-- SEO:START -->' + ('<meta name="robots" content="noindex,follow">' if noindex else '')
