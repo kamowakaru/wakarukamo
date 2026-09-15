@@ -45,9 +45,9 @@ H2見出し
 
 画像は「画像」ブロック、リンクは文字を選択してリンクコントロールから追加します。
 
-→ [WordPressで画像を挿入する方法](13-2-wordpress.html)
+[WordPressで画像を挿入する方法](13-2-wordpress.html)
 
-→ [WordPressでリンクを貼る方法｜内部リンク・外部リンクを解説](13-3-wordpress.html)
+[WordPressでリンクを貼る方法｜内部リンク・外部リンクを解説](13-3-wordpress.html)
 
 ## 4. 右側の「投稿」設定を確認する
 

@@ -58,4 +58,4 @@ URL：https://example.com/
 
 サイト名変更とドメイン変更は別作業です。
 
-→ [WordPressの初期設定まとめ｜サイト開設後に最初にやること](14-wordpress.html)
+[WordPressの初期設定まとめ｜サイト開設後に最初にやること](14-wordpress.html)

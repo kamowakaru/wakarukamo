@@ -7,7 +7,7 @@
 X案1：要点型
 ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
 【ChatGPTのプロンプトとは？書き方のコツと例文を初心者向けに解説】
-ChatGPTのプロンプトの意味と、目的・前提・条件・出力形式を使って欲しい回答へ近づける書き方を例文付きで解説します。
+ChatGPTのプロンプトとは？書き方のコツと例文を初心者向けに解説について、初心者向けに具体的な手順・例・注意点を交えて解説します。
 
 https://kamowakaru.github.io/wakarukamo/articles/24-chatgpt.html?utm_source=x&utm_medium=social&utm_campaign=article_share
 #ChatGPT
@@ -16,7 +16,7 @@ https://kamowakaru.github.io/wakarukamo/articles/24-chatgpt.html?utm_source=x&ut
 X案2：問いかけ型
 ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
 「ChatGPTのプロンプトとは？書き方のコツと例文を初心者向けに解説」で困っていませんか？
-ChatGPTのプロンプトの意味と、目的・前提・条件・出力形式を使って欲しい回答へ近づける書き方を例文付きで解説します。
+ChatGPTのプロンプトとは？書き方のコツと例文を初心者向けに解説について、初心者向けに具体的な手順・例・注意点を交えて解説します。
 
 https://kamowakaru.github.io/wakarukamo/articles/24-chatgpt.html?utm_source=x&utm_medium=social&utm_campaign=article_share
 #ChatGPT
@@ -26,7 +26,7 @@ Threads案：体験に寄り添う型
 ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
 「ChatGPTのプロンプトとは？書き方のコツと例文を初心者向けに解説」で迷うこと、ありませんか？
 
-今回は、ChatGPTのプロンプトの意味と、目的・前提・条件・出力形式を使って欲しい回答へ近づける書き方を例文付きで解説します。
+今回は、ChatGPTのプロンプトとは？書き方のコツと例文を初心者向けに解説について、初心者向けに具体的な手順・例・注意点を交えて解説します。
 実際の手順やポイントを初心者向けにまとめました🐤
 
 https://kamowakaru.github.io/wakarukamo/articles/24-chatgpt.html?utm_source=threads&utm_medium=social&utm_campaign=article_share

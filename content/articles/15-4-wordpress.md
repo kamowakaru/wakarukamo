@@ -53,6 +53,6 @@ Apache環境では、Pretty Permalinksに`.htaccess`や`mod_rewrite`が関係し
 
 公開済み記事のURLを変えた場合、旧URLから新URLへ301リダイレクトを設定すれば、古いリンクから来た人を新しいページへ案内できます。
 
-→ [WordPressのパーマリンクとは？おすすめ設定を解説](14-1-wordpress.html)
+[WordPressのパーマリンクとは？おすすめ設定を解説](14-1-wordpress.html)
 
 404は「WordPressが壊れた」とは限りません。**対象範囲→現在のURL→公開状態→パーマリンク→サーバー設定**の順で見ると切り分けやすくなります。

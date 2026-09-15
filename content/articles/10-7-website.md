@@ -82,7 +82,7 @@ Pagesの公開処理
 
 のどこまで進んでいるか確認します。
 
-→ [GitHub Pagesが更新されないときは？反映されない原因と確認方法](8-3-github-pages.html)
+[GitHub Pagesが更新されないときは？反映されない原因と確認方法](8-3-github-pages.html)
 
 ## ワカルカモでもキャッシュ対策を使うことがある
 

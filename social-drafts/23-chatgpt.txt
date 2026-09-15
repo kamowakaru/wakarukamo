@@ -7,7 +7,7 @@
 X案1：要点型
 ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
 【ChatGPTの使い方｜基本操作と便利な機能を初心者向けに解説】
-ChatGPTの基本的な使い方を、質問の送り方から画像・ファイル・Web検索・過去チャット・プロジェクトまで初心者向けに整理します。
+ChatGPTの使い方について、初心者向けに具体的な手順・例・注意点を交えて解説します。
 
 https://kamowakaru.github.io/wakarukamo/articles/23-chatgpt.html?utm_source=x&utm_medium=social&utm_campaign=article_share
 #ChatGPT
@@ -16,7 +16,7 @@ https://kamowakaru.github.io/wakarukamo/articles/23-chatgpt.html?utm_source=x&ut
 X案2：問いかけ型
 ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
 「ChatGPTの使い方｜基本操作と便利な機能を初心者向けに解説」で困っていませんか？
-ChatGPTの基本的な使い方を、質問の送り方から画像・ファイル・Web検索・過去チャット・プロジェクトまで初心者向けに整理します。
+ChatGPTの使い方について、初心者向けに具体的な手順・例・注意点を交えて解説します。
 
 https://kamowakaru.github.io/wakarukamo/articles/23-chatgpt.html?utm_source=x&utm_medium=social&utm_campaign=article_share
 #ChatGPT
@@ -26,7 +26,7 @@ Threads案：体験に寄り添う型
 ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
 「ChatGPTの使い方｜基本操作と便利な機能を初心者向けに解説」で迷うこと、ありませんか？
 
-今回は、ChatGPTの基本的な使い方を、質問の送り方から画像・ファイル・Web検索・過去チャット・プロジェクトまで初心者向けに整理します。
+今回は、ChatGPTの使い方について、初心者向けに具体的な手順・例・注意点を交えて解説します。
 実際の手順やポイントを初心者向けにまとめました🐤
 
 https://kamowakaru.github.io/wakarukamo/articles/23-chatgpt.html?utm_source=threads&utm_medium=social&utm_campaign=article_share

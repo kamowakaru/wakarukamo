@@ -65,4 +65,4 @@ https://あなたのドメイン/wp-admin/
 
 ログインできたら、サイトURLを開いてWordPressの初期ページが表示されることも確認します。
 
-→ [WordPressにログインする方法｜ログインURLも解説](12-4-wordpress.html)
+[WordPressにログインする方法｜ログインURLも解説](12-4-wordpress.html)

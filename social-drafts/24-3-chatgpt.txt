@@ -7,7 +7,7 @@
 X案1：要点型
 ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
 【ChatGPTに文章を要約してもらう方法｜プロンプト例つき】
-ChatGPTで文章を要約する方法を、文字数・箇条書き・対象読者・重要点を指定するコピペ用プロンプト例とともに解説します。
+ChatGPTに文章を要約してもらう方法について、初心者向けに具体的な手順・例・注意点を交えて解説します。
 
 https://kamowakaru.github.io/wakarukamo/articles/24-3-chatgpt.html?utm_source=x&utm_medium=social&utm_campaign=article_share
 #ChatGPT
@@ -16,7 +16,7 @@ https://kamowakaru.github.io/wakarukamo/articles/24-3-chatgpt.html?utm_source=x&
 X案2：問いかけ型
 ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
 「ChatGPTに文章を要約してもらう方法｜プロンプト例つき」で困っていませんか？
-ChatGPTで文章を要約する方法を、文字数・箇条書き・対象読者・重要点を指定するコピペ用プロンプト例とともに解説します。
+ChatGPTに文章を要約してもらう方法について、初心者向けに具体的な手順・例・注意点を交えて解説します。
 
 https://kamowakaru.github.io/wakarukamo/articles/24-3-chatgpt.html?utm_source=x&utm_medium=social&utm_campaign=article_share
 #ChatGPT
@@ -26,7 +26,7 @@ Threads案：体験に寄り添う型
 ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
 「ChatGPTに文章を要約してもらう方法｜プロンプト例つき」で迷うこと、ありませんか？
 
-今回は、ChatGPTで文章を要約する方法を、文字数・箇条書き・対象読者・重要点を指定するコピペ用プロンプト例とともに解説します。
+今回は、ChatGPTに文章を要約してもらう方法について、初心者向けに具体的な手順・例・注意点を交えて解説します。
 実際の手順やポイントを初心者向けにまとめました🐤
 
 https://kamowakaru.github.io/wakarukamo/articles/24-3-chatgpt.html?utm_source=threads&utm_medium=social&utm_campaign=article_share

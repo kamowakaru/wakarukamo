@@ -35,23 +35,23 @@ Googleスプレッドシートはブラウザと共同編集を中心に作ら�
 
 ExcelもMicrosoft 365やOneDriveを使えばクラウド共同編集できますが、デスクトップ版Excelは高度なデータ処理・分析機能や大規模な既存Excel資産との互換性で強みがあります。
 
-→ [GoogleスプレッドシートとExcelはどっちがいい？違いを比較](16-2-sheets.html)
+[GoogleスプレッドシートとExcelはどっちがいい？違いを比較](16-2-sheets.html)
 
 ## Excelファイルも扱える
 
 Googleドライブへ`.xlsx`をアップロードし、Googleスプレッドシートで開いて編集できます。元のOffice形式のまま編集する方法と、Googleスプレッドシート形式へ変換する方法があります。
 
-→ [ExcelファイルをGoogleスプレッドシートで開く方法](16-3-sheets.html)
+[ExcelファイルをGoogleスプレッドシートで開く方法](16-3-sheets.html)
 
 逆に、GoogleスプレッドシートをExcel形式でダウンロードすることもできます。
 
-→ [GoogleスプレッドシートをExcel形式で保存する方法](16-4-sheets.html)
+[GoogleスプレッドシートをExcel形式で保存する方法](16-4-sheets.html)
 
 ## 共有が簡単
 
 右上の **「共有」** から相手のメールアドレスを指定し、閲覧者・閲覧者（コメント可）・編集者などの権限を設定できます。
 
-→ [Googleスプレッドシートを共有する方法](16-5-sheets.html)
+[Googleスプレッドシートを共有する方法](16-5-sheets.html)
 
 ## ワカルカモではスプレッドシートをこう使っています
 

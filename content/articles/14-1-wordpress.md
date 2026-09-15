@@ -81,4 +81,4 @@ wordpress-add-image
 
 初心者なら、まず投稿名だけのシンプルな構造から検討すると分かりやすいでしょう。
 
-→ [WordPressの初期設定まとめ｜サイト開設後に最初にやること](14-wordpress.html)
+[WordPressの初期設定まとめ｜サイト開設後に最初にやること](14-wordpress.html)

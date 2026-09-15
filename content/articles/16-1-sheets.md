@@ -53,4 +53,4 @@ GoogleスプレッドシートはGoogleドライブ上で管理されます。
 
 組織管理、ビジネス用メール、より高度なAI・管理機能などが必要になったときにGoogle Workspaceを検討すると分かりやすいです。
 
-→ [Googleスプレッドシートとは？Excelとの違い・できることを解説](16-sheets.html)
+[Googleスプレッドシートとは？Excelとの違い・できることを解説](16-sheets.html)

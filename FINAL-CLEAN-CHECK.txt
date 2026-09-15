@@ -14,3 +14,10 @@ generate_site.py exit code: 0
 
 Removed from generated articles/:
 articles/x-api-auto-post-pricing.md
+
+V2 display fixes:
+Category order: PC・Windows > Web全般 > Webマーケティング > WordPress > Google・GAS > AI・ChatGPT
+Removed stray arrow prefixes before Markdown link cards: 78
+Files changed for arrow cleanup: 46
+Generated HTML stray-arrow check: 0
+generate_site.py exit code: 0

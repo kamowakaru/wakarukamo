@@ -7,7 +7,7 @@
 X案1：要点型
 ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
 【ChatGPTの過去のチャットを探す方法】
-ChatGPTで以前の会話を検索して見つける方法と、タイトルを覚えていないときの検索語の選び方を解説します。
+ChatGPTの過去のチャットを探す方法について、初心者向けに具体的な手順・例・注意点を交えて解説します。
 
 https://kamowakaru.github.io/wakarukamo/articles/23-4-chatgpt.html?utm_source=x&utm_medium=social&utm_campaign=article_share
 #ChatGPT
@@ -16,7 +16,7 @@ https://kamowakaru.github.io/wakarukamo/articles/23-4-chatgpt.html?utm_source=x&
 X案2：問いかけ型
 ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
 「ChatGPTの過去のチャットを探す方法」で困っていませんか？
-ChatGPTで以前の会話を検索して見つける方法と、タイトルを覚えていないときの検索語の選び方を解説します。
+ChatGPTの過去のチャットを探す方法について、初心者向けに具体的な手順・例・注意点を交えて解説します。
 
 https://kamowakaru.github.io/wakarukamo/articles/23-4-chatgpt.html?utm_source=x&utm_medium=social&utm_campaign=article_share
 #ChatGPT
@@ -26,7 +26,7 @@ Threads案：体験に寄り添う型
 ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
 「ChatGPTの過去のチャットを探す方法」で迷うこと、ありませんか？
 
-今回は、ChatGPTで以前の会話を検索して見つける方法と、タイトルを覚えていないときの検索語の選び方を解説します。
+今回は、ChatGPTの過去のチャットを探す方法について、初心者向けに具体的な手順・例・注意点を交えて解説します。
 実際の手順やポイントを初心者向けにまとめました🐤
 
 https://kamowakaru.github.io/wakarukamo/articles/23-4-chatgpt.html?utm_source=threads&utm_medium=social&utm_campaign=article_share

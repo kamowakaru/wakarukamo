@@ -19,7 +19,7 @@ point: "実際に確認・操作できるところまで具体的に解説しま
 
 WordPressを動かし、Webサイトをインターネットへ公開する場所です。
 
-→ [WordPressに必要なレンタルサーバーとは？選び方を解説](12-1-wordpress.html)
+[WordPressに必要なレンタルサーバーとは？選び方を解説](12-1-wordpress.html)
 
 ### ドメイン
 
@@ -27,7 +27,7 @@ WordPressを動かし、Webサイトをインターネットへ公開する場�
 
 サーバー会社で同時取得できる場合もあります。
 
-→ [WordPressのドメインはどう決める？決め方と注意点](12-2-wordpress.html)
+[WordPressのドメインはどう決める？決め方と注意点](12-2-wordpress.html)
 
 ### WordPress
 
@@ -53,4 +53,4 @@ WordPressを動かし、Webサイトをインターネットへ公開する場�
 
 まずWordPressへログインでき、サイトがHTTPSで正常に表示されるところまで進めます。その後、目的に合わせてテーマ・必要なプラグインを追加します。
 
-→ [WordPressの始め方｜初心者向けに開設までの流れを解説](12-wordpress.html)
+[WordPressの始め方｜初心者向けに開設までの流れを解説](12-wordpress.html)

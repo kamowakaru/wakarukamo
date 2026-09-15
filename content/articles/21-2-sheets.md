@@ -60,4 +60,4 @@ const values = sheet.getRange('A2:C10').getValues();
 
 記事管理表なら「1行＝1記事」にしておくと、GASで全行を配列として読み込み、記事番号や公開状態を条件にチェックしやすくなります。
 
-→ [Googleスプレッドシートの使い方｜初心者向けに基本操作を解説](17-sheets.html)
+[Googleスプレッドシートの使い方｜初心者向けに基本操作を解説](17-sheets.html)

@@ -43,7 +43,7 @@ Excelの`.xlsx`をGoogleスプレッドシートで開いたり、Googleスプ�
 
 ただし、複雑なマクロ、特殊な書式、Excel固有機能などは完全互換にならない場合があります。
 
-→ [ExcelファイルをGoogleスプレッドシートで開く方法](16-3-sheets.html)
+[ExcelファイルをGoogleスプレッドシートで開く方法](16-3-sheets.html)
 
 ## 自動化の考え方も違う
 
