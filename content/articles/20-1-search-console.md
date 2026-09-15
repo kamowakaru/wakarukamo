@@ -2,7 +2,7 @@
 title: "Google Search Consoleにサイトを登録する方法"
 date: "2026-09-15"
 article_no: "20-1"
-category: "google-gas"
+category: "other"
 tags:
   - "spreadsheet"
   - "search-console"

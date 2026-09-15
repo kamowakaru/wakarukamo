@@ -2,7 +2,7 @@
 title: "Search Consoleで検索キーワードを確認する方法"
 date: "2026-09-15"
 article_no: "20-3"
-category: "google-gas"
+category: "other"
 tags:
   - "spreadsheet"
   - "search-console"

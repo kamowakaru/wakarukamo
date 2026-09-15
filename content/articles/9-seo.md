@@ -2,7 +2,7 @@
 title: "SEOとは？初心者向けに仕組みと基本的な対策をわかりやすく解説"
 date: "2026-09-15"
 article_no: "9"
-category: "web"
+category: "other"
 tags:
   - "website"
   - "seo"

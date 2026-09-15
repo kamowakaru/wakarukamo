@@ -342,6 +342,8 @@ def shell(title, body, prefix='../', desc='', canonical_path='', json_ld='', noi
         f'<a href="{prefix}about.html">このサイトについて</a>'
     )
     canonical = SITE_URL + ('/' + canonical_path.lstrip('/') if canonical_path else '/')
+    page_title = title if not canonical_path else f'{title} | ワカルカモ'
+    text = re.sub(r'<title>.*?</title>', f'<title>{html.escape(page_title)}</title>', text, count=1, flags=re.S)
     schema = f'<script type="application/ld+json">{json_ld}</script>' if json_ld else ''
     image = og_image or f'{SITE_URL}/assets/images/hero-duck.webp'
     robots = '<meta name="robots" content="noindex,follow">' if noindex else ''
@@ -572,7 +574,7 @@ home_schema = json.dumps({'@context':'https://schema.org','@graph':[
     {'@type':'WebSite','name':'ワカルカモ','url':f'{SITE_URL}/','potentialAction':{'@type':'SearchAction','target':f'{SITE_URL}/search.html?q={{search_term_string}}','query-input':'required name=search_term_string'}},
     {'@type':'Organization','name':'ワカルカモ','url':f'{SITE_URL}/','logo':f'{SITE_URL}/assets/images/logo-duck.webp'}
 ]}, ensure_ascii=False).replace('</', '<\\/')
-update_static_seo(ROOT/'index.html', '', 'ワカルカモ', 'PC・Web・AIの「わからない」が、わかるかも。', json_ld=home_schema)
+update_static_seo(ROOT/'index.html', '', 'ワカルカモ｜PC・Web・ChatGPTの使い方・困りごとを初心者向けに解説', 'PC・Web・AI・Webマーケティングをはじめとしたデジタルの困りごとを、わかりやすく解説するブログです。', json_ld=home_schema)
 update_static_seo(ROOT/'articles.html', 'articles.html', '記事一覧', 'ワカルカモの記事一覧です。')
 update_static_seo(ROOT/'search.html', 'search.html', '検索', 'ワカルカモの記事を検索できます。', noindex=True)
 update_static_seo(ROOT/'about.html', 'about.html', 'このサイトについて', 'ワカルカモの方針と運営者情報です。')

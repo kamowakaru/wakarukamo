@@ -2,7 +2,7 @@
 title: "Search Consoleへサイトマップを送信する方法｜追加後の見方も解説"
 date: "2026-09-15"
 article_no: "20-2"
-category: "google-gas"
+category: "other"
 tags:
   - "spreadsheet"
   - "search-console"

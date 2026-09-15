@@ -2,7 +2,7 @@
 title: "メタディスクリプションとは？SEOを意識した書き方を解説"
 date: "2026-09-15"
 article_no: "9-4"
-category: "web"
+category: "other"
 tags:
   - "website"
   - "seo"

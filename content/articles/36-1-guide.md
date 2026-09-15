@@ -2,7 +2,7 @@
 title: "お店・商品・サービスの紹介ページを作るには？LPの作り方を解説"
 date: "2026-09-15"
 article_no: "36-1"
-category: "web"
+category: "other"
 tags:
   - "website"
 description: "お店・商品・サービスの紹介ページを作るには？LPの作り方を解説について、初心者向けに具体的な手順・例・注意点を交えて解説します。"

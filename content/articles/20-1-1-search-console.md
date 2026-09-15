@@ -2,7 +2,7 @@
 title: "Search ConsoleのHTML確認ファイルをGitHub Pagesへ置く方法"
 date: "2026-09-15"
 article_no: "20-1-1"
-category: "google-gas"
+category: "other"
 tags:
   - "spreadsheet"
   - "github-pages"

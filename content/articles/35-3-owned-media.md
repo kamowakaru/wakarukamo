@@ -2,7 +2,7 @@
 title: "オウンドメディアでは何を書く？記事テーマ・キーワードの決め方"
 date: "2026-09-15"
 article_no: "35-3"
-category: "web"
+category: "other"
 tags:
   - "website"
 description: "オウンドメディアでは何を書く？記事テーマ・キーワードの決め方について、初心者向けに具体的な手順・例・注意点を交えて解説します。"

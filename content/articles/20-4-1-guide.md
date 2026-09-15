@@ -2,7 +2,7 @@
 title: "新しい記事は毎回インデックス登録をリクエストする必要がある？"
 date: "2026-09-15"
 article_no: "20-4-1"
-category: "google-gas"
+category: "other"
 tags:
   - "spreadsheet"
 description: "新しい記事は毎回インデックス登録をリクエストする必要がある？について、初心者向けに具体的な手順・例・注意点を交えて解説します。"

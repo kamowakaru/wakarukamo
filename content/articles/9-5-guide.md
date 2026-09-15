@@ -2,7 +2,7 @@
 title: "検索順位が上がらない原因は？初心者が確認したいポイント"
 date: "2026-09-15"
 article_no: "9-5"
-category: "web"
+category: "other"
 tags:
   - "website"
 description: "検索順位が上がらない原因は？初心者が確認したいポイントについて、初心者向けに具体的な手順・例・注意点を交えて解説します。"

@@ -2,7 +2,7 @@
 title: "Google Search Consoleとは？できること・登録方法・使い方を解説"
 date: "2026-09-15"
 article_no: "20"
-category: "google-gas"
+category: "other"
 tags:
   - "spreadsheet"
   - "search-console"

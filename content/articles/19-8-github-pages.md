@@ -2,7 +2,7 @@
 title: "GitHub PagesにGA4を設定する方法｜測定開始までの手順"
 date: "2026-09-15"
 article_no: "19-8"
-category: "google-gas"
+category: "other"
 tags:
   - "spreadsheet"
   - "github-pages"

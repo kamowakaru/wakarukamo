@@ -2,7 +2,7 @@
 title: "SEOでタイトルが重要な理由は？付け方のポイントを解説"
 date: "2026-09-15"
 article_no: "9-1"
-category: "web"
+category: "other"
 tags:
   - "website"
   - "seo"
