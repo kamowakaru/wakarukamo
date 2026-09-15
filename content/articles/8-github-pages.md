@@ -5,8 +5,6 @@ article_no: "8"
 category: "web"
 tags:
   - "website"
-  - "github-pages"
-  - "github"
 description: "GitHub Pagesとは？無料でWebサイトを公開する方法・使い方を解説について、初心者向けに具体的な手順・例・注意点を交えて解説します。"
 point: "実際に確認・操作できるところまで具体的に解説します。"
 ---

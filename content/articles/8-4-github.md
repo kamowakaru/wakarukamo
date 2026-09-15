@@ -5,7 +5,6 @@ article_no: "8-4"
 category: "web"
 tags:
   - "website"
-  - "github"
 description: "GitHubで100ファイルを超えてアップロードできないときの対処法について、初心者向けに具体的な手順・例・注意点を交えて解説します。"
 point: "実際に確認・操作できるところまで具体的に解説します。"
 ---
