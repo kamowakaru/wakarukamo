@@ -4,6 +4,14 @@
   <url><loc>https://kamowakaru.github.io/wakarukamo/articles.html</loc></url>
   <url><loc>https://kamowakaru.github.io/wakarukamo/about.html</loc></url>
   <url><loc>https://kamowakaru.github.io/wakarukamo/privacy.html</loc></url>
+  <url><loc>https://kamowakaru.github.io/wakarukamo/articles/7-website.html</loc><lastmod>2026-09-16</lastmod></url>
+  <url><loc>https://kamowakaru.github.io/wakarukamo/articles/7-7-github-pages.html</loc><lastmod>2026-09-16</lastmod></url>
+  <url><loc>https://kamowakaru.github.io/wakarukamo/articles/7-6-github-pages.html</loc><lastmod>2026-09-16</lastmod></url>
+  <url><loc>https://kamowakaru.github.io/wakarukamo/articles/7-5-website.html</loc><lastmod>2026-09-16</lastmod></url>
+  <url><loc>https://kamowakaru.github.io/wakarukamo/articles/7-4-website.html</loc><lastmod>2026-09-16</lastmod></url>
+  <url><loc>https://kamowakaru.github.io/wakarukamo/articles/7-3-guide.html</loc><lastmod>2026-09-16</lastmod></url>
+  <url><loc>https://kamowakaru.github.io/wakarukamo/articles/7-2-guide.html</loc><lastmod>2026-09-16</lastmod></url>
+  <url><loc>https://kamowakaru.github.io/wakarukamo/articles/7-1-website.html</loc><lastmod>2026-09-16</lastmod></url>
   <url><loc>https://kamowakaru.github.io/wakarukamo/articles/9-seo.html</loc><lastmod>2026-09-15</lastmod></url>
   <url><loc>https://kamowakaru.github.io/wakarukamo/articles/9-5-guide.html</loc><lastmod>2026-09-15</lastmod></url>
   <url><loc>https://kamowakaru.github.io/wakarukamo/articles/9-4-seo.html</loc><lastmod>2026-09-15</lastmod></url>
@@ -16,14 +24,6 @@
   <url><loc>https://kamowakaru.github.io/wakarukamo/articles/8-3-github-pages.html</loc><lastmod>2026-09-15</lastmod></url>
   <url><loc>https://kamowakaru.github.io/wakarukamo/articles/8-2-github-pages.html</loc><lastmod>2026-09-15</lastmod></url>
   <url><loc>https://kamowakaru.github.io/wakarukamo/articles/8-1-github-pages.html</loc><lastmod>2026-09-15</lastmod></url>
-  <url><loc>https://kamowakaru.github.io/wakarukamo/articles/7-website.html</loc><lastmod>2026-09-15</lastmod></url>
-  <url><loc>https://kamowakaru.github.io/wakarukamo/articles/7-7-github-pages.html</loc><lastmod>2026-09-15</lastmod></url>
-  <url><loc>https://kamowakaru.github.io/wakarukamo/articles/7-6-github-pages.html</loc><lastmod>2026-09-15</lastmod></url>
-  <url><loc>https://kamowakaru.github.io/wakarukamo/articles/7-5-website.html</loc><lastmod>2026-09-15</lastmod></url>
-  <url><loc>https://kamowakaru.github.io/wakarukamo/articles/7-4-website.html</loc><lastmod>2026-09-15</lastmod></url>
-  <url><loc>https://kamowakaru.github.io/wakarukamo/articles/7-3-guide.html</loc><lastmod>2026-09-15</lastmod></url>
-  <url><loc>https://kamowakaru.github.io/wakarukamo/articles/7-2-guide.html</loc><lastmod>2026-09-15</lastmod></url>
-  <url><loc>https://kamowakaru.github.io/wakarukamo/articles/7-1-website.html</loc><lastmod>2026-09-15</lastmod></url>
   <url><loc>https://kamowakaru.github.io/wakarukamo/articles/6-website.html</loc><lastmod>2026-09-15</lastmod></url>
   <url><loc>https://kamowakaru.github.io/wakarukamo/articles/6-5-guide.html</loc><lastmod>2026-09-15</lastmod></url>
   <url><loc>https://kamowakaru.github.io/wakarukamo/articles/6-4-guide.html</loc><lastmod>2026-09-15</lastmod></url>
@@ -271,7 +271,7 @@
   <url><loc>https://kamowakaru.github.io/wakarukamo/articles/1-1-windows11-screenshot.html</loc><lastmod>2026-09-14</lastmod></url>
   <url><loc>https://kamowakaru.github.io/wakarukamo/articles/chatgpt-seo-publish-workflow.html</loc><lastmod>2026-09-13</lastmod></url>
   <url><loc>https://kamowakaru.github.io/wakarukamo/articles/x-api-auto-post-pricing.html</loc><lastmod>2026-09-12</lastmod></url>
-  <url><loc>https://kamowakaru.github.io/wakarukamo/categories/web.html</loc><lastmod>2026-09-15</lastmod></url>
+  <url><loc>https://kamowakaru.github.io/wakarukamo/categories/web.html</loc><lastmod>2026-09-16</lastmod></url>
   <url><loc>https://kamowakaru.github.io/wakarukamo/categories/wordpress.html</loc><lastmod>2026-09-15</lastmod></url>
   <url><loc>https://kamowakaru.github.io/wakarukamo/categories/other.html</loc><lastmod>2026-09-15</lastmod></url>
   <url><loc>https://kamowakaru.github.io/wakarukamo/categories/google-gas.html</loc><lastmod>2026-09-15</lastmod></url>
@@ -288,7 +288,7 @@
   <url><loc>https://kamowakaru.github.io/wakarukamo/tags/seo.html</loc><lastmod>2026-09-15</lastmod></url>
   <url><loc>https://kamowakaru.github.io/wakarukamo/tags/github.html</loc><lastmod>2026-09-15</lastmod></url>
   <url><loc>https://kamowakaru.github.io/wakarukamo/tags/github-pages.html</loc><lastmod>2026-09-15</lastmod></url>
-  <url><loc>https://kamowakaru.github.io/wakarukamo/tags/website.html</loc><lastmod>2026-09-15</lastmod></url>
+  <url><loc>https://kamowakaru.github.io/wakarukamo/tags/website.html</loc><lastmod>2026-09-16</lastmod></url>
   <url><loc>https://kamowakaru.github.io/wakarukamo/tags/markdown.html</loc><lastmod>2026-09-15</lastmod></url>
   <url><loc>https://kamowakaru.github.io/wakarukamo/tags/search-console.html</loc><lastmod>2026-09-15</lastmod></url>
   <url><loc>https://kamowakaru.github.io/wakarukamo/tags/ga4.html</loc><lastmod>2026-09-15</lastmod></url>

@@ -7,7 +7,7 @@
 X案1：要点型
 ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
 【Webサイトの作り方｜初心者向けに作成から公開までの流れを解説】
-Webサイトの作り方について、初心者向けに具体的な手順・例・注意点を交えて解説します。
+Webサイトは「目的を決める→作り方を選ぶ→ページを作る→公開する→検索・アクセスを確認する」の順で作ると迷いにくくなります。HTMLを一から書く方法だけがWebサイト制作ではありません。WordPress、Wix、GitH…
 
 https://kamowakaru.github.io/wakarukamo/articles/7-website.html?utm_source=x&utm_medium=social&utm_campaign=article_share
 #Webサイト制作
@@ -16,7 +16,7 @@ https://kamowakaru.github.io/wakarukamo/articles/7-website.html?utm_source=x&utm
 X案2：問いかけ型
 ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
 「Webサイトの作り方｜初心者向けに作成から公開までの流れを解説」で困っていませんか？
-Webサイトの作り方について、初心者向けに具体的な手順・例・注意点を交えて解説します。
+Webサイトは「目的を決める→作り方を選ぶ→ページを作る→公開する→検索・アクセスを確認する」の順で作ると迷いにくくなります。HTMLを一から書く方法だけがWebサイト制作ではありません。WordPres…
 
 https://kamowakaru.github.io/wakarukamo/articles/7-website.html?utm_source=x&utm_medium=social&utm_campaign=article_share
 #Webサイト制作
@@ -26,7 +26,7 @@ Threads案：体験に寄り添う型
 ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
 「Webサイトの作り方｜初心者向けに作成から公開までの流れを解説」で迷うこと、ありませんか？
 
-今回は、Webサイトの作り方について、初心者向けに具体的な手順・例・注意点を交えて解説します。
+今回は、Webサイトは「目的を決める→作り方を選ぶ→ページを作る→公開する→検索・アクセスを確認する」の順で作ると迷いにくくなります。HTMLを一から書く方法だけがWebサイト制作ではありません。WordPress、Wix、GitHub Pages、Netlifyなど、目的と必要な機能に合う方法を選べます。
 実際の手順やポイントを初心者向けにまとめました🐤
 
 https://kamowakaru.github.io/wakarukamo/articles/7-website.html?utm_source=threads&utm_medium=social&utm_campaign=article_share

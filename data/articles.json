@@ -1,5 +1,125 @@
 [
   {
+    "slug": "7-website",
+    "title": "Webサイトの作り方｜初心者向けに作成から公開までの流れを解説",
+    "date": "2026-09-16",
+    "updated": "2026-09-16",
+    "category": "web",
+    "tags": [
+      "website"
+    ],
+    "description": "Webサイトは「目的を決める→作り方を選ぶ→ページを作る→公開する→検索・アクセスを確認する」の順で作ると迷いにくくなります。HTMLを一から書く方法だけがWebサイト制作ではありません。WordPress、Wix、GitHub Pages、Netlifyなど、目的と必要な機能に合う方法を選べます。",
+    "article_no": "7",
+    "thumbnail": "groups/07.jpg",
+    "point": "タイトルの疑問に先に答え、必要な手順・違い・注意点だけを具体的に解説します。",
+    "draft": false
+  },
+  {
+    "slug": "7-7-github-pages",
+    "title": "Wixとは？無料でWebサイトを作れる？WordPress・GitHub Pagesとの違い",
+    "date": "2026-09-16",
+    "updated": "2026-09-16",
+    "category": "web",
+    "tags": [
+      "website"
+    ],
+    "description": "Wixは、コードを一から書かなくてもWebサイトを作成・公開できるWebサイト作成サービスです。無料でアカウントを作り、Wixの無料URLでサイトを公開できます。独自ドメインを接続するにはサイトプランへのアップグレードが必要です。",
+    "article_no": "7-7",
+    "thumbnail": "groups/07.jpg",
+    "point": "タイトルの疑問に先に答え、必要な手順・違い・注意点だけを具体的に解説します。",
+    "draft": false
+  },
+  {
+    "slug": "7-6-github-pages",
+    "title": "Netlifyとは？GitHub Pagesとの違い・無料でWebサイトを公開する方法",
+    "date": "2026-09-16",
+    "updated": "2026-09-16",
+    "category": "web",
+    "tags": [
+      "website"
+    ],
+    "description": "Netlifyは、Webサイトやフロントエンドをビルド・公開できるホスティングサービスです。GitHubなどのリポジトリと接続すると、pushに合わせて自動でビルド・デプロイできます。GitHub Pagesも静的サイトを公開できますが、Netlifyはデプロイ設定やプレビューなどWeb開発向けの機能をまとめて使いたい場合に向いています。",
+    "article_no": "7-6",
+    "thumbnail": "groups/07.jpg",
+    "point": "タイトルの疑問に先に答え、必要な手順・違い・注意点だけを具体的に解説します。",
+    "draft": false
+  },
+  {
+    "slug": "7-5-website",
+    "title": "作ったWebサイトをインターネットに公開する方法",
+    "date": "2026-09-16",
+    "updated": "2026-09-16",
+    "category": "web",
+    "tags": [
+      "website"
+    ],
+    "description": "作ったHTML/CSSサイトを公開するには、ファイルをWebからアクセスできる場所へ置きます。代表的なのは「レンタルサーバーへFTP/SFTPでアップロード」「GitHub Pagesで公開」「Netlifyへデプロイ」です。WordPressやWixはサービス側の公開機能を使います。",
+    "article_no": "7-5",
+    "thumbnail": "groups/07.jpg",
+    "point": "タイトルの疑問に先に答え、必要な手順・違い・注意点だけを具体的に解説します。",
+    "draft": false
+  },
+  {
+    "slug": "7-4-website",
+    "title": "無料でWebサイトを作る方法｜初心者向けに解説",
+    "date": "2026-09-16",
+    "updated": "2026-09-16",
+    "category": "web",
+    "tags": [
+      "website"
+    ],
+    "description": "無料でWebサイトを作るなら、コードを書かずに始めるWix、HTML/CSSなどの静的サイトを公開するGitHub PagesやNetlifyなどがあります。無料でも公開できますが、独自ドメイン、広告表示、容量、商用機能などに制限がある場合があるため、目的に合わせて選びます。",
+    "article_no": "7-4",
+    "thumbnail": "groups/07.jpg",
+    "point": "タイトルの疑問に先に答え、必要な手順・違い・注意点だけを具体的に解説します。",
+    "draft": false
+  },
+  {
+    "slug": "7-3-guide",
+    "title": "CSSとは？HTMLとの違いと役割を初心者向けに解説",
+    "date": "2026-09-16",
+    "updated": "2026-09-16",
+    "category": "web",
+    "tags": [
+      "website"
+    ],
+    "description": "CSSは、HTMLで作ったWebページの色・文字サイズ・余白・配置などの見た目を指定するための言語です。HTMLがページの構造、CSSがデザインを担当すると考えると分かりやすいです。",
+    "article_no": "7-3",
+    "thumbnail": "groups/07.jpg",
+    "point": "タイトルの疑問に先に答え、必要な手順・違い・注意点だけを具体的に解説します。",
+    "draft": false
+  },
+  {
+    "slug": "7-2-guide",
+    "title": "HTMLとは？初心者向けに役割と基本を解説",
+    "date": "2026-09-16",
+    "updated": "2026-09-16",
+    "category": "web",
+    "tags": [
+      "website"
+    ],
+    "description": "HTMLは、Webページの「見出し・文章・画像・リンク」などの意味と構造をブラウザに伝えるための言語です。見た目を整えるCSSや、動きを付けるJavaScriptとは役割が違います。",
+    "article_no": "7-2",
+    "thumbnail": "groups/07.jpg",
+    "point": "タイトルの疑問に先に答え、必要な手順・違い・注意点だけを具体的に解説します。",
+    "draft": false
+  },
+  {
+    "slug": "7-1-website",
+    "title": "Webサイトを作るには何が必要？初心者向けに解説",
+    "date": "2026-09-16",
+    "updated": "2026-09-16",
+    "category": "web",
+    "tags": [
+      "website"
+    ],
+    "description": "Webサイト作成に最低限必要なのは「公開する内容」と「公開する場所」です。自作するならHTML/CSSなどのファイルとサーバー、必要に応じて独自ドメインを用意します。Wixなどのサービスなら作成画面と公開場所がセットになっているため、個別にサーバーを契約しなくても始められます。",
+    "article_no": "7-1",
+    "thumbnail": "groups/07.jpg",
+    "point": "タイトルの疑問に先に答え、必要な手順・違い・注意点だけを具体的に解説します。",
+    "draft": false
+  },
+  {
     "slug": "9-seo",
     "title": "SEOとは？初心者向けに仕組みと基本的な対策をわかりやすく解説",
     "date": "2026-09-15",
@@ -101,9 +221,7 @@
     "updated": "2026-09-15",
     "category": "web",
     "tags": [
-      "website",
-      "github-pages",
-      "github"
+      "website"
     ],
     "description": "GitHub Pagesとは？無料でWebサイトを公開する方法・使い方を解説について、初心者向けに具体的な手順・例・注意点を交えて解説します。",
     "article_no": "8",
@@ -118,9 +236,7 @@
     "updated": "2026-09-15",
     "category": "web",
     "tags": [
-      "website",
-      "github-pages",
-      "github"
+      "website"
     ],
     "description": "GitHub Pagesで独自ドメインを使う方法について、初心者向けに具体的な手順・例・注意点を交えて解説します。",
     "article_no": "8-5",
@@ -135,8 +251,7 @@
     "updated": "2026-09-15",
     "category": "web",
     "tags": [
-      "website",
-      "github"
+      "website"
     ],
     "description": "GitHubで100ファイルを超えてアップロードできないときの対処法について、初心者向けに具体的な手順・例・注意点を交えて解説します。",
     "article_no": "8-4",
@@ -151,9 +266,7 @@
     "updated": "2026-09-15",
     "category": "web",
     "tags": [
-      "website",
-      "github-pages",
-      "github"
+      "website"
     ],
     "description": "GitHub Pagesが更新されないときは？反映されない原因と確認方法について、初心者向けに具体的な手順・例・注意点を交えて解説します。",
     "article_no": "8-3",
@@ -168,9 +281,7 @@
     "updated": "2026-09-15",
     "category": "web",
     "tags": [
-      "website",
-      "github-pages",
-      "github"
+      "website"
     ],
     "description": "GitHub Pagesの公開元はどれを選ぶ？ブランチとActionsの違いについて、初心者向けに具体的な手順・例・注意点を交えて解説します。",
     "article_no": "8-2",
@@ -185,137 +296,11 @@
     "updated": "2026-09-15",
     "category": "web",
     "tags": [
-      "website",
-      "github-pages",
-      "github"
+      "website"
     ],
     "description": "GitHub PagesでWebサイトを作る方法について、初心者向けに具体的な手順・例・注意点を交えて解説します。",
     "article_no": "8-1",
     "thumbnail": "groups/08.jpg",
-    "point": "実際に確認・操作できるところまで具体的に解説します。",
-    "draft": false
-  },
-  {
-    "slug": "7-website",
-    "title": "Webサイトの作り方｜初心者向けに作成から公開までの流れを解説",
-    "date": "2026-09-15",
-    "updated": "2026-09-15",
-    "category": "web",
-    "tags": [
-      "website"
-    ],
-    "description": "Webサイトの作り方について、初心者向けに具体的な手順・例・注意点を交えて解説します。",
-    "article_no": "7",
-    "thumbnail": "groups/07.jpg",
-    "point": "実際に確認・操作できるところまで具体的に解説します。",
-    "draft": false
-  },
-  {
-    "slug": "7-7-github-pages",
-    "title": "Wixとは？無料でWebサイトを作れる？WordPress・GitHub Pagesとの違い",
-    "date": "2026-09-15",
-    "updated": "2026-09-15",
-    "category": "web",
-    "tags": [
-      "website",
-      "github-pages",
-      "github"
-    ],
-    "description": "Wixとは？無料でWebサイトを作れる？WordPress・GitHub Pagesとの違いについて、初心者向けに具体的な手順・例・注意点を交えて解説します。",
-    "article_no": "7-7",
-    "thumbnail": "groups/07.jpg",
-    "point": "実際に確認・操作できるところまで具体的に解説します。",
-    "draft": false
-  },
-  {
-    "slug": "7-6-github-pages",
-    "title": "Netlifyとは？GitHub Pagesとの違い・無料でWebサイトを公開する方法",
-    "date": "2026-09-15",
-    "updated": "2026-09-15",
-    "category": "web",
-    "tags": [
-      "website",
-      "github-pages",
-      "github"
-    ],
-    "description": "Netlifyとは？GitHub Pagesとの違い・無料でWebサイトを公開する方法について、初心者向けに具体的な手順・例・注意点を交えて解説します。",
-    "article_no": "7-6",
-    "thumbnail": "groups/07.jpg",
-    "point": "実際に確認・操作できるところまで具体的に解説します。",
-    "draft": false
-  },
-  {
-    "slug": "7-5-website",
-    "title": "作ったWebサイトをインターネットに公開する方法",
-    "date": "2026-09-15",
-    "updated": "2026-09-15",
-    "category": "web",
-    "tags": [
-      "website"
-    ],
-    "description": "作ったWebサイトをインターネットに公開する方法について、初心者向けに具体的な手順・例・注意点を交えて解説します。",
-    "article_no": "7-5",
-    "thumbnail": "groups/07.jpg",
-    "point": "実際に確認・操作できるところまで具体的に解説します。",
-    "draft": false
-  },
-  {
-    "slug": "7-4-website",
-    "title": "無料でWebサイトを作る方法｜初心者向けに解説",
-    "date": "2026-09-15",
-    "updated": "2026-09-15",
-    "category": "web",
-    "tags": [
-      "website"
-    ],
-    "description": "無料でWebサイトを作る方法について、初心者向けに具体的な手順・例・注意点を交えて解説します。",
-    "article_no": "7-4",
-    "thumbnail": "groups/07.jpg",
-    "point": "実際に確認・操作できるところまで具体的に解説します。",
-    "draft": false
-  },
-  {
-    "slug": "7-3-guide",
-    "title": "CSSとは？HTMLとの違いと役割を初心者向けに解説",
-    "date": "2026-09-15",
-    "updated": "2026-09-15",
-    "category": "web",
-    "tags": [
-      "website"
-    ],
-    "description": "CSSとは？HTMLとの違いと役割を初心者向けに解説について、初心者向けに具体的な手順・例・注意点を交えて解説します。",
-    "article_no": "7-3",
-    "thumbnail": "groups/07.jpg",
-    "point": "実際に確認・操作できるところまで具体的に解説します。",
-    "draft": false
-  },
-  {
-    "slug": "7-2-guide",
-    "title": "HTMLとは？初心者向けに役割と基本を解説",
-    "date": "2026-09-15",
-    "updated": "2026-09-15",
-    "category": "web",
-    "tags": [
-      "website"
-    ],
-    "description": "HTMLとは？初心者向けに役割と基本を解説について、初心者向けに具体的な手順・例・注意点を交えて解説します。",
-    "article_no": "7-2",
-    "thumbnail": "groups/07.jpg",
-    "point": "実際に確認・操作できるところまで具体的に解説します。",
-    "draft": false
-  },
-  {
-    "slug": "7-1-website",
-    "title": "Webサイトを作るには何が必要？初心者向けに解説",
-    "date": "2026-09-15",
-    "updated": "2026-09-15",
-    "category": "web",
-    "tags": [
-      "website"
-    ],
-    "description": "Webサイトを作るには何が必要？初心者向けに解説について、初心者向けに具体的な手順・例・注意点を交えて解説します。",
-    "article_no": "7-1",
-    "thumbnail": "groups/07.jpg",
     "point": "実際に確認・操作できるところまで具体的に解説します。",
     "draft": false
   },

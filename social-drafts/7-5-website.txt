@@ -7,7 +7,7 @@
 X案1：要点型
 ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
 【作ったWebサイトをインターネットに公開する方法】
-作ったWebサイトをインターネットに公開する方法について、初心者向けに具体的な手順・例・注意点を交えて解説します。
+作ったHTML/CSSサイトを公開するには、ファイルをWebからアクセスできる場所へ置きます。代表的なのは「レンタルサーバーへFTP/SFTPでアップロード」「GitHub Pagesで公開」「Netlifyへデプロイ」です。Word…
 
 https://kamowakaru.github.io/wakarukamo/articles/7-5-website.html?utm_source=x&utm_medium=social&utm_campaign=article_share
 #Webサイト制作
@@ -16,7 +16,7 @@ https://kamowakaru.github.io/wakarukamo/articles/7-5-website.html?utm_source=x&u
 X案2：問いかけ型
 ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
 「作ったWebサイトをインターネットに公開する方法」で困っていませんか？
-作ったWebサイトをインターネットに公開する方法について、初心者向けに具体的な手順・例・注意点を交えて解説します。
+作ったHTML/CSSサイトを公開するには、ファイルをWebからアクセスできる場所へ置きます。代表的なのは「レンタルサーバーへFTP/SFTPでアップロード」「GitHub Pagesで公開」「Netlifyへデプ…
 
 https://kamowakaru.github.io/wakarukamo/articles/7-5-website.html?utm_source=x&utm_medium=social&utm_campaign=article_share
 #Webサイト制作
@@ -26,7 +26,7 @@ Threads案：体験に寄り添う型
 ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
 「作ったWebサイトをインターネットに公開する方法」で迷うこと、ありませんか？
 
-今回は、作ったWebサイトをインターネットに公開する方法について、初心者向けに具体的な手順・例・注意点を交えて解説します。
+今回は、作ったHTML/CSSサイトを公開するには、ファイルをWebからアクセスできる場所へ置きます。代表的なのは「レンタルサーバーへFTP/SFTPでアップロード」「GitHub Pagesで公開」「Netlifyへデプロイ」です。WordPressやWixはサービス側の公開機能を使います。
 実際の手順やポイントを初心者向けにまとめました🐤
 
 https://kamowakaru.github.io/wakarukamo/articles/7-5-website.html?utm_source=threads&utm_medium=social&utm_campaign=article_share
