@@ -7,7 +7,7 @@
 X案1：要点型
 ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
 【ChatGPTにファイルを送って内容を読み取る方法】
-ChatGPTにファイルを送って内容を読み取る方法について、初心者向けに具体的な手順・例・注意点を交えて解説します。
+ChatGPTにPDFや文書、CSVなどのファイルを添付し、要約・抽出・比較などを依頼する基本手順を解説します。
 
 https://kamowakaru.github.io/wakarukamo/articles/23-2-chatgpt.html?utm_source=x&utm_medium=social&utm_campaign=article_share
 #ChatGPT
@@ -16,7 +16,7 @@ https://kamowakaru.github.io/wakarukamo/articles/23-2-chatgpt.html?utm_source=x&
 X案2：問いかけ型
 ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
 「ChatGPTにファイルを送って内容を読み取る方法」で困っていませんか？
-ChatGPTにファイルを送って内容を読み取る方法について、初心者向けに具体的な手順・例・注意点を交えて解説します。
+ChatGPTにPDFや文書、CSVなどのファイルを添付し、要約・抽出・比較などを依頼する基本手順を解説します。
 
 https://kamowakaru.github.io/wakarukamo/articles/23-2-chatgpt.html?utm_source=x&utm_medium=social&utm_campaign=article_share
 #ChatGPT
@@ -26,7 +26,7 @@ Threads案：体験に寄り添う型
 ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
 「ChatGPTにファイルを送って内容を読み取る方法」で迷うこと、ありませんか？
 
-今回は、ChatGPTにファイルを送って内容を読み取る方法について、初心者向けに具体的な手順・例・注意点を交えて解説します。
+今回は、ChatGPTにPDFや文書、CSVなどのファイルを添付し、要約・抽出・比較などを依頼する基本手順を解説します。
 実際の手順やポイントを初心者向けにまとめました🐤
 
 https://kamowakaru.github.io/wakarukamo/articles/23-2-chatgpt.html?utm_source=threads&utm_medium=social&utm_campaign=article_share
