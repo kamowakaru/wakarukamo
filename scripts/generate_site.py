@@ -384,7 +384,7 @@ def grouped_collection(items, prefix=''):
         else:
             chunks.append('<section class="article-group"><div class="group-children">' + ''.join(static_card(a, prefix) for a in children) + '</div></section>')
     if legacy:
-        chunks.append('<section class="article-group legacy-group"><h2 class="legacy-heading">その他の記事</h2><div class="group-children">' + ''.join(static_card(a, prefix) for a in legacy) + '</div></section>')
+        chunks.append('<section class="article-group legacy-group"><h2 class="legacy-heading">Webマーケティングの記事</h2><div class="group-children">' + ''.join(static_card(a, prefix) for a in legacy) + '</div></section>')
     return ''.join(chunks) or '<div class="empty-note">まだ記事がありません。</div>'
 
 def update_grouped_collection(path, items, prefix=''):
