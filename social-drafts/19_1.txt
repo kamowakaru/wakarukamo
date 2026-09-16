@@ -1,13 +1,13 @@
 ﻿ワカルカモ｜記事公開時のSNS投稿原稿
 
-記事タイトル：GA4の測定IDはどこ？G-から始まる番号の確認方法
+記事タイトル：サイトにGA4を登録する方法
 記事URL：https://kamowakaru.github.io/wakarukamo/articles/19_1.html
 
 ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
 X案1：要点型
 ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
-【GA4の測定IDはどこ？G-から始まる番号の確認方法】
-GA4のG-から始まる測定IDを、Webデータストリームから確認する手順を初心者向けに解説します。
+【サイトにGA4を登録する方法】
+Google Analytics 4でWebサイトを登録し、データを集め始めるまでの手順を初心者向けに解説します。
 
 https://kamowakaru.github.io/wakarukamo/articles/19_1.html?utm_source=x&utm_medium=social&utm_campaign=article_share
 #GA4
@@ -15,8 +15,8 @@ https://kamowakaru.github.io/wakarukamo/articles/19_1.html?utm_source=x&utm_medi
 ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
 X案2：問いかけ型
 ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
-「GA4の測定IDはどこ？G-から始まる番号の確認方法」で困っていませんか？
-GA4のG-から始まる測定IDを、Webデータストリームから確認する手順を初心者向けに解説します。
+「サイトにGA4を登録する方法」で困っていませんか？
+Google Analytics 4でWebサイトを登録し、データを集め始めるまでの手順を初心者向けに解説します。
 
 https://kamowakaru.github.io/wakarukamo/articles/19_1.html?utm_source=x&utm_medium=social&utm_campaign=article_share
 #GA4
@@ -24,9 +24,9 @@ https://kamowakaru.github.io/wakarukamo/articles/19_1.html?utm_source=x&utm_medi
 ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
 Threads案：体験に寄り添う型
 ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
-「GA4の測定IDはどこ？G-から始まる番号の確認方法」で迷うこと、ありませんか？
+「サイトにGA4を登録する方法」で迷うこと、ありませんか？
 
-今回は、GA4のG-から始まる測定IDを、Webデータストリームから確認する手順を初心者向けに解説します。
+今回は、Google Analytics 4でWebサイトを登録し、データを集め始めるまでの手順を初心者向けに解説します。
 実際の手順やポイントを初心者向けにまとめました🐤
 
 https://kamowakaru.github.io/wakarukamo/articles/19_1.html?utm_source=threads&utm_medium=social&utm_campaign=article_share
