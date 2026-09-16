@@ -1,0 +1,45 @@
+﻿ワカルカモ｜記事公開時のSNS投稿原稿
+
+記事タイトル：作ったWebサイトをインターネットに公開する方法
+記事URL：https://kamowakaru.github.io/wakarukamo/articles/7-5-website.html
+
+＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+X案1：要点型
+＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+【作ったWebサイトをインターネットに公開する方法】
+作ったHTML/CSSサイトを公開するには、ファイルをWebからアクセスできる場所へ置きます。代表的なのは「レンタルサーバーへFTP/SFTPでアップロード」「GitHub Pagesで公開」「Netlifyへデプロイ」です。Word…
+
+https://kamowakaru.github.io/wakarukamo/articles/7-5-website.html?utm_source=x&utm_medium=social&utm_campaign=article_share
+#Webサイト制作
+
+＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+X案2：問いかけ型
+＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+「作ったWebサイトをインターネットに公開する方法」で困っていませんか？
+作ったHTML/CSSサイトを公開するには、ファイルをWebからアクセスできる場所へ置きます。代表的なのは「レンタルサーバーへFTP/SFTPでアップロード」「GitHub Pagesで公開」「Netlifyへデプ…
+
+https://kamowakaru.github.io/wakarukamo/articles/7-5-website.html?utm_source=x&utm_medium=social&utm_campaign=article_share
+#Webサイト制作
+
+＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+Threads案：体験に寄り添う型
+＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+「作ったWebサイトをインターネットに公開する方法」で迷うこと、ありませんか？
+
+今回は、作ったHTML/CSSサイトを公開するには、ファイルをWebからアクセスできる場所へ置きます。代表的なのは「レンタルサーバーへFTP/SFTPでアップロード」「GitHub Pagesで公開」「Netlifyへデプロイ」です。WordPressやWixはサービス側の公開機能を使います。
+実際の手順やポイントを初心者向けにまとめました🐤
+
+https://kamowakaru.github.io/wakarukamo/articles/7-5-website.html?utm_source=threads&utm_medium=social&utm_campaign=article_share
+
+#Webサイト制作
+
+＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+投稿前チェック
+＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+□ 記事ページを開いて誤字・リンクを確認
+□ サムネイルの表示を確認
+□ Xへ投稿
+□ Threadsへ投稿
+
+※URLにはSNS別の流入をGA4で確認できるUTMパラメータが付いています。
+※文章は記事内容や実体験に合わせて、必要に応じて少し整えてください。

@@ -2686,17 +2686,17 @@
   },
   {
     "slug": "19_1",
-    "title": "GA4の測定IDはどこ？G-から始まる番号の確認方法",
+    "title": "サイトにGA4を登録する方法",
     "date": "2026-09-17",
     "updated": "2026-09-17",
     "category": "other",
     "tags": [
       "ga4"
     ],
-    "description": "GA4のG-から始まる測定IDを、Webデータストリームから確認する手順を初心者向けに解説します。",
+    "description": "Google Analytics 4でWebサイトを登録し、データを集め始めるまでの手順を初心者向けに解説します。",
     "article_no": "19_1",
     "thumbnail": "groups/19.jpg",
-    "point": "測定IDはGA4のWebデータストリーム詳細で確認できます。プロパティIDやストリームIDとは別の番号です。",
+    "point": "GA4のプロパティを用意し、Webデータストリームを追加してGoogleタグをサイトへ設置したあと、リアルタイムで計測を確認します。",
     "draft": false
   },
   {
