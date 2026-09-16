@@ -1,0 +1,45 @@
+﻿ワカルカモ｜記事公開時のSNS投稿原稿
+
+記事タイトル：WordPressで画像を挿入する方法
+記事URL：https://kamowakaru.github.io/wakarukamo/articles/13_2.html
+
+＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+X案1：要点型
+＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+【WordPressで画像を挿入する方法】
+WordPressのブロックエディターで画像を挿入する方法を、アップロード・メディアライブラリの選択から代替テキストやサイズ確認まで解説します。
+
+https://kamowakaru.github.io/wakarukamo/articles/13_2.html?utm_source=x&utm_medium=social&utm_campaign=article_share
+#WordPress
+
+＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+X案2：問いかけ型
+＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+「WordPressで画像を挿入する方法」で困っていませんか？
+WordPressのブロックエディターで画像を挿入する方法を、アップロード・メディアライブラリの選択から代替テキストやサイズ確認まで解説します。
+
+https://kamowakaru.github.io/wakarukamo/articles/13_2.html?utm_source=x&utm_medium=social&utm_campaign=article_share
+#WordPress
+
+＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+Threads案：体験に寄り添う型
+＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+「WordPressで画像を挿入する方法」で迷うこと、ありませんか？
+
+今回は、WordPressのブロックエディターで画像を挿入する方法を、アップロード・メディアライブラリの選択から代替テキストやサイズ確認まで解説します。
+実際の手順やポイントを初心者向けにまとめました🐤
+
+https://kamowakaru.github.io/wakarukamo/articles/13_2.html?utm_source=threads&utm_medium=social&utm_campaign=article_share
+
+#WordPress
+
+＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+投稿前チェック
+＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+□ 記事ページを開いて誤字・リンクを確認
+□ サムネイルの表示を確認
+□ Xへ投稿
+□ Threadsへ投稿
+
+※URLにはSNS別の流入をGA4で確認できるUTMパラメータが付いています。
+※文章は記事内容や実体験に合わせて、必要に応じて少し整えてください。

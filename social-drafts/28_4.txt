@@ -1,0 +1,45 @@
+﻿ワカルカモ｜記事公開時のSNS投稿原稿
+
+記事タイトル：WordPress REST APIで記事データをスプレッドシートと照合する方法
+記事URL：https://kamowakaru.github.io/wakarukamo/articles/28_4.html
+
+＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+X案1：要点型
+＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+【WordPress REST APIで記事データをスプレッドシートと照合する方法】
+WordPress REST APIの記事データとGoogleスプレッドシートなどの記事管理表を照合する方法を、照合キーと不一致の見つけ方から解説します。
+
+https://kamowakaru.github.io/wakarukamo/articles/28_4.html?utm_source=x&utm_medium=social&utm_campaign=article_share
+#WordPress
+
+＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+X案2：問いかけ型
+＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+「WordPress REST APIで記事データをスプレッドシートと照合する方法」で困っていませんか？
+WordPress REST APIの記事データとGoogleスプレッドシートなどの記事管理表を照合する方法を、照合キーと不一致の見つけ方から解説します。
+
+https://kamowakaru.github.io/wakarukamo/articles/28_4.html?utm_source=x&utm_medium=social&utm_campaign=article_share
+#WordPress
+
+＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+Threads案：体験に寄り添う型
+＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+「WordPress REST APIで記事データをスプレッドシートと照合する方法」で迷うこと、ありませんか？
+
+今回は、WordPress REST APIの記事データとGoogleスプレッドシートなどの記事管理表を照合する方法を、照合キーと不一致の見つけ方から解説します。
+実際の手順やポイントを初心者向けにまとめました🐤
+
+https://kamowakaru.github.io/wakarukamo/articles/28_4.html?utm_source=threads&utm_medium=social&utm_campaign=article_share
+
+#WordPress
+
+＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+投稿前チェック
+＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+□ 記事ページを開いて誤字・リンクを確認
+□ サムネイルの表示を確認
+□ Xへ投稿
+□ Threadsへ投稿
+
+※URLにはSNS別の流入をGA4で確認できるUTMパラメータが付いています。
+※文章は記事内容や実体験に合わせて、必要に応じて少し整えてください。

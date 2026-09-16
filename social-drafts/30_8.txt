@@ -1,0 +1,45 @@
+﻿ワカルカモ｜記事公開時のSNS投稿原稿
+
+記事タイトル：MarkdownからHTMLに変換する方法｜ブログ記事を自動生成する仕組みも解説
+記事URL：https://kamowakaru.github.io/wakarukamo/articles/30_8.html
+
+＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+X案1：要点型
+＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+【MarkdownからHTMLに変換する方法｜ブログ記事を自動生成する仕組みも解説】
+MarkdownからHTMLへ変換する基本的な方法と、複数の記事をテンプレートへ組み込んでブログページを自動生成する仕組みを解説します。
+
+https://kamowakaru.github.io/wakarukamo/articles/30_8.html?utm_source=x&utm_medium=social&utm_campaign=article_share
+#Markdown
+
+＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+X案2：問いかけ型
+＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+「MarkdownからHTMLに変換する方法｜ブログ記事を自動生成する仕組みも解説」で困っていませんか？
+MarkdownからHTMLへ変換する基本的な方法と、複数の記事をテンプレートへ組み込んでブログページを自動生成する仕組みを解説します。
+
+https://kamowakaru.github.io/wakarukamo/articles/30_8.html?utm_source=x&utm_medium=social&utm_campaign=article_share
+#Markdown
+
+＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+Threads案：体験に寄り添う型
+＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+「MarkdownからHTMLに変換する方法｜ブログ記事を自動生成する仕組みも解説」で迷うこと、ありませんか？
+
+今回は、MarkdownからHTMLへ変換する基本的な方法と、複数の記事をテンプレートへ組み込んでブログページを自動生成する仕組みを解説します。
+実際の手順やポイントを初心者向けにまとめました🐤
+
+https://kamowakaru.github.io/wakarukamo/articles/30_8.html?utm_source=threads&utm_medium=social&utm_campaign=article_share
+
+#Markdown
+
+＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+投稿前チェック
+＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+□ 記事ページを開いて誤字・リンクを確認
+□ サムネイルの表示を確認
+□ Xへ投稿
+□ Threadsへ投稿
+
+※URLにはSNS別の流入をGA4で確認できるUTMパラメータが付いています。
+※文章は記事内容や実体験に合わせて、必要に応じて少し整えてください。

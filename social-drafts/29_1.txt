@@ -1,0 +1,45 @@
+﻿ワカルカモ｜記事公開時のSNS投稿原稿
+
+記事タイトル：GitHubのリポジトリとは？初心者向けにわかりやすく解説
+記事URL：https://kamowakaru.github.io/wakarukamo/articles/29_1.html
+
+＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+X案1：要点型
+＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+【GitHubのリポジトリとは？初心者向けにわかりやすく解説】
+GitHubのリポジトリとは何かを、フォルダとの違い、含まれるファイルや履歴、公開・非公開の考え方から初心者向けに解説します。
+
+https://kamowakaru.github.io/wakarukamo/articles/29_1.html?utm_source=x&utm_medium=social&utm_campaign=article_share
+#GitHub
+
+＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+X案2：問いかけ型
+＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+「GitHubのリポジトリとは？初心者向けにわかりやすく解説」で困っていませんか？
+GitHubのリポジトリとは何かを、フォルダとの違い、含まれるファイルや履歴、公開・非公開の考え方から初心者向けに解説します。
+
+https://kamowakaru.github.io/wakarukamo/articles/29_1.html?utm_source=x&utm_medium=social&utm_campaign=article_share
+#GitHub
+
+＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+Threads案：体験に寄り添う型
+＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+「GitHubのリポジトリとは？初心者向けにわかりやすく解説」で迷うこと、ありませんか？
+
+今回は、GitHubのリポジトリとは何かを、フォルダとの違い、含まれるファイルや履歴、公開・非公開の考え方から初心者向けに解説します。
+実際の手順やポイントを初心者向けにまとめました🐤
+
+https://kamowakaru.github.io/wakarukamo/articles/29_1.html?utm_source=threads&utm_medium=social&utm_campaign=article_share
+
+#GitHub
+
+＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+投稿前チェック
+＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+□ 記事ページを開いて誤字・リンクを確認
+□ サムネイルの表示を確認
+□ Xへ投稿
+□ Threadsへ投稿
+
+※URLにはSNS別の流入をGA4で確認できるUTMパラメータが付いています。
+※文章は記事内容や実体験に合わせて、必要に応じて少し整えてください。
