@@ -1,0 +1,45 @@
+﻿ワカルカモ｜記事公開時のSNS投稿原稿
+
+記事タイトル：APIを使わずに自動化する方法はある？代替手段を解説
+記事URL：https://kamowakaru.github.io/wakarukamo/articles/27_5.html
+
+＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+X案1：要点型
+＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+【APIを使わずに自動化する方法はある？代替手段を解説】
+APIを使わずに作業を自動化する方法として、標準機能、GAS、RPA系ツール、定期実行などの代替手段と選び方を解説します。
+
+https://kamowakaru.github.io/wakarukamo/articles/27_5.html?utm_source=x&utm_medium=social&utm_campaign=article_share
+#API
+
+＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+X案2：問いかけ型
+＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+「APIを使わずに自動化する方法はある？代替手段を解説」で困っていませんか？
+APIを使わずに作業を自動化する方法として、標準機能、GAS、RPA系ツール、定期実行などの代替手段と選び方を解説します。
+
+https://kamowakaru.github.io/wakarukamo/articles/27_5.html?utm_source=x&utm_medium=social&utm_campaign=article_share
+#API
+
+＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+Threads案：体験に寄り添う型
+＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+「APIを使わずに自動化する方法はある？代替手段を解説」で迷うこと、ありませんか？
+
+今回は、APIを使わずに作業を自動化する方法として、標準機能、GAS、RPA系ツール、定期実行などの代替手段と選び方を解説します。
+実際の手順やポイントを初心者向けにまとめました🐤
+
+https://kamowakaru.github.io/wakarukamo/articles/27_5.html?utm_source=threads&utm_medium=social&utm_campaign=article_share
+
+#API
+
+＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+投稿前チェック
+＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+□ 記事ページを開いて誤字・リンクを確認
+□ サムネイルの表示を確認
+□ Xへ投稿
+□ Threadsへ投稿
+
+※URLにはSNS別の流入をGA4で確認できるUTMパラメータが付いています。
+※文章は記事内容や実体験に合わせて、必要に応じて少し整えてください。
