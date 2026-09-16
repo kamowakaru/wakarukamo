@@ -1,0 +1,66 @@
+<!doctype html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="ChatGPTにプログラムを書いてもらうときの指示方法を、目的、言語、実行環境、入力例、期待結果、制約の伝え方から解説します。"><link rel="canonical" href="https://kamowakaru.github.io/wakarukamo/articles/33_1.html"><meta property="og:title" content="ChatGPTにプログラムを書いてもらう方法｜指示の出し方を解説"><meta property="og:description" content="ChatGPTにプログラムを書いてもらうときの指示方法を、目的、言語、実行環境、入力例、期待結果、制約の伝え方から解説します。"><meta property="og:url" content="https://kamowakaru.github.io/wakarukamo/articles/33_1.html"><meta property="og:type" content="article"><meta property="og:image" content="https://kamowakaru.github.io/wakarukamo/assets/images/thumbnails/groups/33.jpg"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="ChatGPTにプログラムを書いてもらう方法｜指示の出し方を解説"><meta name="twitter:description" content="ChatGPTにプログラムを書いてもらうときの指示方法を、目的、言語、実行環境、入力例、期待結果、制約の伝え方から解説します。"><meta name="twitter:image" content="https://kamowakaru.github.io/wakarukamo/assets/images/thumbnails/groups/33.jpg"><title>ChatGPTにプログラムを書いてもらう方法｜指示の出し方を解説 | ワカルカモ</title><link rel="stylesheet" href="../assets/css/style.css?v=20260914-3"><link rel="stylesheet" href="../assets/css/point.css"><link rel="stylesheet" href="../assets/css/article-markdown.css?v=20260915-table"><script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "Article", "headline": "ChatGPTにプログラムを書いてもらう方法｜指示の出し方を解説", "description": "ChatGPTにプログラムを書いてもらうときの指示方法を、目的、言語、実行環境、入力例、期待結果、制約の伝え方から解説します。", "datePublished": "2026-09-17", "dateModified": "2026-09-17", "mainEntityOfPage": "https://kamowakaru.github.io/wakarukamo/articles/33_1.html", "author": {"@type": "Person", "name": "ワカルカモ運営者", "url": "https://kamowakaru.github.io/wakarukamo/about.html#author-profile"}, "publisher": {"@type": "Organization", "name": "ワカルカモ", "url": "https://kamowakaru.github.io/wakarukamo"}, "image": "https://kamowakaru.github.io/wakarukamo/assets/images/thumbnails/groups/33.jpg"}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "ホーム", "item": "https://kamowakaru.github.io/wakarukamo/"}, {"@type": "ListItem", "position": 2, "name": "AI・ChatGPT", "item": "https://kamowakaru.github.io/wakarukamo/categories/ai-chatgpt.html"}, {"@type": "ListItem", "position": 3, "name": "ChatGPTにプログラムを書いてもらう方法｜指示の出し方を解説", "item": "https://kamowakaru.github.io/wakarukamo/articles/33_1.html"}]}]}</script><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2620370554695357" crossorigin="anonymous"></script></head><body data-root="../"><header class="site-header"><div class="container header-inner"><a class="brand" href="../index.html"><img src="../assets/images/logo-duck.webp" alt=""><span><strong>ワカルカモ</strong><small>PC・Web・AIの「わからない」が、わかるかも。</small></span></a><button class="menu-btn" aria-label="メニュー">☰</button><nav class="nav"><a href="../index.html">ホーム</a><a href="../index.html#categories">カテゴリ</a><a href="../articles.html">記事一覧</a><a href="../about.html">このサイトについて</a></nav><form class="header-search" action="../search.html"><input name="q" type="search" placeholder="キーワードで検索…"><button>🔍</button></form></div></header><main class="article-main"><div class="container article-layout"><article class="article-body"><div class="breadcrumb"><a href="../index.html">ホーム</a> › <a href="../categories/ai-chatgpt.html">AI・ChatGPT</a> › ChatGPTにプログラムを書いてもらう方法｜指示の出し方を解説</div><div class="meta"><span class="chip">AI・ChatGPT</span><a class="tag-link" href="../tags/chatgpt.html">ChatGPT</a><span class="author-byline">著者：<a href="../about.html#author-profile">ワカルカモ運営者</a></span><time datetime="2026-09-17">2026.09.17</time></div><h1>ChatGPTにプログラムを書いてもらう方法｜指示の出し方を解説</h1><p class="lead">ChatGPTにプログラムを書いてもらうときの指示方法を、目的、言語、実行環境、入力例、期待結果、制約の伝え方から解説します。</p><figure class="article-thumbnail"><img src="../assets/images/thumbnails/groups/33.jpg" alt="ChatGPTにプログラムを書いてもらう方法｜指示の出し方を解説のイメージ画像"></figure><h2 id="結論">結論</h2>
+<p>ChatGPTにプログラムを書いてもらうときは、<strong>目的、使用する言語、実行環境、入力、期待する出力、守る条件</strong>をセットで伝えます。</p>
+<p>「CSVを処理するコードを書いて」より、「どの列をどう判定し、どんなファイルを出すか」まで説明した方が仕様のずれを防げます。</p>
+<h2 id="目的を書く">目的を書く</h2>
+<p>最初に完成後の動作を1〜2文で説明します。</p>
+<pre><code>CSVの記事管理表を読み込み、
+未公開の記事だけMarkdownファイルとして保存したいです。</code></pre>
+<p>コードの書き方より先に、何を達成したいかを伝えます。</p>
+<h2 id="言語と実行環境を書く">言語と実行環境を書く</h2>
+<pre><code>Python 3で作ってください。
+Windows 11のローカルPCで実行します。</code></pre>
+<p>GASならGoogle Apps Script、ブラウザならJavaScriptなど、実行場所も重要です。</p>
+<h2 id="入力データを具体的にする">入力データを具体的にする</h2>
+<p>CSVなら列名や例を示します。</p>
+<pre><code>No.,タイトル,公開済
+1,記事A,済
+1_1,記事B,</code></pre>
+<p>実際のファイルを添付できる場合は、そのファイルを基準にするよう指示します。</p>
+<h2 id="期待する結果を書く">期待する結果を書く</h2>
+<pre><code>公開済が「済」の行は処理しない。
+空欄の1_1だけを対象にする。
+出力ファイル名は1_1.mdにする。</code></pre>
+<p>条件が厳密な処理ほど、例を1つ入れると伝わりやすくなります。</p>
+<h2 id="変更してはいけないルールを書く">変更してはいけないルールを書く</h2>
+<pre><code>No.のアンダーバーをハイフンに変換しない。
+タイトルは変更しない。
+既存ファイルは上書きしない。</code></pre>
+<p>重要な仕様は「できれば」ではなく明確な条件として伝えます。</p>
+<h2 id="使用できるライブラリに条件がある場合">使用できるライブラリに条件がある場合</h2>
+<p>環境によってインストールできないライブラリがあるなら先に伝えます。</p>
+<pre><code>Python標準ライブラリだけで作ってください。</code></pre>
+<p>逆に、すでに使っているライブラリがあるなら、その前提を示します。</p>
+<h2 id="エラー処理も依頼する">エラー処理も依頼する</h2>
+<p>正常時だけでなく、想定する失敗も伝えます。</p>
+<pre><code>CSVが見つからない場合は分かりやすいエラーを表示してください。
+必須列がない場合は処理を止めてください。</code></pre>
+<p>大量ファイルを扱う場合は、1件失敗したときの動作も決めます。</p>
+<h2 id="最初から全部作らせない方法もある">最初から全部作らせない方法もある</h2>
+<p>複雑な処理なら、段階的に依頼します。</p>
+<pre><code>今回はCSVを読み込んで対象行を表示するところまで作ってください。
+ファイル生成はまだ不要です。</code></pre>
+<p>動作確認後に次の機能を追加すると、問題箇所を特定しやすくなります。</p>
+<h2 id="依頼例">依頼例</h2>
+<pre><code>Pythonでプログラムを書いてください。
+
+目的：
+article-management.csvを読み込み、
+公開済が空欄の行だけ抽出する。
+
+必須列：
+No.
+タイトル
+公開済
+
+条件：
+No.は文字列としてそのまま扱う。
+タイトルは変更しない。
+公開済が「済」の行は除外する。
+
+結果：
+対象行のNo.とタイトルをコンソールへ表示する。
+
+必須列が不足している場合はエラーで停止してください。</code></pre>
+<p>このように仕様を分けて書くと確認しやすくなります。</p>
+<h2 id="まとめ">まとめ</h2>
+<p>ChatGPTへのコード作成依頼では、目的だけでなく、環境、入力、期待結果、禁止事項まで具体化します。複雑なプログラムは小さな処理から作り、実行結果を確認してから機能を追加してください。</p><aside class="point yellow wakarukamo-point"><div class="point-heading"><img src="../assets/images/wakarukamo-point.png" alt=""><strong>ワカルカモポイント</strong></div><p>コード生成では「何をしたいか」に加え、言語・実行環境・入力・出力・変更禁止条件を具体的に伝えると、修正回数を減らしやすくなります。</p></aside><section class="author-box" aria-labelledby="author-box-title"><img src="../assets/images/tip-duck.webp" alt="ワカルカモ運営者"><div><span id="author-box-title" class="author-label">この記事を書いた人</span><strong>ワカルカモ運営者</strong><p>企業の情報システム・DX推進・マーケティング業務などを経験。PC・Webサービス・業務自動化など、実際に試して分かったことを初心者向けに解説しています。</p><a href="../about.html#author-profile">運営者情報を見る →</a></div></section><nav class="article-pager" aria-label="前後の記事"><a class="article-pager-link article-pager-prev" href="33.html"><span class="article-pager-label">← 前の記事</span><strong>ChatGPTでプログラミングする方法｜コード作成・修正のコツ</strong></a><a class="article-pager-link article-pager-next" href="33_2.html"><span class="article-pager-label">次の記事 →</span><strong>ChatGPTでプログラムのエラーを直す方法</strong></a></nav><h2>関連記事</h2><div class="article-grid" data-related data-category="ai-chatgpt" data-slug="33_1"></div></article><aside><div class="sidebox"><img class="side-duck" src="../assets/images/tip-duck.webp" alt=""><h3>この記事のカテゴリ</h3><a class="outline-btn" href="../categories/ai-chatgpt.html">AI・ChatGPT →</a></div><div class="sidebox"><h3>🔥 人気のタグ</h3><div class="tag-cloud" data-popular-tags></div></div></aside></div></main><footer class="footer"><div class="container footer-inner"><div class="footer-brand"><img src="../assets/images/logo-duck.webp" alt=""><div><strong>ワカルカモ</strong><div style="font-size:12px;color:#6c7c91">PC・Web・AIの「わからない」が、わかるかも。</div></div></div><div class="footer-links"><a href="../index.html">ホーム</a><a href="../articles.html">記事一覧</a><a href="../about.html">このサイトについて</a><a href="../privacy.html">プライバシーポリシー</a></div></div><p class="copyright">© 2026 ワカルカモ</p></footer><script src="../assets/js/analytics-config.js"></script><script src="../assets/js/site.js?v=20260914-2"></script></body></html>

@@ -1,0 +1,51 @@
+<!doctype html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="複数のHTMLページのデザインを一括変更する方法を、外部CSSの共通化とclass設計、キャッシュ確認などから解説します。"><link rel="canonical" href="https://kamowakaru.github.io/wakarukamo/articles/30_12.html"><meta property="og:title" content="複数のHTMLページのデザインを一括変更する方法｜CSSを共通化するメリット"><meta property="og:description" content="複数のHTMLページのデザインを一括変更する方法を、外部CSSの共通化とclass設計、キャッシュ確認などから解説します。"><meta property="og:url" content="https://kamowakaru.github.io/wakarukamo/articles/30_12.html"><meta property="og:type" content="article"><meta property="og:image" content="https://kamowakaru.github.io/wakarukamo/assets/images/thumbnails/groups/30.jpg"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="複数のHTMLページのデザインを一括変更する方法｜CSSを共通化するメリット"><meta name="twitter:description" content="複数のHTMLページのデザインを一括変更する方法を、外部CSSの共通化とclass設計、キャッシュ確認などから解説します。"><meta name="twitter:image" content="https://kamowakaru.github.io/wakarukamo/assets/images/thumbnails/groups/30.jpg"><title>複数のHTMLページのデザインを一括変更する方法｜CSSを共通化するメリット | ワカルカモ</title><link rel="stylesheet" href="../assets/css/style.css?v=20260914-3"><link rel="stylesheet" href="../assets/css/point.css"><link rel="stylesheet" href="../assets/css/article-markdown.css?v=20260915-table"><script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "Article", "headline": "複数のHTMLページのデザインを一括変更する方法｜CSSを共通化するメリット", "description": "複数のHTMLページのデザインを一括変更する方法を、外部CSSの共通化とclass設計、キャッシュ確認などから解説します。", "datePublished": "2026-09-17", "dateModified": "2026-09-17", "mainEntityOfPage": "https://kamowakaru.github.io/wakarukamo/articles/30_12.html", "author": {"@type": "Person", "name": "ワカルカモ運営者", "url": "https://kamowakaru.github.io/wakarukamo/about.html#author-profile"}, "publisher": {"@type": "Organization", "name": "ワカルカモ", "url": "https://kamowakaru.github.io/wakarukamo"}, "image": "https://kamowakaru.github.io/wakarukamo/assets/images/thumbnails/groups/30.jpg"}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "ホーム", "item": "https://kamowakaru.github.io/wakarukamo/"}, {"@type": "ListItem", "position": 2, "name": "Web全般", "item": "https://kamowakaru.github.io/wakarukamo/categories/web.html"}, {"@type": "ListItem", "position": 3, "name": "複数のHTMLページのデザインを一括変更する方法｜CSSを共通化するメリット", "item": "https://kamowakaru.github.io/wakarukamo/articles/30_12.html"}]}]}</script><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2620370554695357" crossorigin="anonymous"></script></head><body data-root="../"><header class="site-header"><div class="container header-inner"><a class="brand" href="../index.html"><img src="../assets/images/logo-duck.webp" alt=""><span><strong>ワカルカモ</strong><small>PC・Web・AIの「わからない」が、わかるかも。</small></span></a><button class="menu-btn" aria-label="メニュー">☰</button><nav class="nav"><a href="../index.html">ホーム</a><a href="../index.html#categories">カテゴリ</a><a href="../articles.html">記事一覧</a><a href="../about.html">このサイトについて</a></nav><form class="header-search" action="../search.html"><input name="q" type="search" placeholder="キーワードで検索…"><button>🔍</button></form></div></header><main class="article-main"><div class="container article-layout"><article class="article-body"><div class="breadcrumb"><a href="../index.html">ホーム</a> › <a href="../categories/web.html">Web全般</a> › 複数のHTMLページのデザインを一括変更する方法｜CSSを共通化するメリット</div><div class="meta"><span class="chip">Web全般</span><a class="tag-link" href="../tags/html-css.html">HTML・CSS</a><span class="author-byline">著者：<a href="../about.html#author-profile">ワカルカモ運営者</a></span><time datetime="2026-09-17">2026.09.17</time></div><h1>複数のHTMLページのデザインを一括変更する方法｜CSSを共通化するメリット</h1><p class="lead">複数のHTMLページのデザインを一括変更する方法を、外部CSSの共通化とclass設計、キャッシュ確認などから解説します。</p><figure class="article-thumbnail"><img src="../assets/images/thumbnails/groups/30.jpg" alt="複数のHTMLページのデザインを一括変更する方法｜CSSを共通化するメリットのイメージ画像"></figure><h2 id="結論">結論</h2>
+<p>複数のHTMLページのデザインを一括変更するには、<strong>各ページから同じ外部CSSファイルを読み込む構成</strong>にします。</p>
+<p>100ページの見出し色を変える場合でも、共通CSSで指定していれば、基本的にはCSS側のルールを修正するだけで済みます。</p>
+<h2 id="共通CSSを読み込む">共通CSSを読み込む</h2>
+<p>各HTMLの<code>head</code>から同じCSSを読み込みます。</p>
+<pre><code>&lt;link rel=&quot;stylesheet&quot; href=&quot;/css/style.css&quot;&gt;</code></pre>
+<p><code>style.css</code>に共通デザインを書きます。</p>
+<pre><code>body {
+  font-family: sans-serif;
+}
+
+h2 {
+  margin-top: 2rem;
+}</code></pre>
+<p>これらのHTMLが同じCSSを参照していれば、CSSの変更が各ページへ適用されます。</p>
+<h2 id="HTMLごとに同じstyleを書かない">HTMLごとに同じstyleを書かない</h2>
+<p>各HTMLへ次のような<code>style</code>をコピーすると、後で変更するときに全ファイルを修正することになります。</p>
+<pre><code>&lt;style&gt;
+  h2 {
+    margin-top: 2rem;
+  }
+&lt;/style&gt;</code></pre>
+<p>ページ固有の事情がなければ、共通ルールは外部CSSへまとめます。</p>
+<h2 id="classで部品を共通化する">classで部品を共通化する</h2>
+<p>注意書きなど、特定の部品へ同じデザインを使う場合はclassを付けます。</p>
+<pre><code>&lt;div class=&quot;note&quot;&gt;
+  注意事項
+&lt;/div&gt;</code></pre>
+<p>CSS側で共通デザインを指定します。</p>
+<pre><code>.note {
+  padding: 1rem;
+  border: 1px solid;
+}</code></pre>
+<p>後から<code>.note</code>のデザインを変更すれば、そのclassを使うページへまとめて反映できます。</p>
+<h2 id="ページ固有のCSSは必要な分だけ追加する">ページ固有のCSSは必要な分だけ追加する</h2>
+<p>特定ページだけレイアウトが違う場合は、共通CSSをコピーして別ファイルを大量に作るより、共通ルールを土台に必要な差分だけ追加する方が管理しやすくなります。</p>
+<h2 id="HTML構造も共通ならテンプレート化する">HTML構造も共通ならテンプレート化する</h2>
+<p>CSSは見た目を共通化できますが、全ページのヘッダーへ同じ要素を追加するような「HTML構造の変更」はCSSだけでは対応できません。</p>
+<p>その場合はHTMLテンプレートを共通化し、各ページを自動生成する構成が向いています。</p>
+<h2 id="変更が反映されないとき">変更が反映されないとき</h2>
+<p>CSSを修正したのに見た目が変わらない場合は、次を確認します。</p>
+<ul>
+<li>HTMLが正しいCSSファイルを読み込んでいる</li>
+<li>CSSのパスが正しい</li>
+<li>別のCSSルールに上書きされていない</li>
+<li>公開先へ最新ファイルが反映されている</li>
+<li>ブラウザや配信環境のキャッシュが影響していないか</li>
+</ul>
+<p>開発者ツールで実際に適用されているCSSを確認すると切り分けやすくなります。</p>
+<h2 id="まとめ">まとめ</h2>
+<p>複数HTMLのデザインは、外部CSSを共通化することで一括変更できます。見た目はCSS、ページ構造はHTMLテンプレートへ分けると、ページ数が増えても修正しやすい構成になります。</p><aside class="point yellow wakarukamo-point"><div class="point-heading"><img src="../assets/images/wakarukamo-point.png" alt=""><strong>ワカルカモポイント</strong></div><p>複数ページが同じCSSファイルを読み込む構成なら、そのCSSを修正することで共通デザインを一括変更できます。</p></aside><section class="author-box" aria-labelledby="author-box-title"><img src="../assets/images/tip-duck.webp" alt="ワカルカモ運営者"><div><span id="author-box-title" class="author-label">この記事を書いた人</span><strong>ワカルカモ運営者</strong><p>企業の情報システム・DX推進・マーケティング業務などを経験。PC・Webサービス・業務自動化など、実際に試して分かったことを初心者向けに解説しています。</p><a href="../about.html#author-profile">運営者情報を見る →</a></div></section><nav class="article-pager" aria-label="前後の記事"><a class="article-pager-link article-pager-prev" href="30_11.html"><span class="article-pager-label">← 前の記事</span><strong>ブログ記事のデザインを一括管理する方法｜HTML・CSS・Markdownの役割を解説</strong></a><a class="article-pager-link article-pager-next" href="30_13.html"><span class="article-pager-label">次の記事 →</span><strong>大量のHTMLファイルを一括更新するには？テンプレート化・自動生成する方法</strong></a></nav><h2>関連記事</h2><div class="article-grid" data-related data-category="web" data-slug="30_12"></div></article><aside><div class="sidebox"><img class="side-duck" src="../assets/images/tip-duck.webp" alt=""><h3>この記事のカテゴリ</h3><a class="outline-btn" href="../categories/web.html">Web全般 →</a></div><div class="sidebox"><h3>🔥 人気のタグ</h3><div class="tag-cloud" data-popular-tags></div></div></aside></div></main><footer class="footer"><div class="container footer-inner"><div class="footer-brand"><img src="../assets/images/logo-duck.webp" alt=""><div><strong>ワカルカモ</strong><div style="font-size:12px;color:#6c7c91">PC・Web・AIの「わからない」が、わかるかも。</div></div></div><div class="footer-links"><a href="../index.html">ホーム</a><a href="../articles.html">記事一覧</a><a href="../about.html">このサイトについて</a><a href="../privacy.html">プライバシーポリシー</a></div></div><p class="copyright">© 2026 ワカルカモ</p></footer><script src="../assets/js/analytics-config.js"></script><script src="../assets/js/site.js?v=20260914-2"></script></body></html>

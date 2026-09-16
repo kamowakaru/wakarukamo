@@ -1,0 +1,47 @@
+<!doctype html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="GASで作業を自動化する方法を、スプレッドシート、Gmail、Drive、定期実行などの活用例と、自動化を始める手順から初心者向けに解説します。"><link rel="canonical" href="https://kamowakaru.github.io/wakarukamo/articles/31.html"><meta property="og:title" content="GASで作業を自動化する方法｜便利な活用例まとめ"><meta property="og:description" content="GASで作業を自動化する方法を、スプレッドシート、Gmail、Drive、定期実行などの活用例と、自動化を始める手順から初心者向けに解説します。"><meta property="og:url" content="https://kamowakaru.github.io/wakarukamo/articles/31.html"><meta property="og:type" content="article"><meta property="og:image" content="https://kamowakaru.github.io/wakarukamo/assets/images/thumbnails/groups/31.jpg"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="GASで作業を自動化する方法｜便利な活用例まとめ"><meta name="twitter:description" content="GASで作業を自動化する方法を、スプレッドシート、Gmail、Drive、定期実行などの活用例と、自動化を始める手順から初心者向けに解説します。"><meta name="twitter:image" content="https://kamowakaru.github.io/wakarukamo/assets/images/thumbnails/groups/31.jpg"><title>GASで作業を自動化する方法｜便利な活用例まとめ | ワカルカモ</title><link rel="stylesheet" href="../assets/css/style.css?v=20260914-3"><link rel="stylesheet" href="../assets/css/point.css"><link rel="stylesheet" href="../assets/css/article-markdown.css?v=20260915-table"><script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "Article", "headline": "GASで作業を自動化する方法｜便利な活用例まとめ", "description": "GASで作業を自動化する方法を、スプレッドシート、Gmail、Drive、定期実行などの活用例と、自動化を始める手順から初心者向けに解説します。", "datePublished": "2026-09-17", "dateModified": "2026-09-17", "mainEntityOfPage": "https://kamowakaru.github.io/wakarukamo/articles/31.html", "author": {"@type": "Person", "name": "ワカルカモ運営者", "url": "https://kamowakaru.github.io/wakarukamo/about.html#author-profile"}, "publisher": {"@type": "Organization", "name": "ワカルカモ", "url": "https://kamowakaru.github.io/wakarukamo"}, "image": "https://kamowakaru.github.io/wakarukamo/assets/images/thumbnails/groups/31.jpg"}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "ホーム", "item": "https://kamowakaru.github.io/wakarukamo/"}, {"@type": "ListItem", "position": 2, "name": "Google・GAS", "item": "https://kamowakaru.github.io/wakarukamo/categories/google-gas.html"}, {"@type": "ListItem", "position": 3, "name": "GASで作業を自動化する方法｜便利な活用例まとめ", "item": "https://kamowakaru.github.io/wakarukamo/articles/31.html"}]}]}</script><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2620370554695357" crossorigin="anonymous"></script></head><body data-root="../"><header class="site-header"><div class="container header-inner"><a class="brand" href="../index.html"><img src="../assets/images/logo-duck.webp" alt=""><span><strong>ワカルカモ</strong><small>PC・Web・AIの「わからない」が、わかるかも。</small></span></a><button class="menu-btn" aria-label="メニュー">☰</button><nav class="nav"><a href="../index.html">ホーム</a><a href="../index.html#categories">カテゴリ</a><a href="../articles.html">記事一覧</a><a href="../about.html">このサイトについて</a></nav><form class="header-search" action="../search.html"><input name="q" type="search" placeholder="キーワードで検索…"><button>🔍</button></form></div></header><main class="article-main"><div class="container article-layout"><article class="article-body"><div class="breadcrumb"><a href="../index.html">ホーム</a> › <a href="../categories/google-gas.html">Google・GAS</a> › GASで作業を自動化する方法｜便利な活用例まとめ</div><div class="meta"><span class="chip">Google・GAS</span><a class="tag-link" href="../tags/gas.html">GAS</a><span class="author-byline">著者：<a href="../about.html#author-profile">ワカルカモ運営者</a></span><time datetime="2026-09-17">2026.09.17</time></div><h1>GASで作業を自動化する方法｜便利な活用例まとめ</h1><p class="lead">GASで作業を自動化する方法を、スプレッドシート、Gmail、Drive、定期実行などの活用例と、自動化を始める手順から初心者向けに解説します。</p><figure class="article-thumbnail"><img src="../assets/images/thumbnails/groups/31.jpg" alt="GASで作業を自動化する方法｜便利な活用例まとめのイメージ画像"></figure><h2 id="結論">結論</h2>
+<p>Google Apps Script（GAS）を使うと、<strong>Googleスプレッドシートの集計、Gmailの送信、Google Drive上のファイル操作など、Googleサービスを使った定型作業を自動化</strong>できます。</p>
+<p>初心者は、いきなり複雑な自動化を作るより、「1つの表を処理する」のような小さな作業を手動実行できる状態にし、その後でトリガーを設定する流れが分かりやすいです。</p>
+<h2 id="GASで自動化できること">GASで自動化できること</h2>
+<p>代表的な例があります。</p>
+<ul>
+<li>スプレッドシートのデータを読み書きする</li>
+<li>条件に合う行を抽出する</li>
+<li>集計結果を別シートへ書き込む</li>
+<li>Gmailでメールを送る</li>
+<li>Google Driveのファイルやフォルダを処理する</li>
+<li>Googleフォームの回答を処理する</li>
+<li>決まった時刻に処理を実行する</li>
+</ul>
+<p>利用するサービスや処理によって必要な権限は異なります。</p>
+<h2 id="自動化したい作業を書き出す">自動化したい作業を書き出す</h2>
+<p>たとえば毎日行っている作業が次の内容だとします。</p>
+<pre><code>スプレッドシートを開く
+↓
+未処理の行を探す
+↓
+データを集計する
+↓
+結果を別シートへ記録する</code></pre>
+<p>この手順を、GASで扱える小さな処理へ分けます。</p>
+<h2 id="スプレッドシートからGASを開く">スプレッドシートからGASを開く</h2>
+<p>Googleスプレッドシートに紐づくスクリプトを作る場合は、スプレッドシートの拡張機能メニューからApps Scriptを開けます。</p>
+<p>Googleサービスの画面名は変更されることがあるため、表示が異なる場合は現在のGoogle公式ヘルプを確認してください。</p>
+<h2 id="最初は手動で実行する">最初は手動で実行する</h2>
+<p>コードを書いたら、最初から時間トリガーを設定せず、エディタから手動で実行します。</p>
+<p>初回実行時などには、スクリプトが利用するGoogleサービスへの権限を求められる場合があります。内容を確認して必要な権限だけ許可します。</p>
+<h2 id="ログや実行結果を確認する">ログや実行結果を確認する</h2>
+<p>自動化では「エラーが表示されなかった」だけで判断せず、対象データが想定どおり更新されたか確認します。</p>
+<p>処理件数や対象行などをログへ残すと、後から原因を調べやすくなります。</p>
+<h2 id="トリガーで自動実行する">トリガーで自動実行する</h2>
+<p>手動実行で安定したら、必要に応じてトリガーを設定します。</p>
+<p>たとえば時間主導型トリガーを使うと、決めた間隔や時刻に関数を実行できます。</p>
+<p>フォーム送信など、特定のイベントをきっかけに動かすトリガーもあります。</p>
+<h2 id="実行時間や利用制限に注意する">実行時間や利用制限に注意する</h2>
+<p>GASには実行時間や各サービスの利用量などに制限があります。</p>
+<p>大量のデータを1セルずつ読み書きすると処理が遅くなりやすいため、範囲をまとめて取得・更新する方法を検討します。</p>
+<p>具体的な上限はアカウント種別やサービスによって変わる可能性があるため、Google Apps Script公式のQuotasを確認してください。</p>
+<h2 id="エラー時の処理も決める">エラー時の処理も決める</h2>
+<p>定期実行するなら、途中で失敗したときに気付ける仕組みが必要です。</p>
+<p>処理済みの行を記録し、再実行しても同じデータを二重処理しない設計にすると安全です。</p>
+<h2 id="まとめ">まとめ</h2>
+<p>GASはGoogleサービスを使った反復作業の自動化に便利です。作業を小さく分け、手動実行で結果と権限を確認し、安定してからトリガーで自動実行する流れで進めてください。</p><aside class="point yellow wakarukamo-point"><div class="point-heading"><img src="../assets/images/wakarukamo-point.png" alt=""><strong>ワカルカモポイント</strong></div><p>GASはGoogleサービスを使った定型作業の自動化に利用できます。繰り返し作業を小さく分け、手動実行で確認してからトリガーによる自動実行へ進みます。</p></aside><section class="author-box" aria-labelledby="author-box-title"><img src="../assets/images/tip-duck.webp" alt="ワカルカモ運営者"><div><span id="author-box-title" class="author-label">この記事を書いた人</span><strong>ワカルカモ運営者</strong><p>企業の情報システム・DX推進・マーケティング業務などを経験。PC・Webサービス・業務自動化など、実際に試して分かったことを初心者向けに解説しています。</p><a href="../about.html#author-profile">運営者情報を見る →</a></div></section><nav class="article-pager" aria-label="前後の記事"><a class="article-pager-link article-pager-prev" href="30_23.html"><span class="article-pager-label">← 前の記事</span><strong>ブログ記事を一括投稿する方法｜WordPress・API・GitHub Pagesなどを比較</strong></a><a class="article-pager-link article-pager-next" href="31_1.html"><span class="article-pager-label">次の記事 →</span><strong>GASでスプレッドシートのデータを自動処理する方法</strong></a></nav><h2>関連記事</h2><div class="article-grid" data-related data-category="google-gas" data-slug="31"></div></article><aside><div class="sidebox"><img class="side-duck" src="../assets/images/tip-duck.webp" alt=""><h3>この記事のカテゴリ</h3><a class="outline-btn" href="../categories/google-gas.html">Google・GAS →</a></div><div class="sidebox"><h3>🔥 人気のタグ</h3><div class="tag-cloud" data-popular-tags></div></div></aside></div></main><footer class="footer"><div class="container footer-inner"><div class="footer-brand"><img src="../assets/images/logo-duck.webp" alt=""><div><strong>ワカルカモ</strong><div style="font-size:12px;color:#6c7c91">PC・Web・AIの「わからない」が、わかるかも。</div></div></div><div class="footer-links"><a href="../index.html">ホーム</a><a href="../articles.html">記事一覧</a><a href="../about.html">このサイトについて</a><a href="../privacy.html">プライバシーポリシー</a></div></div><p class="copyright">© 2026 ワカルカモ</p></footer><script src="../assets/js/analytics-config.js"></script><script src="../assets/js/site.js?v=20260914-2"></script></body></html>

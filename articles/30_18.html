@@ -1,0 +1,72 @@
+<!doctype html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="ChatGPTでの記事生成と投稿を自動化する仕組みを、OpenAI API、QA、CMSやREST APIへの投稿、ログ管理の流れから解説します。"><link rel="canonical" href="https://kamowakaru.github.io/wakarukamo/articles/30_18.html"><meta property="og:title" content="ChatGPTで記事生成・投稿を自動化する方法｜OpenAI APIを使った仕組みを解説"><meta property="og:description" content="ChatGPTでの記事生成と投稿を自動化する仕組みを、OpenAI API、QA、CMSやREST APIへの投稿、ログ管理の流れから解説します。"><meta property="og:url" content="https://kamowakaru.github.io/wakarukamo/articles/30_18.html"><meta property="og:type" content="article"><meta property="og:image" content="https://kamowakaru.github.io/wakarukamo/assets/images/thumbnails/groups/30.jpg"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="ChatGPTで記事生成・投稿を自動化する方法｜OpenAI APIを使った仕組みを解説"><meta name="twitter:description" content="ChatGPTでの記事生成と投稿を自動化する仕組みを、OpenAI API、QA、CMSやREST APIへの投稿、ログ管理の流れから解説します。"><meta name="twitter:image" content="https://kamowakaru.github.io/wakarukamo/assets/images/thumbnails/groups/30.jpg"><title>ChatGPTで記事生成・投稿を自動化する方法｜OpenAI APIを使った仕組みを解説 | ワカルカモ</title><link rel="stylesheet" href="../assets/css/style.css?v=20260914-3"><link rel="stylesheet" href="../assets/css/point.css"><link rel="stylesheet" href="../assets/css/article-markdown.css?v=20260915-table"><script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "Article", "headline": "ChatGPTで記事生成・投稿を自動化する方法｜OpenAI APIを使った仕組みを解説", "description": "ChatGPTでの記事生成と投稿を自動化する仕組みを、OpenAI API、QA、CMSやREST APIへの投稿、ログ管理の流れから解説します。", "datePublished": "2026-09-17", "dateModified": "2026-09-17", "mainEntityOfPage": "https://kamowakaru.github.io/wakarukamo/articles/30_18.html", "author": {"@type": "Person", "name": "ワカルカモ運営者", "url": "https://kamowakaru.github.io/wakarukamo/about.html#author-profile"}, "publisher": {"@type": "Organization", "name": "ワカルカモ", "url": "https://kamowakaru.github.io/wakarukamo"}, "image": "https://kamowakaru.github.io/wakarukamo/assets/images/thumbnails/groups/30.jpg"}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "ホーム", "item": "https://kamowakaru.github.io/wakarukamo/"}, {"@type": "ListItem", "position": 2, "name": "Web全般", "item": "https://kamowakaru.github.io/wakarukamo/categories/web.html"}, {"@type": "ListItem", "position": 3, "name": "ChatGPTで記事生成・投稿を自動化する方法｜OpenAI APIを使った仕組みを解説", "item": "https://kamowakaru.github.io/wakarukamo/articles/30_18.html"}]}]}</script><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2620370554695357" crossorigin="anonymous"></script></head><body data-root="../"><header class="site-header"><div class="container header-inner"><a class="brand" href="../index.html"><img src="../assets/images/logo-duck.webp" alt=""><span><strong>ワカルカモ</strong><small>PC・Web・AIの「わからない」が、わかるかも。</small></span></a><button class="menu-btn" aria-label="メニュー">☰</button><nav class="nav"><a href="../index.html">ホーム</a><a href="../index.html#categories">カテゴリ</a><a href="../articles.html">記事一覧</a><a href="../about.html">このサイトについて</a></nav><form class="header-search" action="../search.html"><input name="q" type="search" placeholder="キーワードで検索…"><button>🔍</button></form></div></header><main class="article-main"><div class="container article-layout"><article class="article-body"><div class="breadcrumb"><a href="../index.html">ホーム</a> › <a href="../categories/web.html">Web全般</a> › ChatGPTで記事生成・投稿を自動化する方法｜OpenAI APIを使った仕組みを解説</div><div class="meta"><span class="chip">Web全般</span><a class="tag-link" href="../tags/automation.html">自動化</a><span class="author-byline">著者：<a href="../about.html#author-profile">ワカルカモ運営者</a></span><time datetime="2026-09-17">2026.09.17</time></div><h1>ChatGPTで記事生成・投稿を自動化する方法｜OpenAI APIを使った仕組みを解説</h1><p class="lead">ChatGPTでの記事生成と投稿を自動化する仕組みを、OpenAI API、QA、CMSやREST APIへの投稿、ログ管理の流れから解説します。</p><figure class="article-thumbnail"><img src="../assets/images/thumbnails/groups/30.jpg" alt="ChatGPTで記事生成・投稿を自動化する方法｜OpenAI APIを使った仕組みを解説のイメージ画像"></figure><h2 id="結論">結論</h2>
+<p>ChatGPTを使った記事生成・投稿の自動化は、<strong>OpenAI APIで記事を生成し、内容を検証した後、CMSのAPIなどへ送って下書き保存する</strong>流れで構成できます。</p>
+<p>重要なのは、AIの出力をそのまま自動公開しないことです。生成、QA、投稿、公開を別工程にすると、問題が起きた場所も追いやすくなります。</p>
+<h2 id="全体の処理を分ける">全体の処理を分ける</h2>
+<p>基本的な流れは次のとおりです。</p>
+<pre><code>記事管理データ
+↓
+OpenAI APIへ生成指示
+↓
+生成結果を保存
+↓
+QA・事実確認
+↓
+CMSへ下書き投稿
+↓
+人が確認
+↓
+公開</code></pre>
+<p>自動化範囲は必要に応じて調整します。</p>
+<h2 id="記事管理データを正本にする">記事管理データを正本にする</h2>
+<p>記事番号、タイトル、カテゴリ、公開状態などをCSVやデータベースで管理しているなら、そのデータを生成処理の入力にします。</p>
+<p>AIに記事番号やタイトルを勝手に決めさせず、管理データの値を優先します。</p>
+<h2 id="OpenAI-APIへ生成指示を送る">OpenAI APIへ生成指示を送る</h2>
+<p>OpenAI APIでは、モデルへ入力を送り、文章などの出力を受け取れます。</p>
+<p>記事生成では、タイトルだけでなく次のような条件を明示します。</p>
+<ul>
+<li>対象読者</li>
+<li>記事の目的</li>
+<li>必須の見出し</li>
+<li>出力形式</li>
+<li>書いてはいけない内容</li>
+<li>元資料がある場合はその扱い</li>
+</ul>
+<p>APIのモデルやリクエスト形式は更新されるため、実装時点のOpenAI公式ドキュメントを確認します。</p>
+<h2 id="出力形式を決める">出力形式を決める</h2>
+<p>生成結果をMarkdownとして保存するなら、front matterと本文を分けるなど、後工程で機械的に扱える形式にします。</p>
+<p>タイトルなど正本で管理している値は、AIの自由生成ではなくプログラム側で設定する方法もあります。</p>
+<h2 id="QAを別工程にする">QAを別工程にする</h2>
+<p>生成成功と記事品質の合格は同じではありません。</p>
+<p>次のような項目を確認します。</p>
+<ul>
+<li>指定タイトルと一致している</li>
+<li>必須項目がある</li>
+<li>根拠のない数値がない</li>
+<li>架空の体験談がない</li>
+<li>コードや操作手順に問題がない</li>
+<li>内部リンクが実在する</li>
+<li>内容が途中で切れていない</li>
+</ul>
+<p>機械的に確認できる項目と、人が確認する項目を分けます。</p>
+<h2 id="CMSへ投稿する">CMSへ投稿する</h2>
+<p>WordPressなどAPIを提供するCMSでは、認証したうえで外部プログラムから投稿を作成できる場合があります。</p>
+<p>最初は公開状態ではなく下書きとして送る設計にすると、公開前の確認を残せます。</p>
+<h2 id="重複投稿を防ぐ">重複投稿を防ぐ</h2>
+<p>同じ処理を再実行したとき、同じ記事が複数作られないようにします。</p>
+<p>記事管理番号など一意の値と投稿先のIDを対応付け、すでに処理済みか確認します。</p>
+<h2 id="ログを残す">ログを残す</h2>
+<p>最低限、次の情報を記録します。</p>
+<ul>
+<li>記事番号</li>
+<li>生成日時</li>
+<li>生成成功・失敗</li>
+<li>QA結果</li>
+<li>投稿成功・失敗</li>
+<li>投稿先ID</li>
+</ul>
+<p>途中で止まっても、どこから再開すべきか判断できます。</p>
+<h2 id="APIキーをコードへ直接書かない">APIキーをコードへ直接書かない</h2>
+<p>OpenAI APIやCMSの認証情報は、ソースコードへ直接埋め込んで公開リポジトリへ保存しません。</p>
+<p>実行環境のSecretsや環境変数など、用途に合った方法で管理します。</p>
+<h2 id="まとめ">まとめ</h2>
+<p>ChatGPTの記事生成・投稿を自動化するときは、管理データ、OpenAI API、QA、CMS投稿を分離します。まずは下書き作成までを自動化し、品質と運用が安定してから自動化範囲を検討してください。</p><aside class="point yellow wakarukamo-point"><div class="point-heading"><img src="../assets/images/wakarukamo-point.png" alt=""><strong>ワカルカモポイント</strong></div><p>記事生成と公開を直結せず、OpenAI APIで生成した結果を検証してからCMSへ下書き投稿する構成にすると、誤公開を防ぎやすくなります。</p></aside><section class="author-box" aria-labelledby="author-box-title"><img src="../assets/images/tip-duck.webp" alt="ワカルカモ運営者"><div><span id="author-box-title" class="author-label">この記事を書いた人</span><strong>ワカルカモ運営者</strong><p>企業の情報システム・DX推進・マーケティング業務などを経験。PC・Webサービス・業務自動化など、実際に試して分かったことを初心者向けに解説しています。</p><a href="../about.html#author-profile">運営者情報を見る →</a></div></section><nav class="article-pager" aria-label="前後の記事"><a class="article-pager-link article-pager-prev" href="30_17.html"><span class="article-pager-label">← 前の記事</span><strong>Markdownから同じデザインのHTMLを自動生成する方法</strong></a><a class="article-pager-link article-pager-next" href="30_19.html"><span class="article-pager-label">次の記事 →</span><strong>OpenAI APIでブログ記事を自動生成する方法｜仕組みと実装の流れを解説</strong></a></nav><h2>関連記事</h2><div class="article-grid" data-related data-category="web" data-slug="30_18"></div></article><aside><div class="sidebox"><img class="side-duck" src="../assets/images/tip-duck.webp" alt=""><h3>この記事のカテゴリ</h3><a class="outline-btn" href="../categories/web.html">Web全般 →</a></div><div class="sidebox"><h3>🔥 人気のタグ</h3><div class="tag-cloud" data-popular-tags></div></div></aside></div></main><footer class="footer"><div class="container footer-inner"><div class="footer-brand"><img src="../assets/images/logo-duck.webp" alt=""><div><strong>ワカルカモ</strong><div style="font-size:12px;color:#6c7c91">PC・Web・AIの「わからない」が、わかるかも。</div></div></div><div class="footer-links"><a href="../index.html">ホーム</a><a href="../articles.html">記事一覧</a><a href="../about.html">このサイトについて</a><a href="../privacy.html">プライバシーポリシー</a></div></div><p class="copyright">© 2026 ワカルカモ</p></footer><script src="../assets/js/analytics-config.js"></script><script src="../assets/js/site.js?v=20260914-2"></script></body></html>

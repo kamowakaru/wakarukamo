@@ -1,0 +1,64 @@
+<!doctype html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="ChatGPTでHTML・CSS・Markdownなど複数のファイルをまとめて作成するときの指示方法と、ファイル構成・命名規則・ZIP化・確認ポイントを解説します。"><link rel="canonical" href="https://kamowakaru.github.io/wakarukamo/articles/32_5.html"><meta property="og:title" content="ChatGPTで複数ファイルをまとめて作成する方法"><meta property="og:description" content="ChatGPTでHTML・CSS・Markdownなど複数のファイルをまとめて作成するときの指示方法と、ファイル構成・命名規則・ZIP化・確認ポイントを解説します。"><meta property="og:url" content="https://kamowakaru.github.io/wakarukamo/articles/32_5.html"><meta property="og:type" content="article"><meta property="og:image" content="https://kamowakaru.github.io/wakarukamo/assets/images/thumbnails/groups/32.jpg"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="ChatGPTで複数ファイルをまとめて作成する方法"><meta name="twitter:description" content="ChatGPTでHTML・CSS・Markdownなど複数のファイルをまとめて作成するときの指示方法と、ファイル構成・命名規則・ZIP化・確認ポイントを解説します。"><meta name="twitter:image" content="https://kamowakaru.github.io/wakarukamo/assets/images/thumbnails/groups/32.jpg"><title>ChatGPTで複数ファイルをまとめて作成する方法 | ワカルカモ</title><link rel="stylesheet" href="../assets/css/style.css?v=20260914-3"><link rel="stylesheet" href="../assets/css/point.css"><link rel="stylesheet" href="../assets/css/article-markdown.css?v=20260915-table"><script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "Article", "headline": "ChatGPTで複数ファイルをまとめて作成する方法", "description": "ChatGPTでHTML・CSS・Markdownなど複数のファイルをまとめて作成するときの指示方法と、ファイル構成・命名規則・ZIP化・確認ポイントを解説します。", "datePublished": "2026-09-17", "dateModified": "2026-09-17", "mainEntityOfPage": "https://kamowakaru.github.io/wakarukamo/articles/32_5.html", "author": {"@type": "Person", "name": "ワカルカモ運営者", "url": "https://kamowakaru.github.io/wakarukamo/about.html#author-profile"}, "publisher": {"@type": "Organization", "name": "ワカルカモ", "url": "https://kamowakaru.github.io/wakarukamo"}, "image": "https://kamowakaru.github.io/wakarukamo/assets/images/thumbnails/groups/32.jpg"}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "ホーム", "item": "https://kamowakaru.github.io/wakarukamo/"}, {"@type": "ListItem", "position": 2, "name": "AI・ChatGPT", "item": "https://kamowakaru.github.io/wakarukamo/categories/ai-chatgpt.html"}, {"@type": "ListItem", "position": 3, "name": "ChatGPTで複数ファイルをまとめて作成する方法", "item": "https://kamowakaru.github.io/wakarukamo/articles/32_5.html"}]}]}</script><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2620370554695357" crossorigin="anonymous"></script></head><body data-root="../"><header class="site-header"><div class="container header-inner"><a class="brand" href="../index.html"><img src="../assets/images/logo-duck.webp" alt=""><span><strong>ワカルカモ</strong><small>PC・Web・AIの「わからない」が、わかるかも。</small></span></a><button class="menu-btn" aria-label="メニュー">☰</button><nav class="nav"><a href="../index.html">ホーム</a><a href="../index.html#categories">カテゴリ</a><a href="../articles.html">記事一覧</a><a href="../about.html">このサイトについて</a></nav><form class="header-search" action="../search.html"><input name="q" type="search" placeholder="キーワードで検索…"><button>🔍</button></form></div></header><main class="article-main"><div class="container article-layout"><article class="article-body"><div class="breadcrumb"><a href="../index.html">ホーム</a> › <a href="../categories/ai-chatgpt.html">AI・ChatGPT</a> › ChatGPTで複数ファイルをまとめて作成する方法</div><div class="meta"><span class="chip">AI・ChatGPT</span><a class="tag-link" href="../tags/chatgpt.html">ChatGPT</a><span class="author-byline">著者：<a href="../about.html#author-profile">ワカルカモ運営者</a></span><time datetime="2026-09-17">2026.09.17</time></div><h1>ChatGPTで複数ファイルをまとめて作成する方法</h1><p class="lead">ChatGPTでHTML・CSS・Markdownなど複数のファイルをまとめて作成するときの指示方法と、ファイル構成・命名規則・ZIP化・確認ポイントを解説します。</p><figure class="article-thumbnail"><img src="../assets/images/thumbnails/groups/32.jpg" alt="ChatGPTで複数ファイルをまとめて作成する方法のイメージ画像"></figure><h2 id="結論">結論</h2>
+<p>ChatGPTで複数ファイルをまとめて作成するときは、<strong>最初にファイル一覧とディレクトリ構成を決め、それぞれの役割と命名規則を伝える</strong>のがポイントです。</p>
+<p>複数ファイルでは、1つ1つの内容だけでなく、HTMLからCSSを正しく参照できるか、記事番号とファイル名が一致しているかなど、ファイル同士の関係も確認します。</p>
+<h2 id="最初に構成を指定する">最初に構成を指定する</h2>
+<p>Webサイトなら、たとえば次のように依頼できます。</p>
+<pre><code>次の構成でファイルを作ってください。
+
+index.html
+css/style.css
+js/main.js
+images/README.txt
+
+HTMLからCSSとJavaScriptを正しく読み込んでください。</code></pre>
+<p>先に構成を決めると、不要なファイル名を勝手に増やしにくくなります。</p>
+<h2 id="各ファイルの役割を書く">各ファイルの役割を書く</h2>
+<pre><code>index.html：ページ構造
+style.css：全体デザイン
+main.js：メニューの開閉
+README.md：更新方法</code></pre>
+<p>「サイト一式を作って」だけより、必要な成果物を明確にできます。</p>
+<h2 id="命名規則を固定する">命名規則を固定する</h2>
+<p>記事を複数作る場合は、ファイル名のルールが特に重要です。</p>
+<pre><code>記事番号が1_1なら1_1.md
+記事番号が19_2_1なら19_2_1.md
+番号をハイフンへ変更しない</code></pre>
+<p>IDを日付や連番だと推測して変更しないよう、文字列として扱うことも指定します。</p>
+<h2 id="変更禁止項目を伝える">変更禁止項目を伝える</h2>
+<p>元データから複数ファイルを作る場合は、正本となるデータを明示します。</p>
+<pre><code>CSVのタイトルをそのまま使う
+公開済みの行は生成しない
+CSVにないファイルは作らない</code></pre>
+<p>自動処理では、このような条件を機械的に確認できる形にします。</p>
+<h2 id="ZIPにまとめる">ZIPにまとめる</h2>
+<p>ファイル数が多い場合は、ディレクトリ構造を保ったままZIPへまとめると扱いやすくなります。</p>
+<pre><code>project.zip
+  content/
+    articles/
+      1.md
+      1_1.md
+  data/
+    management.csv</code></pre>
+<p>ZIP化する前に、不要な一時ファイルや秘密情報が入っていないか確認します。</p>
+<h2 id="複数ファイルは小さな単位で作る">複数ファイルは小さな単位で作る</h2>
+<p>数十・数百ファイルを一度に生成すると、途中の誤りに気付きにくくなります。</p>
+<p>最初に数件を作り、ファイル名、内容、参照関係が正しいことを確認してから次のバッチへ進めます。</p>
+<h2 id="既存ファイルと混ぜる場合">既存ファイルと混ぜる場合</h2>
+<p>既存ファイルを上書きしてはいけない場合は、生成先を別フォルダにします。</p>
+<p>公開済みファイルや手作業で修正したファイルを保護する必要があるなら、上書き可否を管理データで判定します。</p>
+<h2 id="完成後に機械的なQAをする">完成後に機械的なQAをする</h2>
+<p>複数ファイルでは次を自動確認すると便利です。</p>
+<ul>
+<li>必要なファイルがすべて存在する</li>
+<li>不要なファイルがない</li>
+<li>ファイル名が管理データと一致する</li>
+<li>HTMLから参照するCSS・JavaScriptが存在する</li>
+<li>Markdownの必須項目がある</li>
+<li>重複したIDがない</li>
+<li>ZIP内のディレクトリ構造が正しい</li>
+</ul>
+<h2 id="ChatGPTで扱える範囲は環境によって異なる">ChatGPTで扱える範囲は環境によって異なる</h2>
+<p>ファイル作成や編集の利用方法は、ChatGPTのプラン、ワークスペース設定、利用している機能などによって異なる場合があります。</p>
+<p>大量ファイルでは、作成後にZIPの中身を一覧化して確認すると安全です。</p>
+<h2 id="まとめ">まとめ</h2>
+<p>ChatGPTで複数ファイルを作るときは、ファイル構成、役割、命名規則、変更禁止条件を先に固定します。少数ずつ生成し、ファイル間の参照と管理番号をQAしてからZIPへまとめると、大量ファイルでもミスを見つけやすくなります。</p><aside class="point yellow wakarukamo-point"><div class="point-heading"><img src="../assets/images/wakarukamo-point.png" alt=""><strong>ワカルカモポイント</strong></div><p>複数ファイルでは最初にディレクトリ構成と各ファイルの役割、命名規則、変更禁止条件を決めると、ファイル間の参照ミスを減らせます。</p></aside><section class="author-box" aria-labelledby="author-box-title"><img src="../assets/images/tip-duck.webp" alt="ワカルカモ運営者"><div><span id="author-box-title" class="author-label">この記事を書いた人</span><strong>ワカルカモ運営者</strong><p>企業の情報システム・DX推進・マーケティング業務などを経験。PC・Webサービス・業務自動化など、実際に試して分かったことを初心者向けに解説しています。</p><a href="../about.html#author-profile">運営者情報を見る →</a></div></section><nav class="article-pager" aria-label="前後の記事"><a class="article-pager-link article-pager-prev" href="32_4.html"><span class="article-pager-label">← 前の記事</span><strong>ChatGPTでHTMLファイルを作る方法</strong></a><a class="article-pager-link article-pager-next" href="33.html"><span class="article-pager-label">次の記事 →</span><strong>ChatGPTでプログラミングする方法｜コード作成・修正のコツ</strong></a></nav><h2>関連記事</h2><div class="article-grid" data-related data-category="ai-chatgpt" data-slug="32_5"></div></article><aside><div class="sidebox"><img class="side-duck" src="../assets/images/tip-duck.webp" alt=""><h3>この記事のカテゴリ</h3><a class="outline-btn" href="../categories/ai-chatgpt.html">AI・ChatGPT →</a></div><div class="sidebox"><h3>🔥 人気のタグ</h3><div class="tag-cloud" data-popular-tags></div></div></aside></div></main><footer class="footer"><div class="container footer-inner"><div class="footer-brand"><img src="../assets/images/logo-duck.webp" alt=""><div><strong>ワカルカモ</strong><div style="font-size:12px;color:#6c7c91">PC・Web・AIの「わからない」が、わかるかも。</div></div></div><div class="footer-links"><a href="../index.html">ホーム</a><a href="../articles.html">記事一覧</a><a href="../about.html">このサイトについて</a><a href="../privacy.html">プライバシーポリシー</a></div></div><p class="copyright">© 2026 ワカルカモ</p></footer><script src="../assets/js/analytics-config.js"></script><script src="../assets/js/site.js?v=20260914-2"></script></body></html>

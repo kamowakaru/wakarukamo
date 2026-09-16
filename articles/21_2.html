@@ -1,0 +1,40 @@
+<!doctype html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="GASからGoogleスプレッドシートのシートやセルを取得し、値を読み書きする基本的なコードを解説します。"><link rel="canonical" href="https://kamowakaru.github.io/wakarukamo/articles/21_2.html"><meta property="og:title" content="GASでGoogleスプレッドシートを操作する方法｜基本的な書き方を解説"><meta property="og:description" content="GASからGoogleスプレッドシートのシートやセルを取得し、値を読み書きする基本的なコードを解説します。"><meta property="og:url" content="https://kamowakaru.github.io/wakarukamo/articles/21_2.html"><meta property="og:type" content="article"><meta property="og:image" content="https://kamowakaru.github.io/wakarukamo/assets/images/thumbnails/groups/21.jpg"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="GASでGoogleスプレッドシートを操作する方法｜基本的な書き方を解説"><meta name="twitter:description" content="GASからGoogleスプレッドシートのシートやセルを取得し、値を読み書きする基本的なコードを解説します。"><meta name="twitter:image" content="https://kamowakaru.github.io/wakarukamo/assets/images/thumbnails/groups/21.jpg"><title>GASでGoogleスプレッドシートを操作する方法｜基本的な書き方を解説 | ワカルカモ</title><link rel="stylesheet" href="../assets/css/style.css?v=20260914-3"><link rel="stylesheet" href="../assets/css/point.css"><link rel="stylesheet" href="../assets/css/article-markdown.css?v=20260915-table"><script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "Article", "headline": "GASでGoogleスプレッドシートを操作する方法｜基本的な書き方を解説", "description": "GASからGoogleスプレッドシートのシートやセルを取得し、値を読み書きする基本的なコードを解説します。", "datePublished": "2026-09-17", "dateModified": "2026-09-17", "mainEntityOfPage": "https://kamowakaru.github.io/wakarukamo/articles/21_2.html", "author": {"@type": "Person", "name": "ワカルカモ運営者", "url": "https://kamowakaru.github.io/wakarukamo/about.html#author-profile"}, "publisher": {"@type": "Organization", "name": "ワカルカモ", "url": "https://kamowakaru.github.io/wakarukamo"}, "image": "https://kamowakaru.github.io/wakarukamo/assets/images/thumbnails/groups/21.jpg"}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "ホーム", "item": "https://kamowakaru.github.io/wakarukamo/"}, {"@type": "ListItem", "position": 2, "name": "Google・GAS", "item": "https://kamowakaru.github.io/wakarukamo/categories/google-gas.html"}, {"@type": "ListItem", "position": 3, "name": "GASでGoogleスプレッドシートを操作する方法｜基本的な書き方を解説", "item": "https://kamowakaru.github.io/wakarukamo/articles/21_2.html"}]}]}</script><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2620370554695357" crossorigin="anonymous"></script></head><body data-root="../"><header class="site-header"><div class="container header-inner"><a class="brand" href="../index.html"><img src="../assets/images/logo-duck.webp" alt=""><span><strong>ワカルカモ</strong><small>PC・Web・AIの「わからない」が、わかるかも。</small></span></a><button class="menu-btn" aria-label="メニュー">☰</button><nav class="nav"><a href="../index.html">ホーム</a><a href="../index.html#categories">カテゴリ</a><a href="../articles.html">記事一覧</a><a href="../about.html">このサイトについて</a></nav><form class="header-search" action="../search.html"><input name="q" type="search" placeholder="キーワードで検索…"><button>🔍</button></form></div></header><main class="article-main"><div class="container article-layout"><article class="article-body"><div class="breadcrumb"><a href="../index.html">ホーム</a> › <a href="../categories/google-gas.html">Google・GAS</a> › GASでGoogleスプレッドシートを操作する方法｜基本的な書き方を解説</div><div class="meta"><span class="chip">Google・GAS</span><a class="tag-link" href="../tags/gas.html">GAS</a><span class="author-byline">著者：<a href="../about.html#author-profile">ワカルカモ運営者</a></span><time datetime="2026-09-17">2026.09.17</time></div><h1>GASでGoogleスプレッドシートを操作する方法｜基本的な書き方を解説</h1><p class="lead">GASからGoogleスプレッドシートのシートやセルを取得し、値を読み書きする基本的なコードを解説します。</p><figure class="article-thumbnail"><img src="../assets/images/thumbnails/groups/21.jpg" alt="GASでGoogleスプレッドシートを操作する方法｜基本的な書き方を解説のイメージ画像"></figure><h2 id="結論">結論</h2>
+<p>GASでGoogleスプレッドシートを操作する基本は、<strong>スプレッドシートを取得する → シートを取得する → セル範囲を取得する → 値を読む・書く</strong>という順番です。</p>
+<p>スプレッドシートから「拡張機能」→「Apps Script」で作成したスクリプトなら、現在のスプレッドシートを取得して操作できます。</p>
+<h2 id="セルへ文字を書き込む">セルへ文字を書き込む</h2>
+<p>たとえば、現在のスプレッドシートにある「シート1」のA1セルへ文字を入れるコードは次のように書けます。</p>
+<pre><code>function writeCell() {
+  const spreadsheet = SpreadsheetApp.getActiveSpreadsheet();
+  const sheet = spreadsheet.getSheetByName(&#x27;シート1&#x27;);
+  sheet.getRange(&#x27;A1&#x27;).setValue(&#x27;こんにちは&#x27;);
+}</code></pre>
+<p>実行すると、指定したシートのA1セルへ「こんにちは」と入力されます。</p>
+<h2 id="セルの値を取得する">セルの値を取得する</h2>
+<p>A1セルの値を読み取り、ログへ表示する例です。</p>
+<pre><code>function readCell() {
+  const spreadsheet = SpreadsheetApp.getActiveSpreadsheet();
+  const sheet = spreadsheet.getSheetByName(&#x27;シート1&#x27;);
+  const value = sheet.getRange(&#x27;A1&#x27;).getValue();
+
+  console.log(value);
+}</code></pre>
+<p><code>getValue()</code> で1セルの値を取得できます。</p>
+<h2 id="複数セルをまとめて取得する">複数セルをまとめて取得する</h2>
+<p>表を扱う場合は、1セルずつ処理するより範囲をまとめて取得する方法が便利です。</p>
+<pre><code>function readTable() {
+  const sheet = SpreadsheetApp
+    .getActiveSpreadsheet()
+    .getSheetByName(&#x27;シート1&#x27;);
+
+  const values = sheet.getRange(&#x27;A1:C5&#x27;).getValues();
+  console.log(values);
+}</code></pre>
+<p><code>getValues()</code> の結果は、行と列を持つ二次元配列として扱います。</p>
+<h2 id="シート名が違うとエラーの原因になる">シート名が違うとエラーの原因になる</h2>
+<p>コードで <code>&#x27;シート1&#x27;</code> と指定していても、実際のタブ名が「売上一覧」なら対象シートを取得できません。</p>
+<p>コピーしたサンプルコードが動かない場合は、最初に自分のスプレッドシートのシート名とコード内の名前が一致しているか確認してください。</p>
+<h2 id="大量データはまとめて読み書きする">大量データはまとめて読み書きする</h2>
+<p>大量のセルをループのたびに <code>getValue()</code> や <code>setValue()</code> で操作すると、処理に時間がかかりやすくなります。</p>
+<p>必要な範囲を <code>getValues()</code> でまとめて取得し、JavaScript側で加工してから <code>setValues()</code> でまとめて戻す考え方を覚えておくと効率的です。</p>
+<h2 id="まとめ">まとめ</h2>
+<p>GASでスプレッドシートを操作するときは、SpreadsheetAppから対象シートを取得し、<code>getRange()</code> でセル範囲を指定します。最初は1セルの読み書きから試し、動作を確認してから複数セルや自動処理へ広げてください。</p><aside class="point yellow wakarukamo-point"><div class="point-heading"><img src="../assets/images/wakarukamo-point.png" alt=""><strong>ワカルカモポイント</strong></div><p>スプレッドシートに紐づくGASではSpreadsheetAppからシートを取得し、getRangeで対象セルを指定して読み書きします。</p></aside><section class="author-box" aria-labelledby="author-box-title"><img src="../assets/images/tip-duck.webp" alt="ワカルカモ運営者"><div><span id="author-box-title" class="author-label">この記事を書いた人</span><strong>ワカルカモ運営者</strong><p>企業の情報システム・DX推進・マーケティング業務などを経験。PC・Webサービス・業務自動化など、実際に試して分かったことを初心者向けに解説しています。</p><a href="../about.html#author-profile">運営者情報を見る →</a></div></section><nav class="article-pager" aria-label="前後の記事"><a class="article-pager-link article-pager-prev" href="21_1.html"><span class="article-pager-label">← 前の記事</span><strong>GASの始め方｜スクリプトを作成・実行する方法を初心者向けに解説</strong></a><a class="article-pager-link article-pager-next" href="21_3.html"><span class="article-pager-label">次の記事 →</span><strong>GASのトリガーとは？決まった時間に自動実行する方法</strong></a></nav><h2>関連記事</h2><div class="article-grid" data-related data-category="google-gas" data-slug="21_2"></div></article><aside><div class="sidebox"><img class="side-duck" src="../assets/images/tip-duck.webp" alt=""><h3>この記事のカテゴリ</h3><a class="outline-btn" href="../categories/google-gas.html">Google・GAS →</a></div><div class="sidebox"><h3>🔥 人気のタグ</h3><div class="tag-cloud" data-popular-tags></div></div></aside></div></main><footer class="footer"><div class="container footer-inner"><div class="footer-brand"><img src="../assets/images/logo-duck.webp" alt=""><div><strong>ワカルカモ</strong><div style="font-size:12px;color:#6c7c91">PC・Web・AIの「わからない」が、わかるかも。</div></div></div><div class="footer-links"><a href="../index.html">ホーム</a><a href="../articles.html">記事一覧</a><a href="../about.html">このサイトについて</a><a href="../privacy.html">プライバシーポリシー</a></div></div><p class="copyright">© 2026 ワカルカモ</p></footer><script src="../assets/js/analytics-config.js"></script><script src="../assets/js/site.js?v=20260914-2"></script></body></html>

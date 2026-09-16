@@ -1,0 +1,59 @@
+<!doctype html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="GASで複数のGoogleスプレッドシートを照合する基本を、IDでの取得、キー列の対応付け、Mapを使った比較の流れから解説します。"><link rel="canonical" href="https://kamowakaru.github.io/wakarukamo/articles/31_2.html"><meta property="og:title" content="GASで複数のスプレッドシートを照合する方法"><meta property="og:description" content="GASで複数のGoogleスプレッドシートを照合する基本を、IDでの取得、キー列の対応付け、Mapを使った比較の流れから解説します。"><meta property="og:url" content="https://kamowakaru.github.io/wakarukamo/articles/31_2.html"><meta property="og:type" content="article"><meta property="og:image" content="https://kamowakaru.github.io/wakarukamo/assets/images/thumbnails/groups/31.jpg"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="GASで複数のスプレッドシートを照合する方法"><meta name="twitter:description" content="GASで複数のGoogleスプレッドシートを照合する基本を、IDでの取得、キー列の対応付け、Mapを使った比較の流れから解説します。"><meta name="twitter:image" content="https://kamowakaru.github.io/wakarukamo/assets/images/thumbnails/groups/31.jpg"><title>GASで複数のスプレッドシートを照合する方法 | ワカルカモ</title><link rel="stylesheet" href="../assets/css/style.css?v=20260914-3"><link rel="stylesheet" href="../assets/css/point.css"><link rel="stylesheet" href="../assets/css/article-markdown.css?v=20260915-table"><script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "Article", "headline": "GASで複数のスプレッドシートを照合する方法", "description": "GASで複数のGoogleスプレッドシートを照合する基本を、IDでの取得、キー列の対応付け、Mapを使った比較の流れから解説します。", "datePublished": "2026-09-17", "dateModified": "2026-09-17", "mainEntityOfPage": "https://kamowakaru.github.io/wakarukamo/articles/31_2.html", "author": {"@type": "Person", "name": "ワカルカモ運営者", "url": "https://kamowakaru.github.io/wakarukamo/about.html#author-profile"}, "publisher": {"@type": "Organization", "name": "ワカルカモ", "url": "https://kamowakaru.github.io/wakarukamo"}, "image": "https://kamowakaru.github.io/wakarukamo/assets/images/thumbnails/groups/31.jpg"}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "ホーム", "item": "https://kamowakaru.github.io/wakarukamo/"}, {"@type": "ListItem", "position": 2, "name": "Google・GAS", "item": "https://kamowakaru.github.io/wakarukamo/categories/google-gas.html"}, {"@type": "ListItem", "position": 3, "name": "GASで複数のスプレッドシートを照合する方法", "item": "https://kamowakaru.github.io/wakarukamo/articles/31_2.html"}]}]}</script><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2620370554695357" crossorigin="anonymous"></script></head><body data-root="../"><header class="site-header"><div class="container header-inner"><a class="brand" href="../index.html"><img src="../assets/images/logo-duck.webp" alt=""><span><strong>ワカルカモ</strong><small>PC・Web・AIの「わからない」が、わかるかも。</small></span></a><button class="menu-btn" aria-label="メニュー">☰</button><nav class="nav"><a href="../index.html">ホーム</a><a href="../index.html#categories">カテゴリ</a><a href="../articles.html">記事一覧</a><a href="../about.html">このサイトについて</a></nav><form class="header-search" action="../search.html"><input name="q" type="search" placeholder="キーワードで検索…"><button>🔍</button></form></div></header><main class="article-main"><div class="container article-layout"><article class="article-body"><div class="breadcrumb"><a href="../index.html">ホーム</a> › <a href="../categories/google-gas.html">Google・GAS</a> › GASで複数のスプレッドシートを照合する方法</div><div class="meta"><span class="chip">Google・GAS</span><a class="tag-link" href="../tags/gas.html">GAS</a><span class="author-byline">著者：<a href="../about.html#author-profile">ワカルカモ運営者</a></span><time datetime="2026-09-17">2026.09.17</time></div><h1>GASで複数のスプレッドシートを照合する方法</h1><p class="lead">GASで複数のGoogleスプレッドシートを照合する基本を、IDでの取得、キー列の対応付け、Mapを使った比較の流れから解説します。</p><figure class="article-thumbnail"><img src="../assets/images/thumbnails/groups/31.jpg" alt="GASで複数のスプレッドシートを照合する方法のイメージ画像"></figure><h2 id="結論">結論</h2>
+<p>GASで複数のスプレッドシートを照合するときは、<strong>それぞれの表をまとめて配列へ読み込み、共通のIDなどをキーにして比較</strong>します。</p>
+<p>行ごとに別のスプレッドシートへアクセスすると処理回数が増えるため、最初に必要なデータを取得してからJavaScript側で照合する構成が基本です。</p>
+<h2 id="照合キーを決める">照合キーを決める</h2>
+<p>たとえば2つの表に次の列があるとします。</p>
+<pre><code>管理表A
+ID | 名前 | 状態
+
+管理表B
+ID | メール</code></pre>
+<p>この場合は<code>ID</code>を照合キーにします。</p>
+<p>名前は表記ゆれや同姓同名があるため、一意に管理できるIDがあるならそちらを使います。</p>
+<h2 id="別のスプレッドシートを開く">別のスプレッドシートを開く</h2>
+<p>スプレッドシートIDが分かっている場合は、<code>openById()</code>で対象を取得できます。</p>
+<pre><code>const ssA = SpreadsheetApp.openById(&#x27;SPREADSHEET_ID_A&#x27;);
+const ssB = SpreadsheetApp.openById(&#x27;SPREADSHEET_ID_B&#x27;);
+
+const sheetA = ssA.getSheetByName(&#x27;データ&#x27;);
+const sheetB = ssB.getSheetByName(&#x27;データ&#x27;);</code></pre>
+<p>IDやシート名は実際の環境へ合わせます。</p>
+<h2 id="データをまとめて取得する">データをまとめて取得する</h2>
+<pre><code>const valuesA = sheetA.getDataRange().getValues();
+const valuesB = sheetB.getDataRange().getValues();</code></pre>
+<p>1行目がヘッダーなら、処理時に除外します。</p>
+<h2 id="Mapへ変換する">Mapへ変換する</h2>
+<p>表BのIDをキーにして、メールアドレスを取り出せるようにします。</p>
+<pre><code>const mapB = new Map();
+
+valuesB.slice(1).forEach(row =&gt; {
+  const id = String(row[0]).trim();
+  const email = row[1];
+
+  if (id) {
+    mapB.set(id, email);
+  }
+});</code></pre>
+<p>これでIDから対応データを探せます。</p>
+<h2 id="表Aと照合する">表Aと照合する</h2>
+<pre><code>const results = valuesA.slice(1).map(row =&gt; {
+  const id = String(row[0]).trim();
+  const email = mapB.get(id) || &#x27;&#x27;;
+  return [email];
+});</code></pre>
+<p>結果を表Aの新しい列へまとめて書き込みます。</p>
+<pre><code>if (results.length &gt; 0) {
+  sheetA.getRange(2, 4, results.length, 1).setValues(results);
+}</code></pre>
+<h2 id="キーの型をそろえる">キーの型をそろえる</h2>
+<p>片方では数値<code>123</code>、もう片方では文字列<code>&quot;123&quot;</code>になっていると、比較方法によって一致しない場合があります。</p>
+<p>照合前に<code>String()</code>や<code>trim()</code>などで形式をそろえます。</p>
+<p>ただし、先頭ゼロが意味を持つIDでは、スプレッドシート側で値がどのように保存されているかも確認してください。</p>
+<h2 id="重複キーを確認する">重複キーを確認する</h2>
+<p>同じIDが複数行に存在すると、単純な<code>Map</code>では後の値で上書きされます。</p>
+<p>IDが本当に一意か確認し、重複が正常なデータなら配列として複数件を保持する設計へ変えます。</p>
+<h2 id="大量データではアクセス回数を減らす">大量データではアクセス回数を減らす</h2>
+<p>GASでは、セルを1件ずつ読みながら別シートを検索するより、必要な範囲をまとめて取得し、メモリ上で照合する方が効率的です。</p>
+<p>結果も<code>setValues()</code>でまとめて書き戻します。</p>
+<h2 id="まとめ">まとめ</h2>
+<p>複数スプレッドシートの照合では、共通キーを決め、両方のデータをまとめて取得し、<code>Map</code>などで対応付けます。型の違い、空欄、重複キーを確認し、実データを書き換える前に少量データでテストしてください。</p><aside class="point yellow wakarukamo-point"><div class="point-heading"><img src="../assets/images/wakarukamo-point.png" alt=""><strong>ワカルカモポイント</strong></div><p>複数シートの照合では、氏名ではなく一意のIDなど安定したキーを決め、データをまとめて配列へ取得してからMapなどで比較すると処理しやすくなります。</p></aside><section class="author-box" aria-labelledby="author-box-title"><img src="../assets/images/tip-duck.webp" alt="ワカルカモ運営者"><div><span id="author-box-title" class="author-label">この記事を書いた人</span><strong>ワカルカモ運営者</strong><p>企業の情報システム・DX推進・マーケティング業務などを経験。PC・Webサービス・業務自動化など、実際に試して分かったことを初心者向けに解説しています。</p><a href="../about.html#author-profile">運営者情報を見る →</a></div></section><nav class="article-pager" aria-label="前後の記事"><a class="article-pager-link article-pager-prev" href="31_1.html"><span class="article-pager-label">← 前の記事</span><strong>GASでスプレッドシートのデータを自動処理する方法</strong></a><a class="article-pager-link article-pager-next" href="31_3.html"><span class="article-pager-label">次の記事 →</span><strong>GASでフォーム回答を自動処理する方法</strong></a></nav><h2>関連記事</h2><div class="article-grid" data-related data-category="google-gas" data-slug="31_2"></div></article><aside><div class="sidebox"><img class="side-duck" src="../assets/images/tip-duck.webp" alt=""><h3>この記事のカテゴリ</h3><a class="outline-btn" href="../categories/google-gas.html">Google・GAS →</a></div><div class="sidebox"><h3>🔥 人気のタグ</h3><div class="tag-cloud" data-popular-tags></div></div></aside></div></main><footer class="footer"><div class="container footer-inner"><div class="footer-brand"><img src="../assets/images/logo-duck.webp" alt=""><div><strong>ワカルカモ</strong><div style="font-size:12px;color:#6c7c91">PC・Web・AIの「わからない」が、わかるかも。</div></div></div><div class="footer-links"><a href="../index.html">ホーム</a><a href="../articles.html">記事一覧</a><a href="../about.html">このサイトについて</a><a href="../privacy.html">プライバシーポリシー</a></div></div><p class="copyright">© 2026 ワカルカモ</p></footer><script src="../assets/js/analytics-config.js"></script><script src="../assets/js/site.js?v=20260914-2"></script></body></html>

@@ -1,0 +1,61 @@
+<!doctype html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="定型的なWeb作業を自動化するときに、手順を入力・処理・出力・確認へ分解し、自動化しやすい単位へ整理する方法を解説します。"><link rel="canonical" href="https://kamowakaru.github.io/wakarukamo/articles/30_4.html"><meta property="og:title" content="定型的なWeb作業を自動化するときの考え方｜手順の分け方を解説"><meta property="og:description" content="定型的なWeb作業を自動化するときに、手順を入力・処理・出力・確認へ分解し、自動化しやすい単位へ整理する方法を解説します。"><meta property="og:url" content="https://kamowakaru.github.io/wakarukamo/articles/30_4.html"><meta property="og:type" content="article"><meta property="og:image" content="https://kamowakaru.github.io/wakarukamo/assets/images/thumbnails/groups/30.jpg"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="定型的なWeb作業を自動化するときの考え方｜手順の分け方を解説"><meta name="twitter:description" content="定型的なWeb作業を自動化するときに、手順を入力・処理・出力・確認へ分解し、自動化しやすい単位へ整理する方法を解説します。"><meta name="twitter:image" content="https://kamowakaru.github.io/wakarukamo/assets/images/thumbnails/groups/30.jpg"><title>定型的なWeb作業を自動化するときの考え方｜手順の分け方を解説 | ワカルカモ</title><link rel="stylesheet" href="../assets/css/style.css?v=20260914-3"><link rel="stylesheet" href="../assets/css/point.css"><link rel="stylesheet" href="../assets/css/article-markdown.css?v=20260915-table"><script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "Article", "headline": "定型的なWeb作業を自動化するときの考え方｜手順の分け方を解説", "description": "定型的なWeb作業を自動化するときに、手順を入力・処理・出力・確認へ分解し、自動化しやすい単位へ整理する方法を解説します。", "datePublished": "2026-09-17", "dateModified": "2026-09-17", "mainEntityOfPage": "https://kamowakaru.github.io/wakarukamo/articles/30_4.html", "author": {"@type": "Person", "name": "ワカルカモ運営者", "url": "https://kamowakaru.github.io/wakarukamo/about.html#author-profile"}, "publisher": {"@type": "Organization", "name": "ワカルカモ", "url": "https://kamowakaru.github.io/wakarukamo"}, "image": "https://kamowakaru.github.io/wakarukamo/assets/images/thumbnails/groups/30.jpg"}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "ホーム", "item": "https://kamowakaru.github.io/wakarukamo/"}, {"@type": "ListItem", "position": 2, "name": "Web全般", "item": "https://kamowakaru.github.io/wakarukamo/categories/web.html"}, {"@type": "ListItem", "position": 3, "name": "定型的なWeb作業を自動化するときの考え方｜手順の分け方を解説", "item": "https://kamowakaru.github.io/wakarukamo/articles/30_4.html"}]}]}</script><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2620370554695357" crossorigin="anonymous"></script></head><body data-root="../"><header class="site-header"><div class="container header-inner"><a class="brand" href="../index.html"><img src="../assets/images/logo-duck.webp" alt=""><span><strong>ワカルカモ</strong><small>PC・Web・AIの「わからない」が、わかるかも。</small></span></a><button class="menu-btn" aria-label="メニュー">☰</button><nav class="nav"><a href="../index.html">ホーム</a><a href="../index.html#categories">カテゴリ</a><a href="../articles.html">記事一覧</a><a href="../about.html">このサイトについて</a></nav><form class="header-search" action="../search.html"><input name="q" type="search" placeholder="キーワードで検索…"><button>🔍</button></form></div></header><main class="article-main"><div class="container article-layout"><article class="article-body"><div class="breadcrumb"><a href="../index.html">ホーム</a> › <a href="../categories/web.html">Web全般</a> › 定型的なWeb作業を自動化するときの考え方｜手順の分け方を解説</div><div class="meta"><span class="chip">Web全般</span><a class="tag-link" href="../tags/automation.html">自動化</a><span class="author-byline">著者：<a href="../about.html#author-profile">ワカルカモ運営者</a></span><time datetime="2026-09-17">2026.09.17</time></div><h1>定型的なWeb作業を自動化するときの考え方｜手順の分け方を解説</h1><p class="lead">定型的なWeb作業を自動化するときに、手順を入力・処理・出力・確認へ分解し、自動化しやすい単位へ整理する方法を解説します。</p><figure class="article-thumbnail"><img src="../assets/images/thumbnails/groups/30.jpg" alt="定型的なWeb作業を自動化するときの考え方｜手順の分け方を解説のイメージ画像"></figure><h2 id="結論">結論</h2>
+<p>定型的なWeb作業を自動化するときは、人が行っているクリック操作をそのまま記録する前に、<strong>開始条件・入力・処理・出力・成功条件・例外</strong>へ手順を分けます。</p>
+<p>作業の意味を分解すると、APIで置き換えられる部分、人の確認を残す部分、そもそも不要な操作が見つかります。</p>
+<h2 id="実際の作業を1回書き出す">実際の作業を1回書き出す</h2>
+<p>たとえば「新記事を管理表へ登録する」作業なら、人が行っている操作を書き出します。</p>
+<pre><code>記事を公開
+↓
+公開URLを開く
+↓
+タイトルとURLをコピー
+↓
+スプレッドシートを開く
+↓
+対象行へ貼り付け
+↓
+公開済を「済」に変更</code></pre>
+<p>この時点では自動化方法を考えず、現状の手順を把握します。</p>
+<h2 id="開始条件を決める">開始条件を決める</h2>
+<p>何をきっかけに処理を始めるか決めます。</p>
+<ul>
+<li>ボタンを押したとき</li>
+<li>毎日決まった時刻</li>
+<li>新しいファイルが追加されたとき</li>
+<li>Webhookが届いたとき</li>
+<li>GitHubへPushされたとき</li>
+</ul>
+<p>開始条件が曖昧だと、同じ処理が重複して動く原因になります。</p>
+<h2 id="入力を整理する">入力を整理する</h2>
+<p>処理に必要な情報を列挙します。</p>
+<p>記事登録なら、記事番号、タイトル、URL、公開状態などです。</p>
+<p>「画面を見れば分かる」情報も、自動化ではどこから取得するか明確にします。</p>
+<h2 id="処理を小さく分ける">処理を小さく分ける</h2>
+<p>1つの巨大な処理ではなく、役割ごとに分けます。</p>
+<pre><code>記事データ取得
+→ データ検証
+→ 管理表と照合
+→ 更新
+→ 結果記録</code></pre>
+<p>途中で失敗したとき、どこまで成功したか確認しやすくなります。</p>
+<h2 id="出力を決める">出力を決める</h2>
+<p>処理後に何が残れば成功なのか決めます。</p>
+<p>たとえば「スプレッドシートの公開済列が更新される」だけでなく、処理日時や対象記事番号をログへ残す方法もあります。</p>
+<h2 id="成功条件を定義する">成功条件を定義する</h2>
+<p>「エラーが出なかった」だけでは成功と判断できない場合があります。</p>
+<p>たとえばAPIが200番台を返したことに加え、返された記事IDや更新後データを確認するなど、目的に合う条件を決めます。</p>
+<h2 id="例外を先に考える">例外を先に考える</h2>
+<p>次のようなケースを洗い出します。</p>
+<ul>
+<li>入力が空欄</li>
+<li>同じデータがすでに存在する</li>
+<li>APIが失敗する</li>
+<li>認証期限が切れる</li>
+<li>対象ページがない</li>
+<li>一部だけ成功する</li>
+</ul>
+<p>例外時に処理を止めるのか、次のデータへ進むのかも決めます。</p>
+<h2 id="人の確認を残す場所を決める">人の確認を残す場所を決める</h2>
+<p>記事公開、送金、削除など、誤処理の影響が大きい操作は完全自動にしない選択肢があります。</p>
+<p>「下書き作成までは自動、公開は人」のように境界を決めます。</p>
+<h2 id="まとめ">まとめ</h2>
+<p>Web作業の自動化では、画面操作ではなく作業の意味を分解します。開始条件、入力、処理、出力、成功条件、例外を整理すると、APIやスクリプトなど適切な方法を選びやすくなり、失敗時の復旧もしやすくなります。</p><aside class="point yellow wakarukamo-point"><div class="point-heading"><img src="../assets/images/wakarukamo-point.png" alt=""><strong>ワカルカモポイント</strong></div><p>自動化では人の操作をそのまま再現する前に、開始条件・入力・処理・出力・成功条件・例外へ手順を分けると実装方法を選びやすくなります。</p></aside><section class="author-box" aria-labelledby="author-box-title"><img src="../assets/images/tip-duck.webp" alt="ワカルカモ運営者"><div><span id="author-box-title" class="author-label">この記事を書いた人</span><strong>ワカルカモ運営者</strong><p>企業の情報システム・DX推進・マーケティング業務などを経験。PC・Webサービス・業務自動化など、実際に試して分かったことを初心者向けに解説しています。</p><a href="../about.html#author-profile">運営者情報を見る →</a></div></section><nav class="article-pager" aria-label="前後の記事"><a class="article-pager-link article-pager-prev" href="30_3.html"><span class="article-pager-label">← 前の記事</span><strong>Webhookとは？APIとの違いと仕組みを初心者向けに解説</strong></a><a class="article-pager-link article-pager-next" href="30_5.html"><span class="article-pager-label">次の記事 →</span><strong>Web自動化で失敗しやすいポイントは？認証・制限・エラーの注意点</strong></a></nav><h2>関連記事</h2><div class="article-grid" data-related data-category="web" data-slug="30_4"></div></article><aside><div class="sidebox"><img class="side-duck" src="../assets/images/tip-duck.webp" alt=""><h3>この記事のカテゴリ</h3><a class="outline-btn" href="../categories/web.html">Web全般 →</a></div><div class="sidebox"><h3>🔥 人気のタグ</h3><div class="tag-cloud" data-popular-tags></div></div></aside></div></main><footer class="footer"><div class="container footer-inner"><div class="footer-brand"><img src="../assets/images/logo-duck.webp" alt=""><div><strong>ワカルカモ</strong><div style="font-size:12px;color:#6c7c91">PC・Web・AIの「わからない」が、わかるかも。</div></div></div><div class="footer-links"><a href="../index.html">ホーム</a><a href="../articles.html">記事一覧</a><a href="../about.html">このサイトについて</a><a href="../privacy.html">プライバシーポリシー</a></div></div><p class="copyright">© 2026 ワカルカモ</p></footer><script src="../assets/js/analytics-config.js"></script><script src="../assets/js/site.js?v=20260914-2"></script></body></html>

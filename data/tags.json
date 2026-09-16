@@ -94,5 +94,29 @@
   {
     "slug": "privacy",
     "name": "プライバシー"
+  },
+  {
+    "slug": "api",
+    "name": "API"
+  },
+  {
+    "slug": "blog-management",
+    "name": "ブログ運営"
+  },
+  {
+    "slug": "google-sheets",
+    "name": "Googleスプレッドシート"
+  },
+  {
+    "slug": "html-css",
+    "name": "HTML・CSS"
+  },
+  {
+    "slug": "lp",
+    "name": "LP"
+  },
+  {
+    "slug": "owned-media",
+    "name": "オウンドメディア"
   }
 ]

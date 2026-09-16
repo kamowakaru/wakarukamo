@@ -1,0 +1,75 @@
+<!doctype html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="ブログのデザインを全記事まとめて変更する方法を、共通CSSの仕組み、HTML側の読み込み、変更時の確認ポイントとともに解説します。"><link rel="canonical" href="https://kamowakaru.github.io/wakarukamo/articles/34_17.html"><meta property="og:title" content="ブログのデザインを全記事まとめて変更する方法｜共通CSSで管理するメリット"><meta property="og:description" content="ブログのデザインを全記事まとめて変更する方法を、共通CSSの仕組み、HTML側の読み込み、変更時の確認ポイントとともに解説します。"><meta property="og:url" content="https://kamowakaru.github.io/wakarukamo/articles/34_17.html"><meta property="og:type" content="article"><meta property="og:image" content="https://kamowakaru.github.io/wakarukamo/assets/images/thumbnails/groups/34.jpg"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="ブログのデザインを全記事まとめて変更する方法｜共通CSSで管理するメリット"><meta name="twitter:description" content="ブログのデザインを全記事まとめて変更する方法を、共通CSSの仕組み、HTML側の読み込み、変更時の確認ポイントとともに解説します。"><meta name="twitter:image" content="https://kamowakaru.github.io/wakarukamo/assets/images/thumbnails/groups/34.jpg"><title>ブログのデザインを全記事まとめて変更する方法｜共通CSSで管理するメリット | ワカルカモ</title><link rel="stylesheet" href="../assets/css/style.css?v=20260914-3"><link rel="stylesheet" href="../assets/css/point.css"><link rel="stylesheet" href="../assets/css/article-markdown.css?v=20260915-table"><script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "Article", "headline": "ブログのデザインを全記事まとめて変更する方法｜共通CSSで管理するメリット", "description": "ブログのデザインを全記事まとめて変更する方法を、共通CSSの仕組み、HTML側の読み込み、変更時の確認ポイントとともに解説します。", "datePublished": "2026-09-17", "dateModified": "2026-09-17", "mainEntityOfPage": "https://kamowakaru.github.io/wakarukamo/articles/34_17.html", "author": {"@type": "Person", "name": "ワカルカモ運営者", "url": "https://kamowakaru.github.io/wakarukamo/about.html#author-profile"}, "publisher": {"@type": "Organization", "name": "ワカルカモ", "url": "https://kamowakaru.github.io/wakarukamo"}, "image": "https://kamowakaru.github.io/wakarukamo/assets/images/thumbnails/groups/34.jpg"}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "ホーム", "item": "https://kamowakaru.github.io/wakarukamo/"}, {"@type": "ListItem", "position": 2, "name": "Web全般", "item": "https://kamowakaru.github.io/wakarukamo/categories/web.html"}, {"@type": "ListItem", "position": 3, "name": "ブログのデザインを全記事まとめて変更する方法｜共通CSSで管理するメリット", "item": "https://kamowakaru.github.io/wakarukamo/articles/34_17.html"}]}]}</script><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2620370554695357" crossorigin="anonymous"></script></head><body data-root="../"><header class="site-header"><div class="container header-inner"><a class="brand" href="../index.html"><img src="../assets/images/logo-duck.webp" alt=""><span><strong>ワカルカモ</strong><small>PC・Web・AIの「わからない」が、わかるかも。</small></span></a><button class="menu-btn" aria-label="メニュー">☰</button><nav class="nav"><a href="../index.html">ホーム</a><a href="../index.html#categories">カテゴリ</a><a href="../articles.html">記事一覧</a><a href="../about.html">このサイトについて</a></nav><form class="header-search" action="../search.html"><input name="q" type="search" placeholder="キーワードで検索…"><button>🔍</button></form></div></header><main class="article-main"><div class="container article-layout"><article class="article-body"><div class="breadcrumb"><a href="../index.html">ホーム</a> › <a href="../categories/web.html">Web全般</a> › ブログのデザインを全記事まとめて変更する方法｜共通CSSで管理するメリット</div><div class="meta"><span class="chip">Web全般</span><a class="tag-link" href="../tags/html-css.html">HTML・CSS</a><span class="author-byline">著者：<a href="../about.html#author-profile">ワカルカモ運営者</a></span><time datetime="2026-09-17">2026.09.17</time></div><h1>ブログのデザインを全記事まとめて変更する方法｜共通CSSで管理するメリット</h1><p class="lead">ブログのデザインを全記事まとめて変更する方法を、共通CSSの仕組み、HTML側の読み込み、変更時の確認ポイントとともに解説します。</p><figure class="article-thumbnail"><img src="../assets/images/thumbnails/groups/34.jpg" alt="ブログのデザインを全記事まとめて変更する方法｜共通CSSで管理するメリットのイメージ画像"></figure><h2 id="結論">結論</h2>
+<p>ブログのデザインを全記事まとめて変更したいなら、<strong>各記事が同じCSSファイルを読み込む構成にして、共通CSSを修正</strong>します。</p>
+<p>記事ごとのHTMLへ色や文字サイズを直接書いていると、変更のたびに多数のファイルを修正する必要があります。共通CSSへ集約すると、デザイン変更箇所を減らせます。</p>
+<h2 id="HTMLとCSSの役割を分ける">HTMLとCSSの役割を分ける</h2>
+<p>基本的には、</p>
+<pre><code>HTML
+→ 見出し・本文・リンクなどの構造
+
+CSS
+→ 色・サイズ・余白・配置などの見た目</code></pre>
+<p>として管理します。</p>
+<p>たとえば記事ページから共通CSSを読み込みます。</p>
+<pre><code>&lt;link rel=&quot;stylesheet&quot; href=&quot;/css/style.css&quot;&gt;</code></pre>
+<p>すべての記事が同じ<code>style.css</code>を参照すれば、そのファイルの変更を共通反映できます。</p>
+<h2 id="見出しをまとめて変更する">見出しをまとめて変更する</h2>
+<p>たとえばH2の余白を変更する場合です。</p>
+<pre><code>article h2 {
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
+}</code></pre>
+<p>全記事のH2が同じ構造なら、各HTMLを編集する必要はありません。</p>
+<h2 id="記事領域へ限定する">記事領域へ限定する</h2>
+<p>単純に、</p>
+<pre><code>h2 {
+  ...
+}</code></pre>
+<p>とすると、記事以外のH2にも影響する場合があります。</p>
+<p>記事本文を<code>article</code>や専用classで囲み、</p>
+<pre><code>.article-body h2 {
+  ...
+}</code></pre>
+<p>のように対象を限定すると管理しやすくなります。</p>
+<h2 id="共通classを使う">共通classを使う</h2>
+<p>注意ボックスなどを記事ごとに別のclass名で作ると、一括変更しにくくなります。</p>
+<pre><code>&lt;div class=&quot;note&quot;&gt;
+  注意内容
+&lt;/div&gt;</code></pre>
+<p>のように共通classを使えば、</p>
+<pre><code>.note {
+  padding: 1rem;
+  border: 1px solid;
+}</code></pre>
+<p>と1か所で管理できます。</p>
+<h2 id="インラインスタイルを減らす">インラインスタイルを減らす</h2>
+<p>HTMLへ直接、</p>
+<pre><code>&lt;p style=&quot;font-size:18px;&quot;&gt;</code></pre>
+<p>のように書くと、共通CSSより個別指定が優先される場合があります。</p>
+<p>全記事のデザインを一括管理したいなら、記事ごとのインラインスタイルを増やしすぎないようにします。</p>
+<h2 id="CSSを分割する方法">CSSを分割する方法</h2>
+<p>サイトが大きくなったら、役割ごとに分ける方法もあります。</p>
+<pre><code>base.css
+layout.css
+article.css
+components.css</code></pre>
+<p>ただし、小規模サイトで細かく分けすぎると逆に管理しにくくなります。変更頻度や役割に合わせます。</p>
+<h2 id="Markdown記事でもCSSは共通化できる">Markdown記事でもCSSは共通化できる</h2>
+<p>MarkdownからHTMLを生成している場合も、生成後のHTMLへ共通classや共通CSSを適用します。</p>
+<p>Markdown本文へデザイン情報を大量に書かず、テンプレートとCSS側で見た目を管理できます。</p>
+<h2 id="変更前に影響範囲を確認する">変更前に影響範囲を確認する</h2>
+<p>共通CSSは便利ですが、1回の変更が多数のページへ影響します。</p>
+<p>変更後は次のようなページを確認します。</p>
+<ul>
+<li>通常の記事</li>
+<li>長いタイトルの記事</li>
+<li>表がある記事</li>
+<li>コードブロックがある記事</li>
+<li>画像がある記事</li>
+<li>スマートフォン表示</li>
+</ul>
+<p>代表的なパターンを確認します。</p>
+<h2 id="ブラウザキャッシュにも注意する">ブラウザキャッシュにも注意する</h2>
+<p>CSSを更新したのに見た目が変わらない場合、古いCSSがブラウザや配信側のキャッシュに残っている可能性があります。</p>
+<p>ファイルが正しく公開されているかを確認したうえで、キャッシュの影響も切り分けます。</p>
+<h2 id="まとめ">まとめ</h2>
+<p>ブログのデザインを全記事まとめて変更するには、HTMLとCSSを分離し、全記事で共通CSSを読み込みます。記事本文のclassも統一し、変更後は複数種類のページと画面幅で表示を確認してください。</p><aside class="point yellow wakarukamo-point"><div class="point-heading"><img src="../assets/images/wakarukamo-point.png" alt=""><strong>ワカルカモポイント</strong></div><p>全記事が同じCSSファイルを読み込む構成なら、共通CSSを修正することで見出しや本文などのデザインをまとめて変更できます。</p></aside><section class="author-box" aria-labelledby="author-box-title"><img src="../assets/images/tip-duck.webp" alt="ワカルカモ運営者"><div><span id="author-box-title" class="author-label">この記事を書いた人</span><strong>ワカルカモ運営者</strong><p>企業の情報システム・DX推進・マーケティング業務などを経験。PC・Webサービス・業務自動化など、実際に試して分かったことを初心者向けに解説しています。</p><a href="../about.html#author-profile">運営者情報を見る →</a></div></section><nav class="article-pager" aria-label="前後の記事"><a class="article-pager-link article-pager-prev" href="34_16.html"><span class="article-pager-label">← 前の記事</span><strong>静的サイトの記事を効率よく管理する方法｜Markdown・テンプレート・CSSを活用</strong></a><a class="article-pager-link article-pager-next" href="35.html"><span class="article-pager-label">次の記事 →</span><strong>オウンドメディアとは？企業が運営するメリット・作り方を初心者向けに解説</strong></a></nav><h2>関連記事</h2><div class="article-grid" data-related data-category="web" data-slug="34_17"></div></article><aside><div class="sidebox"><img class="side-duck" src="../assets/images/tip-duck.webp" alt=""><h3>この記事のカテゴリ</h3><a class="outline-btn" href="../categories/web.html">Web全般 →</a></div><div class="sidebox"><h3>🔥 人気のタグ</h3><div class="tag-cloud" data-popular-tags></div></div></aside></div></main><footer class="footer"><div class="container footer-inner"><div class="footer-brand"><img src="../assets/images/logo-duck.webp" alt=""><div><strong>ワカルカモ</strong><div style="font-size:12px;color:#6c7c91">PC・Web・AIの「わからない」が、わかるかも。</div></div></div><div class="footer-links"><a href="../index.html">ホーム</a><a href="../articles.html">記事一覧</a><a href="../about.html">このサイトについて</a><a href="../privacy.html">プライバシーポリシー</a></div></div><p class="copyright">© 2026 ワカルカモ</p></footer><script src="../assets/js/analytics-config.js"></script><script src="../assets/js/site.js?v=20260914-2"></script></body></html>

@@ -1,0 +1,60 @@
+<!doctype html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="大量のHTMLファイルを一括更新するときに、テンプレート化と自動生成へ切り替える方法、既存HTMLを直接置換する場合の注意点を解説します。"><link rel="canonical" href="https://kamowakaru.github.io/wakarukamo/articles/30_13.html"><meta property="og:title" content="大量のHTMLファイルを一括更新するには？テンプレート化・自動生成する方法"><meta property="og:description" content="大量のHTMLファイルを一括更新するときに、テンプレート化と自動生成へ切り替える方法、既存HTMLを直接置換する場合の注意点を解説します。"><meta property="og:url" content="https://kamowakaru.github.io/wakarukamo/articles/30_13.html"><meta property="og:type" content="article"><meta property="og:image" content="https://kamowakaru.github.io/wakarukamo/assets/images/thumbnails/groups/30.jpg"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="大量のHTMLファイルを一括更新するには？テンプレート化・自動生成する方法"><meta name="twitter:description" content="大量のHTMLファイルを一括更新するときに、テンプレート化と自動生成へ切り替える方法、既存HTMLを直接置換する場合の注意点を解説します。"><meta name="twitter:image" content="https://kamowakaru.github.io/wakarukamo/assets/images/thumbnails/groups/30.jpg"><title>大量のHTMLファイルを一括更新するには？テンプレート化・自動生成する方法 | ワカルカモ</title><link rel="stylesheet" href="../assets/css/style.css?v=20260914-3"><link rel="stylesheet" href="../assets/css/point.css"><link rel="stylesheet" href="../assets/css/article-markdown.css?v=20260915-table"><script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "Article", "headline": "大量のHTMLファイルを一括更新するには？テンプレート化・自動生成する方法", "description": "大量のHTMLファイルを一括更新するときに、テンプレート化と自動生成へ切り替える方法、既存HTMLを直接置換する場合の注意点を解説します。", "datePublished": "2026-09-17", "dateModified": "2026-09-17", "mainEntityOfPage": "https://kamowakaru.github.io/wakarukamo/articles/30_13.html", "author": {"@type": "Person", "name": "ワカルカモ運営者", "url": "https://kamowakaru.github.io/wakarukamo/about.html#author-profile"}, "publisher": {"@type": "Organization", "name": "ワカルカモ", "url": "https://kamowakaru.github.io/wakarukamo"}, "image": "https://kamowakaru.github.io/wakarukamo/assets/images/thumbnails/groups/30.jpg"}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "ホーム", "item": "https://kamowakaru.github.io/wakarukamo/"}, {"@type": "ListItem", "position": 2, "name": "Web全般", "item": "https://kamowakaru.github.io/wakarukamo/categories/web.html"}, {"@type": "ListItem", "position": 3, "name": "大量のHTMLファイルを一括更新するには？テンプレート化・自動生成する方法", "item": "https://kamowakaru.github.io/wakarukamo/articles/30_13.html"}]}]}</script><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2620370554695357" crossorigin="anonymous"></script></head><body data-root="../"><header class="site-header"><div class="container header-inner"><a class="brand" href="../index.html"><img src="../assets/images/logo-duck.webp" alt=""><span><strong>ワカルカモ</strong><small>PC・Web・AIの「わからない」が、わかるかも。</small></span></a><button class="menu-btn" aria-label="メニュー">☰</button><nav class="nav"><a href="../index.html">ホーム</a><a href="../index.html#categories">カテゴリ</a><a href="../articles.html">記事一覧</a><a href="../about.html">このサイトについて</a></nav><form class="header-search" action="../search.html"><input name="q" type="search" placeholder="キーワードで検索…"><button>🔍</button></form></div></header><main class="article-main"><div class="container article-layout"><article class="article-body"><div class="breadcrumb"><a href="../index.html">ホーム</a> › <a href="../categories/web.html">Web全般</a> › 大量のHTMLファイルを一括更新するには？テンプレート化・自動生成する方法</div><div class="meta"><span class="chip">Web全般</span><a class="tag-link" href="../tags/html-css.html">HTML・CSS</a><span class="author-byline">著者：<a href="../about.html#author-profile">ワカルカモ運営者</a></span><time datetime="2026-09-17">2026.09.17</time></div><h1>大量のHTMLファイルを一括更新するには？テンプレート化・自動生成する方法</h1><p class="lead">大量のHTMLファイルを一括更新するときに、テンプレート化と自動生成へ切り替える方法、既存HTMLを直接置換する場合の注意点を解説します。</p><figure class="article-thumbnail"><img src="../assets/images/thumbnails/groups/30.jpg" alt="大量のHTMLファイルを一括更新するには？テンプレート化・自動生成する方法のイメージ画像"></figure><h2 id="結論">結論</h2>
+<p>大量のHTMLファイルを継続的に一括更新するなら、<strong>完成したHTMLを毎回検索置換するのではなく、記事データと共通テンプレートからHTMLを再生成できる構成</strong>にするのが管理しやすい方法です。</p>
+<p>CSSだけの変更なら共通CSSを修正し、HTML構造まで変えるならテンプレートを修正して全ページを再生成します。</p>
+<h2 id="何を変更したいか分ける">何を変更したいか分ける</h2>
+<p>最初に変更内容を分類します。</p>
+<h3 id="色や余白を変えたい">色や余白を変えたい</h3>
+<p>共通CSSを修正します。</p>
+<h3 id="ヘッダーや記事構造を変えたい">ヘッダーや記事構造を変えたい</h3>
+<p>HTMLテンプレートを修正します。</p>
+<h3 id="記事本文を変えたい">記事本文を変えたい</h3>
+<p>Markdownなど元の記事データを修正します。</p>
+<p>変更の種類によって触るファイルを分けることが重要です。</p>
+<h2 id="元データを用意する">元データを用意する</h2>
+<p>記事本文をMarkdownで管理する例です。</p>
+<pre><code>content/articles/1.md
+content/articles/2.md
+content/articles/3.md</code></pre>
+<p>各記事にはタイトルや本文など、記事固有の情報を入れます。</p>
+<h2 id="共通テンプレートを作る">共通テンプレートを作る</h2>
+<p>ページ全体の共通部分をテンプレートへまとめます。</p>
+<pre><code>&lt;!doctype html&gt;
+&lt;html lang=&quot;ja&quot;&gt;
+&lt;head&gt;
+  &lt;!-- 共通設定 --&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;header&gt;...&lt;/header&gt;
+  &lt;main&gt;
+    &lt;!-- 記事本文 --&gt;
+  &lt;/main&gt;
+  &lt;footer&gt;...&lt;/footer&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+<p>ビルドプログラムが記事ごとのデータをこのテンプレートへ差し込みます。</p>
+<h2 id="全記事を再生成する">全記事を再生成する</h2>
+<p>テンプレートを変更したら、ビルド処理ですべてのHTMLを生成し直します。</p>
+<pre><code>Markdown
+＋
+HTMLテンプレート
+↓
+ビルド
+↓
+大量のHTML</code></pre>
+<p>これなら、各HTMLへ同じ修正を手作業で繰り返す必要がありません。</p>
+<h2 id="既存HTMLしかない場合">既存HTMLしかない場合</h2>
+<p>元データやテンプレートがなく、大量の完成HTMLだけがある場合は、スクリプトで一括置換する方法もあります。</p>
+<p>ただし、ページごとにHTML構造が違うと誤置換が起きやすくなります。</p>
+<p>本番ファイルへ直接実行せず、バックアップやGitの履歴を用意し、少数ファイルで結果を確認してから対象を広げます。</p>
+<h2 id="正規表現だけに頼りすぎない">正規表現だけに頼りすぎない</h2>
+<p>複雑なHTMLを文字列や正規表現だけで編集すると、想定外のタグまで変更する可能性があります。</p>
+<p>構造を理解して編集する必要がある場合は、HTMLを解析できるライブラリを使う方法も検討します。</p>
+<h2 id="Gitで差分を確認する">Gitで差分を確認する</h2>
+<p>一括更新後はGitの差分が役立ちます。</p>
+<p>変更対象でないファイルや箇所まで変わっていないか確認してからCommitします。</p>
+<p>大量変更では、ファイル数だけでなく代表的なページをブラウザで表示して確認します。</p>
+<h2 id="自動生成へ移行するときの注意">自動生成へ移行するときの注意</h2>
+<p>既存HTMLを自動生成へ切り替える場合は、現在のURLを変えないことが重要です。</p>
+<p>出力ファイル名やディレクトリが変わると、既存リンクや検索エンジンからのアクセスへ影響します。</p>
+<h2 id="まとめ">まとめ</h2>
+<p>大量HTMLの更新は、CSS変更、構造変更、本文変更を分けて考えます。継続運用するなら元データとテンプレートからHTMLを再生成する構成にし、一括変更後はGitの差分と実際の表示を確認してください。</p><aside class="point yellow wakarukamo-point"><div class="point-heading"><img src="../assets/images/wakarukamo-point.png" alt=""><strong>ワカルカモポイント</strong></div><p>大量HTMLは完成ファイルを個別編集するより、元データとテンプレートから再生成できる構成にすると継続的な一括更新がしやすくなります。</p></aside><section class="author-box" aria-labelledby="author-box-title"><img src="../assets/images/tip-duck.webp" alt="ワカルカモ運営者"><div><span id="author-box-title" class="author-label">この記事を書いた人</span><strong>ワカルカモ運営者</strong><p>企業の情報システム・DX推進・マーケティング業務などを経験。PC・Webサービス・業務自動化など、実際に試して分かったことを初心者向けに解説しています。</p><a href="../about.html#author-profile">運営者情報を見る →</a></div></section><nav class="article-pager" aria-label="前後の記事"><a class="article-pager-link article-pager-prev" href="30_12.html"><span class="article-pager-label">← 前の記事</span><strong>複数のHTMLページのデザインを一括変更する方法｜CSSを共通化するメリット</strong></a><a class="article-pager-link article-pager-next" href="30_14.html"><span class="article-pager-label">次の記事 →</span><strong>ブログ記事ごとにHTMLを書く必要はある？テンプレートとCSSを共通化する方法</strong></a></nav><h2>関連記事</h2><div class="article-grid" data-related data-category="web" data-slug="30_13"></div></article><aside><div class="sidebox"><img class="side-duck" src="../assets/images/tip-duck.webp" alt=""><h3>この記事のカテゴリ</h3><a class="outline-btn" href="../categories/web.html">Web全般 →</a></div><div class="sidebox"><h3>🔥 人気のタグ</h3><div class="tag-cloud" data-popular-tags></div></div></aside></div></main><footer class="footer"><div class="container footer-inner"><div class="footer-brand"><img src="../assets/images/logo-duck.webp" alt=""><div><strong>ワカルカモ</strong><div style="font-size:12px;color:#6c7c91">PC・Web・AIの「わからない」が、わかるかも。</div></div></div><div class="footer-links"><a href="../index.html">ホーム</a><a href="../articles.html">記事一覧</a><a href="../about.html">このサイトについて</a><a href="../privacy.html">プライバシーポリシー</a></div></div><p class="copyright">© 2026 ワカルカモ</p></footer><script src="../assets/js/analytics-config.js"></script><script src="../assets/js/site.js?v=20260914-2"></script></body></html>

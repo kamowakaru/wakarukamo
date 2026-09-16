@@ -1,0 +1,57 @@
+<!doctype html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="ChatGPTで大量の記事を作るときにCSVやGoogleスプレッドシートを使って、重複生成・投稿漏れ・公開済み記事の上書きを防ぐ管理方法を解説します。"><link rel="canonical" href="https://kamowakaru.github.io/wakarukamo/articles/34_11.html"><meta property="og:title" content="ChatGPTで大量の記事を作るときの管理方法｜CSV・スプレッドシートで重複や投稿漏れを防ぐ"><meta property="og:description" content="ChatGPTで大量の記事を作るときにCSVやGoogleスプレッドシートを使って、重複生成・投稿漏れ・公開済み記事の上書きを防ぐ管理方法を解説します。"><meta property="og:url" content="https://kamowakaru.github.io/wakarukamo/articles/34_11.html"><meta property="og:type" content="article"><meta property="og:image" content="https://kamowakaru.github.io/wakarukamo/assets/images/thumbnails/groups/34.jpg"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="ChatGPTで大量の記事を作るときの管理方法｜CSV・スプレッドシートで重複や投稿漏れを防ぐ"><meta name="twitter:description" content="ChatGPTで大量の記事を作るときにCSVやGoogleスプレッドシートを使って、重複生成・投稿漏れ・公開済み記事の上書きを防ぐ管理方法を解説します。"><meta name="twitter:image" content="https://kamowakaru.github.io/wakarukamo/assets/images/thumbnails/groups/34.jpg"><title>ChatGPTで大量の記事を作るときの管理方法｜CSV・スプレッドシートで重複や投稿漏れを防ぐ | ワカルカモ</title><link rel="stylesheet" href="../assets/css/style.css?v=20260914-3"><link rel="stylesheet" href="../assets/css/point.css"><link rel="stylesheet" href="../assets/css/article-markdown.css?v=20260915-table"><script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "Article", "headline": "ChatGPTで大量の記事を作るときの管理方法｜CSV・スプレッドシートで重複や投稿漏れを防ぐ", "description": "ChatGPTで大量の記事を作るときにCSVやGoogleスプレッドシートを使って、重複生成・投稿漏れ・公開済み記事の上書きを防ぐ管理方法を解説します。", "datePublished": "2026-09-17", "dateModified": "2026-09-17", "mainEntityOfPage": "https://kamowakaru.github.io/wakarukamo/articles/34_11.html", "author": {"@type": "Person", "name": "ワカルカモ運営者", "url": "https://kamowakaru.github.io/wakarukamo/about.html#author-profile"}, "publisher": {"@type": "Organization", "name": "ワカルカモ", "url": "https://kamowakaru.github.io/wakarukamo"}, "image": "https://kamowakaru.github.io/wakarukamo/assets/images/thumbnails/groups/34.jpg"}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "ホーム", "item": "https://kamowakaru.github.io/wakarukamo/"}, {"@type": "ListItem", "position": 2, "name": "Web全般", "item": "https://kamowakaru.github.io/wakarukamo/categories/web.html"}, {"@type": "ListItem", "position": 3, "name": "ChatGPTで大量の記事を作るときの管理方法｜CSV・スプレッドシートで重複や投稿漏れを防ぐ", "item": "https://kamowakaru.github.io/wakarukamo/articles/34_11.html"}]}]}</script><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2620370554695357" crossorigin="anonymous"></script></head><body data-root="../"><header class="site-header"><div class="container header-inner"><a class="brand" href="../index.html"><img src="../assets/images/logo-duck.webp" alt=""><span><strong>ワカルカモ</strong><small>PC・Web・AIの「わからない」が、わかるかも。</small></span></a><button class="menu-btn" aria-label="メニュー">☰</button><nav class="nav"><a href="../index.html">ホーム</a><a href="../index.html#categories">カテゴリ</a><a href="../articles.html">記事一覧</a><a href="../about.html">このサイトについて</a></nav><form class="header-search" action="../search.html"><input name="q" type="search" placeholder="キーワードで検索…"><button>🔍</button></form></div></header><main class="article-main"><div class="container article-layout"><article class="article-body"><div class="breadcrumb"><a href="../index.html">ホーム</a> › <a href="../categories/web.html">Web全般</a> › ChatGPTで大量の記事を作るときの管理方法｜CSV・スプレッドシートで重複や投稿漏れを防ぐ</div><div class="meta"><span class="chip">Web全般</span><a class="tag-link" href="../tags/blog-management.html">ブログ運営</a><span class="author-byline">著者：<a href="../about.html#author-profile">ワカルカモ運営者</a></span><time datetime="2026-09-17">2026.09.17</time></div><h1>ChatGPTで大量の記事を作るときの管理方法｜CSV・スプレッドシートで重複や投稿漏れを防ぐ</h1><p class="lead">ChatGPTで大量の記事を作るときにCSVやGoogleスプレッドシートを使って、重複生成・投稿漏れ・公開済み記事の上書きを防ぐ管理方法を解説します。</p><figure class="article-thumbnail"><img src="../assets/images/thumbnails/groups/34.jpg" alt="ChatGPTで大量の記事を作るときの管理方法｜CSV・スプレッドシートで重複や投稿漏れを防ぐのイメージ画像"></figure><h2 id="結論">結論</h2>
+<p>ChatGPTで大量の記事を作るときは、<strong>CSVやGoogleスプレッドシートに固定の記事No.と処理状態を持たせ、No.を基準に生成・QA・投稿の進捗を管理</strong>します。</p>
+<p>「どの記事まで作ったか」を記憶だけで管理すると、重複生成や投稿漏れが起こりやすくなります。</p>
+<h2 id="1行を1記事にする">1行を1記事にする</h2>
+<p>管理表は1行につき1記事にします。</p>
+<div class="table-scroll"><table><thead><tr><th>No.</th><th>タイトル</th><th>生成</th><th>QA</th><th>公開</th></tr></thead><tbody><tr><td>34_10</td><td>記事A</td><td>済</td><td>済</td><td>済</td></tr><tr><td>34_11</td><td>記事B</td><td>済</td><td>未</td><td>未</td></tr><tr><td>34_12</td><td>記事C</td><td>未</td><td>未</td><td>未</td></tr></tbody></table></div>
+<p>実際の運用に必要な状態だけを使います。</p>
+<h2 id="固定の記事No-を付ける">固定の記事No.を付ける</h2>
+<p>タイトルは変更する可能性がありますが、記事No.は固定IDとして扱います。</p>
+<pre><code>34_11</code></pre>
+<p>を途中で別番号へ振り直さないようにします。</p>
+<p>ファイル名もNo.と一致させれば、管理表とファイルを照合しやすくなります。</p>
+<h2 id="状態の意味を決める">状態の意味を決める</h2>
+<p>「済」が何を意味するのか曖昧だと管理できません。</p>
+<p>たとえば、</p>
+<pre><code>生成済
+→ Markdownファイルを作成済み
+
+QA済
+→ 公開前確認に合格
+
+公開済
+→ 実際のサイトへ公開済み</code></pre>
+<p>のように工程ごとに分けます。</p>
+<h2 id="生成対象を条件で抽出する">生成対象を条件で抽出する</h2>
+<p>生成プログラムでは、状態を見て対象を決めます。</p>
+<pre><code>生成済ではない
+かつ
+公開済ではない</code></pre>
+<p>など、運用ルールに合わせます。</p>
+<p>公開済みの記事は再生成しない保護条件を入れます。</p>
+<h2 id="生成済みファイルと管理表を照合する">生成済みファイルと管理表を照合する</h2>
+<p>管理表では生成済みなのにファイルがない、逆にファイルはあるのに管理表が未、という不一致を確認します。</p>
+<p>自動修正する前に、不一致一覧を出すだけの処理を作る方法があります。</p>
+<h2 id="タイトルだけで重複判定しない">タイトルだけで重複判定しない</h2>
+<p>似たタイトルでも別記事の場合があります。</p>
+<p>反対に、タイトルを少し変更した同じ記事を二重登録する可能性もあります。</p>
+<p>処理上の重複はNo.で判定し、企画上の内容重複はタイトルや検索意図を別途確認します。</p>
+<h2 id="投稿先IDやURLも記録する">投稿先IDやURLも記録する</h2>
+<p>公開後は次の情報を持たせると照合しやすくなります。</p>
+<pre><code>記事No.
+公開URL
+投稿先ID
+公開日</code></pre>
+<p>CMSの投稿IDなどを取得できる場合は、記事No.との対応を保存します。</p>
+<h2 id="バッチ単位の処理結果を残す">バッチ単位の処理結果を残す</h2>
+<p>大量生成では、各バッチの結果CSVを保存する方法があります。</p>
+<pre><code>No.
+生成結果
+ファイル名
+処理日時</code></pre>
+<p>どのバッチで作ったか追跡できます。</p>
+<h2 id="管理表そのものを壊さない">管理表そのものを壊さない</h2>
+<p>自動処理で管理表を更新する場合は、タイトルやNo.など正本列まで不用意に書き換えないようにします。</p>
+<p>更新対象の列を限定し、処理前にバックアップを残す方法もあります。</p>
+<h2 id="まとめ">まとめ</h2>
+<p>大量の記事管理では、固定No.と工程ごとの状態をCSVやスプレッドシートへ記録します。生成対象を状態から抽出し、公開済みを保護し、ファイルや公開URLとNo.を照合すれば、重複生成と投稿漏れを見つけやすくなります。</p><aside class="point yellow wakarukamo-point"><div class="point-heading"><img src="../assets/images/wakarukamo-point.png" alt=""><strong>ワカルカモポイント</strong></div><p>記事ごとに固定No.と状態を持ち、生成対象を状態から判定します。タイトルではなくNo.で処理履歴を追うと、重複や投稿漏れを確認しやすくなります。</p></aside><section class="author-box" aria-labelledby="author-box-title"><img src="../assets/images/tip-duck.webp" alt="ワカルカモ運営者"><div><span id="author-box-title" class="author-label">この記事を書いた人</span><strong>ワカルカモ運営者</strong><p>企業の情報システム・DX推進・マーケティング業務などを経験。PC・Webサービス・業務自動化など、実際に試して分かったことを初心者向けに解説しています。</p><a href="../about.html#author-profile">運営者情報を見る →</a></div></section><nav class="article-pager" aria-label="前後の記事"><a class="article-pager-link article-pager-prev" href="34_10.html"><span class="article-pager-label">← 前の記事</span><strong>ChatGPTでブログ記事を一括生成する方法｜複数記事を効率よく作るコツ</strong></a><a class="article-pager-link article-pager-next" href="34_12.html"><span class="article-pager-label">次の記事 →</span><strong>大量の記事を効率よくQAする方法｜目視確認と自動チェックの使い分け</strong></a></nav><h2>関連記事</h2><div class="article-grid" data-related data-category="web" data-slug="34_11"></div></article><aside><div class="sidebox"><img class="side-duck" src="../assets/images/tip-duck.webp" alt=""><h3>この記事のカテゴリ</h3><a class="outline-btn" href="../categories/web.html">Web全般 →</a></div><div class="sidebox"><h3>🔥 人気のタグ</h3><div class="tag-cloud" data-popular-tags></div></div></aside></div></main><footer class="footer"><div class="container footer-inner"><div class="footer-brand"><img src="../assets/images/logo-duck.webp" alt=""><div><strong>ワカルカモ</strong><div style="font-size:12px;color:#6c7c91">PC・Web・AIの「わからない」が、わかるかも。</div></div></div><div class="footer-links"><a href="../index.html">ホーム</a><a href="../articles.html">記事一覧</a><a href="../about.html">このサイトについて</a><a href="../privacy.html">プライバシーポリシー</a></div></div><p class="copyright">© 2026 ワカルカモ</p></footer><script src="../assets/js/analytics-config.js"></script><script src="../assets/js/site.js?v=20260914-2"></script></body></html>
