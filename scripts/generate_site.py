@@ -99,7 +99,7 @@ THUMBNAIL_KEYWORDS = {
 def thumbnail_for(slug, category, article_no='', specified='', title='', description=''):
     """Choose a thumbnail. New articles use their management No. to share one image per group.
 
-    Example: article_no 17 / 17-2 / 17-2-1 -> groups/17.jpg
+    Example: article_no 17 / 17_2 / 17_2_1 -> groups/17.jpg
     `thumbnail` in front matter always takes priority. Older articles without article_no
     keep the previous keyword-based selection so the current site can still build.
     """
@@ -108,9 +108,9 @@ def thumbnail_for(slug, category, article_no='', specified='', title='', descrip
 
     article_no = str(article_no).strip()
     if article_no:
-        if not re.fullmatch(r'\d+(?:-\d+)*', article_no):
+        if not re.fullmatch(r'\d+(?:_\d+)*', article_no):
             raise ValueError(f'不正な article_no: {article_no!r}')
-        group_no = int(article_no.split('-', 1)[0])
+        group_no = int(article_no.split('_', 1)[0])
         group_thumb = f'groups/{group_no:02d}.jpg'
         if (ROOT / 'assets/images/thumbnails' / group_thumb).exists():
             return group_thumb
@@ -360,7 +360,7 @@ def article_no_key(article):
     if not no:
         return (9999, article.get('date', ''), article['slug'])
     try:
-        parts = tuple(int(x) for x in no.split('-'))
+        parts = tuple(int(x) for x in no.split('_'))
         return parts + (-1,) * (4 - len(parts))
     except ValueError:
         return (9998, no, article['slug'])
@@ -370,7 +370,7 @@ def grouped_collection(items, prefix=''):
     legacy = [a for a in items if not a.get('article_no')]
     groups = {}
     for a in sorted(numbered, key=article_no_key):
-        root = str(a['article_no']).split('-')[0]
+        root = str(a['article_no']).split('_')[0]
         groups.setdefault(root, []).append(a)
     chunks = []
     for root in sorted(groups, key=lambda x: int(x) if x.isdigit() else 9999):
@@ -451,10 +451,15 @@ categories = json.loads((ROOT/'data/categories.json').read_text(encoding='utf-8'
 tags = json.loads((ROOT/'data/tags.json').read_text(encoding='utf-8'))
 catmap = {x['slug']: x for x in categories}
 tagmap = {x['slug']: x for x in tags}
+# Markdown files may contain either a category slug or the display name from
+# the management CSV. Normalize both forms before looking up category data.
+CATEGORY_ALIASES = {x['name']: x['slug'] for x in categories}
+CATEGORY_ALIASES.update({x['slug']: x['slug'] for x in categories})
 all_articles, bodies = [], {}
 
 for fp in sorted(CONTENT.glob('*.md')):
     fm, body = parse_frontmatter(fp.read_text(encoding='utf-8'))
+    fm['category'] = CATEGORY_ALIASES.get(fm.get('category', ''), fm.get('category', ''))
     slug = fp.stem
     required = ['title','date','category','tags','description']
     missing = [k for k in required if k not in fm]
@@ -473,7 +478,7 @@ for fp in sorted(CONTENT.glob('*.md')):
 all_articles.sort(key=lambda a: (a['date'], a['slug']), reverse=True)
 articles = [a for a in all_articles if not a['draft']]
 
-# Previous/next navigation follows article_no (1, 1-1, 1-2 ... 36-x),
+# Previous/next navigation follows article_no (1, 1_1, 1_2 ... 36_x),
 # which is also the easiest order for a human QA pass.
 nav_articles = sorted(articles, key=article_no_key)
 article_neighbors = {}
