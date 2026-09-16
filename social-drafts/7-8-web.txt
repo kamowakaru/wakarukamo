@@ -7,7 +7,7 @@
 X案1：要点型
 ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
 【デプロイとは？Webサイトを公開する仕組みを初心者向けに解説】
-デプロイとは？Webサイトを公開する仕組みを初心者向けに解説について、初心者向けに要点と具体例を整理します。
+デプロイとは、作成・更新したWebサイトをサーバーなどの公開環境へ反映し、ユーザーがアクセスできる状態にすることです。ビルドやアップロードとの違い、GitHub PagesやNetlifyでの例を初心者向けに解説します。
 
 https://kamowakaru.github.io/wakarukamo/articles/7-8-web.html?utm_source=x&utm_medium=social&utm_campaign=article_share
 #Webサイト制作
@@ -16,7 +16,7 @@ https://kamowakaru.github.io/wakarukamo/articles/7-8-web.html?utm_source=x&utm_m
 X案2：問いかけ型
 ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
 「デプロイとは？Webサイトを公開する仕組みを初心者向けに解説」で困っていませんか？
-デプロイとは？Webサイトを公開する仕組みを初心者向けに解説について、初心者向けに要点と具体例を整理します。
+デプロイとは、作成・更新したWebサイトをサーバーなどの公開環境へ反映し、ユーザーがアクセスできる状態にすることです。ビルドやアップロードとの違い、GitHub PagesやNetlifyでの例を初心者向けに解…
 
 https://kamowakaru.github.io/wakarukamo/articles/7-8-web.html?utm_source=x&utm_medium=social&utm_campaign=article_share
 #Webサイト制作
@@ -26,7 +26,7 @@ Threads案：体験に寄り添う型
 ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
 「デプロイとは？Webサイトを公開する仕組みを初心者向けに解説」で迷うこと、ありませんか？
 
-今回は、デプロイとは？Webサイトを公開する仕組みを初心者向けに解説について、初心者向けに要点と具体例を整理します。
+今回は、デプロイとは、作成・更新したWebサイトをサーバーなどの公開環境へ反映し、ユーザーがアクセスできる状態にすることです。ビルドやアップロードとの違い、GitHub PagesやNetlifyでの例を初心者向けに解説します。
 実際の手順やポイントを初心者向けにまとめました🐤
 
 https://kamowakaru.github.io/wakarukamo/articles/7-8-web.html?utm_source=threads&utm_medium=social&utm_campaign=article_share
