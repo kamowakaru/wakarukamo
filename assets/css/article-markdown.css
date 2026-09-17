@@ -83,6 +83,70 @@
   transform: translateY(-1px);
 }
 
+/* アフィリエイトリンクも関連記事と同じカード型・左右位置で表示 */
+.article-body ul:has(> li > a.affiliate-link) {
+  list-style: none;
+  margin-left: 0;
+  padding-left: 0;
+}
+
+.article-body li:has(> a.affiliate-link) {
+  list-style: none;
+  width: 100%;
+  margin: 18px 0;
+  padding: 0;
+}
+
+.article-body a.affiliate-link {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+  padding: 14px 18px;
+  border: 1px solid #f0d38a;
+  border-left: 5px solid #e2a516;
+  border-radius: 12px;
+  background: #fffaf0;
+  color: #8a5b00;
+  font-weight: 800;
+  line-height: 1.6;
+  text-decoration: none;
+  box-shadow: 0 3px 12px rgba(160, 110, 15, 0.08);
+  transition: 0.2s ease;
+}
+
+.article-body a.affiliate-link::before {
+  content: "Wix";
+  flex: 0 0 auto;
+  padding: 4px 9px;
+  border-radius: 999px;
+  background: #fff0bd;
+  color: #9a6900;
+  font-size: 11px;
+  white-space: nowrap;
+}
+
+.article-body a.affiliate-link.a8-link::before {
+  content: "おすすめ";
+  background: #e5f1ff;
+  color: #287be0;
+}
+
+.article-body a.affiliate-link::after {
+  content: "詳しく見る →";
+  flex: 0 0 auto;
+  color: #b27600;
+  font-size: 13px;
+  white-space: nowrap;
+}
+
+.article-body a.affiliate-link:hover {
+  border-color: #d59b17;
+  background: #fff6dc;
+  transform: translateY(-1px);
+}
+
 /* 長いURLや英数字がある記事でもスマホ画面からはみ出さないようにする */
 .article-body,
 .article-body p,
@@ -113,6 +177,17 @@
   }
 
   .article-body a.article-reference::before {
+    display: none;
+  }
+
+  .article-body a.affiliate-link {
+    align-items: flex-start;
+    gap: 9px;
+    padding: 12px 13px;
+    font-size: 14px;
+  }
+
+  .article-body a.affiliate-link::before {
     display: none;
   }
 }
@@ -198,7 +273,9 @@
 
 /* 「次に読むと分かりやすい記事」のカードリンクは箇条書き記号を表示しない */
 .article-body h2#次に読むと分かりやすい記事 + ul,
-.article-body h2#次に読むとわかりやすい記事 + ul {
+.article-body h2#次に読むとわかりやすい記事 + ul,
+/* 「このグループでわかること」のカードリンクも箇条書き記号を表示しない */
+.article-body h2#このグループでわかること + ul {
   list-style: none;
   padding-left: 0;
 }

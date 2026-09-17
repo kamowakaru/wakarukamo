@@ -166,7 +166,10 @@ def inline(text):
         label, href = match.group(1), match.group(2)
         raw_href = html.unescape(href)
         if raw_href.startswith(('https://', 'http://')):
-            return f'<a href="{href}" rel="noopener" target="_blank">{label}</a>'
+            is_affiliate = 'pxf.io/' in raw_href or 'px.a8.net/' in raw_href
+            rel = 'sponsored nofollow noopener' if is_affiliate else 'noopener'
+            css_class = ' class="affiliate-link a8-link"' if 'px.a8.net/' in raw_href else (' class="affiliate-link"' if is_affiliate else '')
+            return f'<a{css_class} href="{href}" rel="{rel}" target="_blank">{label}</a>'
         # 記事同士の相対リンクや、サイト内の絶対パス・ページ内リンクを許可する。
         is_relative = (
             raw_href.startswith(('/', './', '../', '#', '?'))
