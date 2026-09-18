@@ -12,7 +12,7 @@
     ],
     "description": "ブログのsitemap.xmlを作成してSearch Consoleへ送信し、URL検査やページのインデックス登録状況からGoogleに認識されているか確認する手順を紹介します。",
     "article_no": "39_9",
-    "thumbnail": "ai-chatgpt/09.jpg",
+    "thumbnail": "groups/39.jpg",
     "point": "公開URLだけを含むサイトマップを送信し、受理後はURL検査と登録状況を分けて確認します。",
     "draft": false
   },
@@ -29,7 +29,7 @@
     ],
     "description": "公開したブログへGA4とGoogle Search Consoleを設定し、自分のアクセス、検索への登録状況、検索キーワードを確認できる状態にする手順を紹介します。",
     "article_no": "39_8",
-    "thumbnail": "ai-chatgpt/09.jpg",
+    "thumbnail": "groups/39.jpg",
     "point": "GA4でサイト内の行動、Search ConsoleでGoogle検索上の状態を確認できるようにします。",
     "draft": false
   },
@@ -46,7 +46,7 @@
     ],
     "description": "作成したブログをGitHubへ登録し、GitHub Pagesで公開して、実際のURLからトップページと記事ページを確認する手順を紹介します。",
     "article_no": "39_7",
-    "thumbnail": "ai-chatgpt/09.jpg",
+    "thumbnail": "groups/39.jpg",
     "point": "GitHubへファイルを保存したあと、Pagesの公開元を設定し、公開URLでリンクや画像まで確認します。",
     "draft": false
   },
@@ -63,7 +63,7 @@
     ],
     "description": "Markdown記事をHTMLへ変換し、共通テンプレートとCSSを使って同じデザインの記事ページを自動生成する流れを紹介します。",
     "article_no": "39_6",
-    "thumbnail": "ai-chatgpt/09.jpg",
+    "thumbnail": "groups/39.jpg",
     "point": "記事本文・HTMLテンプレート・CSSを分け、1つの変換処理ですべての記事ページを生成します。",
     "draft": false
   },
@@ -80,7 +80,7 @@
     ],
     "description": "記事管理CSVから未作成の記事を選び、ChatGPTで構成・本文・内部リンクを含むMarkdown記事を作成し、公開前に確認する手順を紹介します。",
     "article_no": "39_5",
-    "thumbnail": "ai-chatgpt/09.jpg",
+    "thumbnail": "groups/39.jpg",
     "point": "本文を一度に大量生成せず、記事の目的・確認可能な内容・内部リンク先を指定して1記事ずつ仕上げます。",
     "draft": false
   },
@@ -97,7 +97,7 @@
     ],
     "description": "ブログの記事番号、カテゴリ、親子関係、タイトル、公開状況を管理するCSVを作り、ChatGPTへ渡せる形に整える方法を紹介します。",
     "article_no": "39_4",
-    "thumbnail": "ai-chatgpt/09.jpg",
+    "thumbnail": "groups/39.jpg",
     "point": "記事番号・タイトル・公開状況を1行1記事で管理し、ChatGPTへ渡す元データを一本化します。",
     "draft": false
   },
@@ -114,7 +114,7 @@
     ],
     "description": "ブログの企画をもとに、ChatGPTでカテゴリ、親記事、子記事を作り、読者が順番に理解できる記事構成へ整理する方法を紹介します。",
     "article_no": "39_3",
-    "thumbnail": "ai-chatgpt/09.jpg",
+    "thumbnail": "groups/39.jpg",
     "point": "記事タイトルを大量に並べる前に、親記事と子記事の関係を決めてサイト全体の道筋を作ります。",
     "draft": false
   },
@@ -131,7 +131,7 @@
     ],
     "description": "ChatGPTを使ってブログのトップページ、記事ページ、記事一覧、カテゴリ一覧などのサイト本体を先に作り、記事を入れられる状態にする手順を紹介します。",
     "article_no": "39_2",
-    "thumbnail": "ai-chatgpt/09.jpg",
+    "thumbnail": "groups/39.jpg",
     "point": "記事を量産する前に、トップ・一覧・記事ページを1件ずつ表示できる最小構成のサイトを完成させます。",
     "draft": false
   },
@@ -147,7 +147,7 @@
     ],
     "description": "ブログへ広告とアフィリエイトリンクを設置するときに、記事との関連性、リンク形式、広告表記、プライバシーポリシー、公開後の確認を進める手順を紹介します。",
     "article_no": "39_10",
-    "thumbnail": "ai-chatgpt/09.jpg",
+    "thumbnail": "groups/39.jpg",
     "point": "すべての記事へ同じ広告を置かず、読者が次に必要とするサービスだけを関連する記事へ配置します。",
     "draft": false
   },
@@ -163,7 +163,7 @@
     ],
     "description": "ChatGPTを使ってブログのテーマ、想定読者、解決する悩み、サイト名を決め、1ページの企画メモにまとめる実践手順を紹介します。",
     "article_no": "39_1",
-    "thumbnail": "ai-chatgpt/09.jpg",
+    "thumbnail": "groups/39.jpg",
     "point": "テーマを一語で決めるのではなく、読者・悩み・自分が提供できる情報まで1枚にまとめます。",
     "draft": false
   },
@@ -180,7 +180,7 @@
     ],
     "description": "ChatGPTを使ってブログのテーマ決め、記事作成、HTML生成、GitHub Pagesでの公開、アクセス解析、検索登録、収益化まで進める実践手順を紹介します。",
     "article_no": "39",
-    "thumbnail": "ai-chatgpt/09.jpg",
+    "thumbnail": "groups/39.jpg",
     "point": "各回の作業と完成物を順番に確認しながら、ブログの企画から公開・収益化まで進めます。",
     "draft": false
   },
