@@ -1,0 +1,38 @@
+[
+  {
+    "slug": "pc-windows",
+    "name": "PC・Windows",
+    "icon": "💻",
+    "description": "設定・トラブル解決など"
+  },
+  {
+    "slug": "web",
+    "name": "Web全般",
+    "icon": "🌐",
+    "description": "ブラウザ・Webサービスなど"
+  },
+  {
+    "slug": "other",
+    "name": "Webマーケティング",
+    "icon": "📈",
+    "description": "SEO・集客・メルマガなど"
+  },
+  {
+    "slug": "wordpress",
+    "name": "WordPress",
+    "icon": "ⓦ",
+    "description": "テーマ・プラグイン・運営"
+  },
+  {
+    "slug": "google-gas",
+    "name": "Google・GAS",
+    "icon": "📊",
+    "description": "スプレッドシート・自動化"
+  },
+  {
+    "slug": "ai-chatgpt",
+    "name": "AI・ChatGPT",
+    "icon": "✨",
+    "description": "使い方・活用術"
+  }
+]

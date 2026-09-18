@@ -1,0 +1,45 @@
+﻿ワカルカモ｜記事公開時のSNS投稿原稿
+
+記事タイトル：GitHubへファイルをアップロードする方法｜ブラウザだけで追加・差し替え
+記事URL：https://kamowakaru.github.io/wakarukamo/articles/29_4.html
+
+＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+X案1：要点型
+＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+【GitHubへファイルをアップロードする方法｜ブラウザだけで追加・差し替え】
+GitHubへブラウザだけでファイルをアップロードし、新規追加や既存ファイルの差し替えをcommitする基本手順を解説します。
+
+https://kamowakaru.github.io/wakarukamo/articles/29_4.html?utm_source=x&utm_medium=social&utm_campaign=article_share
+#GitHub
+
+＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+X案2：問いかけ型
+＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+「GitHubへファイルをアップロードする方法｜ブラウザだけで追加・差し替え」で困っていませんか？
+GitHubへブラウザだけでファイルをアップロードし、新規追加や既存ファイルの差し替えをcommitする基本手順を解説します。
+
+https://kamowakaru.github.io/wakarukamo/articles/29_4.html?utm_source=x&utm_medium=social&utm_campaign=article_share
+#GitHub
+
+＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+Threads案：体験に寄り添う型
+＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+「GitHubへファイルをアップロードする方法｜ブラウザだけで追加・差し替え」で迷うこと、ありませんか？
+
+今回は、GitHubへブラウザだけでファイルをアップロードし、新規追加や既存ファイルの差し替えをcommitする基本手順を解説します。
+実際の手順やポイントを初心者向けにまとめました🐤
+
+https://kamowakaru.github.io/wakarukamo/articles/29_4.html?utm_source=threads&utm_medium=social&utm_campaign=article_share
+
+#GitHub
+
+＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+投稿前チェック
+＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+□ 記事ページを開いて誤字・リンクを確認
+□ サムネイルの表示を確認
+□ Xへ投稿
+□ Threadsへ投稿
+
+※URLにはSNS別の流入をGA4で確認できるUTMパラメータが付いています。
+※文章は記事内容や実体験に合わせて、必要に応じて少し整えてください。

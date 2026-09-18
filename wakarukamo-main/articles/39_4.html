@@ -1,0 +1,53 @@
+<!doctype html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="ブログの記事番号、カテゴリ、親子関係、タイトル、公開状況を管理するCSVを作り、ChatGPTへ渡せる形に整える方法を紹介します。"><link rel="canonical" href="https://kamowakaru.github.io/wakarukamo/articles/39_4.html"><meta property="og:title" content="ChatGPTでブログを作ってみた④｜記事管理用CSVを作る"><meta property="og:description" content="ブログの記事番号、カテゴリ、親子関係、タイトル、公開状況を管理するCSVを作り、ChatGPTへ渡せる形に整える方法を紹介します。"><meta property="og:url" content="https://kamowakaru.github.io/wakarukamo/articles/39_4.html"><meta property="og:type" content="article"><meta property="og:image" content="https://kamowakaru.github.io/wakarukamo/assets/images/thumbnails/ai-chatgpt/09.jpg"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="ChatGPTでブログを作ってみた④｜記事管理用CSVを作る"><meta name="twitter:description" content="ブログの記事番号、カテゴリ、親子関係、タイトル、公開状況を管理するCSVを作り、ChatGPTへ渡せる形に整える方法を紹介します。"><meta name="twitter:image" content="https://kamowakaru.github.io/wakarukamo/assets/images/thumbnails/ai-chatgpt/09.jpg"><title>ChatGPTでブログを作ってみた④｜記事管理用CSVを作る | ワカルカモ</title><link rel="stylesheet" href="../assets/css/style.css?v=20260914-3"><link rel="stylesheet" href="../assets/css/point.css"><link rel="stylesheet" href="../assets/css/article-markdown.css?v=20260918-images"><script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "Article", "headline": "ChatGPTでブログを作ってみた④｜記事管理用CSVを作る", "description": "ブログの記事番号、カテゴリ、親子関係、タイトル、公開状況を管理するCSVを作り、ChatGPTへ渡せる形に整える方法を紹介します。", "datePublished": "2026-09-18", "dateModified": "2026-09-18", "mainEntityOfPage": "https://kamowakaru.github.io/wakarukamo/articles/39_4.html", "author": {"@type": "Person", "name": "ワカルカモ運営者", "url": "https://kamowakaru.github.io/wakarukamo/about.html#author-profile"}, "publisher": {"@type": "Organization", "name": "ワカルカモ", "url": "https://kamowakaru.github.io/wakarukamo"}, "image": "https://kamowakaru.github.io/wakarukamo/assets/images/thumbnails/ai-chatgpt/09.jpg"}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "ホーム", "item": "https://kamowakaru.github.io/wakarukamo/"}, {"@type": "ListItem", "position": 2, "name": "AI・ChatGPT", "item": "https://kamowakaru.github.io/wakarukamo/categories/ai-chatgpt.html"}, {"@type": "ListItem", "position": 3, "name": "ChatGPTでブログを作ってみた④｜記事管理用CSVを作る", "item": "https://kamowakaru.github.io/wakarukamo/articles/39_4.html"}]}]}</script><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2620370554695357" crossorigin="anonymous"></script></head><body data-root="../"><header class="site-header"><div class="container header-inner"><a class="brand" href="../index.html"><img src="../assets/images/logo-duck.webp" alt=""><span><strong>ワカルカモ</strong><small>PC・Web・AIの「わからない」が、わかるかも。</small></span></a><button class="menu-btn" aria-label="メニュー">☰</button><nav class="nav"><a href="../index.html">ホーム</a><a href="../index.html#categories">カテゴリ</a><a href="../articles.html">記事一覧</a><a href="../about.html">このサイトについて</a></nav><form class="header-search" action="../search.html"><input name="q" type="search" placeholder="キーワードで検索…"><button>🔍</button></form></div></header><main class="article-main"><div class="container article-layout"><article class="article-body"><div class="breadcrumb"><a href="../index.html">ホーム</a> › <a href="../categories/ai-chatgpt.html">AI・ChatGPT</a> › ChatGPTでブログを作ってみた④｜記事管理用CSVを作る</div><div class="meta"><span class="chip">AI・ChatGPT</span><a class="tag-link" href="../tags/chatgpt.html">ChatGPT</a><a class="tag-link" href="../tags/blog-management.html">ブログ運営</a><a class="tag-link" href="../tags/spreadsheet.html">スプレッドシート</a><span class="author-byline">著者：<a href="../about.html#author-profile">ワカルカモ運営者</a></span><time datetime="2026-09-18">2026.09.18</time></div><h1>ChatGPTでブログを作ってみた④｜記事管理用CSVを作る</h1><p class="lead">ブログの記事番号、カテゴリ、親子関係、タイトル、公開状況を管理するCSVを作り、ChatGPTへ渡せる形に整える方法を紹介します。</p><figure class="article-thumbnail"><img src="../assets/images/thumbnails/ai-chatgpt/09.jpg" alt="ChatGPTでブログを作ってみた④｜記事管理用CSVを作るのイメージ画像"></figure><h2 id="結論">結論</h2>
+<p>記事数が増える前に、<strong>1行を1記事として管理するCSV</strong>を作ります。ファイル名、記事タイトル、親子関係、公開状況を同じ番号で結びつけるのがポイントです。</p>
+<h2 id="1-必要な列を決める">1. 必要な列を決める</h2>
+<p>最小構成は次の7列です。</p>
+<div class="table-scroll"><table><thead><tr><th>列</th><th>入れる内容</th></tr></thead><tbody><tr><td>No.</td><td>記事とファイルを結ぶ管理番号</td></tr><tr><td>カテゴリ</td><td>サイト上の大分類</td></tr><tr><td>グループ</td><td>親子記事をまとめる単位</td></tr><tr><td>種別</td><td>親・子・孫</td></tr><tr><td>タイトル</td><td>公開する記事タイトル</td></tr><tr><td>公開済</td><td>未・済</td></tr><tr><td>アフィ候補</td><td>紹介できそうなサービス</td></tr></tbody></table></div>
+<p>必要になったら、slug、公開日、確認担当などを追加します。最初から列を増やしすぎると更新が止まりやすくなります。</p>
+<h2 id="2-管理番号は文字列として扱う">2. 管理番号は文字列として扱う</h2>
+<p><code>1_2</code>や<code>19_2_1</code>のように、親子関係が分かる番号にします。</p>
+<pre><code>No.,カテゴリ,グループ,種別,タイトル,公開済,アフィ候補
+1,Web全般,Webサイト,親,Webサイトとは？,未,なし
+1_1,Web全般,Webサイト,子,Webサイトを公開する方法,未,レンタルサーバー</code></pre>
+<p>ハイフンを使った<code>1-2</code>はExcelで日付に変換されることがあります。アンダースコアなら管理番号として表示されやすくなります。</p>
+<h2 id="3-ChatGPTに表を整えてもらう">3. ChatGPTに表を整えてもらう</h2>
+<p>③の記事一覧を貼り、次のように依頼します。</p>
+<pre><code>次の記事一覧をCSV形式にしてください。
+列は「No.,カテゴリ,グループ,種別,タイトル,公開済,アフィ候補」です。
+No.は親を1、子を1_1の形式にし、公開済はすべて「未」、アフィ候補がなければ「なし」にしてください。
+Excelで日付化しないよう、管理番号にハイフンは使わないでください。
+
+【記事一覧】</code></pre>
+<p>出力後は、番号重複・列ずれ・タイトル内のカンマを確認します。</p>
+<h2 id="4-CSVをExcelで開くときの注意">4. CSVをExcelで開くときの注意</h2>
+<p>日本語が文字化けする場合は、UTF-8のCSVとして保存します。Excelへ直接ダブルクリックで開くより、「データ」からCSVを読み込むと文字コードや列形式を指定しやすくなります。</p>
+<p>編集後に保存するときも、CSV UTF-8形式を選びます。</p>
+<h2 id="5-更新ルールを決める">5. 更新ルールを決める</h2>
+<p>記事を作るたびに、次の順で更新します。</p>
+<ol>
+<li>CSVで「未」の記事を選ぶ</li>
+<li>No.とタイトルを本文作成に使う</li>
+<li>ファイル名を<code>No..md</code>にする</li>
+<li>公開後に「済」へ変える</li>
+<li>タイトルや番号を変更したらCSVとファイルを同時に直す</li>
+</ol>
+<p>最新のCSVを正本にすると、どれが未作成か分からなくなるのを防げます。</p>
+<h2 id="今回の完成チェック">今回の完成チェック</h2>
+<ul>
+<li>1行1記事になっている</li>
+<li>管理番号に重複がない</li>
+<li>管理番号とファイル名のルールが決まった</li>
+<li>未公開記事を絞り込める</li>
+<li>UTF-8で保存できた</li>
+</ul>
+<h2 id="詳しい手順はこちら">詳しい手順はこちら</h2>
+<ul>
+<li><a class="article-reference" href="32_1.html"><span>ChatGPTでCSVファイルを作る方法</span></a></li>
+<li><a class="article-reference" href="34_1.html"><span>ブログの記事管理表をGoogleスプレッドシートで作る方法</span></a></li>
+<li><a class="article-reference" href="34_4.html"><span>ChatGPTでCSVを作ってGoogleスプレッドシートへ取り込む方法</span></a></li>
+<li><a class="article-reference" href="34_11.html"><span>ChatGPTで大量の記事を作るときの管理方法｜CSV・スプレッドシートで重複や投稿漏れを防ぐ</span></a></li>
+</ul>
+<p>次は、CSVから1記事を選び、ChatGPTで本文を作ります。</p>
+<p><a class="article-reference" href="39_5.html"><span>ChatGPTでブログを作ってみた⑤｜記事本文を作る</span></a></p>
+<h2 id="親記事">親記事</h2>
+<p><a class="article-reference" href="39.html"><span>ChatGPTでブログを作ってみた｜企画から公開・収益化までの全手順</span></a></p><aside class="point yellow wakarukamo-point"><div class="point-heading"><img src="../assets/images/wakarukamo-point.png" alt=""><strong>ワカルカモポイント</strong></div><p>記事番号・タイトル・公開状況を1行1記事で管理し、ChatGPTへ渡す元データを一本化します。</p></aside><section class="author-box" aria-labelledby="author-box-title"><img src="../assets/images/tip-duck.webp" alt="ワカルカモ運営者"><div><span id="author-box-title" class="author-label">この記事を書いた人</span><strong>ワカルカモ運営者</strong><p>企業の情報システム・DX推進・マーケティング業務などを経験。PC・Webサービス・業務自動化など、実際に試して分かったことを初心者向けに解説しています。</p><a href="../about.html#author-profile">運営者情報を見る →</a></div></section><nav class="article-pager" aria-label="前後の記事"><a class="article-pager-link article-pager-prev" href="39_3.html"><span class="article-pager-label">← 前の記事</span><strong>ChatGPTでブログを作ってみた③｜カテゴリと記事案を作る</strong></a><a class="article-pager-link article-pager-next" href="39_5.html"><span class="article-pager-label">次の記事 →</span><strong>ChatGPTでブログを作ってみた⑤｜記事本文を作る</strong></a></nav><h2>関連記事</h2><div class="article-grid" data-related data-category="ai-chatgpt" data-slug="39_4"></div></article><aside><div class="sidebox"><img class="side-duck" src="../assets/images/tip-duck.webp" alt=""><h3>この記事のカテゴリ</h3><a class="outline-btn" href="../categories/ai-chatgpt.html">AI・ChatGPT →</a></div><div class="sidebox"><h3>🔥 人気のタグ</h3><div class="tag-cloud" data-popular-tags></div></div></aside></div></main><footer class="footer"><div class="container footer-inner"><div class="footer-brand"><img src="../assets/images/logo-duck.webp" alt=""><div><strong>ワカルカモ</strong><div style="font-size:12px;color:#6c7c91">PC・Web・AIの「わからない」が、わかるかも。</div></div></div><div class="footer-links"><a href="../index.html">ホーム</a><a href="../articles.html">記事一覧</a><a href="../about.html">このサイトについて</a><a href="../privacy.html">プライバシーポリシー</a></div></div><p class="copyright">© 2026 ワカルカモ</p></footer><script src="../assets/js/analytics-config.js"></script><script src="../assets/js/site.js?v=20260914-2"></script></body></html>

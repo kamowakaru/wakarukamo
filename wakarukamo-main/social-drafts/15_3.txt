@@ -1,0 +1,45 @@
+﻿ワカルカモ｜記事公開時のSNS投稿原稿
+
+記事タイトル：WordPressが真っ白になったときの原因と対処法
+記事URL：https://kamowakaru.github.io/wakarukamo/articles/15_3.html
+
+＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+X案1：要点型
+＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+【WordPressが真っ白になったときの原因と対処法】
+WordPressが真っ白になったときに、直前の更新、プラグイン、テーマ、PHPエラー、サーバーログなどから原因を切り分ける方法を解説します。
+
+https://kamowakaru.github.io/wakarukamo/articles/15_3.html?utm_source=x&utm_medium=social&utm_campaign=article_share
+#WordPress
+
+＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+X案2：問いかけ型
+＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+「WordPressが真っ白になったときの原因と対処法」で困っていませんか？
+WordPressが真っ白になったときに、直前の更新、プラグイン、テーマ、PHPエラー、サーバーログなどから原因を切り分ける方法を解説します。
+
+https://kamowakaru.github.io/wakarukamo/articles/15_3.html?utm_source=x&utm_medium=social&utm_campaign=article_share
+#WordPress
+
+＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+Threads案：体験に寄り添う型
+＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+「WordPressが真っ白になったときの原因と対処法」で迷うこと、ありませんか？
+
+今回は、WordPressが真っ白になったときに、直前の更新、プラグイン、テーマ、PHPエラー、サーバーログなどから原因を切り分ける方法を解説します。
+実際の手順やポイントを初心者向けにまとめました🐤
+
+https://kamowakaru.github.io/wakarukamo/articles/15_3.html?utm_source=threads&utm_medium=social&utm_campaign=article_share
+
+#WordPress
+
+＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+投稿前チェック
+＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+□ 記事ページを開いて誤字・リンクを確認
+□ サムネイルの表示を確認
+□ Xへ投稿
+□ Threadsへ投稿
+
+※URLにはSNS別の流入をGA4で確認できるUTMパラメータが付いています。
+※文章は記事内容や実体験に合わせて、必要に応じて少し整えてください。

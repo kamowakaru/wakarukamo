@@ -1,0 +1,122 @@
+[
+  {
+    "slug": "windows",
+    "name": "Windows"
+  },
+  {
+    "slug": "pc",
+    "name": "PC"
+  },
+  {
+    "slug": "chrome",
+    "name": "Chrome"
+  },
+  {
+    "slug": "web-service",
+    "name": "Webサービス"
+  },
+  {
+    "slug": "wordpress",
+    "name": "WordPress"
+  },
+  {
+    "slug": "plugin",
+    "name": "プラグイン"
+  },
+  {
+    "slug": "gas",
+    "name": "GAS"
+  },
+  {
+    "slug": "spreadsheet",
+    "name": "スプレッドシート"
+  },
+  {
+    "slug": "automation",
+    "name": "自動化"
+  },
+  {
+    "slug": "chatgpt",
+    "name": "ChatGPT"
+  },
+  {
+    "slug": "ai",
+    "name": "AI"
+  },
+  {
+    "slug": "tools",
+    "name": "便利ツール"
+  },
+  {
+    "slug": "seo",
+    "name": "SEO"
+  },
+  {
+    "slug": "github",
+    "name": "GitHub"
+  },
+  {
+    "slug": "github-pages",
+    "name": "GitHub Pages"
+  },
+  {
+    "slug": "website",
+    "name": "Webサイト制作"
+  },
+  {
+    "slug": "markdown",
+    "name": "Markdown"
+  },
+  {
+    "slug": "search-console",
+    "name": "Search Console"
+  },
+  {
+    "slug": "ga4",
+    "name": "GA4"
+  },
+  {
+    "slug": "analytics",
+    "name": "アクセス解析"
+  },
+  {
+    "slug": "sns",
+    "name": "SNS"
+  },
+  {
+    "slug": "threads",
+    "name": "Threads"
+  },
+  {
+    "slug": "utm",
+    "name": "UTM"
+  },
+  {
+    "slug": "privacy",
+    "name": "プライバシー"
+  },
+  {
+    "slug": "api",
+    "name": "API"
+  },
+  {
+    "slug": "blog-management",
+    "name": "ブログ運営"
+  },
+  {
+    "slug": "google-sheets",
+    "name": "Googleスプレッドシート"
+  },
+  {
+    "slug": "html-css",
+    "name": "HTML・CSS"
+  },
+  {
+    "slug": "lp",
+    "name": "LP"
+  },
+  {
+    "slug": "owned-media",
+    "name": "オウンドメディア"
+  }
+]
