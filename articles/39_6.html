@@ -1,0 +1,68 @@
+<!doctype html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="Markdown記事をHTMLへ変換し、共通テンプレートとCSSを使って同じデザインの記事ページを自動生成する流れを紹介します。"><link rel="canonical" href="https://kamowakaru.github.io/wakarukamo/articles/39_6.html"><meta property="og:title" content="ChatGPTでブログを作ってみた⑥｜MarkdownからHTMLを生成する"><meta property="og:description" content="Markdown記事をHTMLへ変換し、共通テンプレートとCSSを使って同じデザインの記事ページを自動生成する流れを紹介します。"><meta property="og:url" content="https://kamowakaru.github.io/wakarukamo/articles/39_6.html"><meta property="og:type" content="article"><meta property="og:image" content="https://kamowakaru.github.io/wakarukamo/assets/images/thumbnails/ai-chatgpt/09.jpg"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="ChatGPTでブログを作ってみた⑥｜MarkdownからHTMLを生成する"><meta name="twitter:description" content="Markdown記事をHTMLへ変換し、共通テンプレートとCSSを使って同じデザインの記事ページを自動生成する流れを紹介します。"><meta name="twitter:image" content="https://kamowakaru.github.io/wakarukamo/assets/images/thumbnails/ai-chatgpt/09.jpg"><title>ChatGPTでブログを作ってみた⑥｜MarkdownからHTMLを生成する | ワカルカモ</title><link rel="stylesheet" href="../assets/css/style.css?v=20260914-3"><link rel="stylesheet" href="../assets/css/point.css"><link rel="stylesheet" href="../assets/css/article-markdown.css?v=20260915-table"><script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "Article", "headline": "ChatGPTでブログを作ってみた⑥｜MarkdownからHTMLを生成する", "description": "Markdown記事をHTMLへ変換し、共通テンプレートとCSSを使って同じデザインの記事ページを自動生成する流れを紹介します。", "datePublished": "2026-09-18", "dateModified": "2026-09-18", "mainEntityOfPage": "https://kamowakaru.github.io/wakarukamo/articles/39_6.html", "author": {"@type": "Person", "name": "ワカルカモ運営者", "url": "https://kamowakaru.github.io/wakarukamo/about.html#author-profile"}, "publisher": {"@type": "Organization", "name": "ワカルカモ", "url": "https://kamowakaru.github.io/wakarukamo"}, "image": "https://kamowakaru.github.io/wakarukamo/assets/images/thumbnails/ai-chatgpt/09.jpg"}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "ホーム", "item": "https://kamowakaru.github.io/wakarukamo/"}, {"@type": "ListItem", "position": 2, "name": "AI・ChatGPT", "item": "https://kamowakaru.github.io/wakarukamo/categories/ai-chatgpt.html"}, {"@type": "ListItem", "position": 3, "name": "ChatGPTでブログを作ってみた⑥｜MarkdownからHTMLを生成する", "item": "https://kamowakaru.github.io/wakarukamo/articles/39_6.html"}]}]}</script><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2620370554695357" crossorigin="anonymous"></script></head><body data-root="../"><header class="site-header"><div class="container header-inner"><a class="brand" href="../index.html"><img src="../assets/images/logo-duck.webp" alt=""><span><strong>ワカルカモ</strong><small>PC・Web・AIの「わからない」が、わかるかも。</small></span></a><button class="menu-btn" aria-label="メニュー">☰</button><nav class="nav"><a href="../index.html">ホーム</a><a href="../index.html#categories">カテゴリ</a><a href="../articles.html">記事一覧</a><a href="../about.html">このサイトについて</a></nav><form class="header-search" action="../search.html"><input name="q" type="search" placeholder="キーワードで検索…"><button>🔍</button></form></div></header><main class="article-main"><div class="container article-layout"><article class="article-body"><div class="breadcrumb"><a href="../index.html">ホーム</a> › <a href="../categories/ai-chatgpt.html">AI・ChatGPT</a> › ChatGPTでブログを作ってみた⑥｜MarkdownからHTMLを生成する</div><div class="meta"><span class="chip">AI・ChatGPT</span><a class="tag-link" href="../tags/chatgpt.html">ChatGPT</a><a class="tag-link" href="../tags/markdown.html">Markdown</a><a class="tag-link" href="../tags/html-css.html">HTML・CSS</a><span class="author-byline">著者：<a href="../about.html#author-profile">ワカルカモ運営者</a></span><time datetime="2026-09-18">2026.09.18</time></div><h1>ChatGPTでブログを作ってみた⑥｜MarkdownからHTMLを生成する</h1><p class="lead">Markdown記事をHTMLへ変換し、共通テンプレートとCSSを使って同じデザインの記事ページを自動生成する流れを紹介します。</p><figure class="article-thumbnail"><img src="../assets/images/thumbnails/ai-chatgpt/09.jpg" alt="ChatGPTでブログを作ってみた⑥｜MarkdownからHTMLを生成するのイメージ画像"></figure><h2 id="結論">結論</h2>
+<p>Markdown記事を公開するには、<strong>MarkdownをHTMLへ変換し、共通テンプレートへ入れて、CSSを読み込ませる処理</strong>を作ります。</p>
+<p>記事ごとに完成HTMLを手作業で直すのではなく、元のMarkdownを修正して再生成できる状態を目指します。</p>
+<h2 id="1-フォルダを役割で分ける">1. フォルダを役割で分ける</h2>
+<pre><code>content/articles/   Markdown記事
+templates/          共通HTML
+assets/css/         デザイン
+scripts/            変換処理
+articles/           生成されたHTML</code></pre>
+<p>編集する元データと、公開用の生成結果を混ぜないようにします。</p>
+<h2 id="2-HTMLテンプレートを用意する">2. HTMLテンプレートを用意する</h2>
+<p>テンプレートには、ヘッダー・記事領域・フッター・CSSの読み込みを置きます。</p>
+<pre><code>&lt;!doctype html&gt;
+&lt;html lang=&quot;ja&quot;&gt;
+&lt;head&gt;
+  &lt;meta charset=&quot;utf-8&quot;&gt;
+  &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot;&gt;
+  &lt;link rel=&quot;stylesheet&quot; href=&quot;../assets/css/style.css&quot;&gt;
+  &lt;title&gt;{{ title }}&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;main&gt;{{ content }}&lt;/main&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+<p><code>{{ title }}</code>と<code>{{ content }}</code>を変換処理で置き換えます。実際の記法は使用する仕組みに合わせます。</p>
+<h2 id="3-ChatGPTに変換処理を作ってもらう">3. ChatGPTに変換処理を作ってもらう</h2>
+<pre><code>content/articles内のMarkdownを読み込み、articles内へ同名のHTMLを生成するPythonスクリプトを作ってください。
+
+要件：
+- front matterのtitleとdescriptionを読み取る
+- Markdown本文をHTMLへ変換する
+- templates/article.htmlへtitle、description、本文を差し込む
+- 内部リンクの.mdを.htmlへ変換する
+- UTF-8で読み書きする
+- 変換に失敗したファイル名を表示する</code></pre>
+<p>実行前に、必要なライブラリと起動コマンドも確認します。</p>
+<h2 id="4-まず1記事だけ変換する">4. まず1記事だけ変換する</h2>
+<p>いきなり全記事を変換せず、1記事で次を確認します。</p>
+<ul>
+<li>日本語が文字化けしていない</li>
+<li>タイトルとdescriptionが入っている</li>
+<li>H2・H3・リスト・表が表示される</li>
+<li>CSSが読み込まれている</li>
+<li>内部リンク先が<code>.html</code>になっている</li>
+</ul>
+<p>問題があれば変換処理かテンプレートを直し、もう一度生成します。</p>
+<h2 id="5-全記事を再生成できるようにする">5. 全記事を再生成できるようにする</h2>
+<p>1記事で問題がなければ、フォルダ内のMarkdownを一括変換します。記事本文を修正したときは、生成済みHTMLを直接編集せず、Markdownから作り直します。</p>
+<h2 id="今回の完成チェック">今回の完成チェック</h2>
+<ul>
+<li>Markdownと生成HTMLの保存場所が分かれている</li>
+<li>共通テンプレートとCSSを使っている</li>
+<li>1記事をブラウザで確認できた</li>
+<li>内部リンクがHTMLを指している</li>
+<li>同じコマンドで全記事を再生成できる</li>
+</ul>
+<h2 id="詳しい手順はこちら">詳しい手順はこちら</h2>
+<ul>
+<li><a class="article-reference" href="30_6.html"><span>Markdown（マークダウン）とは？HTMLとの違い・記事をMarkdownで管理するメリットを解説</span></a></li>
+<li><a class="article-reference" href="30_9.html"><span>Markdownでブログを書く方法｜見出し・リンク・画像・コードの基本記法</span></a></li>
+<li><a class="article-reference" href="30_8.html"><span>MarkdownからHTMLに変換する方法｜ブログ記事を自動生成する仕組みも解説</span></a></li>
+<li><a class="article-reference" href="30_17.html"><span>Markdownから同じデザインのHTMLを自動生成する方法</span></a></li>
+<li><a class="article-reference" href="30_2_1.html"><span>Markdownの記事をGitHub ActionsでHTMLへ自動変換する方法</span></a></li>
+</ul>
+<p>次は、サイト一式をGitHubへ登録します。</p>
+<p><a class="article-reference" href="39_7.html"><span>ChatGPTでブログを作ってみた⑦｜GitHubへ登録してGitHub Pagesで公開する</span></a></p>
+<h2 id="親記事">親記事</h2>
+<p><a class="article-reference" href="39.html"><span>ChatGPTでブログを作ってみた｜企画から公開・収益化までの全手順</span></a></p><aside class="point yellow wakarukamo-point"><div class="point-heading"><img src="../assets/images/wakarukamo-point.png" alt=""><strong>ワカルカモポイント</strong></div><p>記事本文・HTMLテンプレート・CSSを分け、1つの変換処理ですべての記事ページを生成します。</p></aside><section class="author-box" aria-labelledby="author-box-title"><img src="../assets/images/tip-duck.webp" alt="ワカルカモ運営者"><div><span id="author-box-title" class="author-label">この記事を書いた人</span><strong>ワカルカモ運営者</strong><p>企業の情報システム・DX推進・マーケティング業務などを経験。PC・Webサービス・業務自動化など、実際に試して分かったことを初心者向けに解説しています。</p><a href="../about.html#author-profile">運営者情報を見る →</a></div></section><nav class="article-pager" aria-label="前後の記事"><a class="article-pager-link article-pager-prev" href="39_5.html"><span class="article-pager-label">← 前の記事</span><strong>ChatGPTでブログを作ってみた⑤｜記事本文を作る</strong></a><a class="article-pager-link article-pager-next" href="39_7.html"><span class="article-pager-label">次の記事 →</span><strong>ChatGPTでブログを作ってみた⑦｜GitHubへ登録してGitHub Pagesで公開する</strong></a></nav><h2>関連記事</h2><div class="article-grid" data-related data-category="ai-chatgpt" data-slug="39_6"></div></article><aside><div class="sidebox"><img class="side-duck" src="../assets/images/tip-duck.webp" alt=""><h3>この記事のカテゴリ</h3><a class="outline-btn" href="../categories/ai-chatgpt.html">AI・ChatGPT →</a></div><div class="sidebox"><h3>🔥 人気のタグ</h3><div class="tag-cloud" data-popular-tags></div></div></aside></div></main><footer class="footer"><div class="container footer-inner"><div class="footer-brand"><img src="../assets/images/logo-duck.webp" alt=""><div><strong>ワカルカモ</strong><div style="font-size:12px;color:#6c7c91">PC・Web・AIの「わからない」が、わかるかも。</div></div></div><div class="footer-links"><a href="../index.html">ホーム</a><a href="../articles.html">記事一覧</a><a href="../about.html">このサイトについて</a><a href="../privacy.html">プライバシーポリシー</a></div></div><p class="copyright">© 2026 ワカルカモ</p></footer><script src="../assets/js/analytics-config.js"></script><script src="../assets/js/site.js?v=20260914-2"></script></body></html>

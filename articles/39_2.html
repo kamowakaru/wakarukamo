@@ -1,0 +1,110 @@
+<!doctype html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="ChatGPTを使ってブログのトップページ、記事ページ、記事一覧、カテゴリ一覧などのサイト本体を先に作り、記事を入れられる状態にする手順を紹介します。"><link rel="canonical" href="https://kamowakaru.github.io/wakarukamo/articles/39_2.html"><meta property="og:title" content="ChatGPTでブログを作ってみた②｜サイト本体を作る"><meta property="og:description" content="ChatGPTを使ってブログのトップページ、記事ページ、記事一覧、カテゴリ一覧などのサイト本体を先に作り、記事を入れられる状態にする手順を紹介します。"><meta property="og:url" content="https://kamowakaru.github.io/wakarukamo/articles/39_2.html"><meta property="og:type" content="article"><meta property="og:image" content="https://kamowakaru.github.io/wakarukamo/assets/images/thumbnails/ai-chatgpt/09.jpg"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="ChatGPTでブログを作ってみた②｜サイト本体を作る"><meta name="twitter:description" content="ChatGPTを使ってブログのトップページ、記事ページ、記事一覧、カテゴリ一覧などのサイト本体を先に作り、記事を入れられる状態にする手順を紹介します。"><meta name="twitter:image" content="https://kamowakaru.github.io/wakarukamo/assets/images/thumbnails/ai-chatgpt/09.jpg"><title>ChatGPTでブログを作ってみた②｜サイト本体を作る | ワカルカモ</title><link rel="stylesheet" href="../assets/css/style.css?v=20260914-3"><link rel="stylesheet" href="../assets/css/point.css"><link rel="stylesheet" href="../assets/css/article-markdown.css?v=20260915-table"><script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "Article", "headline": "ChatGPTでブログを作ってみた②｜サイト本体を作る", "description": "ChatGPTを使ってブログのトップページ、記事ページ、記事一覧、カテゴリ一覧などのサイト本体を先に作り、記事を入れられる状態にする手順を紹介します。", "datePublished": "2026-09-18", "dateModified": "2026-09-18", "mainEntityOfPage": "https://kamowakaru.github.io/wakarukamo/articles/39_2.html", "author": {"@type": "Person", "name": "ワカルカモ運営者", "url": "https://kamowakaru.github.io/wakarukamo/about.html#author-profile"}, "publisher": {"@type": "Organization", "name": "ワカルカモ", "url": "https://kamowakaru.github.io/wakarukamo"}, "image": "https://kamowakaru.github.io/wakarukamo/assets/images/thumbnails/ai-chatgpt/09.jpg"}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "ホーム", "item": "https://kamowakaru.github.io/wakarukamo/"}, {"@type": "ListItem", "position": 2, "name": "AI・ChatGPT", "item": "https://kamowakaru.github.io/wakarukamo/categories/ai-chatgpt.html"}, {"@type": "ListItem", "position": 3, "name": "ChatGPTでブログを作ってみた②｜サイト本体を作る", "item": "https://kamowakaru.github.io/wakarukamo/articles/39_2.html"}]}]}</script><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2620370554695357" crossorigin="anonymous"></script></head><body data-root="../"><header class="site-header"><div class="container header-inner"><a class="brand" href="../index.html"><img src="../assets/images/logo-duck.webp" alt=""><span><strong>ワカルカモ</strong><small>PC・Web・AIの「わからない」が、わかるかも。</small></span></a><button class="menu-btn" aria-label="メニュー">☰</button><nav class="nav"><a href="../index.html">ホーム</a><a href="../index.html#categories">カテゴリ</a><a href="../articles.html">記事一覧</a><a href="../about.html">このサイトについて</a></nav><form class="header-search" action="../search.html"><input name="q" type="search" placeholder="キーワードで検索…"><button>🔍</button></form></div></header><main class="article-main"><div class="container article-layout"><article class="article-body"><div class="breadcrumb"><a href="../index.html">ホーム</a> › <a href="../categories/ai-chatgpt.html">AI・ChatGPT</a> › ChatGPTでブログを作ってみた②｜サイト本体を作る</div><div class="meta"><span class="chip">AI・ChatGPT</span><a class="tag-link" href="../tags/chatgpt.html">ChatGPT</a><a class="tag-link" href="../tags/website.html">Webサイト制作</a><a class="tag-link" href="../tags/html-css.html">HTML・CSS</a><span class="author-byline">著者：<a href="../about.html#author-profile">ワカルカモ運営者</a></span><time datetime="2026-09-18">2026.09.18</time></div><h1>ChatGPTでブログを作ってみた②｜サイト本体を作る</h1><p class="lead">ChatGPTを使ってブログのトップページ、記事ページ、記事一覧、カテゴリ一覧などのサイト本体を先に作り、記事を入れられる状態にする手順を紹介します。</p><figure class="article-thumbnail"><img src="../assets/images/thumbnails/ai-chatgpt/09.jpg" alt="ChatGPTでブログを作ってみた②｜サイト本体を作るのイメージ画像"></figure><h2 id="結論">結論</h2>
+<p>記事案を大量に作る前に、<strong>トップページ・記事一覧・記事ページを表示できる最小構成のサイト本体</strong>を作ります。</p>
+<p>先に記事を入れる箱を作ると、CSVに必要な項目、画像サイズ、カテゴリの見せ方、内部リンクの形式が分かります。今回は仮の記事1本が表示できれば完了です。</p>
+<h2 id="1-必要なページを決める">1. 必要なページを決める</h2>
+<p>最初は次のページがあれば進められます。</p>
+<ul>
+<li>トップページ</li>
+<li>記事一覧</li>
+<li>記事ページ</li>
+<li>カテゴリ一覧</li>
+<li>このサイトについて</li>
+<li>プライバシーポリシー</li>
+<li>404ページ</li>
+</ul>
+<p>検索・タグ・お問い合わせなどは、必要になってから追加しても構いません。</p>
+<h2 id="2-ChatGPTにサイト構成を伝える">2. ChatGPTにサイト構成を伝える</h2>
+<p>①で決めた企画を使い、次のように依頼します。</p>
+<pre><code>次のブログのサイト本体をHTML・CSS・JavaScriptで作ります。
+
+サイト名：ワカルカモ
+目的：PC・Web・ChatGPTで困った初心者が、実際に操作できるところまで案内する
+公開先：GitHub Pages
+
+必要なページ：
+- トップページ
+- 記事一覧
+- 記事ページのテンプレート
+- カテゴリ一覧
+- このサイトについて
+- プライバシーポリシー
+- 404ページ
+
+要件：
+- スマートフォンでも読める
+- ヘッダーとフッターを共通デザインにする
+- 記事本文は後からMarkdownから生成する
+- 相対パスでリンクする
+- まず仮の記事1本で表示確認できる最小構成にする
+
+最初にフォルダ構成を提示し、その後に必要なファイルを作成してください。</code></pre>
+<p>一度に巨大なコードを出させず、フォルダ構成→トップページ→共通CSS→記事テンプレートの順に作ると確認しやすくなります。</p>
+<h2 id="3-フォルダ構成を作る">3. フォルダ構成を作る</h2>
+<p>たとえば次のように分けます。</p>
+<pre><code>index.html
+articles.html
+about.html
+privacy.html
+404.html
+assets/
+  css/style.css
+  js/site.js
+  images/
+content/
+  articles/
+templates/
+scripts/</code></pre>
+<p><code>content</code>は記事の元データ、<code>articles</code>は生成された公開ページ、<code>assets</code>はデザインや画像に使います。</p>
+<h2 id="4-トップページを先に表示する">4. トップページを先に表示する</h2>
+<p><code>index.html</code>をブラウザで開き、次を確認します。</p>
+<ul>
+<li>サイト名が表示される</li>
+<li>ヘッダーとフッターがある</li>
+<li>記事一覧へのリンクを押せる</li>
+<li>スマートフォン幅でも横にはみ出さない</li>
+<li>CSSや画像のパスが切れていない</li>
+</ul>
+<p>デザインを細かく調整する前に、ページ間を移動できることを優先します。</p>
+<h2 id="5-仮の記事を1本入れる">5. 仮の記事を1本入れる</h2>
+<p>記事ページのテンプレートへ、仮のタイトル・説明・本文を入れます。</p>
+<pre><code>記事タイトル
+説明文
+公開日
+カテゴリ
+本文
+関連記事</code></pre>
+<p>トップページと記事一覧から、この仮記事を開けるようにします。戻るリンクやカテゴリリンクも実際に押します。</p>
+<h2 id="6-デザインの共通部分を確認する">6. デザインの共通部分を確認する</h2>
+<p>文字サイズ、本文幅、見出し、リンクカード、ポイント枠など、すべての記事で使うものは共通CSSへ置きます。</p>
+<p>記事ごとにCSSを書く構成にすると、後から全記事を直すのが難しくなります。</p>
+<h2 id="7-この段階では記事を量産しない">7. この段階では記事を量産しない</h2>
+<p>仮記事1本で次を確認してから、カテゴリと記事案を作ります。</p>
+<ul>
+<li>記事タイトルが長くても崩れない</li>
+<li>表やコードブロックを表示できる</li>
+<li>親記事・子記事へのリンクを置ける</li>
+<li>アイキャッチ画像の表示場所が決まった</li>
+<li>URLの命名規則が決まった</li>
+</ul>
+<p>必要な管理項目が見えたら、次のCSV設計にもつなげられます。</p>
+<h2 id="今回の完成チェック">今回の完成チェック</h2>
+<ul>
+<li>トップページをブラウザで開けた</li>
+<li>記事一覧から仮記事へ移動できた</li>
+<li>CSSと画像が表示された</li>
+<li>スマートフォン幅で大きく崩れない</li>
+<li>記事ページに必要な項目が分かった</li>
+<li>記事を増やす前のひな型が完成した</li>
+</ul>
+<h2 id="詳しい手順はこちら">詳しい手順はこちら</h2>
+<ul>
+<li><a class="article-reference" href="7.html"><span>Webサイトの作り方｜初心者向けに作成から公開までの流れを解説</span></a></li>
+<li><a class="article-reference" href="7_1.html"><span>Webサイトを作るには何が必要？初心者向けに解説</span></a></li>
+<li><a class="article-reference" href="7_2.html"><span>HTMLとは？初心者向けに役割と基本を解説</span></a></li>
+<li><a class="article-reference" href="7_3.html"><span>CSSとは？HTMLとの違いと役割を初心者向けに解説</span></a></li>
+<li><a class="article-reference" href="30_14.html"><span>ブログ記事ごとにHTMLを書く必要はある？テンプレートとCSSを共通化する方法</span></a></li>
+</ul>
+<p>次は、このサイトへ入れるカテゴリと記事案を作ります。</p>
+<p><a class="article-reference" href="39_3.html"><span>ChatGPTでブログを作ってみた③｜カテゴリと記事案を作る</span></a></p>
+<h2 id="親記事">親記事</h2>
+<p><a class="article-reference" href="39.html"><span>ChatGPTでブログを作ってみた｜企画から公開・収益化までの全手順</span></a></p><aside class="point yellow wakarukamo-point"><div class="point-heading"><img src="../assets/images/wakarukamo-point.png" alt=""><strong>ワカルカモポイント</strong></div><p>記事を量産する前に、トップ・一覧・記事ページを1件ずつ表示できる最小構成のサイトを完成させます。</p></aside><section class="author-box" aria-labelledby="author-box-title"><img src="../assets/images/tip-duck.webp" alt="ワカルカモ運営者"><div><span id="author-box-title" class="author-label">この記事を書いた人</span><strong>ワカルカモ運営者</strong><p>企業の情報システム・DX推進・マーケティング業務などを経験。PC・Webサービス・業務自動化など、実際に試して分かったことを初心者向けに解説しています。</p><a href="../about.html#author-profile">運営者情報を見る →</a></div></section><nav class="article-pager" aria-label="前後の記事"><a class="article-pager-link article-pager-prev" href="39_1.html"><span class="article-pager-label">← 前の記事</span><strong>ChatGPTでブログを作ってみた①｜テーマとサイト名を決める</strong></a><a class="article-pager-link article-pager-next" href="39_3.html"><span class="article-pager-label">次の記事 →</span><strong>ChatGPTでブログを作ってみた③｜カテゴリと記事案を作る</strong></a></nav><h2>関連記事</h2><div class="article-grid" data-related data-category="ai-chatgpt" data-slug="39_2"></div></article><aside><div class="sidebox"><img class="side-duck" src="../assets/images/tip-duck.webp" alt=""><h3>この記事のカテゴリ</h3><a class="outline-btn" href="../categories/ai-chatgpt.html">AI・ChatGPT →</a></div><div class="sidebox"><h3>🔥 人気のタグ</h3><div class="tag-cloud" data-popular-tags></div></div></aside></div></main><footer class="footer"><div class="container footer-inner"><div class="footer-brand"><img src="../assets/images/logo-duck.webp" alt=""><div><strong>ワカルカモ</strong><div style="font-size:12px;color:#6c7c91">PC・Web・AIの「わからない」が、わかるかも。</div></div></div><div class="footer-links"><a href="../index.html">ホーム</a><a href="../articles.html">記事一覧</a><a href="../about.html">このサイトについて</a><a href="../privacy.html">プライバシーポリシー</a></div></div><p class="copyright">© 2026 ワカルカモ</p></footer><script src="../assets/js/analytics-config.js"></script><script src="../assets/js/site.js?v=20260914-2"></script></body></html>

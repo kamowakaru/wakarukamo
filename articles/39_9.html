@@ -1,0 +1,60 @@
+<!doctype html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="ブログのsitemap.xmlを作成してSearch Consoleへ送信し、URL検査やページのインデックス登録状況からGoogleに認識されているか確認する手順を紹介します。"><link rel="canonical" href="https://kamowakaru.github.io/wakarukamo/articles/39_9.html"><meta property="og:title" content="ChatGPTでブログを作ってみた⑨｜サイトマップを送信して検索登録を確認する"><meta property="og:description" content="ブログのsitemap.xmlを作成してSearch Consoleへ送信し、URL検査やページのインデックス登録状況からGoogleに認識されているか確認する手順を紹介します。"><meta property="og:url" content="https://kamowakaru.github.io/wakarukamo/articles/39_9.html"><meta property="og:type" content="article"><meta property="og:image" content="https://kamowakaru.github.io/wakarukamo/assets/images/thumbnails/ai-chatgpt/09.jpg"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="ChatGPTでブログを作ってみた⑨｜サイトマップを送信して検索登録を確認する"><meta name="twitter:description" content="ブログのsitemap.xmlを作成してSearch Consoleへ送信し、URL検査やページのインデックス登録状況からGoogleに認識されているか確認する手順を紹介します。"><meta name="twitter:image" content="https://kamowakaru.github.io/wakarukamo/assets/images/thumbnails/ai-chatgpt/09.jpg"><title>ChatGPTでブログを作ってみた⑨｜サイトマップを送信して検索登録を確認する | ワカルカモ</title><link rel="stylesheet" href="../assets/css/style.css?v=20260914-3"><link rel="stylesheet" href="../assets/css/point.css"><link rel="stylesheet" href="../assets/css/article-markdown.css?v=20260915-table"><script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "Article", "headline": "ChatGPTでブログを作ってみた⑨｜サイトマップを送信して検索登録を確認する", "description": "ブログのsitemap.xmlを作成してSearch Consoleへ送信し、URL検査やページのインデックス登録状況からGoogleに認識されているか確認する手順を紹介します。", "datePublished": "2026-09-18", "dateModified": "2026-09-18", "mainEntityOfPage": "https://kamowakaru.github.io/wakarukamo/articles/39_9.html", "author": {"@type": "Person", "name": "ワカルカモ運営者", "url": "https://kamowakaru.github.io/wakarukamo/about.html#author-profile"}, "publisher": {"@type": "Organization", "name": "ワカルカモ", "url": "https://kamowakaru.github.io/wakarukamo"}, "image": "https://kamowakaru.github.io/wakarukamo/assets/images/thumbnails/ai-chatgpt/09.jpg"}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "ホーム", "item": "https://kamowakaru.github.io/wakarukamo/"}, {"@type": "ListItem", "position": 2, "name": "AI・ChatGPT", "item": "https://kamowakaru.github.io/wakarukamo/categories/ai-chatgpt.html"}, {"@type": "ListItem", "position": 3, "name": "ChatGPTでブログを作ってみた⑨｜サイトマップを送信して検索登録を確認する", "item": "https://kamowakaru.github.io/wakarukamo/articles/39_9.html"}]}]}</script><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2620370554695357" crossorigin="anonymous"></script></head><body data-root="../"><header class="site-header"><div class="container header-inner"><a class="brand" href="../index.html"><img src="../assets/images/logo-duck.webp" alt=""><span><strong>ワカルカモ</strong><small>PC・Web・AIの「わからない」が、わかるかも。</small></span></a><button class="menu-btn" aria-label="メニュー">☰</button><nav class="nav"><a href="../index.html">ホーム</a><a href="../index.html#categories">カテゴリ</a><a href="../articles.html">記事一覧</a><a href="../about.html">このサイトについて</a></nav><form class="header-search" action="../search.html"><input name="q" type="search" placeholder="キーワードで検索…"><button>🔍</button></form></div></header><main class="article-main"><div class="container article-layout"><article class="article-body"><div class="breadcrumb"><a href="../index.html">ホーム</a> › <a href="../categories/ai-chatgpt.html">AI・ChatGPT</a> › ChatGPTでブログを作ってみた⑨｜サイトマップを送信して検索登録を確認する</div><div class="meta"><span class="chip">AI・ChatGPT</span><a class="tag-link" href="../tags/search-console.html">Search Console</a><a class="tag-link" href="../tags/seo.html">SEO</a><a class="tag-link" href="../tags/website.html">Webサイト制作</a><span class="author-byline">著者：<a href="../about.html#author-profile">ワカルカモ運営者</a></span><time datetime="2026-09-18">2026.09.18</time></div><h1>ChatGPTでブログを作ってみた⑨｜サイトマップを送信して検索登録を確認する</h1><p class="lead">ブログのsitemap.xmlを作成してSearch Consoleへ送信し、URL検査やページのインデックス登録状況からGoogleに認識されているか確認する手順を紹介します。</p><figure class="article-thumbnail"><img src="../assets/images/thumbnails/ai-chatgpt/09.jpg" alt="ChatGPTでブログを作ってみた⑨｜サイトマップを送信して検索登録を確認するのイメージ画像"></figure><h2 id="結論">結論</h2>
+<p>公開した記事をGoogleへ伝えるため、<strong>sitemap.xmlを作成してSearch Consoleへ送信</strong>します。</p>
+<p>「送信しました」は受付完了を示す表示で、全記事がすぐ検索結果へ登録されたという意味ではありません。サイトマップの状態と各URLの登録状況を分けて確認します。</p>
+<h2 id="1-公開URLの一覧を作る">1. 公開URLの一覧を作る</h2>
+<p>サイトマップには、実際に公開されている正規URLを入れます。</p>
+<ul>
+<li>下書き記事を含めない</li>
+<li>404になるURLを含めない</li>
+<li>古いslugや削除済みページを含めない</li>
+<li>同じページを複数URLで重複させない</li>
+</ul>
+<p>Markdownからサイトを生成している場合は、公開対象の記事データからサイトマップも自動生成すると更新漏れを減らせます。</p>
+<h2 id="2-sitemap-xmlを生成する">2. sitemap.xmlを生成する</h2>
+<p>ChatGPTへサイトURLと記事データの形式を伝え、生成処理を追加してもらいます。</p>
+<pre><code>公開対象の記事一覧からsitemap.xmlを生成する処理を追加してください。
+
+要件：
+- トップページ、記事一覧、カテゴリ、公開済み記事を含める
+- 下書きは除外する
+- URLはhttps://から始まる絶対URLにする
+- XMLとして正しい形式で出力する
+- 同じURLを重複させない</code></pre>
+<p>生成後にブラウザで<code>sitemap.xml</code>を開き、URLが表示されるか確認します。</p>
+<h2 id="3-Search-Consoleへ送信する">3. Search Consoleへ送信する</h2>
+<p>Search Consoleのサイトマップ画面で、対象プロパティのURLに続く<code>sitemap.xml</code>を指定して送信します。</p>
+<p>入力欄にすでにサイトURLが表示されている場合は、重複して完全URLを入れず、画面の形式に合わせます。</p>
+<h2 id="4-成功しました-になるまで待つ">4. 「成功しました」になるまで待つ</h2>
+<p>送信直後は取得処理中になることがあります。エラーになった場合は、サイトマップURLをブラウザで直接開きます。</p>
+<p>確認する内容は次の通りです。</p>
+<ul>
+<li>404や403になっていない</li>
+<li>XMLではなくHTMLエラーページが返っていない</li>
+<li>URLが現在のサイトを指している</li>
+<li>XMLの記号やタグが壊れていない</li>
+</ul>
+<h2 id="5-代表URLを検査する">5. 代表URLを検査する</h2>
+<p>URL検査で、トップページ、親記事、子記事を数件確認します。</p>
+<p>重要なページが未登録なら、公開状態とcanonicalを確認したうえで登録をリクエストします。全URLへ短時間に何度もリクエストする必要はありません。</p>
+<h2 id="6-登録数が少なくてもすぐ作り直さない">6. 登録数が少なくてもすぐ作り直さない</h2>
+<p>新しいサイトでは、クロールと登録に時間がかかることがあります。サイトマップが取得できていて、ページが公開され、内部リンクでたどれるなら、まず状態の変化を待ちます。</p>
+<p>その間に確認するのは、記事内容、リンク切れ、重複ページ、noindexの有無です。</p>
+<h2 id="今回の完成チェック">今回の完成チェック</h2>
+<ul>
+<li>sitemap.xmlを公開URLで開けた</li>
+<li>下書きや削除済みURLが入っていない</li>
+<li>Search Consoleへ送信できた</li>
+<li>代表的なURLを検査した</li>
+<li>送信完了とインデックス登録を区別できている</li>
+</ul>
+<h2 id="詳しい手順はこちら">詳しい手順はこちら</h2>
+<ul>
+<li><a class="article-reference" href="10_2.html"><span>sitemap.xmlとは？必要な理由と基本的な作り方を解説</span></a></li>
+<li><a class="article-reference" href="20_2.html"><span>Search Consoleへサイトマップを送信する方法｜追加後の見方も解説</span></a></li>
+<li><a class="article-reference" href="20_4.html"><span>Search Consoleでインデックス登録をリクエストする方法</span></a></li>
+<li><a class="article-reference" href="20_5.html"><span>「クロール済み・インデックス未登録」と表示されたときの対処法</span></a></li>
+</ul>
+<p>次は、記事内容に合う広告やアフィリエイト導線を設置します。</p>
+<p><a class="article-reference" href="39_10.html"><span>ChatGPTでブログを作ってみた⑩｜広告・アフィリエイトを設置する</span></a></p>
+<h2 id="親記事">親記事</h2>
+<p><a class="article-reference" href="39.html"><span>ChatGPTでブログを作ってみた｜企画から公開・収益化までの全手順</span></a></p><aside class="point yellow wakarukamo-point"><div class="point-heading"><img src="../assets/images/wakarukamo-point.png" alt=""><strong>ワカルカモポイント</strong></div><p>公開URLだけを含むサイトマップを送信し、受理後はURL検査と登録状況を分けて確認します。</p></aside><section class="author-box" aria-labelledby="author-box-title"><img src="../assets/images/tip-duck.webp" alt="ワカルカモ運営者"><div><span id="author-box-title" class="author-label">この記事を書いた人</span><strong>ワカルカモ運営者</strong><p>企業の情報システム・DX推進・マーケティング業務などを経験。PC・Webサービス・業務自動化など、実際に試して分かったことを初心者向けに解説しています。</p><a href="../about.html#author-profile">運営者情報を見る →</a></div></section><nav class="article-pager" aria-label="前後の記事"><a class="article-pager-link article-pager-prev" href="39_8.html"><span class="article-pager-label">← 前の記事</span><strong>ChatGPTでブログを作ってみた⑧｜GA4とSearch Consoleを設定する</strong></a><a class="article-pager-link article-pager-next" href="39_10.html"><span class="article-pager-label">次の記事 →</span><strong>ChatGPTでブログを作ってみた⑩｜広告・アフィリエイトを設置する</strong></a></nav><h2>関連記事</h2><div class="article-grid" data-related data-category="ai-chatgpt" data-slug="39_9"></div></article><aside><div class="sidebox"><img class="side-duck" src="../assets/images/tip-duck.webp" alt=""><h3>この記事のカテゴリ</h3><a class="outline-btn" href="../categories/ai-chatgpt.html">AI・ChatGPT →</a></div><div class="sidebox"><h3>🔥 人気のタグ</h3><div class="tag-cloud" data-popular-tags></div></div></aside></div></main><footer class="footer"><div class="container footer-inner"><div class="footer-brand"><img src="../assets/images/logo-duck.webp" alt=""><div><strong>ワカルカモ</strong><div style="font-size:12px;color:#6c7c91">PC・Web・AIの「わからない」が、わかるかも。</div></div></div><div class="footer-links"><a href="../index.html">ホーム</a><a href="../articles.html">記事一覧</a><a href="../about.html">このサイトについて</a><a href="../privacy.html">プライバシーポリシー</a></div></div><p class="copyright">© 2026 ワカルカモ</p></footer><script src="../assets/js/analytics-config.js"></script><script src="../assets/js/site.js?v=20260914-2"></script></body></html>

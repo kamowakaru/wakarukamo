@@ -1,0 +1,65 @@
+<!doctype html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="記事管理CSVから未作成の記事を選び、ChatGPTで構成・本文・内部リンクを含むMarkdown記事を作成し、公開前に確認する手順を紹介します。"><link rel="canonical" href="https://kamowakaru.github.io/wakarukamo/articles/39_5.html"><meta property="og:title" content="ChatGPTでブログを作ってみた⑤｜記事本文を作る"><meta property="og:description" content="記事管理CSVから未作成の記事を選び、ChatGPTで構成・本文・内部リンクを含むMarkdown記事を作成し、公開前に確認する手順を紹介します。"><meta property="og:url" content="https://kamowakaru.github.io/wakarukamo/articles/39_5.html"><meta property="og:type" content="article"><meta property="og:image" content="https://kamowakaru.github.io/wakarukamo/assets/images/thumbnails/ai-chatgpt/09.jpg"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="ChatGPTでブログを作ってみた⑤｜記事本文を作る"><meta name="twitter:description" content="記事管理CSVから未作成の記事を選び、ChatGPTで構成・本文・内部リンクを含むMarkdown記事を作成し、公開前に確認する手順を紹介します。"><meta name="twitter:image" content="https://kamowakaru.github.io/wakarukamo/assets/images/thumbnails/ai-chatgpt/09.jpg"><title>ChatGPTでブログを作ってみた⑤｜記事本文を作る | ワカルカモ</title><link rel="stylesheet" href="../assets/css/style.css?v=20260914-3"><link rel="stylesheet" href="../assets/css/point.css"><link rel="stylesheet" href="../assets/css/article-markdown.css?v=20260915-table"><script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "Article", "headline": "ChatGPTでブログを作ってみた⑤｜記事本文を作る", "description": "記事管理CSVから未作成の記事を選び、ChatGPTで構成・本文・内部リンクを含むMarkdown記事を作成し、公開前に確認する手順を紹介します。", "datePublished": "2026-09-18", "dateModified": "2026-09-18", "mainEntityOfPage": "https://kamowakaru.github.io/wakarukamo/articles/39_5.html", "author": {"@type": "Person", "name": "ワカルカモ運営者", "url": "https://kamowakaru.github.io/wakarukamo/about.html#author-profile"}, "publisher": {"@type": "Organization", "name": "ワカルカモ", "url": "https://kamowakaru.github.io/wakarukamo"}, "image": "https://kamowakaru.github.io/wakarukamo/assets/images/thumbnails/ai-chatgpt/09.jpg"}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "ホーム", "item": "https://kamowakaru.github.io/wakarukamo/"}, {"@type": "ListItem", "position": 2, "name": "AI・ChatGPT", "item": "https://kamowakaru.github.io/wakarukamo/categories/ai-chatgpt.html"}, {"@type": "ListItem", "position": 3, "name": "ChatGPTでブログを作ってみた⑤｜記事本文を作る", "item": "https://kamowakaru.github.io/wakarukamo/articles/39_5.html"}]}]}</script><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2620370554695357" crossorigin="anonymous"></script></head><body data-root="../"><header class="site-header"><div class="container header-inner"><a class="brand" href="../index.html"><img src="../assets/images/logo-duck.webp" alt=""><span><strong>ワカルカモ</strong><small>PC・Web・AIの「わからない」が、わかるかも。</small></span></a><button class="menu-btn" aria-label="メニュー">☰</button><nav class="nav"><a href="../index.html">ホーム</a><a href="../index.html#categories">カテゴリ</a><a href="../articles.html">記事一覧</a><a href="../about.html">このサイトについて</a></nav><form class="header-search" action="../search.html"><input name="q" type="search" placeholder="キーワードで検索…"><button>🔍</button></form></div></header><main class="article-main"><div class="container article-layout"><article class="article-body"><div class="breadcrumb"><a href="../index.html">ホーム</a> › <a href="../categories/ai-chatgpt.html">AI・ChatGPT</a> › ChatGPTでブログを作ってみた⑤｜記事本文を作る</div><div class="meta"><span class="chip">AI・ChatGPT</span><a class="tag-link" href="../tags/chatgpt.html">ChatGPT</a><a class="tag-link" href="../tags/blog-management.html">ブログ運営</a><a class="tag-link" href="../tags/markdown.html">Markdown</a><span class="author-byline">著者：<a href="../about.html#author-profile">ワカルカモ運営者</a></span><time datetime="2026-09-18">2026.09.18</time></div><h1>ChatGPTでブログを作ってみた⑤｜記事本文を作る</h1><p class="lead">記事管理CSVから未作成の記事を選び、ChatGPTで構成・本文・内部リンクを含むMarkdown記事を作成し、公開前に確認する手順を紹介します。</p><figure class="article-thumbnail"><img src="../assets/images/thumbnails/ai-chatgpt/09.jpg" alt="ChatGPTでブログを作ってみた⑤｜記事本文を作るのイメージ画像"></figure><h2 id="結論">結論</h2>
+<p>ChatGPTで記事を作るときは、タイトルだけを渡すのではなく、<strong>読者・記事の目的・必要な見出し・書いてはいけない内容・出力形式</strong>を指定します。</p>
+<p>この回では、公開できるMarkdownファイルを1本完成させます。</p>
+<h2 id="1-CSVから未作成の記事を1本選ぶ">1. CSVから未作成の記事を1本選ぶ</h2>
+<p>最初は、操作結果を自分で確認できる記事を選びます。10記事を一度に作ると、同じ誤りや薄い文章がまとめて増えるため、まず1記事で品質を確認します。</p>
+<h2 id="2-記事のゴールを決める">2. 記事のゴールを決める</h2>
+<p>タイトルが「GitHub PagesでWebサイトを公開する方法」なら、ゴールは「読者が公開URLを開ける状態」です。</p>
+<p>次のように具体化します。</p>
+<pre><code>読者：GitHubを初めて使う人
+開始地点：公開したいHTMLファイルが手元にある
+完了地点：GitHub PagesのURLでindex.htmlを表示できる
+記事で扱わないこと：独自ドメイン、複雑なActions設定</code></pre>
+<h2 id="3-ChatGPTへ記事作成を依頼する">3. ChatGPTへ記事作成を依頼する</h2>
+<pre><code>次の条件で初心者向け記事をMarkdown形式で作成してください。
+
+タイトル：GitHub PagesでWebサイトを公開する方法
+読者：GitHubを初めて使う人
+開始地点：index.htmlが手元にある
+完了地点：公開URLを開いてページを確認できる
+
+要件：
+- 冒頭は「## 結論」から始める
+- 実際の操作順に番号付き見出しを作る
+- 各手順で何を確認すれば完了か書く
+- 画面名称を断定できない場合は、環境で異なることを明記する
+- 存在を確認できない機能やURLを作らない
+- 最後に確認チェックリストを付ける</code></pre>
+<p>自分のサイトで使うfront matterや文体がある場合は、お手本記事も一緒に渡します。</p>
+<h2 id="4-それで何ができるか-を確認する">4. 「それで何ができるか」を確認する</h2>
+<p>生成された記事を読み、各見出しに操作や判断があるかを確認します。</p>
+<ul>
+<li>用語説明だけで終わっていないか</li>
+<li>読者が押す場所や入力する内容が分かるか</li>
+<li>操作後の正常な状態が書かれているか</li>
+<li>エラー時の確認先があるか</li>
+<li>記事タイトルの疑問に最後まで答えているか</li>
+</ul>
+<p>概念説明が長い場合は、「操作手順を先にし、背景説明は後ろへ移してください」と修正します。</p>
+<h2 id="5-事実とリンクを確認する">5. 事実とリンクを確認する</h2>
+<p>ChatGPTが作った外部リンク、料金、仕様、画面名は公式情報で確認します。内部リンクは、実在する記事番号とファイル名に合わせます。</p>
+<p>体験していないことを「実際に使った」と書いていないかも確認します。</p>
+<h2 id="6-Markdownファイルとして保存する">6. Markdownファイルとして保存する</h2>
+<p>管理番号が<code>39_4</code>なら、ファイル名を<code>39_4.md</code>のように統一します。文字コードはUTF-8にします。</p>
+<p>公開前に、見出し、リンク、コードブロック、表が崩れていないかプレビューします。</p>
+<h2 id="今回の完成チェック">今回の完成チェック</h2>
+<ul>
+<li>記事の開始地点と完了地点が明確</li>
+<li>冒頭で結論が分かる</li>
+<li>操作順に見出しが並んでいる</li>
+<li>自分で確認できない断定を削った</li>
+<li>外部リンクと内部リンクを確認した</li>
+<li>Markdownファイルとして保存した</li>
+</ul>
+<h2 id="詳しい手順はこちら">詳しい手順はこちら</h2>
+<ul>
+<li><a class="article-reference" href="26.html"><span>ChatGPTでブログ記事を書く方法｜作成・修正・事実確認まで解説</span></a></li>
+<li><a class="article-reference" href="26_1_1.html"><span>ChatGPTでSEO記事を書くプロンプト例｜構成から確認まで</span></a></li>
+<li><a class="article-reference" href="26_5.html"><span>ChatGPTで作った記事を事実確認する方法｜公開前チェック項目</span></a></li>
+<li><a class="article-reference" href="26_10.html"><span>ChatGPTの記事品質をチェックする方法｜AIっぽい文章・内容不足を防ぐには</span></a></li>
+<li><a class="article-reference" href="34_13.html"><span>SEO記事の公開前チェックリスト｜検索意図・内部リンク・内容を確認</span></a></li>
+</ul>
+<p>次は、Markdownをブラウザで読めるHTMLへ変換します。</p>
+<p><a class="article-reference" href="39_6.html"><span>ChatGPTでブログを作ってみた⑥｜MarkdownからHTMLを生成する</span></a></p>
+<h2 id="親記事">親記事</h2>
+<p><a class="article-reference" href="39.html"><span>ChatGPTでブログを作ってみた｜企画から公開・収益化までの全手順</span></a></p><aside class="point yellow wakarukamo-point"><div class="point-heading"><img src="../assets/images/wakarukamo-point.png" alt=""><strong>ワカルカモポイント</strong></div><p>本文を一度に大量生成せず、記事の目的・確認可能な内容・内部リンク先を指定して1記事ずつ仕上げます。</p></aside><section class="author-box" aria-labelledby="author-box-title"><img src="../assets/images/tip-duck.webp" alt="ワカルカモ運営者"><div><span id="author-box-title" class="author-label">この記事を書いた人</span><strong>ワカルカモ運営者</strong><p>企業の情報システム・DX推進・マーケティング業務などを経験。PC・Webサービス・業務自動化など、実際に試して分かったことを初心者向けに解説しています。</p><a href="../about.html#author-profile">運営者情報を見る →</a></div></section><nav class="article-pager" aria-label="前後の記事"><a class="article-pager-link article-pager-prev" href="39_4.html"><span class="article-pager-label">← 前の記事</span><strong>ChatGPTでブログを作ってみた④｜記事管理用CSVを作る</strong></a><a class="article-pager-link article-pager-next" href="39_6.html"><span class="article-pager-label">次の記事 →</span><strong>ChatGPTでブログを作ってみた⑥｜MarkdownからHTMLを生成する</strong></a></nav><h2>関連記事</h2><div class="article-grid" data-related data-category="ai-chatgpt" data-slug="39_5"></div></article><aside><div class="sidebox"><img class="side-duck" src="../assets/images/tip-duck.webp" alt=""><h3>この記事のカテゴリ</h3><a class="outline-btn" href="../categories/ai-chatgpt.html">AI・ChatGPT →</a></div><div class="sidebox"><h3>🔥 人気のタグ</h3><div class="tag-cloud" data-popular-tags></div></div></aside></div></main><footer class="footer"><div class="container footer-inner"><div class="footer-brand"><img src="../assets/images/logo-duck.webp" alt=""><div><strong>ワカルカモ</strong><div style="font-size:12px;color:#6c7c91">PC・Web・AIの「わからない」が、わかるかも。</div></div></div><div class="footer-links"><a href="../index.html">ホーム</a><a href="../articles.html">記事一覧</a><a href="../about.html">このサイトについて</a><a href="../privacy.html">プライバシーポリシー</a></div></div><p class="copyright">© 2026 ワカルカモ</p></footer><script src="../assets/js/analytics-config.js"></script><script src="../assets/js/site.js?v=20260914-2"></script></body></html>

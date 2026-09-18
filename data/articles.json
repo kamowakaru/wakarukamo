@@ -1,5 +1,190 @@
 [
   {
+    "slug": "39_9",
+    "title": "ChatGPTでブログを作ってみた⑨｜サイトマップを送信して検索登録を確認する",
+    "date": "2026-09-18",
+    "updated": "2026-09-18",
+    "category": "ai-chatgpt",
+    "tags": [
+      "search-console",
+      "seo",
+      "website"
+    ],
+    "description": "ブログのsitemap.xmlを作成してSearch Consoleへ送信し、URL検査やページのインデックス登録状況からGoogleに認識されているか確認する手順を紹介します。",
+    "article_no": "39_9",
+    "thumbnail": "ai-chatgpt/09.jpg",
+    "point": "公開URLだけを含むサイトマップを送信し、受理後はURL検査と登録状況を分けて確認します。",
+    "draft": false
+  },
+  {
+    "slug": "39_8",
+    "title": "ChatGPTでブログを作ってみた⑧｜GA4とSearch Consoleを設定する",
+    "date": "2026-09-18",
+    "updated": "2026-09-18",
+    "category": "ai-chatgpt",
+    "tags": [
+      "ga4",
+      "search-console",
+      "analytics"
+    ],
+    "description": "公開したブログへGA4とGoogle Search Consoleを設定し、自分のアクセス、検索への登録状況、検索キーワードを確認できる状態にする手順を紹介します。",
+    "article_no": "39_8",
+    "thumbnail": "ai-chatgpt/09.jpg",
+    "point": "GA4でサイト内の行動、Search ConsoleでGoogle検索上の状態を確認できるようにします。",
+    "draft": false
+  },
+  {
+    "slug": "39_7",
+    "title": "ChatGPTでブログを作ってみた⑦｜GitHubへ登録してGitHub Pagesで公開する",
+    "date": "2026-09-18",
+    "updated": "2026-09-18",
+    "category": "ai-chatgpt",
+    "tags": [
+      "github",
+      "github-pages",
+      "website"
+    ],
+    "description": "作成したブログをGitHubへ登録し、GitHub Pagesで公開して、実際のURLからトップページと記事ページを確認する手順を紹介します。",
+    "article_no": "39_7",
+    "thumbnail": "ai-chatgpt/09.jpg",
+    "point": "GitHubへファイルを保存したあと、Pagesの公開元を設定し、公開URLでリンクや画像まで確認します。",
+    "draft": false
+  },
+  {
+    "slug": "39_6",
+    "title": "ChatGPTでブログを作ってみた⑥｜MarkdownからHTMLを生成する",
+    "date": "2026-09-18",
+    "updated": "2026-09-18",
+    "category": "ai-chatgpt",
+    "tags": [
+      "chatgpt",
+      "markdown",
+      "html-css"
+    ],
+    "description": "Markdown記事をHTMLへ変換し、共通テンプレートとCSSを使って同じデザインの記事ページを自動生成する流れを紹介します。",
+    "article_no": "39_6",
+    "thumbnail": "ai-chatgpt/09.jpg",
+    "point": "記事本文・HTMLテンプレート・CSSを分け、1つの変換処理ですべての記事ページを生成します。",
+    "draft": false
+  },
+  {
+    "slug": "39_5",
+    "title": "ChatGPTでブログを作ってみた⑤｜記事本文を作る",
+    "date": "2026-09-18",
+    "updated": "2026-09-18",
+    "category": "ai-chatgpt",
+    "tags": [
+      "chatgpt",
+      "blog-management",
+      "markdown"
+    ],
+    "description": "記事管理CSVから未作成の記事を選び、ChatGPTで構成・本文・内部リンクを含むMarkdown記事を作成し、公開前に確認する手順を紹介します。",
+    "article_no": "39_5",
+    "thumbnail": "ai-chatgpt/09.jpg",
+    "point": "本文を一度に大量生成せず、記事の目的・確認可能な内容・内部リンク先を指定して1記事ずつ仕上げます。",
+    "draft": false
+  },
+  {
+    "slug": "39_4",
+    "title": "ChatGPTでブログを作ってみた④｜記事管理用CSVを作る",
+    "date": "2026-09-18",
+    "updated": "2026-09-18",
+    "category": "ai-chatgpt",
+    "tags": [
+      "chatgpt",
+      "blog-management",
+      "spreadsheet"
+    ],
+    "description": "ブログの記事番号、カテゴリ、親子関係、タイトル、公開状況を管理するCSVを作り、ChatGPTへ渡せる形に整える方法を紹介します。",
+    "article_no": "39_4",
+    "thumbnail": "ai-chatgpt/09.jpg",
+    "point": "記事番号・タイトル・公開状況を1行1記事で管理し、ChatGPTへ渡す元データを一本化します。",
+    "draft": false
+  },
+  {
+    "slug": "39_3",
+    "title": "ChatGPTでブログを作ってみた③｜カテゴリと記事案を作る",
+    "date": "2026-09-18",
+    "updated": "2026-09-18",
+    "category": "ai-chatgpt",
+    "tags": [
+      "chatgpt",
+      "blog-management",
+      "seo"
+    ],
+    "description": "ブログの企画をもとに、ChatGPTでカテゴリ、親記事、子記事を作り、読者が順番に理解できる記事構成へ整理する方法を紹介します。",
+    "article_no": "39_3",
+    "thumbnail": "ai-chatgpt/09.jpg",
+    "point": "記事タイトルを大量に並べる前に、親記事と子記事の関係を決めてサイト全体の道筋を作ります。",
+    "draft": false
+  },
+  {
+    "slug": "39_2",
+    "title": "ChatGPTでブログを作ってみた②｜サイト本体を作る",
+    "date": "2026-09-18",
+    "updated": "2026-09-18",
+    "category": "ai-chatgpt",
+    "tags": [
+      "chatgpt",
+      "website",
+      "html-css"
+    ],
+    "description": "ChatGPTを使ってブログのトップページ、記事ページ、記事一覧、カテゴリ一覧などのサイト本体を先に作り、記事を入れられる状態にする手順を紹介します。",
+    "article_no": "39_2",
+    "thumbnail": "ai-chatgpt/09.jpg",
+    "point": "記事を量産する前に、トップ・一覧・記事ページを1件ずつ表示できる最小構成のサイトを完成させます。",
+    "draft": false
+  },
+  {
+    "slug": "39_10",
+    "title": "ChatGPTでブログを作ってみた⑩｜広告・アフィリエイトを設置する",
+    "date": "2026-09-18",
+    "updated": "2026-09-18",
+    "category": "ai-chatgpt",
+    "tags": [
+      "blog-management",
+      "seo"
+    ],
+    "description": "ブログへ広告とアフィリエイトリンクを設置するときに、記事との関連性、リンク形式、広告表記、プライバシーポリシー、公開後の確認を進める手順を紹介します。",
+    "article_no": "39_10",
+    "thumbnail": "ai-chatgpt/09.jpg",
+    "point": "すべての記事へ同じ広告を置かず、読者が次に必要とするサービスだけを関連する記事へ配置します。",
+    "draft": false
+  },
+  {
+    "slug": "39_1",
+    "title": "ChatGPTでブログを作ってみた①｜テーマとサイト名を決める",
+    "date": "2026-09-18",
+    "updated": "2026-09-18",
+    "category": "ai-chatgpt",
+    "tags": [
+      "chatgpt",
+      "blog-management"
+    ],
+    "description": "ChatGPTを使ってブログのテーマ、想定読者、解決する悩み、サイト名を決め、1ページの企画メモにまとめる実践手順を紹介します。",
+    "article_no": "39_1",
+    "thumbnail": "ai-chatgpt/09.jpg",
+    "point": "テーマを一語で決めるのではなく、読者・悩み・自分が提供できる情報まで1枚にまとめます。",
+    "draft": false
+  },
+  {
+    "slug": "39",
+    "title": "ChatGPTでブログを作ってみた｜企画から公開・収益化までの全手順",
+    "date": "2026-09-18",
+    "updated": "2026-09-18",
+    "category": "ai-chatgpt",
+    "tags": [
+      "chatgpt",
+      "blog-management",
+      "website"
+    ],
+    "description": "ChatGPTを使ってブログのテーマ決め、記事作成、HTML生成、GitHub Pagesでの公開、アクセス解析、検索登録、収益化まで進める実践手順を紹介します。",
+    "article_no": "39",
+    "thumbnail": "ai-chatgpt/09.jpg",
+    "point": "各回の作業と完成物を順番に確認しながら、ブログの企画から公開・収益化まで進めます。",
+    "draft": false
+  },
+  {
     "slug": "38_5_1",
     "title": "LPのSEO対策とは？検索流入を増やす方法とLPだけでは難しい理由",
     "date": "2026-09-17",
@@ -3402,7 +3587,7 @@
     "description": "検索順位が上がらない原因は？初心者が確認したいポイントについて、初心者向けに具体的な手順・例・注意点を交えて解説します。",
     "article_no": "9_5",
     "thumbnail": "groups/09.jpg",
-    "point": "実際に確認・操作できるところまで具体的に解説します。",
+    "point": "順位が上がらない原因を、検索意図・記事内容・技術面に分けて見直せます。",
     "draft": false
   },
   {
@@ -3418,7 +3603,7 @@
     "description": "メタディスクリプションとは？SEOを意識した書き方を解説について、初心者向けに具体的な手順・例・注意点を交えて解説します。",
     "article_no": "9_4",
     "thumbnail": "groups/09.jpg",
-    "point": "実際に確認・操作できるところまで具体的に解説します。",
+    "point": "検索結果で記事内容が伝わるメタディスクリプションの長さと書き方が分かります。",
     "draft": false
   },
   {
@@ -3434,7 +3619,7 @@
     "description": "内部リンクとは？SEOで重要な理由と貼り方を解説について、初心者向けに具体的な手順・例・注意点を交えて解説します。",
     "article_no": "9_3",
     "thumbnail": "groups/09.jpg",
-    "point": "実際に確認・操作できるところまで具体的に解説します。",
+    "point": "内部リンクを貼る場所とリンク先の選び方を、SEOと読者の両面から判断できます。",
     "draft": false
   },
   {
@@ -3450,7 +3635,7 @@
     "description": "SEOの見出しはどう使う？H1・H2・H3の違いを解説について、初心者向けに具体的な手順・例・注意点を交えて解説します。",
     "article_no": "9_2",
     "thumbnail": "groups/09.jpg",
-    "point": "実際に確認・操作できるところまで具体的に解説します。",
+    "point": "H1・H2・H3の役割と親子関係を整理し、読みやすい見出し構成を作れます。",
     "draft": false
   },
   {
@@ -3466,7 +3651,7 @@
     "description": "SEOでタイトルが重要な理由は？付け方のポイントを解説について、初心者向けに具体的な手順・例・注意点を交えて解説します。",
     "article_no": "9_1",
     "thumbnail": "groups/09.jpg",
-    "point": "実際に確認・操作できるところまで具体的に解説します。",
+    "point": "検索する人に伝わりやすく、検索結果でも内容が分かるタイトルの付け方を確認できます。",
     "draft": false
   },
   {
@@ -3482,7 +3667,7 @@
     "description": "SEOとは？初心者向けに仕組みと基本的な対策をわかりやすく解説について、初心者向けに具体的な手順・例・注意点を交えて解説します。",
     "article_no": "9",
     "thumbnail": "groups/09.jpg",
-    "point": "実際に確認・操作できるところまで具体的に解説します。",
+    "point": "SEOの基本を、検索エンジン・記事内容・サイト構造の3つに分けて理解できます。",
     "draft": false
   },
   {
@@ -3497,7 +3682,7 @@
     "description": "GitHub Pagesで独自ドメインを使う方法について、初心者向けに具体的な手順・例・注意点を交えて解説します。",
     "article_no": "8_5",
     "thumbnail": "groups/08.jpg",
-    "point": "実際に確認・操作できるところまで具体的に解説します。",
+    "point": "独自ドメイン側のDNS設定とGitHub Pages側の設定を分けて確認できます。",
     "draft": false
   },
   {
@@ -3512,7 +3697,7 @@
     "description": "GitHubで100ファイルを超えてアップロードできないときの対処法について、初心者向けに具体的な手順・例・注意点を交えて解説します。",
     "article_no": "8_4",
     "thumbnail": "groups/08.jpg",
-    "point": "実際に確認・操作できるところまで具体的に解説します。",
+    "point": "100ファイル制限を避けて、GitHub Desktopから大量のファイルをまとめて反映できます。",
     "draft": false
   },
   {
@@ -3527,7 +3712,7 @@
     "description": "GitHub Pagesが更新されないときは？反映されない原因と確認方法について、初心者向けに具体的な手順・例・注意点を交えて解説します。",
     "article_no": "8_3",
     "thumbnail": "groups/08.jpg",
-    "point": "実際に確認・操作できるところまで具体的に解説します。",
+    "point": "Actions・公開設定・キャッシュの順に確認し、更新されない原因を切り分けられます。",
     "draft": false
   },
   {
@@ -3542,7 +3727,7 @@
     "description": "GitHub Pagesの公開元はどれを選ぶ？ブランチとActionsの違いについて、初心者向けに具体的な手順・例・注意点を交えて解説します。",
     "article_no": "8_2",
     "thumbnail": "groups/08.jpg",
-    "point": "実際に確認・操作できるところまで具体的に解説します。",
+    "point": "ブランチ公開とGitHub Actionsの違いを比べ、自分のサイトに合う公開方法を選べます。",
     "draft": false
   },
   {
@@ -3557,7 +3742,7 @@
     "description": "GitHub PagesでWebサイトを作る方法について、初心者向けに具体的な手順・例・注意点を交えて解説します。",
     "article_no": "8_1",
     "thumbnail": "groups/08.jpg",
-    "point": "実際に確認・操作できるところまで具体的に解説します。",
+    "point": "リポジトリの作成から公開URLの確認まで、迷いやすい設定を順番に進められます。",
     "draft": false
   },
   {
@@ -3572,7 +3757,7 @@
     "description": "GitHub Pagesとは？無料でWebサイトを公開する方法・使い方を解説について、初心者向けに具体的な手順・例・注意点を交えて解説します。",
     "article_no": "8",
     "thumbnail": "groups/08.jpg",
-    "point": "実際に確認・操作できるところまで具体的に解説します。",
+    "point": "GitHub Pagesの仕組みから、無料公開に向いているサイトまでまとめてつかめます。",
     "draft": false
   },
   {
@@ -3677,7 +3862,7 @@
     "description": "WordPress開設後に最初にやることまとめについて、初心者向けに具体的な手順・例・注意点を交えて解説します。",
     "article_no": "12_5",
     "thumbnail": "groups/12.jpg",
-    "point": "実際に確認・操作できるところまで具体的に解説します。",
+    "point": "パーマリンク・テーマ・セキュリティなど、開設直後の初期設定を順番に進められます。",
     "draft": false
   },
   {
@@ -3692,7 +3877,7 @@
     "description": "WordPressにログインする方法について、初心者向けに具体的な手順・例・注意点を交えて解説します。",
     "article_no": "12_4",
     "thumbnail": "groups/12.jpg",
-    "point": "実際に確認・操作できるところまで具体的に解説します。",
+    "point": "ログインURLの確認方法と、入れないときに見直す項目が分かります。",
     "draft": false
   },
   {
@@ -3707,7 +3892,7 @@
     "description": "WordPressをインストールする方法について、初心者向けに具体的な手順・例・注意点を交えて解説します。",
     "article_no": "12_3",
     "thumbnail": "groups/12.jpg",
-    "point": "実際に確認・操作できるところまで具体的に解説します。",
+    "point": "サーバーの簡単インストールを使って、WordPressを公開できる状態まで進められます。",
     "draft": false
   },
   {
@@ -3722,7 +3907,7 @@
     "description": "WordPressのドメインはどう決める？決め方と注意点について、初心者向けに具体的な手順・例・注意点を交えて解説します。",
     "article_no": "12_2",
     "thumbnail": "groups/12.jpg",
-    "point": "実際に確認・操作できるところまで具体的に解説します。",
+    "point": "覚えやすさ・サイト内容・長期利用を考えて、後悔しにくいドメイン名を決められます。",
     "draft": false
   },
   {
@@ -3737,7 +3922,7 @@
     "description": "WordPressに必要なレンタルサーバーとは？選び方を解説について、初心者向けに具体的な手順・例・注意点を交えて解説します。",
     "article_no": "12_1",
     "thumbnail": "groups/12.jpg",
-    "point": "実際に確認・操作できるところまで具体的に解説します。",
+    "point": "料金だけでなく、表示速度・管理画面・サポートも含めてサーバーを比較できます。",
     "draft": false
   },
   {
@@ -3752,7 +3937,7 @@
     "description": "WordPressの始め方について、初心者向けに具体的な手順・例・注意点を交えて解説します。",
     "article_no": "12",
     "thumbnail": "groups/12.jpg",
-    "point": "実際に確認・操作できるところまで具体的に解説します。",
+    "point": "サーバー契約から初期設定まで、WordPress開設の全体像を順番に確認できます。",
     "draft": false
   },
   {
@@ -3767,7 +3952,7 @@
     "description": "WordPressを使うには何が必要？準備するものを解説について、初心者向けに具体的な手順・例・注意点を交えて解説します。",
     "article_no": "11_5",
     "thumbnail": "groups/11.jpg",
-    "point": "実際に確認・操作できるところまで具体的に解説します。",
+    "point": "サーバー・ドメイン・メールアドレスなど、開設前に準備するものを漏れなく確認できます。",
     "draft": false
   },
   {
@@ -3782,7 +3967,7 @@
     "description": "WordPressと無料ブログの違いは？メリット・デメリットを比較について、初心者向けに具体的な手順・例・注意点を交えて解説します。",
     "article_no": "11_4",
     "thumbnail": "groups/11.jpg",
-    "point": "実際に確認・操作できるところまで具体的に解説します。",
+    "point": "費用・自由度・管理の手間を比べ、WordPressと無料ブログのどちらが合うか判断できます。",
     "draft": false
   },
   {
@@ -3797,7 +3982,7 @@
     "description": "WordPressでどんなサイトが作れる？初心者向けに解説について、初心者向けに具体的な手順・例・注意点を交えて解説します。",
     "article_no": "11_3",
     "thumbnail": "groups/11.jpg",
-    "point": "実際に確認・操作できるところまで具体的に解説します。",
+    "point": "ブログ・企業サイト・ECサイトなど、WordPressで作れるサイトの例が分かります。",
     "draft": false
   },
   {
@@ -3812,7 +3997,7 @@
     "description": "WordPress.comとWordPress.orgの違いを解説について、初心者向けに具体的な手順・例・注意点を交えて解説します。",
     "article_no": "11_2",
     "thumbnail": "groups/11.jpg",
-    "point": "実際に確認・操作できるところまで具体的に解説します。",
+    "point": "WordPress.comとWordPress.orgの運営方法や自由度の違いを見分けられます。",
     "draft": false
   },
   {
@@ -3827,7 +4012,7 @@
     "description": "WordPressは無料？実際にかかる費用を解説について、初心者向けに具体的な手順・例・注意点を交えて解説します。",
     "article_no": "11_1",
     "thumbnail": "groups/11.jpg",
-    "point": "実際に確認・操作できるところまで具体的に解説します。",
+    "point": "WordPress本体以外に必要なサーバー・ドメインなどの費用を整理できます。",
     "draft": false
   },
   {
@@ -3842,7 +4027,7 @@
     "description": "WordPressとは？できること・メリット・仕組みを初心者向けに解説について、初心者向けに具体的な手順・例・注意点を交えて解説します。",
     "article_no": "11",
     "thumbnail": "groups/11.jpg",
-    "point": "実際に確認・操作できるところまで具体的に解説します。",
+    "point": "WordPressでできることと運営に必要な仕組みを、始める前にまとめて把握できます。",
     "draft": false
   },
   {
@@ -3857,7 +4042,7 @@
     "description": "Webサイトを更新したのに画像が変わらない？キャッシュが原因のときの対処法について、初心者向けに具体的な手順・例・注意点を交えて解説します。",
     "article_no": "10_7",
     "thumbnail": "groups/10.jpg",
-    "point": "実際に確認・操作できるところまで具体的に解説します。",
+    "point": "画像URL・ブラウザキャッシュ・公開状況を順に確認し、古い画像表示を解消できます。",
     "draft": false
   },
   {
@@ -3872,7 +4057,7 @@
     "description": "個人ブログにお問い合わせフォームは必要？メールだけにした理由について、初心者向けに具体的な手順・例・注意点を交えて解説します。",
     "article_no": "10_6",
     "thumbnail": "groups/10.jpg",
-    "point": "実際に確認・操作できるところまで具体的に解説します。",
+    "point": "フォームとメール掲載の違いを比べ、小規模サイトに必要な問い合わせ方法を選べます。",
     "draft": false
   },
   {
@@ -3887,7 +4072,7 @@
     "description": "Webサイト公開後にやることチェックリストについて、初心者向けに具体的な手順・例・注意点を交えて解説します。",
     "article_no": "10_5",
     "thumbnail": "groups/10.jpg",
-    "point": "実際に確認・操作できるところまで具体的に解説します。",
+    "point": "公開直後・数日後・継続運用で確認する項目を、チェックリストとして使えます。",
     "draft": false
   },
   {
@@ -3902,7 +4087,7 @@
     "description": "Webサイトのアクセス数を調べる方法について、初心者向けに具体的な手順・例・注意点を交えて解説します。",
     "article_no": "10_4",
     "thumbnail": "groups/10.jpg",
-    "point": "実際に確認・操作できるところまで具体的に解説します。",
+    "point": "アクセス解析で見るべき数字を整理し、訪問数やよく読まれるページを確認できます。",
     "draft": false
   },
   {
@@ -3917,7 +4102,7 @@
     "description": "robots.txtとは？役割と基本的な書き方を解説について、初心者向けに具体的な手順・例・注意点を交えて解説します。",
     "article_no": "10_3",
     "thumbnail": "groups/10.jpg",
-    "point": "実際に確認・操作できるところまで具体的に解説します。",
+    "point": "robots.txtで制御できる範囲を理解し、誤って必要なページを拒否するのを防げます。",
     "draft": false
   },
   {
@@ -3932,7 +4117,7 @@
     "description": "sitemap.xmlとは？必要な理由と基本的な作り方を解説について、初心者向けに具体的な手順・例・注意点を交えて解説します。",
     "article_no": "10_2",
     "thumbnail": "groups/10.jpg",
-    "point": "実際に確認・操作できるところまで具体的に解説します。",
+    "point": "サイトマップの役割と基本構造を知り、検索エンジンにURL一覧を伝えられます。",
     "draft": false
   },
   {
@@ -3947,7 +4132,7 @@
     "description": "WebサイトをGoogle検索に表示させる方法について、初心者向けに具体的な手順・例・注意点を交えて解説します。",
     "article_no": "10_1",
     "thumbnail": "groups/10.jpg",
-    "point": "実際に確認・操作できるところまで具体的に解説します。",
+    "point": "Googleにサイトの存在を伝え、検索結果への登録状況を確認する方法が分かります。",
     "draft": false
   },
   {
@@ -3964,7 +4149,7 @@
     "description": "Webサイトを公開したら何をする？SEO・アクセス解析・サイト改善まとめについて、初心者向けに具体的な手順・例・注意点を交えて解説します。",
     "article_no": "10",
     "thumbnail": "groups/10.jpg",
-    "point": "実際に確認・操作できるところまで具体的に解説します。",
+    "point": "公開後に必要な検索登録・アクセス解析・改善の流れをまとめて確認できます。",
     "draft": false
   },
   {

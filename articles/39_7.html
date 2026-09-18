@@ -1,0 +1,67 @@
+<!doctype html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="作成したブログをGitHubへ登録し、GitHub Pagesで公開して、実際のURLからトップページと記事ページを確認する手順を紹介します。"><link rel="canonical" href="https://kamowakaru.github.io/wakarukamo/articles/39_7.html"><meta property="og:title" content="ChatGPTでブログを作ってみた⑦｜GitHubへ登録してGitHub Pagesで公開する"><meta property="og:description" content="作成したブログをGitHubへ登録し、GitHub Pagesで公開して、実際のURLからトップページと記事ページを確認する手順を紹介します。"><meta property="og:url" content="https://kamowakaru.github.io/wakarukamo/articles/39_7.html"><meta property="og:type" content="article"><meta property="og:image" content="https://kamowakaru.github.io/wakarukamo/assets/images/thumbnails/ai-chatgpt/09.jpg"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="ChatGPTでブログを作ってみた⑦｜GitHubへ登録してGitHub Pagesで公開する"><meta name="twitter:description" content="作成したブログをGitHubへ登録し、GitHub Pagesで公開して、実際のURLからトップページと記事ページを確認する手順を紹介します。"><meta name="twitter:image" content="https://kamowakaru.github.io/wakarukamo/assets/images/thumbnails/ai-chatgpt/09.jpg"><title>ChatGPTでブログを作ってみた⑦｜GitHubへ登録してGitHub Pagesで公開する | ワカルカモ</title><link rel="stylesheet" href="../assets/css/style.css?v=20260914-3"><link rel="stylesheet" href="../assets/css/point.css"><link rel="stylesheet" href="../assets/css/article-markdown.css?v=20260915-table"><script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "Article", "headline": "ChatGPTでブログを作ってみた⑦｜GitHubへ登録してGitHub Pagesで公開する", "description": "作成したブログをGitHubへ登録し、GitHub Pagesで公開して、実際のURLからトップページと記事ページを確認する手順を紹介します。", "datePublished": "2026-09-18", "dateModified": "2026-09-18", "mainEntityOfPage": "https://kamowakaru.github.io/wakarukamo/articles/39_7.html", "author": {"@type": "Person", "name": "ワカルカモ運営者", "url": "https://kamowakaru.github.io/wakarukamo/about.html#author-profile"}, "publisher": {"@type": "Organization", "name": "ワカルカモ", "url": "https://kamowakaru.github.io/wakarukamo"}, "image": "https://kamowakaru.github.io/wakarukamo/assets/images/thumbnails/ai-chatgpt/09.jpg"}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "ホーム", "item": "https://kamowakaru.github.io/wakarukamo/"}, {"@type": "ListItem", "position": 2, "name": "AI・ChatGPT", "item": "https://kamowakaru.github.io/wakarukamo/categories/ai-chatgpt.html"}, {"@type": "ListItem", "position": 3, "name": "ChatGPTでブログを作ってみた⑦｜GitHubへ登録してGitHub Pagesで公開する", "item": "https://kamowakaru.github.io/wakarukamo/articles/39_7.html"}]}]}</script><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2620370554695357" crossorigin="anonymous"></script></head><body data-root="../"><header class="site-header"><div class="container header-inner"><a class="brand" href="../index.html"><img src="../assets/images/logo-duck.webp" alt=""><span><strong>ワカルカモ</strong><small>PC・Web・AIの「わからない」が、わかるかも。</small></span></a><button class="menu-btn" aria-label="メニュー">☰</button><nav class="nav"><a href="../index.html">ホーム</a><a href="../index.html#categories">カテゴリ</a><a href="../articles.html">記事一覧</a><a href="../about.html">このサイトについて</a></nav><form class="header-search" action="../search.html"><input name="q" type="search" placeholder="キーワードで検索…"><button>🔍</button></form></div></header><main class="article-main"><div class="container article-layout"><article class="article-body"><div class="breadcrumb"><a href="../index.html">ホーム</a> › <a href="../categories/ai-chatgpt.html">AI・ChatGPT</a> › ChatGPTでブログを作ってみた⑦｜GitHubへ登録してGitHub Pagesで公開する</div><div class="meta"><span class="chip">AI・ChatGPT</span><a class="tag-link" href="../tags/github.html">GitHub</a><a class="tag-link" href="../tags/github-pages.html">GitHub Pages</a><a class="tag-link" href="../tags/website.html">Webサイト制作</a><span class="author-byline">著者：<a href="../about.html#author-profile">ワカルカモ運営者</a></span><time datetime="2026-09-18">2026.09.18</time></div><h1>ChatGPTでブログを作ってみた⑦｜GitHubへ登録してGitHub Pagesで公開する</h1><p class="lead">作成したブログをGitHubへ登録し、GitHub Pagesで公開して、実際のURLからトップページと記事ページを確認する手順を紹介します。</p><figure class="article-thumbnail"><img src="../assets/images/thumbnails/ai-chatgpt/09.jpg" alt="ChatGPTでブログを作ってみた⑦｜GitHubへ登録してGitHub Pagesで公開するのイメージ画像"></figure><h2 id="結論">結論</h2>
+<p>サイト本体と記事ページができたら、<strong>GitHubへファイルを登録し、GitHub Pagesの公開元を設定</strong>します。</p>
+<p>この回の完成物は、第三者もブラウザから開ける公開URLです。ファイルをGitHubへ置いただけでは公開完了ではないため、Pagesの設定と公開後の動作確認まで行います。</p>
+<h2 id="1-GitHubのリポジトリを作る">1. GitHubのリポジトリを作る</h2>
+<p>GitHubへログインし、新しいリポジトリを作ります。名前は半角英数字とハイフンで、サイト内容が分かるものにします。</p>
+<p>公開サイトとして使う場合は、公開範囲や登録するファイルに個人情報・秘密鍵・APIキーが含まれていないか確認します。</p>
+<h2 id="2-GitHub-Desktopへリポジトリを取り込む">2. GitHub Desktopへリポジトリを取り込む</h2>
+<p>ブラウザから大量のファイルをアップロードすると制限に当たりやすいため、ファイル数が多い場合はGitHub Desktopを使います。</p>
+<ol>
+<li>GitHub Desktopでリポジトリをクローンする</li>
+<li>作成したサイト一式をローカルのリポジトリへ入れる</li>
+<li>変更一覧で追加対象を確認する</li>
+<li>内容が分かるメッセージでCommitする</li>
+<li>PushしてGitHubへ送る</li>
+</ol>
+<p><code>index.html</code>が想定した階層にあるか確認します。</p>
+<h2 id="3-GitHub-Pagesを設定する">3. GitHub Pagesを設定する</h2>
+<p>リポジトリの設定からPagesを開き、公開元を選びます。</p>
+<p>単純なHTMLサイトなら、指定ブランチのルートを公開元にする方法があります。生成処理を自動化する場合はGitHub Actionsを使う方法もあります。</p>
+<p>どちらを選ぶ場合も、現在のサイト構成に合う公開元を指定します。</p>
+<h2 id="4-公開処理の完了を確認する">4. 公開処理の完了を確認する</h2>
+<p>設定後すぐに表示されない場合があります。Actionsを使っている場合は、実行履歴を開いて処理が成功しているか確認します。</p>
+<p>エラーが出た場合は、エラーになった工程と赤字のメッセージをChatGPTへ渡し、原因候補を絞ります。画面全体ではなく、エラーメッセージを文字で渡すと確認しやすくなります。</p>
+<h2 id="5-公開URLを実際に開く">5. 公開URLを実際に開く</h2>
+<p>公開URLで次を確認します。</p>
+<ul>
+<li>トップページが表示される</li>
+<li>記事一覧を開ける</li>
+<li>記事本文が表示される</li>
+<li>CSSと画像が読み込まれる</li>
+<li>内部リンクが404にならない</li>
+<li>スマートフォンでも表示できる</li>
+</ul>
+<p>PC内で表示できても、公開先ではファイル名の大文字・小文字や相対パスの違いでリンク切れすることがあります。</p>
+<h2 id="6-更新の流れを1回試す">6. 更新の流れを1回試す</h2>
+<p>記事の一文を修正し、Commit・Push・公開反映まで試します。</p>
+<pre><code>Markdown修正
+→ HTML再生成
+→ Commit
+→ Push
+→ Actions確認
+→ 公開URL確認</code></pre>
+<p>この流れが再現できれば、今後の記事追加にも使えます。</p>
+<h2 id="今回の完成チェック">今回の完成チェック</h2>
+<ul>
+<li>リポジトリに秘密情報が含まれていない</li>
+<li>GitHub上にサイト一式がある</li>
+<li>Pagesの公開元を設定した</li>
+<li>公開URLでトップと記事を開けた</li>
+<li>CSS・画像・内部リンクを確認した</li>
+<li>修正から再公開まで1回試した</li>
+</ul>
+<h2 id="詳しい手順はこちら">詳しい手順はこちら</h2>
+<ul>
+<li><a class="article-reference" href="29_2.html"><span>GitHubでリポジトリを作成する方法</span></a></li>
+<li><a class="article-reference" href="29_6.html"><span>GitHub Desktopとは？使うメリット・できること・基本的な使い方を初心者向けに解説</span></a></li>
+<li><a class="article-reference" href="29_7.html"><span>GitHub DesktopでCloneする方法｜GitHubのリポジトリをPCに保存する手順</span></a></li>
+<li><a class="article-reference" href="29_8.html"><span>GitHub DesktopでCommit・Pushする方法｜ローカルの変更をGitHubに反映する手順</span></a></li>
+<li><a class="article-reference" href="8_1.html"><span>GitHub PagesでWebサイトを作る方法｜無料公開までの手順</span></a></li>
+<li><a class="article-reference" href="8_2.html"><span>GitHub Pagesの公開元はどれを選ぶ？ブランチとActionsの違い</span></a></li>
+<li><a class="article-reference" href="8_3.html"><span>GitHub Pagesが更新されないときは？反映されない原因と確認方法</span></a></li>
+<li><a class="article-reference" href="8_4.html"><span>GitHubで100ファイルを超えてアップロードできないときの対処法</span></a></li>
+</ul>
+<p>次は、公開後のアクセスと検索状況を確認できるようにします。</p>
+<p><a class="article-reference" href="39_8.html"><span>ChatGPTでブログを作ってみた⑧｜GA4とSearch Consoleを設定する</span></a></p>
+<h2 id="親記事">親記事</h2>
+<p><a class="article-reference" href="39.html"><span>ChatGPTでブログを作ってみた｜企画から公開・収益化までの全手順</span></a></p><aside class="point yellow wakarukamo-point"><div class="point-heading"><img src="../assets/images/wakarukamo-point.png" alt=""><strong>ワカルカモポイント</strong></div><p>GitHubへファイルを保存したあと、Pagesの公開元を設定し、公開URLでリンクや画像まで確認します。</p></aside><section class="author-box" aria-labelledby="author-box-title"><img src="../assets/images/tip-duck.webp" alt="ワカルカモ運営者"><div><span id="author-box-title" class="author-label">この記事を書いた人</span><strong>ワカルカモ運営者</strong><p>企業の情報システム・DX推進・マーケティング業務などを経験。PC・Webサービス・業務自動化など、実際に試して分かったことを初心者向けに解説しています。</p><a href="../about.html#author-profile">運営者情報を見る →</a></div></section><nav class="article-pager" aria-label="前後の記事"><a class="article-pager-link article-pager-prev" href="39_6.html"><span class="article-pager-label">← 前の記事</span><strong>ChatGPTでブログを作ってみた⑥｜MarkdownからHTMLを生成する</strong></a><a class="article-pager-link article-pager-next" href="39_8.html"><span class="article-pager-label">次の記事 →</span><strong>ChatGPTでブログを作ってみた⑧｜GA4とSearch Consoleを設定する</strong></a></nav><h2>関連記事</h2><div class="article-grid" data-related data-category="ai-chatgpt" data-slug="39_7"></div></article><aside><div class="sidebox"><img class="side-duck" src="../assets/images/tip-duck.webp" alt=""><h3>この記事のカテゴリ</h3><a class="outline-btn" href="../categories/ai-chatgpt.html">AI・ChatGPT →</a></div><div class="sidebox"><h3>🔥 人気のタグ</h3><div class="tag-cloud" data-popular-tags></div></div></aside></div></main><footer class="footer"><div class="container footer-inner"><div class="footer-brand"><img src="../assets/images/logo-duck.webp" alt=""><div><strong>ワカルカモ</strong><div style="font-size:12px;color:#6c7c91">PC・Web・AIの「わからない」が、わかるかも。</div></div></div><div class="footer-links"><a href="../index.html">ホーム</a><a href="../articles.html">記事一覧</a><a href="../about.html">このサイトについて</a><a href="../privacy.html">プライバシーポリシー</a></div></div><p class="copyright">© 2026 ワカルカモ</p></footer><script src="../assets/js/analytics-config.js"></script><script src="../assets/js/site.js?v=20260914-2"></script></body></html>

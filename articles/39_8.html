@@ -1,0 +1,50 @@
+<!doctype html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="公開したブログへGA4とGoogle Search Consoleを設定し、自分のアクセス、検索への登録状況、検索キーワードを確認できる状態にする手順を紹介します。"><link rel="canonical" href="https://kamowakaru.github.io/wakarukamo/articles/39_8.html"><meta property="og:title" content="ChatGPTでブログを作ってみた⑧｜GA4とSearch Consoleを設定する"><meta property="og:description" content="公開したブログへGA4とGoogle Search Consoleを設定し、自分のアクセス、検索への登録状況、検索キーワードを確認できる状態にする手順を紹介します。"><meta property="og:url" content="https://kamowakaru.github.io/wakarukamo/articles/39_8.html"><meta property="og:type" content="article"><meta property="og:image" content="https://kamowakaru.github.io/wakarukamo/assets/images/thumbnails/ai-chatgpt/09.jpg"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="ChatGPTでブログを作ってみた⑧｜GA4とSearch Consoleを設定する"><meta name="twitter:description" content="公開したブログへGA4とGoogle Search Consoleを設定し、自分のアクセス、検索への登録状況、検索キーワードを確認できる状態にする手順を紹介します。"><meta name="twitter:image" content="https://kamowakaru.github.io/wakarukamo/assets/images/thumbnails/ai-chatgpt/09.jpg"><title>ChatGPTでブログを作ってみた⑧｜GA4とSearch Consoleを設定する | ワカルカモ</title><link rel="stylesheet" href="../assets/css/style.css?v=20260914-3"><link rel="stylesheet" href="../assets/css/point.css"><link rel="stylesheet" href="../assets/css/article-markdown.css?v=20260915-table"><script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "Article", "headline": "ChatGPTでブログを作ってみた⑧｜GA4とSearch Consoleを設定する", "description": "公開したブログへGA4とGoogle Search Consoleを設定し、自分のアクセス、検索への登録状況、検索キーワードを確認できる状態にする手順を紹介します。", "datePublished": "2026-09-18", "dateModified": "2026-09-18", "mainEntityOfPage": "https://kamowakaru.github.io/wakarukamo/articles/39_8.html", "author": {"@type": "Person", "name": "ワカルカモ運営者", "url": "https://kamowakaru.github.io/wakarukamo/about.html#author-profile"}, "publisher": {"@type": "Organization", "name": "ワカルカモ", "url": "https://kamowakaru.github.io/wakarukamo"}, "image": "https://kamowakaru.github.io/wakarukamo/assets/images/thumbnails/ai-chatgpt/09.jpg"}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "ホーム", "item": "https://kamowakaru.github.io/wakarukamo/"}, {"@type": "ListItem", "position": 2, "name": "AI・ChatGPT", "item": "https://kamowakaru.github.io/wakarukamo/categories/ai-chatgpt.html"}, {"@type": "ListItem", "position": 3, "name": "ChatGPTでブログを作ってみた⑧｜GA4とSearch Consoleを設定する", "item": "https://kamowakaru.github.io/wakarukamo/articles/39_8.html"}]}]}</script><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2620370554695357" crossorigin="anonymous"></script></head><body data-root="../"><header class="site-header"><div class="container header-inner"><a class="brand" href="../index.html"><img src="../assets/images/logo-duck.webp" alt=""><span><strong>ワカルカモ</strong><small>PC・Web・AIの「わからない」が、わかるかも。</small></span></a><button class="menu-btn" aria-label="メニュー">☰</button><nav class="nav"><a href="../index.html">ホーム</a><a href="../index.html#categories">カテゴリ</a><a href="../articles.html">記事一覧</a><a href="../about.html">このサイトについて</a></nav><form class="header-search" action="../search.html"><input name="q" type="search" placeholder="キーワードで検索…"><button>🔍</button></form></div></header><main class="article-main"><div class="container article-layout"><article class="article-body"><div class="breadcrumb"><a href="../index.html">ホーム</a> › <a href="../categories/ai-chatgpt.html">AI・ChatGPT</a> › ChatGPTでブログを作ってみた⑧｜GA4とSearch Consoleを設定する</div><div class="meta"><span class="chip">AI・ChatGPT</span><a class="tag-link" href="../tags/ga4.html">GA4</a><a class="tag-link" href="../tags/search-console.html">Search Console</a><a class="tag-link" href="../tags/analytics.html">アクセス解析</a><span class="author-byline">著者：<a href="../about.html#author-profile">ワカルカモ運営者</a></span><time datetime="2026-09-18">2026.09.18</time></div><h1>ChatGPTでブログを作ってみた⑧｜GA4とSearch Consoleを設定する</h1><p class="lead">公開したブログへGA4とGoogle Search Consoleを設定し、自分のアクセス、検索への登録状況、検索キーワードを確認できる状態にする手順を紹介します。</p><figure class="article-thumbnail"><img src="../assets/images/thumbnails/ai-chatgpt/09.jpg" alt="ChatGPTでブログを作ってみた⑧｜GA4とSearch Consoleを設定するのイメージ画像"></figure><h2 id="結論">結論</h2>
+<p>ブログを公開したら、<strong>GA4でサイト内のアクセス、Search ConsoleでGoogle検索上の状態</strong>を確認できるようにします。</p>
+<p>設定コードを入れただけで終わらせず、自分でサイトを開き、データが届いていることまで確認します。</p>
+<h2 id="1-GA4のプロパティとデータストリームを作る">1. GA4のプロパティとデータストリームを作る</h2>
+<p>Google Analyticsでプロパティを作成し、Webデータストリームへ公開URLを登録します。</p>
+<p>発行された<code>G-</code>から始まる測定IDを控えます。別サイトの測定IDを入れないよう、サイト名とURLを確認します。</p>
+<h2 id="2-測定タグをサイトへ入れる">2. 測定タグをサイトへ入れる</h2>
+<p>サイトの全ページで使うHTMLテンプレートの<code>head</code>内へ測定タグを入れます。</p>
+<p>記事HTMLを自動生成している場合は、生成済みの全HTMLを直接修正せず、共通テンプレートや設定ファイルへ測定IDを入れて再生成します。</p>
+<h2 id="3-リアルタイムで自分のアクセスを確認する">3. リアルタイムで自分のアクセスを確認する</h2>
+<p>公開サイトを別タブで開き、GA4のリアルタイム画面を確認します。</p>
+<p>表示されない場合は次を見ます。</p>
+<ul>
+<li>公開ページのHTMLに測定タグが入っているか</li>
+<li>測定IDが一致しているか</li>
+<li>広告ブロック機能で止められていないか</li>
+<li>ローカルファイルではなく公開URLを開いているか</li>
+<li>更新後のHTMLが公開されているか</li>
+</ul>
+<h2 id="4-Search-Consoleへサイトを登録する">4. Search Consoleへサイトを登録する</h2>
+<p>Search Consoleでプロパティを追加します。GitHub Pagesのように特定URL配下で運営する場合は、URLプレフィックスで登録する方法があります。</p>
+<p>所有権の確認方法としてHTMLファイルを使う場合は、指定された確認ファイルを内容や名前を変えずに公開先へ置きます。</p>
+<h2 id="5-URL検査でトップページを確認する">5. URL検査でトップページを確認する</h2>
+<p>Search ConsoleのURL検査へトップページのURLを入力します。</p>
+<p>公開直後は「Googleに登録されていません」と表示されても不自然ではありません。ページが一般公開され、Googleがアクセスできる状態かを確認します。</p>
+<h2 id="6-GA4とSearch-Consoleの役割を混ぜない">6. GA4とSearch Consoleの役割を混ぜない</h2>
+<div class="table-scroll"><table><thead><tr><th>確認したいこと</th><th>主に使うもの</th></tr></thead><tbody><tr><td>今サイトを見ている人がいるか</td><td>GA4</td></tr><tr><td>よく読まれるページ</td><td>GA4</td></tr><tr><td>どんな検索語で表示されたか</td><td>Search Console</td></tr><tr><td>Googleに登録されているか</td><td>Search Console</td></tr><tr><td>検索結果でのクリック数</td><td>Search Console</td></tr></tbody></table></div>
+<p>公開直後はデータが少ないため、数字がゼロでも設定ミスとは限りません。</p>
+<h2 id="今回の完成チェック">今回の完成チェック</h2>
+<ul>
+<li>GA4の測定IDを正しいサイトへ設定した</li>
+<li>リアルタイムで自分のアクセスを確認した</li>
+<li>Search Consoleの所有権確認が完了した</li>
+<li>URL検査でトップページを確認した</li>
+<li>GA4とSearch Consoleの用途を分けて見られる</li>
+</ul>
+<h2 id="詳しい手順はこちら">詳しい手順はこちら</h2>
+<ul>
+<li><a class="article-reference" href="19_1.html"><span>サイトにGA4を登録する方法</span></a></li>
+<li><a class="article-reference" href="19_8.html"><span>GitHub PagesにGA4を設定する方法｜測定開始までの手順</span></a></li>
+<li><a class="article-reference" href="19_2.html"><span>GA4のリアルタイムの見方｜アクセスを確認する方法</span></a></li>
+<li><a class="article-reference" href="19_2_1.html"><span>GA4のリアルタイムにアクセスが出ないときの確認方法</span></a></li>
+<li><a class="article-reference" href="20_1.html"><span>Google Search Consoleにサイトを登録する方法</span></a></li>
+<li><a class="article-reference" href="20_1_1.html"><span>Search ConsoleのHTML確認ファイルをGitHub Pagesへ置く方法</span></a></li>
+<li><a class="article-reference" href="20_1_2.html"><span>GitHub PagesをGoogle Search Consoleへ登録する方法</span></a></li>
+</ul>
+<p>次は、サイトマップを送信し、記事が検索対象になっているか確認します。</p>
+<p><a class="article-reference" href="39_9.html"><span>ChatGPTでブログを作ってみた⑨｜サイトマップを送信して検索登録を確認する</span></a></p>
+<h2 id="親記事">親記事</h2>
+<p><a class="article-reference" href="39.html"><span>ChatGPTでブログを作ってみた｜企画から公開・収益化までの全手順</span></a></p><aside class="point yellow wakarukamo-point"><div class="point-heading"><img src="../assets/images/wakarukamo-point.png" alt=""><strong>ワカルカモポイント</strong></div><p>GA4でサイト内の行動、Search ConsoleでGoogle検索上の状態を確認できるようにします。</p></aside><section class="author-box" aria-labelledby="author-box-title"><img src="../assets/images/tip-duck.webp" alt="ワカルカモ運営者"><div><span id="author-box-title" class="author-label">この記事を書いた人</span><strong>ワカルカモ運営者</strong><p>企業の情報システム・DX推進・マーケティング業務などを経験。PC・Webサービス・業務自動化など、実際に試して分かったことを初心者向けに解説しています。</p><a href="../about.html#author-profile">運営者情報を見る →</a></div></section><nav class="article-pager" aria-label="前後の記事"><a class="article-pager-link article-pager-prev" href="39_7.html"><span class="article-pager-label">← 前の記事</span><strong>ChatGPTでブログを作ってみた⑦｜GitHubへ登録してGitHub Pagesで公開する</strong></a><a class="article-pager-link article-pager-next" href="39_9.html"><span class="article-pager-label">次の記事 →</span><strong>ChatGPTでブログを作ってみた⑨｜サイトマップを送信して検索登録を確認する</strong></a></nav><h2>関連記事</h2><div class="article-grid" data-related data-category="ai-chatgpt" data-slug="39_8"></div></article><aside><div class="sidebox"><img class="side-duck" src="../assets/images/tip-duck.webp" alt=""><h3>この記事のカテゴリ</h3><a class="outline-btn" href="../categories/ai-chatgpt.html">AI・ChatGPT →</a></div><div class="sidebox"><h3>🔥 人気のタグ</h3><div class="tag-cloud" data-popular-tags></div></div></aside></div></main><footer class="footer"><div class="container footer-inner"><div class="footer-brand"><img src="../assets/images/logo-duck.webp" alt=""><div><strong>ワカルカモ</strong><div style="font-size:12px;color:#6c7c91">PC・Web・AIの「わからない」が、わかるかも。</div></div></div><div class="footer-links"><a href="../index.html">ホーム</a><a href="../articles.html">記事一覧</a><a href="../about.html">このサイトについて</a><a href="../privacy.html">プライバシーポリシー</a></div></div><p class="copyright">© 2026 ワカルカモ</p></footer><script src="../assets/js/analytics-config.js"></script><script src="../assets/js/site.js?v=20260914-2"></script></body></html>
