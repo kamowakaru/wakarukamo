@@ -3,7 +3,7 @@
     "slug": "39_9",
     "title": "ChatGPTでブログを作ってみた⑨｜サイトマップを送信して検索登録を確認する",
     "date": "2026-09-18",
-    "updated": "2026-09-18",
+    "updated": "2026-09-26",
     "category": "ai-chatgpt",
     "tags": [
       "search-console",
@@ -20,7 +20,7 @@
     "slug": "39_8",
     "title": "ChatGPTでブログを作ってみた⑧｜GA4とSearch Consoleを設定する",
     "date": "2026-09-18",
-    "updated": "2026-09-18",
+    "updated": "2026-09-26",
     "category": "ai-chatgpt",
     "tags": [
       "ga4",
@@ -37,7 +37,7 @@
     "slug": "39_7",
     "title": "ChatGPTでブログを作ってみた⑦｜GitHubへ登録してGitHub Pagesで公開する",
     "date": "2026-09-18",
-    "updated": "2026-09-18",
+    "updated": "2026-09-26",
     "category": "ai-chatgpt",
     "tags": [
       "github",
@@ -54,24 +54,24 @@
     "slug": "39_6",
     "title": "ChatGPTでブログを作ってみた⑥｜MarkdownからHTMLを生成する",
     "date": "2026-09-18",
-    "updated": "2026-09-18",
+    "updated": "2026-09-26",
     "category": "ai-chatgpt",
     "tags": [
       "chatgpt",
       "markdown",
       "html-css"
     ],
-    "description": "Markdown記事をHTMLへ変換し、共通テンプレートとCSSを使って同じデザインの記事ページを自動生成する流れを紹介します。",
+    "description": "ワカルカモの生成スクリプトを例に、Markdown記事から共通デザインのHTMLとサイトマップを作る流れを紹介します。",
     "article_no": "39_6",
     "thumbnail": "groups/39.jpg",
-    "point": "記事本文・HTMLテンプレート・CSSを分け、1つの変換処理ですべての記事ページを生成します。",
+    "point": "Markdownを編集し、共通の生成処理で記事HTMLを作り直します。",
     "draft": false
   },
   {
     "slug": "39_5",
     "title": "ChatGPTでブログを作ってみた⑤｜記事本文を作る",
     "date": "2026-09-18",
-    "updated": "2026-09-18",
+    "updated": "2026-09-26",
     "category": "ai-chatgpt",
     "tags": [
       "chatgpt",
@@ -88,7 +88,7 @@
     "slug": "39_4",
     "title": "ChatGPTでブログを作ってみた④｜記事管理用CSVを作る",
     "date": "2026-09-18",
-    "updated": "2026-09-18",
+    "updated": "2026-09-26",
     "category": "ai-chatgpt",
     "tags": [
       "chatgpt",
@@ -105,7 +105,7 @@
     "slug": "39_3",
     "title": "ChatGPTでブログを作ってみた③｜カテゴリと記事案を作る",
     "date": "2026-09-18",
-    "updated": "2026-09-18",
+    "updated": "2026-09-26",
     "category": "ai-chatgpt",
     "tags": [
       "chatgpt",
@@ -122,7 +122,7 @@
     "slug": "39_2",
     "title": "ChatGPTでブログを作ってみた②｜サイト本体を作る",
     "date": "2026-09-18",
-    "updated": "2026-09-18",
+    "updated": "2026-09-26",
     "category": "ai-chatgpt",
     "tags": [
       "chatgpt",
@@ -139,7 +139,7 @@
     "slug": "39_10",
     "title": "ChatGPTでブログを作ってみた⑩｜広告・アフィリエイトを設置する",
     "date": "2026-09-18",
-    "updated": "2026-09-18",
+    "updated": "2026-09-26",
     "category": "ai-chatgpt",
     "tags": [
       "blog-management",
@@ -155,7 +155,7 @@
     "slug": "39_1",
     "title": "ChatGPTでブログを作ってみた①｜テーマとサイト名を決める",
     "date": "2026-09-18",
-    "updated": "2026-09-18",
+    "updated": "2026-09-26",
     "category": "ai-chatgpt",
     "tags": [
       "chatgpt",
@@ -171,7 +171,7 @@
     "slug": "39",
     "title": "ChatGPTでブログを作ってみた｜企画から公開・収益化までの全手順",
     "date": "2026-09-18",
-    "updated": "2026-09-18",
+    "updated": "2026-09-26",
     "category": "ai-chatgpt",
     "tags": [
       "chatgpt",
