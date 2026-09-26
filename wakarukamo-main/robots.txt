@@ -1,4 +1,0 @@
-User-agent: *
-Allow: /
-
-Sitemap: https://kamowakaru.github.io/wakarukamo/sitemap.xml
