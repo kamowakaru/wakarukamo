@@ -4,6 +4,7 @@ import hashlib, json, csv, re, html, os
 ROOT = Path(__file__).resolve().parents[1]
 CONTENT = ROOT / 'content/articles'
 SITE_URL = os.environ.get('SITE_URL', 'https://kamowakaru.github.io/wakarukamo').rstrip('/')
+HOME_TITLE = 'PC・Web・AIの使い方をわかりやすく解説 | ワカルカモ'
 
 # data/article-management.csv is the publication master.
 # Only rows whose 公開済 column is 済 are emitted as public articles.
@@ -587,6 +588,7 @@ home_text = home_text.replace(
     '<div class="list-grid new-articles-list" data-collection="latest" data-limit="3">',
     1,
 )
+home_text = re.sub(r'<title>.*?</title>', f'<title>{html.escape(HOME_TITLE)}</title>', home_text, count=1, flags=re.S)
 (ROOT/'index.html').write_text(home_text, encoding='utf-8')
 update_grouped_collection(ROOT/'articles.html', articles)
 for c in categories:
@@ -598,7 +600,7 @@ home_schema = json.dumps({'@context':'https://schema.org','@graph':[
     {'@type':'WebSite','name':'ワカルカモ','url':f'{SITE_URL}/','potentialAction':{'@type':'SearchAction','target':f'{SITE_URL}/search.html?q={{search_term_string}}','query-input':'required name=search_term_string'}},
     {'@type':'Organization','name':'ワカルカモ','url':f'{SITE_URL}/','logo':f'{SITE_URL}/assets/images/logo-duck.webp'}
 ]}, ensure_ascii=False).replace('</', '<\\/')
-update_static_seo(ROOT/'index.html', '', 'ワカルカモ', 'PC・Web・AIの「わからない」が、わかるかも。', json_ld=home_schema)
+update_static_seo(ROOT/'index.html', '', HOME_TITLE, 'PC・Web・AIの「わからない」が、わかるかも。', json_ld=home_schema)
 update_static_seo(ROOT/'articles.html', 'articles.html', '記事一覧', 'ワカルカモの記事一覧です。')
 update_static_seo(ROOT/'search.html', 'search.html', '検索', 'ワカルカモの記事を検索できます。', noindex=True)
 update_static_seo(ROOT/'about.html', 'about.html', 'このサイトについて', 'ワカルカモの方針と運営者情報です。')
@@ -618,6 +620,7 @@ sitemap = '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sit
 sitemap += ''.join(f'  <url><loc>{html.escape(SITE_URL + path)}</loc>{f"<lastmod>{lastmod}</lastmod>" if lastmod else ""}</url>\n' for path, lastmod in sitemap_entries)
 sitemap += '</urlset>\n'
 (ROOT/'sitemap.xml').write_text(sitemap, encoding='utf-8')
+(ROOT/'sitemap.txt').write_text(''.join(SITE_URL + path + '\n' for path, _ in sitemap_entries), encoding='utf-8')
 (ROOT/'robots.txt').write_text(f'User-agent: *\nAllow: /\n\nSitemap: {SITE_URL}/sitemap.xml\n', encoding='utf-8')
 
 # site.js itself can be cached. Add a version query to every generated/static HTML page
