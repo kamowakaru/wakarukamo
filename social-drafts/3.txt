@@ -7,7 +7,7 @@
 X案1：要点型
 ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
 【Windows 11のファイル・フォルダ操作まとめ｜保存・移動・圧縮・検索を解説】
-Windows 11のファイル・フォルダについて、初心者が迷いやすいポイントをまとめ、関連する個別手順へ案内します。
+Windows 11のファイル操作で迷いやすい拡張子、ZIP、検索、一括リネーム、削除ファイルの復元を目的別に案内します。
 
 https://kamowakaru.github.io/wakarukamo/articles/3.html?utm_source=x&utm_medium=social&utm_campaign=article_share
 #Windows #PC
@@ -16,7 +16,7 @@ https://kamowakaru.github.io/wakarukamo/articles/3.html?utm_source=x&utm_medium=
 X案2：問いかけ型
 ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
 「Windows 11のファイル・フォルダ操作まとめ｜保存・移動・圧縮・検索を解説」で困っていませんか？
-Windows 11のファイル・フォルダについて、初心者が迷いやすいポイントをまとめ、関連する個別手順へ案内します。
+Windows 11のファイル操作で迷いやすい拡張子、ZIP、検索、一括リネーム、削除ファイルの復元を目的別に案内します。
 
 https://kamowakaru.github.io/wakarukamo/articles/3.html?utm_source=x&utm_medium=social&utm_campaign=article_share
 #Windows #PC
@@ -26,7 +26,7 @@ Threads案：体験に寄り添う型
 ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
 「Windows 11のファイル・フォルダ操作まとめ｜保存・移動・圧縮・検索を解説」で迷うこと、ありませんか？
 
-今回は、Windows 11のファイル・フォルダについて、初心者が迷いやすいポイントをまとめ、関連する個別手順へ案内します。
+今回は、Windows 11のファイル操作で迷いやすい拡張子、ZIP、検索、一括リネーム、削除ファイルの復元を目的別に案内します。
 実際の手順やポイントを初心者向けにまとめました🐤
 
 https://kamowakaru.github.io/wakarukamo/articles/3.html?utm_source=threads&utm_medium=social&utm_campaign=article_share

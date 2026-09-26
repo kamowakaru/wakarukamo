@@ -7,7 +7,7 @@
 X案1：要点型
 ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
 【Windows 11でスリープ時間を変更する方法】
-PCが自動でスリープするまでの時間を変更する方法を解説します。
+Windows 11で画面が消えるまでの時間とPCがスリープするまでの時間を変更する方法を、ノートPCの電源別設定やWindows 10の手順とあわせて解説します。
 
 https://kamowakaru.github.io/wakarukamo/articles/2_2.html?utm_source=x&utm_medium=social&utm_campaign=article_share
 #Windows #PC
@@ -16,7 +16,7 @@ https://kamowakaru.github.io/wakarukamo/articles/2_2.html?utm_source=x&utm_mediu
 X案2：問いかけ型
 ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
 「Windows 11でスリープ時間を変更する方法」で困っていませんか？
-PCが自動でスリープするまでの時間を変更する方法を解説します。
+Windows 11で画面が消えるまでの時間とPCがスリープするまでの時間を変更する方法を、ノートPCの電源別設定やWindows 10の手順とあわせて解説します。
 
 https://kamowakaru.github.io/wakarukamo/articles/2_2.html?utm_source=x&utm_medium=social&utm_campaign=article_share
 #Windows #PC
@@ -26,7 +26,7 @@ Threads案：体験に寄り添う型
 ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
 「Windows 11でスリープ時間を変更する方法」で迷うこと、ありませんか？
 
-今回は、PCが自動でスリープするまでの時間を変更する方法を解説します。
+今回は、Windows 11で画面が消えるまでの時間とPCがスリープするまでの時間を変更する方法を、ノートPCの電源別設定やWindows 10の手順とあわせて解説します。
 実際の手順やポイントを初心者向けにまとめました🐤
 
 https://kamowakaru.github.io/wakarukamo/articles/2_2.html?utm_source=threads&utm_medium=social&utm_campaign=article_share

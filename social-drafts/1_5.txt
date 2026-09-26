@@ -7,7 +7,7 @@
 X案1：要点型
 ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
 【Windows 11の便利なショートカットキーまとめ】
-Windows 11でよく使う操作をキーボードで素早く行うショートカットをまとめます。
+Windows 11とWindows 10で使える便利なショートカットキーを、基本操作・ウィンドウ切り替え・画面操作に分けて紹介します。
 
 https://kamowakaru.github.io/wakarukamo/articles/1_5.html?utm_source=x&utm_medium=social&utm_campaign=article_share
 #Windows #PC
@@ -16,7 +16,7 @@ https://kamowakaru.github.io/wakarukamo/articles/1_5.html?utm_source=x&utm_mediu
 X案2：問いかけ型
 ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
 「Windows 11の便利なショートカットキーまとめ」で困っていませんか？
-Windows 11でよく使う操作をキーボードで素早く行うショートカットをまとめます。
+Windows 11とWindows 10で使える便利なショートカットキーを、基本操作・ウィンドウ切り替え・画面操作に分けて紹介します。
 
 https://kamowakaru.github.io/wakarukamo/articles/1_5.html?utm_source=x&utm_medium=social&utm_campaign=article_share
 #Windows #PC
@@ -26,7 +26,7 @@ Threads案：体験に寄り添う型
 ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
 「Windows 11の便利なショートカットキーまとめ」で迷うこと、ありませんか？
 
-今回は、Windows 11でよく使う操作をキーボードで素早く行うショートカットをまとめます。
+今回は、Windows 11とWindows 10で使える便利なショートカットキーを、基本操作・ウィンドウ切り替え・画面操作に分けて紹介します。
 実際の手順やポイントを初心者向けにまとめました🐤
 
 https://kamowakaru.github.io/wakarukamo/articles/1_5.html?utm_source=threads&utm_medium=social&utm_campaign=article_share

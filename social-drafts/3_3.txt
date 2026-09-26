@@ -7,7 +7,7 @@
 X案1：要点型
 ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
 【Windows 11でファイルを検索する方法】
-エクスプローラーやWindows検索から目的のファイルを探す方法を解説します。
+Windows 11でファイル名の一部から探す方法を、エクスプローラー・タスクバー検索・更新日時の確認に分けて解説します。Windows 10にも対応します。
 
 https://kamowakaru.github.io/wakarukamo/articles/3_3.html?utm_source=x&utm_medium=social&utm_campaign=article_share
 #Windows #PC
@@ -16,7 +16,7 @@ https://kamowakaru.github.io/wakarukamo/articles/3_3.html?utm_source=x&utm_mediu
 X案2：問いかけ型
 ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
 「Windows 11でファイルを検索する方法」で困っていませんか？
-エクスプローラーやWindows検索から目的のファイルを探す方法を解説します。
+Windows 11でファイル名の一部から探す方法を、エクスプローラー・タスクバー検索・更新日時の確認に分けて解説します。Windows 10にも対応します。
 
 https://kamowakaru.github.io/wakarukamo/articles/3_3.html?utm_source=x&utm_medium=social&utm_campaign=article_share
 #Windows #PC
@@ -26,7 +26,7 @@ Threads案：体験に寄り添う型
 ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
 「Windows 11でファイルを検索する方法」で迷うこと、ありませんか？
 
-今回は、エクスプローラーやWindows検索から目的のファイルを探す方法を解説します。
+今回は、Windows 11でファイル名の一部から探す方法を、エクスプローラー・タスクバー検索・更新日時の確認に分けて解説します。Windows 10にも対応します。
 実際の手順やポイントを初心者向けにまとめました🐤
 
 https://kamowakaru.github.io/wakarukamo/articles/3_3.html?utm_source=threads&utm_medium=social&utm_campaign=article_share
