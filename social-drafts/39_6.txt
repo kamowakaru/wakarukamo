@@ -7,7 +7,7 @@
 X案1：要点型
 ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
 【ChatGPTでブログを作ってみた⑥｜MarkdownからHTMLを生成する】
-Markdown記事をHTMLへ変換し、共通テンプレートとCSSを使って同じデザインの記事ページを自動生成する流れを紹介します。
+ワカルカモの生成スクリプトを例に、Markdown記事から共通デザインのHTMLとサイトマップを作る流れを紹介します。
 
 https://kamowakaru.github.io/wakarukamo/articles/39_6.html?utm_source=x&utm_medium=social&utm_campaign=article_share
 #ChatGPT #Markdown #HTML・CSS
@@ -16,7 +16,7 @@ https://kamowakaru.github.io/wakarukamo/articles/39_6.html?utm_source=x&utm_medi
 X案2：問いかけ型
 ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
 「ChatGPTでブログを作ってみた⑥｜MarkdownからHTMLを生成する」で困っていませんか？
-Markdown記事をHTMLへ変換し、共通テンプレートとCSSを使って同じデザインの記事ページを自動生成する流れを紹介します。
+ワカルカモの生成スクリプトを例に、Markdown記事から共通デザインのHTMLとサイトマップを作る流れを紹介します。
 
 https://kamowakaru.github.io/wakarukamo/articles/39_6.html?utm_source=x&utm_medium=social&utm_campaign=article_share
 #ChatGPT #Markdown #HTML・CSS
@@ -26,7 +26,7 @@ Threads案：体験に寄り添う型
 ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
 「ChatGPTでブログを作ってみた⑥｜MarkdownからHTMLを生成する」で迷うこと、ありませんか？
 
-今回は、Markdown記事をHTMLへ変換し、共通テンプレートとCSSを使って同じデザインの記事ページを自動生成する流れを紹介します。
+今回は、ワカルカモの生成スクリプトを例に、Markdown記事から共通デザインのHTMLとサイトマップを作る流れを紹介します。
 実際の手順やポイントを初心者向けにまとめました🐤
 
 https://kamowakaru.github.io/wakarukamo/articles/39_6.html?utm_source=threads&utm_medium=social&utm_campaign=article_share
