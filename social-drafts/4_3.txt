@@ -7,7 +7,7 @@
 X案1：要点型
 ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
 【Windows 11で音が出ないときの対処法】
-出力先・音量・接続・ドライバーなど、音が出ないときに確認するポイントを解説します。
+Windowsで音が出ないときに、出力先、ミュート、アプリ別音量、接続を順番に調べる方法を解説します。
 
 https://kamowakaru.github.io/wakarukamo/articles/4_3.html?utm_source=x&utm_medium=social&utm_campaign=article_share
 #Windows #PC
@@ -16,7 +16,7 @@ https://kamowakaru.github.io/wakarukamo/articles/4_3.html?utm_source=x&utm_mediu
 X案2：問いかけ型
 ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
 「Windows 11で音が出ないときの対処法」で困っていませんか？
-出力先・音量・接続・ドライバーなど、音が出ないときに確認するポイントを解説します。
+Windowsで音が出ないときに、出力先、ミュート、アプリ別音量、接続を順番に調べる方法を解説します。
 
 https://kamowakaru.github.io/wakarukamo/articles/4_3.html?utm_source=x&utm_medium=social&utm_campaign=article_share
 #Windows #PC
@@ -26,7 +26,7 @@ Threads案：体験に寄り添う型
 ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
 「Windows 11で音が出ないときの対処法」で迷うこと、ありませんか？
 
-今回は、出力先・音量・接続・ドライバーなど、音が出ないときに確認するポイントを解説します。
+今回は、Windowsで音が出ないときに、出力先、ミュート、アプリ別音量、接続を順番に調べる方法を解説します。
 実際の手順やポイントを初心者向けにまとめました🐤
 
 https://kamowakaru.github.io/wakarukamo/articles/4_3.html?utm_source=threads&utm_medium=social&utm_campaign=article_share

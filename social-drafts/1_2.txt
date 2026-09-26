@@ -7,7 +7,7 @@
 X案1：要点型
 ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
 【Windows 11でコピー＆ペーストする方法】
-文字やファイルをコピー・切り取り・貼り付けする基本操作を解説します。
+Windows 11で文字やファイルをコピー・移動して貼り付ける方法と、クリップボード履歴の使い方を解説します。
 
 https://kamowakaru.github.io/wakarukamo/articles/1_2.html?utm_source=x&utm_medium=social&utm_campaign=article_share
 #Windows #PC
@@ -16,7 +16,7 @@ https://kamowakaru.github.io/wakarukamo/articles/1_2.html?utm_source=x&utm_mediu
 X案2：問いかけ型
 ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
 「Windows 11でコピー＆ペーストする方法」で困っていませんか？
-文字やファイルをコピー・切り取り・貼り付けする基本操作を解説します。
+Windows 11で文字やファイルをコピー・移動して貼り付ける方法と、クリップボード履歴の使い方を解説します。
 
 https://kamowakaru.github.io/wakarukamo/articles/1_2.html?utm_source=x&utm_medium=social&utm_campaign=article_share
 #Windows #PC
@@ -26,7 +26,7 @@ Threads案：体験に寄り添う型
 ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
 「Windows 11でコピー＆ペーストする方法」で迷うこと、ありませんか？
 
-今回は、文字やファイルをコピー・切り取り・貼り付けする基本操作を解説します。
+今回は、Windows 11で文字やファイルをコピー・移動して貼り付ける方法と、クリップボード履歴の使い方を解説します。
 実際の手順やポイントを初心者向けにまとめました🐤
 
 https://kamowakaru.github.io/wakarukamo/articles/1_2.html?utm_source=threads&utm_medium=social&utm_campaign=article_share

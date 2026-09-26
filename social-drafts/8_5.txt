@@ -7,7 +7,7 @@
 X案1：要点型
 ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
 【GitHub Pagesで独自ドメインを使う方法】
-GitHub Pagesで独自ドメインを使う方法について、初心者向けに具体的な手順・例・注意点を交えて解説します。
+GitHub Pagesの独自ドメインについて、Pages側の設定、DNSレコードの選び方、HTTPSと表示確認までの順番を解説します。
 
 https://kamowakaru.github.io/wakarukamo/articles/8_5.html?utm_source=x&utm_medium=social&utm_campaign=article_share
 #Webサイト制作
@@ -16,7 +16,7 @@ https://kamowakaru.github.io/wakarukamo/articles/8_5.html?utm_source=x&utm_mediu
 X案2：問いかけ型
 ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
 「GitHub Pagesで独自ドメインを使う方法」で困っていませんか？
-GitHub Pagesで独自ドメインを使う方法について、初心者向けに具体的な手順・例・注意点を交えて解説します。
+GitHub Pagesの独自ドメインについて、Pages側の設定、DNSレコードの選び方、HTTPSと表示確認までの順番を解説します。
 
 https://kamowakaru.github.io/wakarukamo/articles/8_5.html?utm_source=x&utm_medium=social&utm_campaign=article_share
 #Webサイト制作
@@ -26,7 +26,7 @@ Threads案：体験に寄り添う型
 ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
 「GitHub Pagesで独自ドメインを使う方法」で迷うこと、ありませんか？
 
-今回は、GitHub Pagesで独自ドメインを使う方法について、初心者向けに具体的な手順・例・注意点を交えて解説します。
+今回は、GitHub Pagesの独自ドメインについて、Pages側の設定、DNSレコードの選び方、HTTPSと表示確認までの順番を解説します。
 実際の手順やポイントを初心者向けにまとめました🐤
 
 https://kamowakaru.github.io/wakarukamo/articles/8_5.html?utm_source=threads&utm_medium=social&utm_campaign=article_share

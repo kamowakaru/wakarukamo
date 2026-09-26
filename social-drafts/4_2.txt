@@ -7,7 +7,7 @@
 X案1：要点型
 ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
 【Windows 11がフリーズしたときの対処法】
-画面やアプリが反応しなくなったときに、安全に復旧するための順番を解説します。
+アプリだけ固まった場合とWindows全体が反応しない場合を分け、未保存データに注意しながら復旧する順番を解説します。
 
 https://kamowakaru.github.io/wakarukamo/articles/4_2.html?utm_source=x&utm_medium=social&utm_campaign=article_share
 #Windows #PC
@@ -16,7 +16,7 @@ https://kamowakaru.github.io/wakarukamo/articles/4_2.html?utm_source=x&utm_mediu
 X案2：問いかけ型
 ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
 「Windows 11がフリーズしたときの対処法」で困っていませんか？
-画面やアプリが反応しなくなったときに、安全に復旧するための順番を解説します。
+アプリだけ固まった場合とWindows全体が反応しない場合を分け、未保存データに注意しながら復旧する順番を解説します。
 
 https://kamowakaru.github.io/wakarukamo/articles/4_2.html?utm_source=x&utm_medium=social&utm_campaign=article_share
 #Windows #PC
@@ -26,7 +26,7 @@ Threads案：体験に寄り添う型
 ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
 「Windows 11がフリーズしたときの対処法」で迷うこと、ありませんか？
 
-今回は、画面やアプリが反応しなくなったときに、安全に復旧するための順番を解説します。
+今回は、アプリだけ固まった場合とWindows全体が反応しない場合を分け、未保存データに注意しながら復旧する順番を解説します。
 実際の手順やポイントを初心者向けにまとめました🐤
 
 https://kamowakaru.github.io/wakarukamo/articles/4_2.html?utm_source=threads&utm_medium=social&utm_campaign=article_share

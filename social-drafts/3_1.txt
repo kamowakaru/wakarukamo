@@ -7,7 +7,7 @@
 X案1：要点型
 ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
 【Windows 11でファイルの拡張子を表示する方法】
-ファイル名の末尾にある.txtや.jpgなどの拡張子を表示する方法を解説します。
+Windows 11のエクスプローラーでファイル名の拡張子を表示する手順と、Windows 10での設定方法、名前変更時の注意点を解説します。
 
 https://kamowakaru.github.io/wakarukamo/articles/3_1.html?utm_source=x&utm_medium=social&utm_campaign=article_share
 #Windows #PC
@@ -16,7 +16,7 @@ https://kamowakaru.github.io/wakarukamo/articles/3_1.html?utm_source=x&utm_mediu
 X案2：問いかけ型
 ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
 「Windows 11でファイルの拡張子を表示する方法」で困っていませんか？
-ファイル名の末尾にある.txtや.jpgなどの拡張子を表示する方法を解説します。
+Windows 11のエクスプローラーでファイル名の拡張子を表示する手順と、Windows 10での設定方法、名前変更時の注意点を解説します。
 
 https://kamowakaru.github.io/wakarukamo/articles/3_1.html?utm_source=x&utm_medium=social&utm_campaign=article_share
 #Windows #PC
@@ -26,7 +26,7 @@ Threads案：体験に寄り添う型
 ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
 「Windows 11でファイルの拡張子を表示する方法」で迷うこと、ありませんか？
 
-今回は、ファイル名の末尾にある.txtや.jpgなどの拡張子を表示する方法を解説します。
+今回は、Windows 11のエクスプローラーでファイル名の拡張子を表示する手順と、Windows 10での設定方法、名前変更時の注意点を解説します。
 実際の手順やポイントを初心者向けにまとめました🐤
 
 https://kamowakaru.github.io/wakarukamo/articles/3_1.html?utm_source=threads&utm_medium=social&utm_campaign=article_share

@@ -7,7 +7,7 @@
 X案1：要点型
 ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
 【Windows 11の使い方｜初心者が最初に覚えたい基本操作まとめ】
-Windows 11の基本操作について、初心者が迷いやすいポイントをまとめ、関連する個別手順へ案内します。
+Windows 11でアプリや設定を探す方法、ウィンドウの切り替え、ファイルのコピー・移動など、最初に覚えたい基本操作をまとめます。
 
 https://kamowakaru.github.io/wakarukamo/articles/1.html?utm_source=x&utm_medium=social&utm_campaign=article_share
 #Windows #PC
@@ -16,7 +16,7 @@ https://kamowakaru.github.io/wakarukamo/articles/1.html?utm_source=x&utm_medium=
 X案2：問いかけ型
 ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
 「Windows 11の使い方｜初心者が最初に覚えたい基本操作まとめ」で困っていませんか？
-Windows 11の基本操作について、初心者が迷いやすいポイントをまとめ、関連する個別手順へ案内します。
+Windows 11でアプリや設定を探す方法、ウィンドウの切り替え、ファイルのコピー・移動など、最初に覚えたい基本操作をまとめます。
 
 https://kamowakaru.github.io/wakarukamo/articles/1.html?utm_source=x&utm_medium=social&utm_campaign=article_share
 #Windows #PC
@@ -26,7 +26,7 @@ Threads案：体験に寄り添う型
 ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
 「Windows 11の使い方｜初心者が最初に覚えたい基本操作まとめ」で迷うこと、ありませんか？
 
-今回は、Windows 11の基本操作について、初心者が迷いやすいポイントをまとめ、関連する個別手順へ案内します。
+今回は、Windows 11でアプリや設定を探す方法、ウィンドウの切り替え、ファイルのコピー・移動など、最初に覚えたい基本操作をまとめます。
 実際の手順やポイントを初心者向けにまとめました🐤
 
 https://kamowakaru.github.io/wakarukamo/articles/1.html?utm_source=threads&utm_medium=social&utm_campaign=article_share

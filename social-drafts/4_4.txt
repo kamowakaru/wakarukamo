@@ -7,7 +7,7 @@
 X案1：要点型
 ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
 【Windows 11でWi-Fiにつながらないときの原因と対処法】
-PC側とルーター側を切り分けながら、Wi-Fi接続を確認する方法を解説します。
+Wi-Fiに接続できない場合と接続済みでもインターネットが使えない場合を分け、PCとルーターを確認する手順を解説します。
 
 https://kamowakaru.github.io/wakarukamo/articles/4_4.html?utm_source=x&utm_medium=social&utm_campaign=article_share
 #Windows #PC
@@ -16,7 +16,7 @@ https://kamowakaru.github.io/wakarukamo/articles/4_4.html?utm_source=x&utm_mediu
 X案2：問いかけ型
 ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
 「Windows 11でWi-Fiにつながらないときの原因と対処法」で困っていませんか？
-PC側とルーター側を切り分けながら、Wi-Fi接続を確認する方法を解説します。
+Wi-Fiに接続できない場合と接続済みでもインターネットが使えない場合を分け、PCとルーターを確認する手順を解説します。
 
 https://kamowakaru.github.io/wakarukamo/articles/4_4.html?utm_source=x&utm_medium=social&utm_campaign=article_share
 #Windows #PC
@@ -26,7 +26,7 @@ Threads案：体験に寄り添う型
 ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
 「Windows 11でWi-Fiにつながらないときの原因と対処法」で迷うこと、ありませんか？
 
-今回は、PC側とルーター側を切り分けながら、Wi-Fi接続を確認する方法を解説します。
+今回は、Wi-Fiに接続できない場合と接続済みでもインターネットが使えない場合を分け、PCとルーターを確認する手順を解説します。
 実際の手順やポイントを初心者向けにまとめました🐤
 
 https://kamowakaru.github.io/wakarukamo/articles/4_4.html?utm_source=threads&utm_medium=social&utm_campaign=article_share

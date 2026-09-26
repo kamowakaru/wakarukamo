@@ -7,7 +7,7 @@
 X案1：要点型
 ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
 【Windowsで画面の一部だけスクショする方法｜範囲指定してコピー・保存する手順】
-Windows 11で画面の一部だけを範囲指定してスクリーンショットし、コピーまたは画像として保存する方法を解説します。
+Windows 11・Windows 10で画面の一部だけを範囲指定してスクリーンショットし、貼り付けたり画像ファイルに保存したりする方法を解説します。
 
 https://kamowakaru.github.io/wakarukamo/articles/1_6.html?utm_source=x&utm_medium=social&utm_campaign=article_share
 #Windows #PC
@@ -16,7 +16,7 @@ https://kamowakaru.github.io/wakarukamo/articles/1_6.html?utm_source=x&utm_mediu
 X案2：問いかけ型
 ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
 「Windowsで画面の一部だけスクショする方法｜範囲指定してコピー・保存する手順」で困っていませんか？
-Windows 11で画面の一部だけを範囲指定してスクリーンショットし、コピーまたは画像として保存する方法を解説します。
+Windows 11・Windows 10で画面の一部だけを範囲指定してスクリーンショットし、貼り付けたり画像ファイルに保存したりする方法を解説します。
 
 https://kamowakaru.github.io/wakarukamo/articles/1_6.html?utm_source=x&utm_medium=social&utm_campaign=article_share
 #Windows #PC
@@ -26,7 +26,7 @@ Threads案：体験に寄り添う型
 ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
 「Windowsで画面の一部だけスクショする方法｜範囲指定してコピー・保存する手順」で迷うこと、ありませんか？
 
-今回は、Windows 11で画面の一部だけを範囲指定してスクリーンショットし、コピーまたは画像として保存する方法を解説します。
+今回は、Windows 11・Windows 10で画面の一部だけを範囲指定してスクリーンショットし、貼り付けたり画像ファイルに保存したりする方法を解説します。
 実際の手順やポイントを初心者向けにまとめました🐤
 
 https://kamowakaru.github.io/wakarukamo/articles/1_6.html?utm_source=threads&utm_medium=social&utm_campaign=article_share

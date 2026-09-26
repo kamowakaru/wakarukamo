@@ -7,7 +7,7 @@
 X案1：要点型
 ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
 【Windows 11でファイル名を一括変更する方法】
-複数ファイルの名前をまとめて変更する基本方法を解説します。
+Windows 11のエクスプローラーで複数ファイルを選び、共通の名前と連番に一括変更する方法を解説します。Windows 10での操作も紹介します。
 
 https://kamowakaru.github.io/wakarukamo/articles/3_4.html?utm_source=x&utm_medium=social&utm_campaign=article_share
 #Windows #PC
@@ -16,7 +16,7 @@ https://kamowakaru.github.io/wakarukamo/articles/3_4.html?utm_source=x&utm_mediu
 X案2：問いかけ型
 ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
 「Windows 11でファイル名を一括変更する方法」で困っていませんか？
-複数ファイルの名前をまとめて変更する基本方法を解説します。
+Windows 11のエクスプローラーで複数ファイルを選び、共通の名前と連番に一括変更する方法を解説します。Windows 10での操作も紹介します。
 
 https://kamowakaru.github.io/wakarukamo/articles/3_4.html?utm_source=x&utm_medium=social&utm_campaign=article_share
 #Windows #PC
@@ -26,7 +26,7 @@ Threads案：体験に寄り添う型
 ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
 「Windows 11でファイル名を一括変更する方法」で迷うこと、ありませんか？
 
-今回は、複数ファイルの名前をまとめて変更する基本方法を解説します。
+今回は、Windows 11のエクスプローラーで複数ファイルを選び、共通の名前と連番に一括変更する方法を解説します。Windows 10での操作も紹介します。
 実際の手順やポイントを初心者向けにまとめました🐤
 
 https://kamowakaru.github.io/wakarukamo/articles/3_4.html?utm_source=threads&utm_medium=social&utm_campaign=article_share

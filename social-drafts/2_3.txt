@@ -7,7 +7,7 @@
 X案1：要点型
 ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
 【Windows 11で通知をオフにする方法】
-不要な通知をアプリごと、またはまとめてオフにする方法を解説します。
+Windows 11で通知をアプリごと、またはまとめてオフにする方法と、作業中だけ通知を抑える応答不可の使い方を解説します。
 
 https://kamowakaru.github.io/wakarukamo/articles/2_3.html?utm_source=x&utm_medium=social&utm_campaign=article_share
 #Windows #PC
@@ -16,7 +16,7 @@ https://kamowakaru.github.io/wakarukamo/articles/2_3.html?utm_source=x&utm_mediu
 X案2：問いかけ型
 ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
 「Windows 11で通知をオフにする方法」で困っていませんか？
-不要な通知をアプリごと、またはまとめてオフにする方法を解説します。
+Windows 11で通知をアプリごと、またはまとめてオフにする方法と、作業中だけ通知を抑える応答不可の使い方を解説します。
 
 https://kamowakaru.github.io/wakarukamo/articles/2_3.html?utm_source=x&utm_medium=social&utm_campaign=article_share
 #Windows #PC
@@ -26,7 +26,7 @@ Threads案：体験に寄り添う型
 ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
 「Windows 11で通知をオフにする方法」で迷うこと、ありませんか？
 
-今回は、不要な通知をアプリごと、またはまとめてオフにする方法を解説します。
+今回は、Windows 11で通知をアプリごと、またはまとめてオフにする方法と、作業中だけ通知を抑える応答不可の使い方を解説します。
 実際の手順やポイントを初心者向けにまとめました🐤
 
 https://kamowakaru.github.io/wakarukamo/articles/2_3.html?utm_source=threads&utm_medium=social&utm_campaign=article_share
